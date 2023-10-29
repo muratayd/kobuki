@@ -152,9 +152,9 @@ public:
         y = (int)round((current_y + ROBOT_RADIUS * sin(current_yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
         if (occupancy_grid[MAP_SIZE-y][x] == 1) left_obstacle = true;
         // check center
-        x = (int)round((current_x + ROBOT_RADIUS) / GRID_SIZE) + MAP_ORIGIN;
-        y = (int)round((current_y + ROBOT_RADIUS) / GRID_SIZE) + MAP_ORIGIN;
-        if (occupancy_grid[MAP_SIZE-y][x] == 1) center_obstacle = true;
+        x = (int)round((current_x) / GRID_SIZE) + MAP_ORIGIN;
+        y = (int)round((current_y) / GRID_SIZE) + MAP_ORIGIN;
+        //if (occupancy_grid[MAP_SIZE-y][x] == 1) //center_obstacle = true;
     }
 
     void print(bool map)
@@ -200,6 +200,7 @@ public:
         { // "go to target mode"
             if (moving_state == GO_STRAIGHT && (data.bumper != 0 || right_front_obstacle || front_obstacle || left_front_obstacle))
             {   // HIT!
+                kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
                 robot_mode = WALL_FOLLOWING_MODE; // wall following mode
                 // save hit point coordinates:
                 hit_x = current_x;
@@ -210,7 +211,6 @@ public:
                 cout << "m0, hit_x: " << hit_x << " hit_y: " << hit_y << " distance_to_goal_from_hit_point: " << distance_to_goal_from_hit_point << endl;
                 std::cout << "robot_mode: " << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
                 // stop and switch to wall mode
-                kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
                 return;
             }
 
@@ -325,6 +325,7 @@ public:
                 // move backwards
                 rotational_velocity = 0.0;
                 longitudinal_velocity = -FORWARD_SPEED * 0.5;
+                //rotational_velocity = ROTATION_SPEED * 0.5;
                 dx = 0.0;
                 dth = 0.0;
                 corners_turned = 0;
