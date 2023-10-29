@@ -129,7 +129,7 @@ public:
 
     void checkMap() // check obstacles in front for movement controls
     {
-        front_obstacle = right_front_obstacle = right_obstacle = left_front_obstacle = left_obstacle = false;
+        front_obstacle = right_front_obstacle = right_obstacle = left_front_obstacle = left_obstacle = center_obstacle = false;
         int x, y; // row, column
         // check front
         x = (int)round((current_x + ROBOT_RADIUS * cos(current_yaw)) / GRID_SIZE) + MAP_ORIGIN;
@@ -151,6 +151,10 @@ public:
         x = (int)round((current_x + ROBOT_RADIUS * cos(current_yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
         y = (int)round((current_y + ROBOT_RADIUS * sin(current_yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
         if (occupancy_grid[MAP_SIZE-y][x] == 1) left_obstacle = true;
+        // check center
+        x = (int)round((current_x + ROBOT_RADIUS) / GRID_SIZE) + MAP_ORIGIN;
+        y = (int)round((current_y + ROBOT_RADIUS) / GRID_SIZE) + MAP_ORIGIN;
+        if (occupancy_grid[MAP_SIZE-y][x] == 1) center_obstacle = true;
     }
 
     void print(bool map)
@@ -158,7 +162,7 @@ public:
         auto now = std::chrono::system_clock::now();
         auto now_time = std::chrono::system_clock::to_time_t(now);
         cout << endl << "Pose: [" << current_x << ", " << current_y << ", " << current_yaw*360.0/ecl::pi << "] " << std::put_time(std::localtime(&now_time), "%F %T") << std::endl;
-        cout << "Obstacles: " << left_obstacle << left_front_obstacle  << front_obstacle << right_front_obstacle << right_obstacle<< endl;
+        cout << "Obstacles L LF F RF R C: " << left_obstacle << left_front_obstacle  << front_obstacle << right_front_obstacle << right_obstacle << center_obstacle << endl;
 
         if (!map) return;
         for (auto &row : occupancy_grid)
@@ -316,10 +320,11 @@ public:
 
             // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
             // if hit
-            if (data.bumper != 0)
+            if (data.bumper != 0 || center_obstacle)
             {
-                // turn left
-                rotational_velocity = ROTATION_SPEED;
+                // move backwards
+                rotational_velocity = 0.0;
+                longitudinal_velocity = -FORWARD_SPEED * 0.5;
                 dx = 0.0;
                 dth = 0.0;
                 corners_turned = 0;
@@ -390,7 +395,7 @@ private:
     double yaw_precision = 5.0 * (ecl::pi / 180);
     int occupancy_grid[MAP_SIZE][MAP_SIZE];
     // variables for occupancy grid obstacles closer than 10cm
-    bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle;
+    bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle, center_obstacle;
     /*  ############# MAIN ROBOT MODES ###################
         "go to goal mode": Robot will head to an x,y coordinate
         "wall following mode": Robot will follow a wall */
