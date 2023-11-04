@@ -99,7 +99,8 @@ public:
         }
     }
 
-    // Technique used for mapping is Point-robot assumption. Meaning that the robot is represented as a point, and obstacles are Dilated by robot’s radius
+    // Technique used for mapping is Point-robot assumption. 
+    //Meaning that the robot is represented as a point, and obstacles are Dilated by robot’s radius
     void updateMap()
     {
         // Mark the object cell from the hit point, and use Dilation function
@@ -129,7 +130,7 @@ public:
 
     void checkMap() // check obstacles in front for movement controls
     {
-        front_obstacle = right_front_obstacle = right_obstacle = left_front_obstacle = left_obstacle = center_obstacle = false;
+        front_obstacle = right_front_obstacle = right_obstacle = left_front_obstacle = left_obstacle = false;
         int x, y; // row, column
         // check front
         x = (int)round((current_x + ROBOT_RADIUS * cos(current_yaw)) / GRID_SIZE) + MAP_ORIGIN;
@@ -151,18 +152,16 @@ public:
         x = (int)round((current_x + ROBOT_RADIUS * cos(current_yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
         y = (int)round((current_y + ROBOT_RADIUS * sin(current_yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
         if (occupancy_grid[MAP_SIZE-y][x] == 1) left_obstacle = true;
-        // check center
-        x = (int)round((current_x) / GRID_SIZE) + MAP_ORIGIN;
-        y = (int)round((current_y) / GRID_SIZE) + MAP_ORIGIN;
-        //if (occupancy_grid[MAP_SIZE-y][x] == 1) //center_obstacle = true;
     }
 
     void print(bool map)
     {
         auto now = std::chrono::system_clock::now();
         auto now_time = std::chrono::system_clock::to_time_t(now);
-        cout << endl << "Pose: [" << current_x << ", " << current_y << ", " << current_yaw*360.0/ecl::pi << "] " << std::put_time(std::localtime(&now_time), "%F %T") << std::endl;
-        cout << "Obstacles L LF F RF R C: " << left_obstacle << left_front_obstacle  << front_obstacle << right_front_obstacle << right_obstacle << center_obstacle << endl;
+        cout << endl << "Pose: [" << current_x << ", " << current_y << ", " << current_yaw*360.0/ecl::pi 
+                << "] " << std::put_time(std::localtime(&now_time), "%F %T") << std::endl;
+        cout << "Obstacles L LF F RF R: " << left_obstacle << left_front_obstacle  
+                << front_obstacle << right_front_obstacle << right_obstacle << endl;
 
         if (!map) return;
         for (auto &row : occupancy_grid)
@@ -208,7 +207,8 @@ public:
                 distance_to_goal_from_hit_point = sqrt((
                         pow(target_x - hit_x, 2)) +
                         (pow(target_y - hit_y, 2)));
-                cout << "m0, hit_x: " << hit_x << " hit_y: " << hit_y << " distance_to_goal_from_hit_point: " << distance_to_goal_from_hit_point << endl;
+                cout << "m0, hit_x: " << hit_x << " hit_y: " << hit_y << " distance_to_goal_from_hit_point: " 
+                        << distance_to_goal_from_hit_point << endl;
                 std::cout << "robot_mode: " << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
                 // stop and switch to wall mode
                 return;
@@ -320,12 +320,10 @@ public:
 
             // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
             // if hit
-            if (data.bumper != 0 || center_obstacle)
+            if (data.bumper != 0)
             {
                 // move backwards
-                rotational_velocity = 0.0;
                 longitudinal_velocity = -FORWARD_SPEED * 0.5;
-                //rotational_velocity = ROTATION_SPEED * 0.5;
                 dx = 0.0;
                 dth = 0.0;
                 corners_turned = 0;
@@ -396,7 +394,7 @@ private:
     double yaw_precision = 5.0 * (ecl::pi / 180);
     int occupancy_grid[MAP_SIZE][MAP_SIZE];
     // variables for occupancy grid obstacles closer than 10cm
-    bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle, center_obstacle;
+    bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle;
     /*  ############# MAIN ROBOT MODES ###################
         "go to goal mode": Robot will head to an x,y coordinate
         "wall following mode": Robot will follow a wall */
@@ -449,7 +447,6 @@ int main(int argc, char **argv)
     linestream >> targetY;
     std::cout << "x: " << targetX << " y: " << targetY << std::endl;
 
-    ecl::CmdLine cmd_line("Uses a simple control loop to move Kobuki with bug 2 algorithm with sides of length 0.5m", ' ', "0.2");
     ecl::ValueArg<std::string> device_port(
         "p", "port",
         "Path to device file of serial port to open",
