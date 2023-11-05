@@ -4,8 +4,8 @@
 ** Classes
 *****************************************************************************/
 
-KobukiManager::KobukiManager(): 
-    slot_stream_data(&KobukiManager::processStreamData, *this)
+KobukiManager::KobukiManager():
+    slot_stream_data(&KobukiManager::processStreamData, *this),
     slot_button_event(&KobukiManager::processButtonEvent, *this),
     slot_bumper_event(&KobukiManager::processBumperEvent, *this),
     slot_cliff_event(&KobukiManager::processCliffEvent, *this)
@@ -13,6 +13,17 @@ KobukiManager::KobukiManager():
     kobuki::Parameters parameters;
     // namespaces all sigslot connection names, default: /kobuki
     parameters.sigslots_namespace = "/kobuki";
+    ecl::ValueArg<std::string> device_port(
+        "p", "port",
+        "Path to device file of serial port to open",
+        false,
+        "/dev/kobuki",
+        "string");
+    ecl::SwitchArg disable_smoothing(
+        "d", "disable_smoothing",
+        "Disable the acceleration limiter (smoothens velocity)",
+        false);
+
     // Specify the device port, default: /dev/kobuki
     parameters.device_port = device_port.getValue();
     // Most use cases will bring their own smoothing algorithms, but if
@@ -23,6 +34,16 @@ KobukiManager::KobukiManager():
     parameters.battery_capacity = 16.5;
     parameters.battery_low = 14.0;
     parameters.battery_dangerous = 13.2;
+    parameters.log_level = kobuki::LogLevel::DEBUG;
+    slot_stream_data.connect("/kobuki/stream_data");
+    slot_button_event.connect("/kobuki/button_event");
+    slot_bumper_event.connect("/kobuki/bumper_event");
+    slot_cliff_event.connect("/kobuki/cliff_event");
+    userButtonEventCallBack = NULL;
+    userBumperEventCallBack = NULL;
+    userCliffEventCallBack = NULL;
+    pose[0] = pose[1] = pose[2] = 0.0;
+    start_time.stamp();
     // Initialise - exceptions are thrown if parameter validation or initialisation fails.
     try
     {
@@ -33,72 +54,94 @@ KobukiManager::KobukiManager():
         cout << e.what();
     }
     kobuki.enable();
-    slot_stream_data.connect("/kobuki/stream_data");
-    slot_button_event.connect("/kobuki/button_event");
-    slot_bumper_event.connect("/kobuki/bumper_event");
-    slot_cliff_event.connect("/kobuki/cliff_event");
-    userButtonEventCallBack = NULL;
 }
 
 KobukiManager::~KobukiManager() {
-    kobuki.setBaseControl(0, 0); // linear_velocity, angular_velocity in (m/s), (rad/s)
+    kobuki.setBaseControl(0.0, 0.0); // linear_velocity, angular_velocity in (m/s), (rad/s)
     kobuki.disable();
 }
 
-KobukiManager::move(double longitudinal_velocity) {
-    cout << "move " << forward_speed << endl;
-    kobuki.setBaseControl(longitudinal_velocity, 0.0);
-}
-
-KobukiManager::rotate(double rotational_velocity) {
-    cout << "rotate " << rotational_velocity << endl;
-    kobuki.setBaseControl(0.0, rotational_velocity);
-}
-
-KobukiManager::moveAndRotate(double longitudinal_velocity, double rotational_velocity) {
-    cout << "move and rotate " << longitudinal_velocity << " " << rotational_velocity << endl;
+void KobukiManager::move(double longitudinal_velocity, double rotational_velocity) {
     kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
+    std::cout << ecl::green;
+    cout << "moving longitudinal:" << longitudinal_velocity << "m/s, rotational:" 
+            << rotational_velocity << " rad/s" << endl;
+    std::cout << ecl::reset;
 }
 
-KobukiManager::stop() {
-    cout << "stop!" << endl;
+void KobukiManager::rotate(double rotational_velocity) {
+    kobuki.setBaseControl(0.0, rotational_velocity);
+    std::cout << ecl::green;
+    cout << "rotating: " << rotational_velocity << " rad/s" << endl;
+    std::cout << ecl::reset;
+}
+
+void KobukiManager::stop() {
     kobuki.setBaseControl(0.0, 0.0);
+    std::cout << ecl::green;
+    cout << "stop!" << endl;
+    std::cout << ecl::reset;
 }
 
-KobukiManager::getCoordinates() {
-    std::vector<int> arr(2);
+vector<double> KobukiManager::getCoordinates() {
+    vector<double> arr(2);
     arr[0] = pose[0];
     arr[1] = pose[1];
     return arr;
 }
 
-KobukiManager::getAngle() {
+double KobukiManager::getAngle() {
     return pose[2];
 }
 
-KobukiManager::setUserButtonEventCallBack (userButtonEventCallBackType func) {
+int KobukiManager::getBumperState() {
+    return data.bumper;
+}
+
+void KobukiManager::playSoundSequence(int x) {
+    if (x < 0x0 || x > 0x6) {
+        cout << ecl::red;
+        cout << "Sound Sequence code boundry error!" << endl;
+        cout << ecl::reset;
+        return;
+    }
+    kobuki::SoundSequences ss = static_cast<kobuki::SoundSequences>(x);;
+    kobuki.playSoundSequence(ss);
+}
+
+void KobukiManager::setUserButtonEventCallBack (userButtonEventCallBackType func) {
     userButtonEventCallBack = func;
 }
 
-KobukiManager::setUserBumperEventCallBack (userBumperEventCallBackType func) {
+void KobukiManager::setUserBumperEventCallBack (userBumperEventCallBackType func) {
     userBumperEventCallBack = func;
 }
 
-KobukiManager::setUserCliffEventCallBack (userCliffEventCallBackType func) {
+void KobukiManager::setUserCliffEventCallBack (userCliffEventCallBackType func) {
     userCliffEventCallBack = func;
 }
 
-KobukiManager::processStreamData() {
+void KobukiManager::customLogger(const std::string& message) {
+    // Ref: ecl/time/timestamp_base.hpp
+    std::cout << double(ecl::TimeStamp() - start_time) << " " << message << ecl::reset << std::endl;
+}
+
+void KobukiManager::processStreamData() {
     ecl::linear_algebra::Vector3d pose_update;
     ecl::linear_algebra::Vector3d pose_update_rates;
     kobuki.updateOdometry(pose_update, pose_update_rates);
     pose = ecl::concatenate_poses(pose, pose_update);
-    pose[2] = kobuki.getHeading(); // override odometry heading with the more precise gyro data
+    pose[2] = kobuki.getHeading(); // override odometry heading with more precise gyro data
     data = kobuki.getCoreSensorData();
 }
 
-KobukiManager::processButtonEvent(const kobuki::ButtonEvent &event) {
-    if(userButtonEventCallBack!=NULL) {
+void KobukiManager::processButtonEvent(const kobuki::ButtonEvent &event) {
+    const string button_event_state_txt[] = {"Released", "Pressed"};
+    const string button_event_button_txt[] = {"Button0", "Button1", "Button2"};
+    cout << ecl::yellow;
+    customLogger(button_event_button_txt[event.button]
+            + " is " + button_event_state_txt[event.state]);
+    if (userButtonEventCallBack != NULL) {
         userButtonEventCallBack(event);
         return;
     }
@@ -119,20 +162,36 @@ KobukiManager::processButtonEvent(const kobuki::ButtonEvent &event) {
     }
 }
 
-KobukiManager::processBumperEvent(const kobuki::BumperEvent &event) {
-    if(userBumperEventCallBack!=NULL) {
+void KobukiManager::processBumperEvent(const kobuki::BumperEvent &event) {
+    const string bumper_event_state_txt[] = {"Released", "Pressed"};
+    const string bumper_event_bumper_txt[] = {"Left", "Center", "Right"};
+
+    cout << ecl::red;
+    customLogger("Bumper: " + bumper_event_bumper_txt[event.bumper]
+            + ", state: " + bumper_event_state_txt[event.state]);
+    if (userBumperEventCallBack != NULL) {
         userBumperEventCallBack(event);
         return;
     }
-    moveAndRotate(0.0, 0.0);
-    cout << "Default processBumperEvent. bumper: " << event.bumper << ", state: " << event.state << endl;
+    if (event.state == kobuki::BumperEvent::Pressed) {
+        move(0.0, 0.0);
+    }
 }
 
-KobukiManager::processCliffEvent(const kobuki::CliffEvent &event) {
-    if(userCliffEventCallBack!=NULL) {
+void KobukiManager::processCliffEvent(const kobuki::CliffEvent &event) {
+    const string cliff_event_state_txt[] = {"Floor", "Cliff"};
+    const string cliff_event_sensor_txt[] = {"Left", "Center", "Right"};
+     // Ref: ecl/console.hpp for console formatting
+    if (event.state == kobuki::CliffEvent::Cliff) cout << ecl::red << ecl::underline;
+    else cout << ecl::cyan << ecl::concealed;
+    customLogger(cliff_event_sensor_txt[event.sensor]
+            + " " + cliff_event_state_txt[event.state] + "!");
+    if (userCliffEventCallBack != NULL) {
         userCliffEventCallBack(event);
         return;
     }
-    moveAndRotate(0.0, 0.0);
+    if (event.state == kobuki::CliffEvent::Cliff) {
+        move(0.0, 0.0);
+    }
     cout << "Default processCliffEvent." << endl;
 }

@@ -1,16 +1,33 @@
 //#include <string>
 #include <fstream>
 #include <sstream>
+#include <csignal>
+#include <iomanip>
 #include "kobuki_manager.hpp"
 
+using namespace std;
+
 bool shutdown_req = false;
+KobukiManager kobuki_manager;
+
 void signalHandler(int /* signum */)
 {
     shutdown_req = true;
 }
 
-void examplePrint(const kobuki::ButtonEvent &event) {
-    std::cout << "examplePrint: HELLO" << std::endl;
+void exampleCliffHandlerPrint(const kobuki::ButtonEvent &event) {
+    std::cout << "HELLO CLIFF" << std::endl;
+}
+
+void exampleButtonHandler(const kobuki::ButtonEvent &event) {
+    std::cout << "exampleButtonHandler" << std::endl;
+    if (event.state == kobuki::ButtonEvent::Released) {
+        if (event.button == kobuki::ButtonEvent::Button0) {
+            kobuki_manager.rotate(0.5);
+        } else if (event.button == kobuki::ButtonEvent::Button1) {
+            kobuki_manager.playSoundSequence(0x5);
+        }
+    }
 }
 
 /*****************************************************************************
@@ -19,6 +36,7 @@ void examplePrint(const kobuki::ButtonEvent &event) {
 
 int main(int argc, char **argv)
 {
+    cout << setprecision(3);
     fstream fs;
     fs.open("target.txt", ios::in);
     vector<vector<float>> floatVec;
@@ -36,18 +54,23 @@ int main(int argc, char **argv)
 
     signal(SIGINT, signalHandler);
 
-    KobukiManager kobuki_manager;
 
     ecl::MilliSleep sleep(1);
-    kobuki_manager.setUserButtonCallBack(examplePrint);
+    //kobuki_manager.setUserButtonEventCallBack(examplePrint);
+    kobuki_manager.setUserButtonEventCallBack(exampleButtonHandler);
+    //kobuki_manager.setUserCliffEventCallBack(exampleCliffHandlerPrint);
 
     try
     {
         while (!shutdown_req)
         {
-            sleep(200);
-            cout << "angle:" << kobuki_manager.getAngle() << endl;
-            cout << "x,y: " << kobuki_manager.getCoordinates() << endl;
+            vector<double> arr = kobuki_manager.getCoordinates();
+            std::cout << "TimeStamp:" << ecl::TimeStamp() << endl << "x: " << arr[0] << " y: " << arr[1];
+            std::cout << " angle: " << kobuki_manager.getAngle() << endl;
+            cout << "example getbumper: " << kobuki_manager.getBumperState() << endl;
+            //kobuki_manager.playSoundSequence(0x6);
+            kobuki_manager.move(0.03);
+            sleep(5000);
         }
     }
     catch (ecl::StandardException &e)
@@ -56,7 +79,6 @@ int main(int argc, char **argv)
     }
 
     sleep(300);
-    kobuki_manager.print(true);
 
     return 0;
 }
