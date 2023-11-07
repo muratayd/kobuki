@@ -13,7 +13,7 @@ KobukiManager::KobukiManager():
     kobuki::Parameters parameters;
     // namespaces all sigslot connection names, default: /kobuki
     parameters.sigslots_namespace = "/kobuki";
-    ecl::ValueArg<std::string> device_port(
+    ecl::ValueArg<string> device_port(
         "p", "port",
         "Path to device file of serial port to open",
         false,
@@ -63,24 +63,21 @@ KobukiManager::~KobukiManager() {
 
 void KobukiManager::move(double longitudinal_velocity, double rotational_velocity) {
     kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
-    std::cout << ecl::green;
+    cout << ecl::green;
     cout << "moving longitudinal:" << longitudinal_velocity << "m/s, rotational:" 
-            << rotational_velocity << " rad/s" << endl;
-    std::cout << ecl::reset;
+            << rotational_velocity << " rad/s" << endl << ecl::reset;
 }
 
 void KobukiManager::rotate(double rotational_velocity) {
     kobuki.setBaseControl(0.0, rotational_velocity);
-    std::cout << ecl::green;
-    cout << "rotating: " << rotational_velocity << " rad/s" << endl;
-    std::cout << ecl::reset;
+    cout << ecl::green;
+    cout << "rotating: " << rotational_velocity << " rad/s" << endl << ecl::reset;
 }
 
 void KobukiManager::stop() {
     kobuki.setBaseControl(0.0, 0.0);
-    std::cout << ecl::green;
-    cout << "stop!" << endl;
-    std::cout << ecl::reset;
+    cout << ecl::green;
+    cout << "stop!" << endl << ecl::reset;
 }
 
 vector<double> KobukiManager::getCoordinates() {
@@ -121,9 +118,9 @@ void KobukiManager::setUserCliffEventCallBack (userCliffEventCallBackType func) 
     userCliffEventCallBack = func;
 }
 
-void KobukiManager::customLogger(const std::string& message) {
+void KobukiManager::customLogger(const string& message) {
     // Ref: ecl/time/timestamp_base.hpp
-    std::cout << double(ecl::TimeStamp() - start_time) << " " << message << ecl::reset << std::endl;
+    cout << double(ecl::TimeStamp() - start_time) << " " << message << ecl::reset << endl;
 }
 
 void KobukiManager::processStreamData() {
@@ -136,8 +133,8 @@ void KobukiManager::processStreamData() {
 }
 
 void KobukiManager::processButtonEvent(const kobuki::ButtonEvent &event) {
-    const string button_event_state_txt[] = {"Released", "Pressed"};
-    const string button_event_button_txt[] = {"Button0", "Button1", "Button2"};
+    static const string button_event_state_txt[] = {"Released", "Pressed"};
+    static const string button_event_button_txt[] = {"Button0", "Button1", "Button2"};
     cout << ecl::yellow;
     customLogger(button_event_button_txt[event.button]
             + " is " + button_event_state_txt[event.state]);
@@ -163,9 +160,8 @@ void KobukiManager::processButtonEvent(const kobuki::ButtonEvent &event) {
 }
 
 void KobukiManager::processBumperEvent(const kobuki::BumperEvent &event) {
-    const string bumper_event_state_txt[] = {"Released", "Pressed"};
-    const string bumper_event_bumper_txt[] = {"Left", "Center", "Right"};
-
+    static const string bumper_event_state_txt[] = {"Released", "Pressed"};
+    static const string bumper_event_bumper_txt[] = {"Left", "Center", "Right"};
     cout << ecl::red;
     customLogger("Bumper: " + bumper_event_bumper_txt[event.bumper]
             + ", state: " + bumper_event_state_txt[event.state]);
@@ -179,8 +175,8 @@ void KobukiManager::processBumperEvent(const kobuki::BumperEvent &event) {
 }
 
 void KobukiManager::processCliffEvent(const kobuki::CliffEvent &event) {
-    const string cliff_event_state_txt[] = {"Floor", "Cliff"};
-    const string cliff_event_sensor_txt[] = {"Left", "Center", "Right"};
+    static const string cliff_event_state_txt[] = {"Floor", "Cliff"};
+    static const string cliff_event_sensor_txt[] = {"Left", "Center", "Right"};
      // Ref: ecl/console.hpp for console formatting
     if (event.state == kobuki::CliffEvent::Cliff) cout << ecl::red << ecl::underline;
     else cout << ecl::cyan << ecl::concealed;

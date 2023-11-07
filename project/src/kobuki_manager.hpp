@@ -26,8 +26,6 @@
 #include "kobuki_core/kobuki.hpp"
 #include "kobuki_core/packets/core_sensors.hpp"
 
-using namespace std;
-
 /*****************************************************************************
 ** Typedefs
 *****************************************************************************/
@@ -39,6 +37,8 @@ typedef void (*userCliffEventCallBackType)(const kobuki::CliffEvent &event);
 /*****************************************************************************
 ** Classes
 *****************************************************************************/
+
+using namespace std;
 
 class KobukiManager {
 public:
@@ -148,7 +148,7 @@ private:
     * Catches bumper events and prints a message to stdout.
     */
     void processBumperEvent(const kobuki::BumperEvent &event);
-    
+
     /*
     * Catches cliff events and prints a message to stdout.
     */
