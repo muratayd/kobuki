@@ -4,6 +4,7 @@
 #include <csignal>
 #include <iomanip>
 #include "kobuki_manager.hpp"
+#include "map_manager.hpp"
 
 using namespace std;
 
@@ -53,7 +54,13 @@ int main(int argc, char **argv)
     std::cout << "target x: " << targetX << " y: " << targetY << std::endl;
 
     signal(SIGINT, signalHandler);
+    MapManager map_manager;
+    std::cout << "m1" << std::endl;
+    map_manager.updateMap(0,0,0.0,1);
+        std::cout << "m2" << std::endl;
 
+    map_manager.checkMap(0,0,0.0);
+    std::cout << "m3" << std::endl;
 
     ecl::MilliSleep sleep(1);
     //kobuki_manager.setUserButtonEventCallBack(examplePrint);
