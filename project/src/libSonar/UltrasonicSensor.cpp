@@ -19,17 +19,32 @@ UltrasonicSensor::~UltrasonicSensor() {
 }
 
 double UltrasonicSensor::getDistance() {
+    setPinValue(triggerPin, 0);
+    std::this_thread::sleep_for(std::chrono::milliseconds(20));
+
     // Send a trigger pulse to start the measurement
     setPinValue(triggerPin, 1);
     std::this_thread::sleep_for(std::chrono::microseconds(10));
     setPinValue(triggerPin, 0);
 
-    // Wait for the echo to go high
-    while (getPinValue(echoPin) == 0);
-
     auto start_time = std::chrono::high_resolution_clock::now();
+    auto timeout = std::chrono::milliseconds(500); // Timeout set to 500 milliseconds
+
+    // Wait for the echo to go high
+    while (getPinValue(echoPin) == 0) {
+        if (std::chrono::high_resolution_clock::now() - start_time > timeout) {
+            return -1; // Return -1 if timeout occurs (distance measurement unsuccessful)
+        }
+    }
+
+    start_time = std::chrono::high_resolution_clock::now(); // Reset start time
+
     // Wait for the echo to go low
-    while (getPinValue(echoPin) == 1);
+    while (getPinValue(echoPin) == 1) {
+        if (std::chrono::high_resolution_clock::now() - start_time > timeout) {
+            return -1; // Return -1 if timeout occurs (distance measurement unsuccessful)
+        }
+    }
 
     auto end_time = std::chrono::high_resolution_clock::now();
     auto pulse_duration = std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time).count();

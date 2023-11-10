@@ -5,11 +5,12 @@
 #include <iomanip>
 #include "kobuki_manager.hpp"
 #include "map_manager.hpp"
+#include "motion_controller.hpp"
 
 using namespace std;
 
 bool shutdown_req = false;
-KobukiManager kobuki_manager;
+//KobukiManager kobuki_manager;
 
 void signalHandler(int /* signum */)
 {
@@ -22,13 +23,13 @@ void exampleCliffHandlerPrint(const kobuki::ButtonEvent &event) {
 
 void exampleButtonHandler(const kobuki::ButtonEvent &event) {
     std::cout << "exampleButtonHandler" << std::endl;
-    if (event.state == kobuki::ButtonEvent::Released) {
-        if (event.button == kobuki::ButtonEvent::Button0) {
-            kobuki_manager.rotate(0.5);
-        } else if (event.button == kobuki::ButtonEvent::Button1) {
-            kobuki_manager.playSoundSequence(0x5);
-        }
-    }
+    //if (event.state == kobuki::ButtonEvent::Released) {
+        //if (event.button == kobuki::ButtonEvent::Button0) {
+            //kobuki_manager.rotate(0.5);
+        //} else if (event.button == kobuki::ButtonEvent::Button1) {
+            //kobuki_manager.playSoundSequence(0x5);
+        //}
+    //}
 }
 
 /*****************************************************************************
@@ -55,29 +56,29 @@ int main(int argc, char **argv)
 
     signal(SIGINT, signalHandler);
     MapManager map_manager;
-    std::cout << "m1" << std::endl;
-    map_manager.updateMap(0,0,0.0,1);
-        std::cout << "m2" << std::endl;
+    map_manager.updateMap(0,0,1);
+    map_manager.updateMap(0.5,0.5,1);
+    map_manager.updateMap(-0.5,-0.5,0);
 
     map_manager.checkMap(0,0,0.0);
-    std::cout << "m3" << std::endl;
+    map_manager.printMap();
 
-    ecl::MilliSleep sleep(1);
+    ecl::MilliSleep sleep(1000);
     //kobuki_manager.setUserButtonEventCallBack(examplePrint);
-    kobuki_manager.setUserButtonEventCallBack(exampleButtonHandler);
+    //kobuki_manager.setUserButtonEventCallBack(exampleButtonHandler);
     //kobuki_manager.setUserCliffEventCallBack(exampleCliffHandlerPrint);
-
+    int ultrasonic_sensor_trigger_pin = 18;
+    int ultrasonic_sensor_echo_pin = 24;
+    MotionController motion_controller;
     try
     {
         while (!shutdown_req)
         {
-            vector<double> arr = kobuki_manager.getCoordinates();
-            std::cout << "TimeStamp:" << ecl::TimeStamp() << endl << "x: " << arr[0] << " y: " << arr[1];
-            std::cout << " angle: " << kobuki_manager.getAngle() << endl;
-            cout << "example getbumper: " << kobuki_manager.getBumperState() << endl;
+
             //kobuki_manager.playSoundSequence(0x6);
-            kobuki_manager.move(0.03);
-            sleep(5000);
+            //kobuki_manager.move(0.03);
+            motion_controller.Bug2Algorithm();
+            sleep(3000);
         }
     }
     catch (ecl::StandardException &e)

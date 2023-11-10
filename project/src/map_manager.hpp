@@ -44,12 +44,17 @@ public:
     * Technique used for mapping is Point-robot assumption.
     * Meaning that the robot is represented as a point, and obstacles are Dilated by robot’s radius
     */
-    void updateMap(double x, double y, double yaw, int value);
+    void updateMap(double x, double y, int value);
 
     /*
     * Check obstacles in front for movement controls
     */
     void checkMap(double x, double y, double yaw);
+
+    /*
+    * Print the current map to the console
+    */
+    void printMap();
 
 private:
     int occupancy_grid[MAP_SIZE][MAP_SIZE];
@@ -60,7 +65,6 @@ private:
     * Dilates the cell with the robot radius
     */
     void dilateCell(int x, int y, int value);
-    
 };
 
 #endif /* MAP_MANAGER_HPP_ */

@@ -16,7 +16,6 @@ MapManager::~MapManager() {
 }
 
 void MapManager::dilateCell(int x, int y, int value) {
-    std::cout << "m3" << std::endl;
     int grid_numbers_in_radius = (int)(ROBOT_RADIUS/GRID_SIZE) + 1;
     for (int row = y - grid_numbers_in_radius; row <= y + grid_numbers_in_radius; row++) {
         if (row < 0 || row >= MAP_SIZE) continue;
@@ -31,7 +30,7 @@ void MapManager::dilateCell(int x, int y, int value) {
     }
 }
 
-void MapManager::updateMap(double x, double y, double yaw, int value) {
+void MapManager::updateMap(double x, double y, int value) {
     std::cout << "updateMap" << std::endl;
     x = (int)round(x / GRID_SIZE) + MAP_ORIGIN;
     y = (int)round(y / GRID_SIZE) + MAP_ORIGIN;
@@ -62,4 +61,17 @@ void MapManager::checkMap(double x, double y, double yaw) {
     row = (int)round((x + ROBOT_RADIUS * cos(yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
     column = (int)round((y + ROBOT_RADIUS * sin(yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
     if (occupancy_grid[MAP_SIZE-column][row] == 1) left_obstacle = true;
+}
+
+void MapManager::printMap()
+{
+    for (auto &row : occupancy_grid)
+    {
+        for (auto &column : row)
+        {     
+            if (column != -1) cout << column;
+            else cout << " "; // print undiscovered cells as empty
+        }
+        cout << endl;
+    }
 }
