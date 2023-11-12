@@ -55,13 +55,6 @@ int main(int argc, char **argv)
     std::cout << "target x: " << targetX << " y: " << targetY << std::endl;
 
     signal(SIGINT, signalHandler);
-    MapManager map_manager;
-    map_manager.updateMap(0,0,1);
-    map_manager.updateMap(0.5,0.5,1);
-    map_manager.updateMap(-0.5,-0.5,0);
-
-    map_manager.checkMap(0,0,0.0);
-    map_manager.printMap();
 
     ecl::MilliSleep sleep(1000);
     //kobuki_manager.setUserButtonEventCallBack(examplePrint);
@@ -69,17 +62,16 @@ int main(int argc, char **argv)
     //kobuki_manager.setUserCliffEventCallBack(exampleCliffHandlerPrint);
     int ultrasonic_sensor_trigger_pin = 18;
     int ultrasonic_sensor_echo_pin = 24;
-    MotionController motion_controller;
+    MotionController motion_controller(1.50, 0.0);
     try
     {
         while (!shutdown_req)
         {
-
             //kobuki_manager.playSoundSequence(0x6);
-            //kobuki_manager.move(0.03);
             motion_controller.Bug2Algorithm();
-            sleep(3000);
+            sleep(150);
         }
+        motion_controller.stop();
     }
     catch (ecl::StandardException &e)
     {

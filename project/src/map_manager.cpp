@@ -1,6 +1,8 @@
 #include "map_manager.hpp"
 #include <ecl/geometry.hpp>
 
+using namespace std;
+
 MapManager::MapManager() {
     for (auto &row : occupancy_grid)
     {
@@ -15,8 +17,8 @@ MapManager::~MapManager() {
     return;
 }
 
-void MapManager::dilateCell(int x, int y, int value) {
-    int grid_numbers_in_radius = (int)(ROBOT_RADIUS/GRID_SIZE) + 1;
+void MapManager::dilateCell(int x, int y, int value, double radius) {
+    int grid_numbers_in_radius = (int)(radius/GRID_SIZE) + 1;
     for (int row = y - grid_numbers_in_radius; row <= y + grid_numbers_in_radius; row++) {
         if (row < 0 || row >= MAP_SIZE) continue;
         for (int column = x - grid_numbers_in_radius; column <= x + grid_numbers_in_radius; column++) {
@@ -30,48 +32,61 @@ void MapManager::dilateCell(int x, int y, int value) {
     }
 }
 
-void MapManager::updateMap(double x, double y, int value) {
-    std::cout << "updateMap" << std::endl;
-    x = (int)round(x / GRID_SIZE) + MAP_ORIGIN;
-    y = (int)round(y / GRID_SIZE) + MAP_ORIGIN;
-    dilateCell(x, y, value);
+void MapManager::updateMap(double x, double y, int value, double radius) {
+    int row = (int)round(x / GRID_SIZE) + MAP_ORIGIN;
+    int column = (int)round(y / GRID_SIZE) + MAP_ORIGIN;
+    if (row < 0 || row >= MAP_SIZE || column < 0 || column >= MAP_SIZE) {
+        throw std::out_of_range("updateMap Coordinates out of map boundaries");
+    }
+    std::cout << "updateMap x:" << row << " y:" << column << " val:" << value << std::endl;
+    dilateCell(row, column, value, radius);
     return;
 }
 
-void MapManager::checkMap(double x, double y, double yaw) {
-    int row, column;
-    front_obstacle = right_front_obstacle = right_obstacle = left_front_obstacle = left_obstacle = false;
-    // check front
-    row = (int)round((x + ROBOT_RADIUS * cos(yaw)) / GRID_SIZE) + MAP_ORIGIN;
-    column = (int)round((y + ROBOT_RADIUS * sin(yaw)) / GRID_SIZE) + MAP_ORIGIN;
-    if (occupancy_grid[MAP_SIZE-column][row] == 1) front_obstacle = true;
-    // check right_front
-    row = (int)round((x + ROBOT_RADIUS * cos(yaw-ecl::pi/6)) / GRID_SIZE) + MAP_ORIGIN;
-    column = (int)round((y + ROBOT_RADIUS * sin(yaw-ecl::pi/6)) / GRID_SIZE) + MAP_ORIGIN;
-    if (occupancy_grid[MAP_SIZE-column][row] == 1) right_front_obstacle = true;
-    // check right
-    row = (int)round((x + ROBOT_RADIUS * cos(yaw-ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
-    column = (int)round((y + ROBOT_RADIUS * sin(yaw-ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
-    if (occupancy_grid[MAP_SIZE-column][row] == 1) right_obstacle = true;
-    // check left_front
-    row = (int)round((x + ROBOT_RADIUS * cos(yaw+ecl::pi/6)) / GRID_SIZE) + MAP_ORIGIN;
-    column = (int)round((y + ROBOT_RADIUS * sin(yaw+ecl::pi/6)) / GRID_SIZE) + MAP_ORIGIN;
-    if (occupancy_grid[MAP_SIZE-column][row] == 1) left_front_obstacle = true;
-    // check left
-    row = (int)round((x + ROBOT_RADIUS * cos(yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
-    column = (int)round((y + ROBOT_RADIUS * sin(yaw+ecl::pi*0.5)) / GRID_SIZE) + MAP_ORIGIN;
-    if (occupancy_grid[MAP_SIZE-column][row] == 1) left_obstacle = true;
+bool MapManager::checkMap(double x, double y) {
+    int row = (int)round(x / GRID_SIZE) + MAP_ORIGIN;
+    int column = (int)round(y / GRID_SIZE) + MAP_ORIGIN;
+    if (row < 0 || row >= MAP_SIZE || column < 0 || column >= MAP_SIZE) {
+        throw std::out_of_range("checkMap Coordinates out of map boundaries");
+    }
+    return (occupancy_grid[MAP_SIZE-column][row] == 1);
+}
+
+// New methods for polar coordinate support
+void MapManager::updateMapPolar(double distance, double angle, double initial_x, double initial_y, int value, double radius) {
+    double x = distance * cos(angle) + initial_x; // Convert to Cartesian x with initial point
+    double y = distance * sin(angle) + initial_y; // Convert to Cartesian y with initial point
+    updateMap(x, y, value, radius); // Delegate to updateMap with Cartesian coordinates
+}
+
+bool MapManager::checkMapPolar(double distance, double angle, double initial_x, double initial_y) {
+    double x = distance * cos(angle) + initial_x; // Convert to Cartesian x with initial point
+    double y = distance * sin(angle) + initial_y; // Convert to Cartesian y with initial point
+    return checkMap(x, y); // Delegate to checkMap with Cartesian coordinates
 }
 
 void MapManager::printMap()
 {
-    for (auto &row : occupancy_grid)
-    {
-        for (auto &column : row)
-        {     
-            if (column != -1) cout << column;
-            else cout << " "; // print undiscovered cells as empty
+    for (auto &row : occupancy_grid) {
+        bool allZeros = true; // skip the lines that contain only zeros:
+        for (auto &column : row) {
+            if (column != -1) {
+                allZeros = false;
+                break;
+            }
         }
-        cout << endl;
+        if (!allZeros) {
+            for (auto &column : row)
+            {
+                if (column == -1) {
+                    cout << ".";
+                } else if (column == 0) {
+                    cout << " ";
+                } else {
+                    cout << "#";
+                }
+            }
+            cout << endl;
+        }
     }
 }
