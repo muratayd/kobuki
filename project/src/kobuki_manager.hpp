@@ -1,7 +1,15 @@
 /**
  * @file kobuki_manager.hpp
  *
- * @brief Simple high level module for controlling a kobuki robot
+ * @brief High-level module for controlling a Kobuki robot.
+ *
+ * This file defines the KobukiManager class, which serves as a central
+ * interface for interacting with a Kobuki robot. It includes functionalities
+ * for processing sensor data, managing robot states, and handling various
+ * robot events such as button presses, bumper hits, and cliff detections.
+ * The class aims to provide a simplified and coherent interface for robot
+ * control and management.
+ *
 **/
 
 /*****************************************************************************
@@ -134,24 +142,35 @@ private:
     */
     void customLogger(const std::string& message);
 
-    /*
-    * Called whenever the kobuki receives a data packet.
-    */
+    /**
+     * @brief Processes stream data from the robot's sensors.
+     * This function is a callback that handles incoming sensor data,
+     * updates internal states, and triggers appropriate responses.
+     */
     void processStreamData();
 
-    /*
-    * Catches button events
-    */
+    /**
+     * @brief Handles button events from the Kobuki robot.
+     * This function is called when there is a button event, processing
+     * the event data and executing appropriate actions.
+     * @param event The button event data.
+     */
     void processButtonEvent(const kobuki::ButtonEvent &event);
 
-    /*
-    * Catches bumper events and prints a message to stdout.
-    */
+    /**
+     * @brief Handles bumper events from the Kobuki robot.
+     * This function is triggered when the robot's bumper detects a collision,
+     * allowing for appropriate response actions.
+     * @param event The bumper event data.
+     */
     void processBumperEvent(const kobuki::BumperEvent &event);
 
-    /*
-    * Catches cliff events and prints a message to stdout.
-    */
+    /**
+     * @brief Handles cliff events from the Kobuki robot.
+     * Invoked when the robot detects a cliff, this function enables
+     * the robot to take necessary safety measures.
+     * @param event The cliff detection event data.
+     */
     void processCliffEvent(const kobuki::CliffEvent &event);
 };
 

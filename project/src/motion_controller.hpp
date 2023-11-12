@@ -1,7 +1,12 @@
 /**
  * @file motion_controller.hpp
  *
- * @brief Motion controller module for BUG algorithms
+ * @brief Motion controller module for robot navigation with BUG algorithms
+ *
+ * This file defines the MotionController class, which is responsible for implementing
+ * BUG navigation algorithms for a robot. It manages the robot's movements based on sensor
+ * inputs and environmental data, aiming to navigate to a specified target while avoiding obstacles.
+ *
 **/
 
 /*****************************************************************************
@@ -40,12 +45,27 @@ using namespace std;
 class MotionController
 {
 public:
+    /**
+     * @brief Constructor for MotionController.
+     * Initializes the controller with target coordinates and sets up necessary
+     * parameters for motion control.
+     * @param target_x The X coordinate of the target location.
+     * @param target_y The Y coordinate of the target location.
+     */
     MotionController(double target_x, double target_y);
 
     ~MotionController();
 
+    /**
+     * @brief Implements the Bug2 algorithm for navigation.
+     *
+     */
     void Bug2Algorithm();
 
+    /**
+     * @brief Stops the robot's movement.
+     *
+     */
     void stop();
 
 
