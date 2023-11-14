@@ -127,7 +127,7 @@ public:
     *   - ' ' (space) represents free space (cell value = 0 in the grid).
     *   - '#' represents occupied space (any value other than -1 or 0 in the grid).
     */
-    void printMap();
+    void printMap(double robot_x, double robot_y);
 
 private:
 

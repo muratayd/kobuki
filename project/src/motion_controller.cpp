@@ -1,8 +1,9 @@
 #include "motion_controller.hpp"
 
+using namespace std;
 
 void buttonHandler(const kobuki::ButtonEvent &event) {
-    std::cout << "motion controller: buttonHandler" << std::endl;
+    cout << "motion controller: buttonHandler" << endl;
     if (event.state == kobuki::ButtonEvent::Released) {
         if (event.button == kobuki::ButtonEvent::Button0) {
             //button0_flag = true;
@@ -11,7 +12,7 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
     }
 }
 
-MotionController::MotionController(double target_x, double target_y) : ultrasonic_sensor(DEFAULT_TRIGGER_PIN, DEFAULT_ECHO_PIN){
+MotionController::MotionController(double target_x, double target_y) : ultrasonic_sensor(DEFAULT_TRIGGER_PIN, DEFAULT_ECHO_PIN) {
     this->temp_target_x = this->target_x = target_x;
     this->temp_target_y = this->target_y = target_y;
     start_time.stamp();
@@ -22,7 +23,7 @@ MotionController::MotionController(double target_x, double target_y) : ultrasoni
 }
 
 MotionController::~MotionController() {
-    map_manager.printMap();
+    map_manager.printMap(current_x, current_y);
 }
 
 void MotionController::Bug2Algorithm() {
@@ -35,17 +36,15 @@ void MotionController::Bug2Algorithm() {
     current_y = arr[1];
     current_yaw = kobuki_manager.getAngle();
 
-    std::cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
-    std::cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ecl::reset << endl;
+    cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
+    cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ecl::reset << endl;
 
     checkSensors();
     setObstacleFlags();
 
     // Start of BUG 2 Algorithm
-    if (robot_mode == GO_TO_GOAL_MODE)
-    { // "go to target mode"
-        if (moving_state == GO_STRAIGHT && (kobuki_manager.getBumperState() != 0 || right_front_obstacle || front_obstacle || left_front_obstacle))
-        {   // HIT!
+    if (robot_mode == GO_TO_GOAL_MODE) { // "go to target mode"
+        if ((moving_state == GO_STRAIGHT) && (kobuki_manager.getBumperState() != 0 || right_front_obstacle || front_obstacle || left_front_obstacle)) { // HIT!
             kobuki_manager.move(longitudinal_velocity, rotational_velocity);
             robot_mode = WALL_FOLLOWING_MODE; // wall following mode
             // save hit point coordinates:
@@ -54,124 +53,97 @@ void MotionController::Bug2Algorithm() {
             distance_to_goal_from_hit_point = sqrt((
                     pow(target_x - hit_x, 2)) +
                     (pow(target_y - hit_y, 2)));
-            map_manager.printMap();
+            map_manager.printMap(current_x, current_y);
             cout << "hit_x: " << hit_x << " hit_y: " << hit_y << " distance_to_goal_from_hit_point: " << distance_to_goal_from_hit_point << endl;
-            std::cout << "GO_TO_GOAL_MODE, GO_STRAIGHT -> WALL_FOLLOWING_MODE robot_mode: " << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
+            cout << "GO_TO_GOAL_MODE, GO_STRAIGHT -> WALL_FOLLOWING_MODE robot_mode: " << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
             // stop and switch to wall mode
             return;
         }
 
-        if (moving_state == ADJUST_HEADING)
-        { // ADJUST HEADING
+        if (moving_state == ADJUST_HEADING) { // ADJUST HEADING
             double yaw_error = getYawError(current_x, current_y, current_yaw, target_x, target_y);
             // Adjust heading if heading is not good enough
-            if (fabs(yaw_error) > yaw_precision)
-            {
-                if (yaw_error > 0.5)
-                {
+            if (fabs(yaw_error) > yaw_precision) {
+                if (yaw_error > 0.5) {
                     // Turn left (counterclockwise)
                     rotational_velocity = FAST_ROTATION_SPEED;
-                }
-                else if (yaw_error > 0)
-                { // very close, rotate slowly
+                } else if (yaw_error > 0) { // very close, rotate slowly
                     // Turn left (counterclockwise)
-                    longitudinal_velocity = FORWARD_SPEED * 0.5;
+                    longitudinal_velocity = FORWARD_SPEED * 0.2;
                     rotational_velocity = ROTATION_SPEED;
-                }
-                else if (yaw_error < -0.5)
-                {
+                } else if (yaw_error < -0.5) {
                     // Turn right (clockwise)
                     rotational_velocity = -FAST_ROTATION_SPEED;
-                }
-                else
-                { // very close, rotate slowly
+                } else { // very close, rotate slowly
                     // Turn right (clockwise)
-                    longitudinal_velocity = FORWARD_SPEED * 0.5;
+                    longitudinal_velocity = FORWARD_SPEED * 0.2;
                     rotational_velocity = -ROTATION_SPEED;
                 }
-            }
-            else
-            {
+            } else {
                 moving_state = GO_STRAIGHT;
-                std::cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
+                cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
             }
-        }
-        else if (moving_state == GO_STRAIGHT)
-        { // GO STRAIGHT
+        } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
             double position_error = sqrt(
                 pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
 
-            if (position_error > 0.25)
-            {
+            if (position_error > 0.25) {
                 longitudinal_velocity = FORWARD_SPEED;
                 // How far off is the current heading in radians?
                 double yaw_error = getYawError(current_x, current_y, current_yaw, target_x, target_y);
                 cout << "yaw_error: " << yaw_error << " position_error: " << position_error << endl;
 
                 // Adjust heading if heading is not good enough
-                if (fabs(yaw_error) > yaw_precision + 0.2)
-                {
+                if (fabs(yaw_error) > yaw_precision + 0.2) {
                     moving_state = ADJUST_HEADING; // ADJUST HEADING
-                    std::cout << "GO_STRAIGHT -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+                    cout << "GO_STRAIGHT -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
                 }
-            }
-            else
-            {   // If distance to target is smaller than 20cm
+            } else {   // If distance to target is smaller than 20cm
                 moving_state = GOAL_ACHIEVED; // finish successfully
-                std::cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+                cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
                 kobuki_manager.move(0.0, 0.0);
                 kobuki_manager.playSoundSequence(0x6);
                 cout << "DONE!" << endl;
             }
-        }
-        else if (moving_state == GOAL_ACHIEVED)
-        { // GOAL_ACHIEVED
+        } else if (moving_state == GOAL_ACHIEVED) { // GOAL_ACHIEVED
             if (target_x > 0.1) {
                 target_x = 0.0;
                 target_y = 0.0;
                 moving_state = ADJUST_HEADING;
                 //kobuki_manager.playSoundSequence(0x5);
-                std::cout << "GOAL_ACHIEVED -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+                cout << "GOAL_ACHIEVED -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
             }
-            if (button0_flag)
-            {
+            if (button0_flag) {
                 cout << "B0 pressed!!!" << endl;
-                if (fabs(target_x) > 0.1)
-                {
+                if (fabs(target_x) > 0.1) {
                     target_x = 0.0;
-                }
-                else
-                {
+                } else {
                     target_x = temp_target_x;
                 }
                 target_y = 0.0;
                 moving_state = ADJUST_HEADING;
                 kobuki_manager.playSoundSequence(0x5);
-                std::cout << "GOAL_ACHIEVED -> ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
+                cout << "GOAL_ACHIEVED -> ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
                 button0_flag = false;
             }
         }
-    }
-    else if (robot_mode == WALL_FOLLOWING_MODE)
-    { // "wall following mode"
+    } else if (robot_mode == WALL_FOLLOWING_MODE) { // "wall following mode"
         // Distance to the line:
         double a = hit_y - target_y;
         double b = target_x - hit_x;
         double c = hit_x * target_y - target_x * hit_y;
         double distance_to_target_line = abs(a * current_x + b * current_y + c) / sqrt(a * a + b * b);
-        if (distance_to_target_line < 0.10)
-        { // If we hit the start-goal line again?
+        if (distance_to_target_line < 0.10) { // If we hit the start-goal line again?
             // Is the leave point closer to the goal than the hit point?
             // If yes, go to goal. (Should be at least 20cm closer in order to avoid looping)
             double distance_to_goal_from_crossing_point = sqrt(
                 pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
-            if ((distance_to_goal_from_hit_point - distance_to_goal_from_crossing_point) > 0.2)
-            {
+            if ((distance_to_goal_from_hit_point - distance_to_goal_from_crossing_point) > 0.2) {
                 cout << "HIT the GOAL LINE! ";
-                map_manager.printMap();
+                map_manager.printMap(current_x, current_y);
                 robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
                 moving_state = ADJUST_HEADING;
-                std::cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
+                cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
                 kobuki_manager.move(longitudinal_velocity, rotational_velocity);
                 return;
             }
@@ -184,21 +156,17 @@ void MotionController::Bug2Algorithm() {
             rotational_velocity = 0.0;
             longitudinal_velocity = -FORWARD_SPEED;
             //rotational_velocity = ROTATION_SPEED * 0.5;
-        } else if (front_obstacle || left_front_obstacle)
-        {
+        } else if (front_obstacle || left_front_obstacle) {
             // turn left and move forward slowly
             rotational_velocity = FAST_ROTATION_SPEED;
-        } else if (right_front_obstacle)
-        {
+        } else if (right_front_obstacle) {
             // turn left and move forward slowly
             longitudinal_velocity = FORWARD_SPEED * 0.5;
             rotational_velocity = FAST_ROTATION_SPEED;
-        } else if (right_obstacle)
-        {
+        } else if (right_obstacle) {
             // move straight to follow the wall
             longitudinal_velocity = FORWARD_SPEED;
-        } else if (kobuki_manager.getBumperState() == 0)
-        {
+        } else if (kobuki_manager.getBumperState() == 0) {
             // turn right and move forward slowly
             longitudinal_velocity = FORWARD_SPEED;
             rotational_velocity = -FAST_ROTATION_SPEED;
@@ -210,16 +178,16 @@ void MotionController::Bug2Algorithm() {
 
 void MotionController::checkSensors() {
     double distance = ultrasonic_sensor.getDistance() * 0.01;
-    std::cout << "Sensor Distance: " << distance << "m" << std::endl;
+    cout << "Sensor Distance: " << distance << "m" << endl;
     if (distance > 0.02 && distance < 0.5) {
-        map_manager.updateMapPolar(distance, kobuki_manager.getAngle(), current_x, current_y, 1, ROBOT_RADIUS * 0.3);
-        map_manager.printMap();
+        map_manager.updateMapPolar(distance + ROBOT_RADIUS, kobuki_manager.getAngle(), current_x, current_y, 1, ROBOT_RADIUS * 0.8);
+        map_manager.printMap(current_x, current_y);
     }
     map_manager.updateMap(current_x, current_y, 0);
 
     if (kobuki_manager.getBumperState() != 0) {
         map_manager.updateMapPolar(ROBOT_RADIUS, kobuki_manager.getAngle(), current_x, current_y, 1);
-        map_manager.printMap();
+        map_manager.printMap(current_x, current_y);
     }
 }
 

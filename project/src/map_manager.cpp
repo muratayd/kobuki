@@ -65,8 +65,11 @@ bool MapManager::checkMapPolar(double distance, double angle, double initial_x, 
     return checkMap(x, y); // Delegate to checkMap with Cartesian coordinates
 }
 
-void MapManager::printMap()
-{
+void MapManager::printMap(double robot_x, double robot_y) {
+    int robot_column = (int)round(robot_x / GRID_SIZE) + MAP_ORIGIN;
+    int robot_row = MAP_SIZE - ((int)round(robot_y / GRID_SIZE) + MAP_ORIGIN);
+    cout << robot_row << robot_column << endl;
+    int row_cnt = 0;
     for (auto &row : occupancy_grid) {
         bool allZeros = true; // skip the lines that contain only zeros:
         for (auto &column : row) {
@@ -76,17 +79,21 @@ void MapManager::printMap()
             }
         }
         if (!allZeros) {
-            for (auto &column : row)
-            {
-                if (column == -1) {
+            int column_cnt = 0;
+            for (auto &column : row) {
+                if (robot_row == row_cnt && robot_column == column_cnt) {
+                    cout << "+";
+                } else if (column == -1) {
                     cout << ".";
                 } else if (column == 0) {
                     cout << " ";
                 } else {
                     cout << "#";
                 }
+                column_cnt++;
             }
             cout << endl;
         }
+        row_cnt++;
     }
 }

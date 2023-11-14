@@ -20,7 +20,7 @@ UltrasonicSensor::~UltrasonicSensor() {
 
 double UltrasonicSensor::getDistance() {
     setPinValue(triggerPin, 0);
-    std::this_thread::sleep_for(std::chrono::milliseconds(20));
+    std::this_thread::sleep_for(std::chrono::milliseconds(50));
 
     // Send a trigger pulse to start the measurement
     setPinValue(triggerPin, 1);

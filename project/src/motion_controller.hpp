@@ -30,13 +30,11 @@
 *****************************************************************************/
 
 #define FORWARD_SPEED 0.2
-#define ROTATION_SPEED 1.0
-#define FAST_ROTATION_SPEED 1.2
+#define ROTATION_SPEED 0.8
+#define FAST_ROTATION_SPEED 1.1
 #define LEFT_BUMPER 4
 #define RIGHT_BUMPER 1
 #define CENTER_BUMPER 2
-
-using namespace std;
 
 /*****************************************************************************
 ** Classes
