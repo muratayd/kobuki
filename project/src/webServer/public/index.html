@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Map Viewer</title>
+    <style>
+        /* Add your styles here */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(4px, 1fr));
+            gap: 1px;
+        }
+        .cell {
+            width: 4px;
+            height: 4px;
+        }
+        .undiscovered { background-color: rgb(161, 160, 160); }
+        .available { background-color: white; }
+        .obstacle { background-color: red; }
+        .robot { background-color: green; }
+    </style>
+</head>
+<body>
+    <div id="gridMap" class="grid-container"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        socket.on('gridData', (data) => {
+            const gridMap = document.getElementById('gridMap');
+            gridMap.innerHTML = '';
+            gridMap.style.gridTemplateColumns = `repeat(${data[0].length}, 4px)`;
+
+            data.forEach(row => {
+                row.forEach(cell => {
+                    const cellDiv = document.createElement('div');
+                    cellDiv.classList.add('cell');
+                    if(cell === -1) {
+                        cellDiv.classList.add('undiscovered');
+                    } else if(cell === 0) {
+                        cellDiv.classList.add('available');
+                    } else if(cell === 1) {
+                        cellDiv.classList.add('obstacle');
+                    } else if(cell === 2) {
+                        cellDiv.classList.add('robot');
+                    }
+                    gridMap.appendChild(cellDiv);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

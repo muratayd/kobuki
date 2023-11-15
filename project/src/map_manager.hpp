@@ -164,6 +164,8 @@ private:
     * @param radius The dilation radius around the specified coordinates due to the robot's assumed size (default: ROBOT_RADIUS).
     */
     void dilateCell(int x, int y, int value, double radius = ROBOT_RADIUS);
+
+    void saveGridToFile(const std::string& filename);
 };
 
 #endif /* MAP_MANAGER_HPP_ */

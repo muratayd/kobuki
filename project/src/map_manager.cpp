@@ -1,5 +1,7 @@
 #include "map_manager.hpp"
 #include <ecl/geometry.hpp>
+#include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -30,6 +32,27 @@ void MapManager::dilateCell(int x, int y, int value, double radius) {
             }
         }
     }
+}
+
+void MapManager::saveGridToFile(const std::string& filename) {
+    std::ofstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Error opening file for writing: " << filename << std::endl;
+        return;
+    }
+
+    for (int i = 0; i < MAP_SIZE; ++i) {
+        for (int j = 0; j < MAP_SIZE; ++j) {
+            file << occupancy_grid[i][j];
+            if (j < MAP_SIZE - 1) {
+                file << ", ";  // CSV format
+            }
+        }
+        file << std::endl;
+    }
+
+    file.close();
+    std::cout << "Grid map saved to " << filename << std::endl;
 }
 
 void MapManager::updateMap(double x, double y, int value, double radius) {
@@ -96,4 +119,5 @@ void MapManager::printMap(double robot_x, double robot_y) {
         }
         row_cnt++;
     }
+    saveGridToFile("grid_map.csv");
 }

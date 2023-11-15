@@ -110,9 +110,14 @@ void MotionController::Bug2Algorithm() {
                 target_x = 0.0;
                 target_y = 0.0;
                 moving_state = ADJUST_HEADING;
-                //kobuki_manager.playSoundSequence(0x5);
+                cout << "GOAL_ACHIEVED -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+            } else {
+                target_x = temp_target_x;
+                target_y = temp_target_y;
+                moving_state = ADJUST_HEADING;
                 cout << "GOAL_ACHIEVED -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
             }
+            /*TODO: use target list or buttons for new targets in the future*/
             if (button0_flag) {
                 cout << "B0 pressed!!!" << endl;
                 if (fabs(target_x) > 0.1) {
