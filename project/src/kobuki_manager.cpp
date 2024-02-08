@@ -61,6 +61,14 @@ KobukiManager::~KobukiManager() {
     kobuki.disable();
 }
 
+void KobukiManager::setInitialPose(double x, double y, double angle) {
+    pose[0] = x;
+    pose[1] = y;
+    pose[2] = angle;
+    cout << ecl::green;
+    cout << "Initial pose set to x:" << x << " y:" << y << " angle:" << angle << endl << ecl::reset;
+}
+
 void KobukiManager::move(double longitudinal_velocity, double rotational_velocity) {
     kobuki.setBaseControl(longitudinal_velocity, rotational_velocity);
     cout << ecl::green;

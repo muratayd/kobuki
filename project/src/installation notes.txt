@@ -94,5 +94,8 @@ node server.js
 
 
 9. How to build this repo:
+
+sudo apt-get install nlohmann-json3-dev
+
 . env.sh
 ./bcmd

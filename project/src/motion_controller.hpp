@@ -22,8 +22,10 @@
 
 #include <iostream>
 #include "kobuki_manager.hpp"
-#include "UltrasonicSensor.hpp"
 #include "map_manager.hpp"
+#include "mqtt/async_client.h"
+#include <mutex>
+#include <condition_variable>
 
 /*****************************************************************************
 ** Defines
@@ -74,10 +76,13 @@ private:
 
     KobukiManager kobuki_manager;
     MapManager map_manager;
-    UltrasonicSensor ultrasonic_sensor;
     double current_x;
     double current_y;
     double current_yaw;
+    // UWB coordinates
+    double UWB_x;
+    double UWB_y;
+    double UWB_yaw;
     // Target coordinates from a file
     double target_x;
     double target_y;
@@ -93,6 +98,13 @@ private:
     bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle, center_obstacle;
     bool button0_flag;
     ecl::TimeStamp start_time;
+
+    mqtt::async_client mqtt_client;
+    void mqtt_message_arrived(mqtt::const_message_ptr msg);
+    void initialize_mqtt_client();
+    std::mutex mtx;
+    std::condition_variable cv;
+    bool pozyx_position_received = false; // This flag will be set to true once the first pozyx/position message arrives
 
     /*  ############# MAIN ROBOT MODES ###################
         "go to goal mode": Robot will head to an x,y coordinate
@@ -123,7 +135,7 @@ private:
     /*
     * Check bumper and ultrasonic sensors
     */
-    void checkSensors();
+    void checkDistance(double sensor_distance);
     /*
 
     /*
@@ -135,6 +147,11 @@ private:
     * Button handler callback function
     */
     //static void buttonHandler(const kobuki::ButtonEvent &event);
+
+    /* Add this line for the MQTT connection success handler
+    * MQTT connection success handler
+    */
+    void on_connected(const std::string& cause);
 
 };
 

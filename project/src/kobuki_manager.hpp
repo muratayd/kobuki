@@ -120,6 +120,14 @@ public:
     */
     void setUserCliffEventCallBack (userCliffEventCallBackType func);
 
+    /**
+     * @brief Set the initial pose of the robot.
+     * @param x The x coordinate of the initial pose.
+     * @param y The y coordinate of the initial pose.
+     * @param angle The heading angle of the initial pose.
+     */
+    void setInitialPose(double x, double y, double angle);
+
 private:
     kobuki::Kobuki kobuki;
     ecl::linear_algebra::Vector3d pose; // x, y, heading

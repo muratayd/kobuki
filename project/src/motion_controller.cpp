@@ -1,5 +1,8 @@
 #include "motion_controller.hpp"
+#include <nlohmann/json.hpp>
 
+// Use nlohmann::json namespace for convenience
+using json = nlohmann::json;
 using namespace std;
 
 void buttonHandler(const kobuki::ButtonEvent &event) {
@@ -12,18 +15,116 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
     }
 }
 
-MotionController::MotionController(double target_x, double target_y) : ultrasonic_sensor(DEFAULT_TRIGGER_PIN, DEFAULT_ECHO_PIN) {
+MotionController::MotionController(double target_x, double target_y) : mqtt_client("tcp://localhost:1883", "MotionControllerClient")  {
     this->temp_target_x = this->target_x = target_x;
     this->temp_target_y = this->target_y = target_y;
+    UWB_x = 0.0;
+    UWB_y = 0.0;
+    UWB_yaw = 0.0;
     start_time.stamp();
     robot_mode = GO_TO_GOAL_MODE;
     moving_state = ADJUST_HEADING;
     button0_flag = false;
     kobuki_manager.setUserButtonEventCallBack(buttonHandler);
+    initialize_mqtt_client();
+    // Wait for the first pozyx/position message
+    std::unique_lock<std::mutex> lock(mtx);
+    cv.wait(lock, [this] { return pozyx_position_received; });
+    kobuki_manager.setInitialPose(current_x, current_y, current_yaw);
 }
 
 MotionController::~MotionController() {
     map_manager.printMap(current_x, current_y);
+    // Ensure to disconnect MQTT Client
+    try {
+        std::cout << "Disconnecting MQTT client..." << std::endl;
+        mqtt_client.disconnect();
+    } catch (const mqtt::exception& exc) {
+        std::cerr << "MQTT disconnection failed: " << exc.what() << std::endl;
+    }
+}
+
+// MQTT Client Initialization
+void MotionController::initialize_mqtt_client() {
+    using namespace std::placeholders;
+    mqtt_client.set_connected_handler(std::bind(&MotionController::on_connected, this, _1));
+    mqtt_client.set_message_callback(std::bind(&MotionController::mqtt_message_arrived, this, _1));
+
+    mqtt::connect_options connOpts;
+    connOpts.set_keep_alive_interval(20);
+    connOpts.set_clean_session(true);
+
+    try {
+        std::cout << "Connecting to the MQTT broker..." << std::endl;
+        mqtt_client.connect(connOpts)->wait();
+    } catch (const mqtt::exception& exc) {
+        std::cerr << exc.what() << std::endl;
+        // Handle connection failure
+    }
+}
+
+// MQTT Connection Success Handler
+void MotionController::on_connected(const std::string& cause) {
+    std::cout << "MQTT connection success" << std::endl;
+    // Subscribe to topics
+    mqtt_client.subscribe("sensor/distance", 1);
+    mqtt_client.subscribe("pozyx/position", 1);
+}
+
+// MQTT Message Arrival Handler
+void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
+    std::cout << "Message arrived: " << msg->get_topic() << ": " << msg->to_string() << std::endl;
+    // Handle message based on topic
+    if (msg->get_topic() == "sensor/distance") {
+        // Update based on distance message
+        // Convert the payload to a string
+        std::string payload = msg->to_string();
+        double distance = 0.0;
+        try {
+            // Attempt to convert the string payload to a double
+            distance = std::stod(payload);
+
+            std::cout << "Distance received: " << distance << " units" << std::endl;
+
+            // Now you can use the distance value as needed in your application
+        } catch (const std::invalid_argument& e) {
+            std::cerr << "Invalid argument: Could not convert the payload to a double." << std::endl;
+        } catch (const std::out_of_range& e) {
+            std::cerr << "Out of range: The conversion resulted in an overflow or underflow." << std::endl;
+        }
+        if (pozyx_position_received) {
+            checkDistance(distance);
+        }
+    } else if (msg->get_topic() == "pozyx/position") {
+        // Update based on position message
+        std::unique_lock<std::mutex> lock(mtx);
+        try {
+            // Convert the payload to a string and parse it as JSON
+            auto payload = msg->to_string();
+            auto j = json::parse(payload);
+
+            // Extract the position data
+            double x = j["x"];
+            double y = j["y"];
+            double heading = j["heading"];
+            current_x = x * 0.001;
+            current_y = y * 0.001;
+            current_yaw = 2.0 * ecl::pi - (heading  * (ecl::pi / 180.0));
+
+            std::cout << "Position received - X: " << current_x << ", Y: " << current_y << ", heading: " << current_yaw << std::endl;
+
+            // Now you can use x, y, z as needed in your application
+        } catch (json::parse_error& e) {
+            std::cerr << "Parsing error: " << e.what() << '\n';
+        } catch (json::type_error& e) {
+            std::cerr << "Type error: " << e.what() << '\n';
+        } catch (std::exception& e) {
+            std::cerr << "Some other error: " << e.what() << '\n';
+        }
+        // Set the flag and notify
+        pozyx_position_received = true;
+        cv.notify_one();
+    }
 }
 
 void MotionController::Bug2Algorithm() {
@@ -32,14 +133,13 @@ void MotionController::Bug2Algorithm() {
     double rotational_velocity = 0.0;
 
     vector<double> arr = kobuki_manager.getCoordinates();
-    current_x = arr[0];
-    current_y = arr[1];
-    current_yaw = kobuki_manager.getAngle();
+    current_x = (current_x + arr[0]) * 0.5;
+    current_y = (current_y + arr[1]) * 0.5;
+    //current_yaw = kobuki_manager.getAngle();
 
     cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
     cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ecl::reset << endl;
 
-    checkSensors();
     setObstacleFlags();
 
     // Start of BUG 2 Algorithm
@@ -181,9 +281,9 @@ void MotionController::Bug2Algorithm() {
     return;
 }
 
-void MotionController::checkSensors() {
-    double distance = ultrasonic_sensor.getDistance() * 0.01;
-    cout << "Sensor Distance: " << distance << "m" << endl;
+void MotionController::checkDistance(double sensor_distance) {
+    double distance = sensor_distance * 0.01;
+    cout << "Sensor Distance: " << distance << "m" << kobuki_manager.getAngle() << " " << current_x << " " << current_y << endl;
     if (distance > 0.02 && distance < 0.5) {
         map_manager.updateMapPolar(distance + ROBOT_RADIUS, kobuki_manager.getAngle(), current_x, current_y, 1, ROBOT_RADIUS * 0.8);
         map_manager.printMap(current_x, current_y);
