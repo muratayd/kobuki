@@ -15,15 +15,15 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
     }
 }
 
-MotionController::MotionController(double target_x, double target_y) : mqtt_client("tcp://localhost:1883", "MotionControllerClient")  {
-    this->temp_target_x = this->target_x = target_x;
-    this->temp_target_y = this->target_y = target_y;
+MotionController::MotionController() : mqtt_client("tcp://localhost:1883", "MotionControllerClient")  {
+    this->temp_target_x = this->target_x = 0.0;
+    this->temp_target_y = this->target_y = 0.0;
     UWB_x = 0.0;
     UWB_y = 0.0;
     UWB_yaw = 0.0;
     start_time.stamp();
     robot_mode = GO_TO_GOAL_MODE;
-    moving_state = ADJUST_HEADING;
+    moving_state = GOAL_ACHIEVED;
     button0_flag = false;
     kobuki_manager.setUserButtonEventCallBack(buttonHandler);
     initialize_mqtt_client();
@@ -69,6 +69,7 @@ void MotionController::on_connected(const std::string& cause) {
     // Subscribe to topics
     mqtt_client.subscribe("sensor/distance", 1);
     mqtt_client.subscribe("pozyx/position", 1);
+    mqtt_client.subscribe("robot/target", 1);
 }
 
 // MQTT Message Arrival Handler
@@ -124,6 +125,26 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         // Set the flag and notify
         pozyx_position_received = true;
         cv.notify_one();
+    } else if (msg->get_topic() == "robot/target") {
+        // Update based on target message
+        std::string payload = msg->to_string();
+        try {
+            // Attempt to convert the string payload to a double
+            auto j = json::parse(payload);
+            double x = j["x"];
+            double y = j["y"];
+            temp_target_x = target_x = x;
+            temp_target_y = target_y = y;
+            moving_state = ADJUST_HEADING;
+            kobuki_manager.playSoundSequence(0x5);
+            std::cout << "New target received: X: " << temp_target_x << ", Y: " << temp_target_y << std::endl;
+        } catch (json::parse_error& e) {
+            std::cerr << "Parsing error: " << e.what() << '\n';
+        } catch (json::type_error& e) {
+            std::cerr << "Type error: " << e.what() << '\n';
+        } catch (std::exception& e) {
+            std::cerr << "Some other error: " << e.what() << '\n';
+        }
     }
 }
 
@@ -138,7 +159,7 @@ void MotionController::Bug2Algorithm() {
     //current_yaw = kobuki_manager.getAngle();
 
     cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
-    cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ecl::reset << endl;
+    cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ". array: " << arr[0] << " " << arr[1] << ecl::reset << endl;
 
     setObstacleFlags();
 
@@ -206,25 +227,10 @@ void MotionController::Bug2Algorithm() {
                 cout << "DONE!" << endl;
             }
         } else if (moving_state == GOAL_ACHIEVED) { // GOAL_ACHIEVED
-            if (target_x > 0.1) {
-                target_x = 0.0;
-                target_y = 0.0;
-                moving_state = ADJUST_HEADING;
-                cout << "GOAL_ACHIEVED -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
-            } else {
-                target_x = temp_target_x;
-                target_y = temp_target_y;
-                moving_state = ADJUST_HEADING;
-                cout << "GOAL_ACHIEVED -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
-            }
             /*TODO: use target list or buttons for new targets in the future*/
             if (button0_flag) {
                 cout << "B0 pressed!!!" << endl;
-                if (fabs(target_x) > 0.1) {
-                    target_x = 0.0;
-                } else {
-                    target_x = temp_target_x;
-                }
+                target_x = 0.0;
                 target_y = 0.0;
                 moving_state = ADJUST_HEADING;
                 kobuki_manager.playSoundSequence(0x5);

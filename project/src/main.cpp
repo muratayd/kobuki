@@ -62,7 +62,7 @@ int main(int argc, char **argv)
     //kobuki_manager.setUserCliffEventCallBack(exampleCliffHandlerPrint);
     int ultrasonic_sensor_trigger_pin = 18;
     int ultrasonic_sensor_echo_pin = 24;
-    MotionController motion_controller(-0.50, 0.0);
+    MotionController motion_controller;
     try
     {
         while (!shutdown_req)

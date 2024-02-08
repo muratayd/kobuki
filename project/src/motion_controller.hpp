@@ -49,10 +49,8 @@ public:
      * @brief Constructor for MotionController.
      * Initializes the controller with target coordinates and sets up necessary
      * parameters for motion control.
-     * @param target_x The X coordinate of the target location.
-     * @param target_y The Y coordinate of the target location.
      */
-    MotionController(double target_x, double target_y);
+    MotionController();
 
     ~MotionController();
 
