@@ -1,15 +1,24 @@
 import paho.mqtt.client as mqtt
 import json
 import time
+import argparse
+
+# Set up command-line argument parsing
+parser = argparse.ArgumentParser(description='Send target X, Y coordinates via MQTT.')
+parser.add_argument('x', type=float, help='Target X coordinate')
+parser.add_argument('y', type=float, help='Target Y coordinate')
+
+# Parse arguments
+args = parser.parse_args()
 
 # MQTT Broker settings
 broker_address = "localhost"  # or "broker.hivemq.com" for a public broker
 broker_port = 1883
 topic = "robot/target"
 
-# Target coordinates
-target_x = 1.0
-target_y = 0.5
+# Target coordinates from command-line arguments
+target_x = args.x
+target_y = args.y
 
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, flags, rc):
