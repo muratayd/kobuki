@@ -33,12 +33,12 @@ def distance():
     time_elapsed = stop_time - start_time
     # Multiply with the sonic speed (34300 cm/s)
     # and divide by 2, because there and back
-    distance = (time_elapsed * 34300) / 2
+    distance = (time_elapsed * 34300) * 0.5
 
     return distance
 
 def on_publish(client, userdata, result):
-    print("Data published \n")
+    #print("Data published \n")
     pass
 
 # MQTT Settings
