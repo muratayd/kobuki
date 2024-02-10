@@ -1,5 +1,7 @@
 import paho.mqtt.client as mqtt
 
+# example of reading sensor data from a MQTT topic
+
 # MQTT Settings
 MQTT_BROKER = "localhost"
 MQTT_PORT = 1883
