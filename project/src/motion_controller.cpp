@@ -30,7 +30,7 @@ MotionController::MotionController() : mqtt_client("tcp://localhost:1883", "Moti
     // Wait for the first pozyx/position message
     std::unique_lock<std::mutex> lock(mtx);
     cv.wait(lock, [this] { return pozyx_position_received; });
-    kobuki_manager.setInitialPose(current_x, current_y, current_yaw);
+    kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
 }
 
 MotionController::~MotionController() {
@@ -74,7 +74,7 @@ void MotionController::on_connected(const std::string& cause) {
 
 // MQTT Message Arrival Handler
 void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
-    std::cout << "Message arrived: " << msg->get_topic() << ": " << msg->to_string() << std::endl;
+    //std::cout << "Message arrived: " << msg->get_topic() << ": " << msg->to_string() << std::endl;
     // Handle message based on topic
     if (msg->get_topic() == "sensor/distance") {
         // Update based on distance message
@@ -84,9 +84,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         try {
             // Attempt to convert the string payload to a double
             distance = std::stod(payload);
-
             std::cout << "Distance received: " << distance << " units" << std::endl;
-
             // Now you can use the distance value as needed in your application
         } catch (const std::invalid_argument& e) {
             std::cerr << "Invalid argument: Could not convert the payload to a double." << std::endl;
@@ -105,16 +103,14 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             auto j = json::parse(payload);
 
             // Extract the position data
-            double x = j["x"];
-            double y = j["y"];
-            double heading = j["heading"];
-            current_x = x * 0.001;
-            current_y = y * 0.001;
-            current_yaw = 2.0 * ecl::pi - (heading  * (ecl::pi / 180.0));
-
-            std::cout << "Position received - X: " << current_x << ", Y: " << current_y << ", heading: " << current_yaw << std::endl;
-
-            // Now you can use x, y, z as needed in your application
+            UWB_x = j["x"];
+            UWB_y = j["y"];
+            UWB_yaw = j["heading"];
+            UWB_x = UWB_x * MM_TO_M;
+            UWB_y = UWB_y * MM_TO_M;
+            UWB_yaw = 2.0 * ecl::pi - (UWB_yaw  * (ecl::pi / 180.0));
+            std::cout << "Position received - X: " << UWB_x << ", Y: " << UWB_y << ", heading: " << UWB_yaw << std::endl;
+            // Now you can use x, y, heading as needed in your application
         } catch (json::parse_error& e) {
             std::cerr << "Parsing error: " << e.what() << '\n';
         } catch (json::type_error& e) {
@@ -137,7 +133,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             temp_target_y = target_y = y;
             moving_state = ADJUST_HEADING;
             kobuki_manager.playSoundSequence(0x5);
-            std::cout << "New target received: X: " << temp_target_x << ", Y: " << temp_target_y << std::endl;
+            std::cout << "New robot target received: X: " << temp_target_x << ", Y: " << temp_target_y << std::endl;
         } catch (json::parse_error& e) {
             std::cerr << "Parsing error: " << e.what() << '\n';
         } catch (json::type_error& e) {
@@ -149,17 +145,17 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
 }
 
 void MotionController::Bug2Algorithm() {
-    const double buffer = 0.05;
     double longitudinal_velocity = 0.0;
     double rotational_velocity = 0.0;
 
-    vector<double> arr = kobuki_manager.getCoordinates();
-    current_x = (current_x + arr[0]) * 0.5;
-    current_y = (current_y + arr[1]) * 0.5;
+    // Get the most recent coordinates from UWB and Kobuki, and calculate the average
+    vector<double> kobuki_coordinates = kobuki_manager.getCoordinates();
+    current_x = (UWB_x + kobuki_coordinates[0]) * 0.5;
+    current_y = (UWB_y + kobuki_coordinates[1]) * 0.5;
     //current_yaw = kobuki_manager.getAngle();
-
+    current_yaw = UWB_yaw;
     cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
-    cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ". array: " << arr[0] << " " << arr[1] << ecl::reset << endl;
+    cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ecl::reset << endl;
 
     setObstacleFlags();
 
@@ -288,8 +284,8 @@ void MotionController::Bug2Algorithm() {
 }
 
 void MotionController::checkDistance(double sensor_distance) {
-    double distance = sensor_distance * 0.01;
-    cout << "Sensor Distance: " << distance << "m" << kobuki_manager.getAngle() << " " << current_x << " " << current_y << endl;
+    double distance = sensor_distance * CM_TO_M;
+    cout << "Sensor Distance: " << distance << "m. heading:" << kobuki_manager.getAngle() << " x:" << current_x << " y:" << current_y << endl;
     if (distance > 0.02 && distance < 0.5) {
         map_manager.updateMapPolar(distance + ROBOT_RADIUS, kobuki_manager.getAngle(), current_x, current_y, 1, ROBOT_RADIUS * 0.8);
         map_manager.printMap(current_x, current_y);

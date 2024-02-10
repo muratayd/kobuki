@@ -37,6 +37,8 @@
 #define LEFT_BUMPER 4
 #define RIGHT_BUMPER 1
 #define CENTER_BUMPER 2
+#define CM_TO_M 0.01
+#define MM_TO_M 0.001
 
 /*****************************************************************************
 ** Classes
@@ -90,8 +92,8 @@ private:
     double hit_x;
     double hit_y;
     double distance_to_goal_from_hit_point;
-    // +/- 5.0 degrees of precision for the rotation angle
-    double yaw_precision = 5.0 * (ecl::pi / 180);
+    // +/- 7.0 degrees of precision for the rotation angle
+    double yaw_precision = 7.0 * (ecl::pi / 180);
     // variables for occupancy grid obstacles closer than 10cm
     bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle, center_obstacle;
     bool button0_flag;
