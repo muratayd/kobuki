@@ -70,6 +70,7 @@ void MotionController::on_connected(const std::string& cause) {
     mqtt_client.subscribe("sensor/distance", 1);
     mqtt_client.subscribe("pozyx/position", 1);
     mqtt_client.subscribe("robot/target", 1);
+    mqtt_client.subscribe("robot/control", 1);
 }
 
 // MQTT Message Arrival Handler
@@ -141,8 +142,20 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         } catch (std::exception& e) {
             std::cerr << "Some other error: " << e.what() << '\n';
         }
+    } else if (msg->get_topic() == "robot/control") {
+        std::string payload = msg->to_string();
+        if (payload == "STOP") {
+            // Handle the stop command, e.g., stop the robot
+            kobuki_manager.stop();
+            std::cout << "Stop command received." << std::endl;
+            moving_state = GOAL_ACHIEVED; // finish successfully
+            kobuki_manager.playSoundSequence(0x6);
+        } else {
+            std::cout << "Received message: " << payload << std::endl;
+        }
     }
 }
+
 
 void MotionController::Bug2Algorithm() {
     double longitudinal_velocity = 0.0;
@@ -288,13 +301,13 @@ void MotionController::checkDistance(double sensor_distance) {
     double distance = sensor_distance * CM_TO_M;
     cout << "Sensor Distance: " << distance << "m." << endl;
     if (distance > 0.02 && distance < 0.5) {
-        map_manager.updateMapPolar(distance + ROBOT_RADIUS, kobuki_manager.getAngle(), current_x, current_y, 1, ROBOT_RADIUS * 0.8);
+        map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1, ROBOT_RADIUS * 0.8);
         map_manager.printMap(current_x, current_y);
     }
     map_manager.updateMap(current_x, current_y, 0);
 
     if (kobuki_manager.getBumperState() != 0) {
-        map_manager.updateMapPolar(ROBOT_RADIUS, kobuki_manager.getAngle(), current_x, current_y, 1);
+        map_manager.updateMapPolar(ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
         map_manager.printMap(current_x, current_y);
     }
 }

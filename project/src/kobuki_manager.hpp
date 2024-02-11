@@ -131,6 +131,7 @@ public:
 private:
     kobuki::Kobuki kobuki;
     ecl::linear_algebra::Vector3d pose; // x, y, heading
+    double initial_heading;
     ecl::Slot<const kobuki::ButtonEvent&> slot_button_event;
     ecl::Slot<const kobuki::BumperEvent&> slot_bumper_event;
     ecl::Slot<const kobuki::CliffEvent&> slot_cliff_event;

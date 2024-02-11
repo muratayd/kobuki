@@ -64,7 +64,7 @@ KobukiManager::~KobukiManager() {
 void KobukiManager::setInitialPose(double x, double y, double angle) {
     pose[0] = x;
     pose[1] = y;
-    pose[2] = angle;
+    pose[2] = initial_heading = angle;
     cout << ecl::green;
     cout << "Initial pose set to x:" << x << " y:" << y << " angle:" << angle << endl << ecl::reset;
 }
@@ -136,7 +136,8 @@ void KobukiManager::processStreamData() {
     ecl::linear_algebra::Vector3d pose_update_rates;
     kobuki.updateOdometry(pose_update, pose_update_rates);
     pose = ecl::concatenate_poses(pose, pose_update);
-    pose[2] = kobuki.getHeading(); // override odometry heading with more precise gyro data
+    pose[2] = ecl::wrap_angle(initial_heading + kobuki.getHeading()); // override odometry heading with more precise gyro data
+    cout << "pose2:" << pose[2] << " k_heading:" << kobuki.getHeading() << endl;
     data = kobuki.getCoreSensorData();
 }
 
