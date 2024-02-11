@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Robot Map Visualization</title>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+    body { display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; }
+    #robotMap { border: 1px solid black; }
+</style>
+</head>
+<body>
+    <canvas id="robotMap" width="700" height="700"></canvas>
+    <div id="controls">
+        <input type="number" id="targetX" placeholder="Target X">
+        <input type="number" id="targetY" placeholder="Target Y">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+</html>

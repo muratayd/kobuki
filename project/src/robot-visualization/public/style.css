@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('futuristic-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }  
+
+#robotMap {
+margin-bottom: 20px;
+border: 2px solid #333;
+}
+
+input[type="number"] {
+    width: 100px; /* Adjust width as needed */
+    height: 40px; /* Adjust height to match the buttons, ensuring alignment */
+    padding: 0 12px;
+    border: 2px solid #ccc; /* Add a border to the input for better visual */
+    border-radius: 20px; /* Rounded corners for the input fields */
+    font-size: 16px; /* Increase font size for better readability */
+    line-height: 40px; /* Aligns text vertically */
+    text-align: center;
+  }
+
+  button {
+    min-width: 60px; /* Ensure the buttons have a minimum width */
+    height: 60px; /* Circular buttons */
+    padding: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 60px; /* Align text for circular buttons */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+button:hover {
+background-color: #0056b3;
+}
+
+button:active {
+background-color: #004099;
+}
+
+button#start {
+background-color: #28a745; /* Green color for the start button */
+}
+
+button#stop {
+background-color: #dc3545; /* Red color for the stop button */
+}
+
+button:hover {
+transform: scale(1.1); /* Slightly enlarge the buttons on hover for a visual effect */
+}
+
+button:active {
+transform: scale(0.9); /* Slightly shrink the buttons on press */
+}
+
+div#controls {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px; /* Adds space between each control item */
+}
+  
