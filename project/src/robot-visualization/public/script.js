@@ -38,12 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         y = 100 - (y / 50)
         const centerX = x * cellSize + cellSize / 2;
         const centerY = y * cellSize + cellSize / 2;
-
         const radius = cellSize * 5; // Adjust size of the icon as needed
-        console.log("x: ", x);
-        console.log("y: ", y);
-        console.log("centerX: ", centerX);
-        console.log("centerY: ", centerY);
         // Draw robot as a green circle for simplicity
         ctx.fillStyle = 'green';
         ctx.beginPath();

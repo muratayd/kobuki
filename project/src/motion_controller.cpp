@@ -148,7 +148,8 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             // Handle the stop command, e.g., stop the robot
             kobuki_manager.stop();
             std::cout << "Stop command received." << std::endl;
-            moving_state = GOAL_ACHIEVED; // finish successfully
+            robot_mode = GO_TO_GOAL_MODE;
+            moving_state = GOAL_ACHIEVED;
             kobuki_manager.playSoundSequence(0x6);
         } else {
             std::cout << "Received message: " << payload << std::endl;

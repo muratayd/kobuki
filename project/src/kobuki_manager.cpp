@@ -137,7 +137,6 @@ void KobukiManager::processStreamData() {
     kobuki.updateOdometry(pose_update, pose_update_rates);
     pose = ecl::concatenate_poses(pose, pose_update);
     pose[2] = ecl::wrap_angle(initial_heading + kobuki.getHeading()); // override odometry heading with more precise gyro data
-    cout << "pose2:" << pose[2] << " k_heading:" << kobuki.getHeading() << endl;
     data = kobuki.getCoreSensorData();
 }
 
