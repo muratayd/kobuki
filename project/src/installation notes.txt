@@ -93,9 +93,26 @@ node server.js
     https://www.instructables.com/Distance-Sensing-With-Raspberry-Pi-and-HC-SR04/
 
 
-9. How to build this repo:
+9. Install the prerequisites
+
+pip install pypozyx
+    Note: The most recent pyserial version, pyserial3.5b0, is not supported by the pypozyx library.
+    Please force this library to be on an older version larger than 3.0. Use for example “pip install pyserial==3.4”
 
 sudo apt-get install nlohmann-json3-dev
+pip3 install paho-mqtt
+
+sudo apt install -y mosquitto mosquitto-clients
+sudo systemctl enable mosquitto.service
+mosquitto -v
+
+10. How to build this repo:
 
 . env.sh
 ./bcmd
+
+11. Run the sensor python services:
+
+python pozyx_serial.pypi
+python ultrasonic.py
+    Note: Add .service files to /etc/systemd/system/ to run a Python Script as a Service in Raspberry Pi
