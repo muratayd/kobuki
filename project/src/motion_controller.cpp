@@ -150,8 +150,9 @@ void MotionController::Bug2Algorithm() {
 
     // Get the most recent coordinates from UWB and Kobuki, and calculate the average
     vector<double> kobuki_coordinates = kobuki_manager.getCoordinates();
-    current_x = (UWB_x + kobuki_coordinates[0]) * 0.5;
-    current_y = (UWB_y + kobuki_coordinates[1]) * 0.5;
+    cout << ecl::green << "kobuki_coordinates: [x: " << kobuki_coordinates[0] << ", y: " << kobuki_coordinates[1] << ecl::reset << endl;
+    current_x = (0.2 * UWB_x + 0.8 * kobuki_coordinates[0]);
+    current_y = (0.2 * UWB_y + 0.8 * kobuki_coordinates[1]);
     //current_yaw = kobuki_manager.getAngle();
     current_yaw = UWB_yaw;
     cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
@@ -285,7 +286,7 @@ void MotionController::Bug2Algorithm() {
 
 void MotionController::checkDistance(double sensor_distance) {
     double distance = sensor_distance * CM_TO_M;
-    cout << "Sensor Distance: " << distance << "m. heading:" << kobuki_manager.getAngle() << " x:" << current_x << " y:" << current_y << endl;
+    cout << "Sensor Distance: " << distance << "m." << endl;
     if (distance > 0.02 && distance < 0.5) {
         map_manager.updateMapPolar(distance + ROBOT_RADIUS, kobuki_manager.getAngle(), current_x, current_y, 1, ROBOT_RADIUS * 0.8);
         map_manager.printMap(current_x, current_y);

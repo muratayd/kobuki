@@ -58,7 +58,7 @@ void MapManager::saveGridToFile(const std::string& filename) {
 void MapManager::updateMap(double x, double y, int value, double radius) {
     int row = (int)round(x / GRID_SIZE) + MAP_ORIGIN;
     int column = (int)round(y / GRID_SIZE) + MAP_ORIGIN;
-    std::cout << "updateMap x:" << row << " y:" << column << " val:" << value << std::endl;
+    //std::cout << "updateMap x:" << row << " y:" << column << " val:" << value << std::endl;
     if (row < 0 || row >= MAP_SIZE || column < 0 || column >= MAP_SIZE) {
         throw std::out_of_range("updateMap Coordinates out of map boundaries");
     }

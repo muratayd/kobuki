@@ -10,6 +10,8 @@ GPIO_ECHO = 24
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN)
+GPIO.output(GPIO_TRIGGER, False)
+time.sleep(2)  # Calibrating
 
 def distance():
 
@@ -55,7 +57,7 @@ try:
         dist = distance()
         print("Measured Distance = %.1f cm" % dist)
         client.publish(topic, str(dist))
-        time.sleep(0.2)  # Publish at 5Hz
+        time.sleep(0.25)  # Publish at 4Hz
 
 except KeyboardInterrupt:
     print("Measurement stopped by User")

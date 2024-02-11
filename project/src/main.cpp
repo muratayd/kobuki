@@ -63,11 +63,11 @@ int main(int argc, char **argv)
     int ultrasonic_sensor_trigger_pin = 18;
     int ultrasonic_sensor_echo_pin = 24;
     MotionController motion_controller;
+    //kobuki_manager.playSoundSequence(0x6);
     try
     {
         while (!shutdown_req)
         {
-            //kobuki_manager.playSoundSequence(0x6);
             motion_controller.Bug2Algorithm();
             sleep(150);
         }
@@ -77,8 +77,7 @@ int main(int argc, char **argv)
     {
         std::cout << e.what();
     }
-
+    motion_controller.stop();
     sleep(300);
-
     return 0;
 }
