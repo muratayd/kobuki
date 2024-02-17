@@ -1,6 +1,4 @@
 const express = require('express');
-const fs = require('fs');
-const csv = require('csv-parser');
 const mqtt = require('mqtt');
 const socketIo = require('socket.io');
 const http = require('http');
@@ -9,41 +7,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 const mqttClient = mqtt.connect('mqtt://localhost'); // Replace with your MQTT broker
-const csvFilePath = '../grid_map.csv'; // Path to your CSV file
 
 app.use(express.static('public'));
-
-// Throttling control
-let lastUpdateTime = 0;
-const updateFrequency = 1000; // Minimum time between updates in milliseconds (1 second)
 
 // MQTT Topics
 const controlTopic = 'robot/control'; // Topic for start/stop commands
 const targetTopic = 'robot/target'; // Topic for sending target position
+const mapTopic = 'robot/map'; // Topic for sending target position
 const positionTopic = 'pozyx/position'; // Topic for receiving robot position
-
-// Function to read and emit the CSV file content
-function readAndEmitCSV() {
-    const gridMap = [];
-    fs.createReadStream(csvFilePath)
-        .pipe(csv({ headers: false }))
-        .on('data', (data) => gridMap.push(Object.values(data).map(Number)))
-        .on('end', () => {
-            const now = Date.now();
-            if (now - lastUpdateTime >= updateFrequency) {
-                io.emit('map update', gridMap);
-                lastUpdateTime = now; // Update the last update time
-            }
-        });
-}
-
-// Watch the CSV file for changes and update the grid map accordingly
-fs.watch(csvFilePath, (eventType) => {
-    if (eventType === 'change') {
-        console.log('grid_map.csv has been changed, updating grid map...');
-        readAndEmitCSV();
-    }
-});
 
 mqttClient.on('connect', () => {
     console.log('Connected to MQTT broker');
@@ -52,12 +23,31 @@ mqttClient.on('connect', () => {
         console.log('Subscribed to "pozyx/position"');
         }
     });
+    mqttClient.subscribe(mapTopic, (err) => {
+        if (!err) {
+        console.log('Subscribed to "robot/map"');
+        }
+    });
 });
 
 mqttClient.on('message', (topic, message) => {
     if (topic === positionTopic) {
+        //console.log('Received "pozyx/position"');
         const positionData = JSON.parse(message.toString()); // Assuming the message is a JSON string
         io.emit('robot position', positionData); // Emit to all connected clients
+    } else if (topic === mapTopic) {
+        console.log('Received "robot/map"');
+        // Assuming the message contains a flattened array of integers
+        const data = new Int32Array(message.buffer);
+
+        // Assuming the 2D array was originally a 200x200 map
+        const map = [];
+        for (let i = 0; i < 200; i++) {
+            map.push(Array.from(data.slice(i * 200, (i + 1) * 200)));
+        }
+        // console.log('Received map update:', map);
+
+        io.emit('map update', map); // Emit to all connected clients
     }
 });
 
@@ -77,9 +67,10 @@ io.on('connection', (socket) => {
         mqttClient.publish(controlTopic, 'STOP');
         console.log(`Publishing stop command to ${controlTopic}`);
     });
+});
 
-    // Initial CSV read and emit upon new client connection
-    readAndEmitCSV();
+io.on('error', function (err) {
+    console.error('Error:', err);
 });
 
 server.listen(3000, () => {

@@ -1,11 +1,17 @@
 #include "map_manager.hpp"
 #include <ecl/geometry.hpp>
 #include <fstream>
-#include <iostream>
+#include <vector>
+#include <string>
+#include <cstring>
 
 using namespace std;
 
-MapManager::MapManager() {
+const string SERVER_ADDRESS("tcp://localhost:1883");
+const string CLIENT_ID("map_publisher");
+const string TOPIC("robot/map");
+
+MapManager::MapManager() : client_(SERVER_ADDRESS, CLIENT_ID), callback_() {
     for (auto &row : occupancy_grid)
     {
         for (auto &column : row)
@@ -13,10 +19,19 @@ MapManager::MapManager() {
             column = -1;
         }
     }
+    mqtt::connect_options connOpts;
+    connOpts.set_keep_alive_interval(20);
+    connOpts.set_clean_session(true);
+    client_.set_callback(callback_);
+    cout << "Connecting to server..." << endl;
+    client_.connect(connOpts)->wait();
+    cout << "Connected" << endl;
+    sendGridToMQTT();
 }
 
 MapManager::~MapManager() {
-    return;
+    client_.disconnect()->wait();
+    cout << "Disconnected" << endl;
 }
 
 void MapManager::dilateCell(int x, int y, int value, double radius) {
@@ -34,25 +49,19 @@ void MapManager::dilateCell(int x, int y, int value, double radius) {
     }
 }
 
-void MapManager::saveGridToFile(const std::string& filename) {
-    std::ofstream file(filename);
-    if (!file.is_open()) {
-        std::cerr << "Error opening file for writing: " << filename << std::endl;
-        return;
-    }
-
-    for (int i = 0; i < MAP_SIZE; ++i) {
-        for (int j = 0; j < MAP_SIZE; ++j) {
-            file << occupancy_grid[i][j];
-            if (j < MAP_SIZE - 1) {
-                file << ", ";  // CSV format
-            }
+void MapManager::sendGridToMQTT() {
+    // Flatten the 2D array into a 1D array
+    vector<int> flattened_data;
+    for (auto &row : occupancy_grid)
+    {
+        for (auto &column : row)
+        {
+            flattened_data.push_back(column);
         }
-        file << std::endl;
     }
-
-    file.close();
-    std::cout << "Grid map saved to " << filename << std::endl;
+    // Publish the flattened array
+    client_.publish(TOPIC, flattened_data.data(), flattened_data.size() * sizeof(int), 0, false);
+    cout << "Grid map sent to MQTT" << endl;
 }
 
 void MapManager::updateMap(double x, double y, int value, double radius) {
@@ -119,5 +128,5 @@ void MapManager::printMap(double robot_x, double robot_y) {
         }
         row_cnt++;
     }
-    saveGridToFile("grid_map.csv");
+    sendGridToMQTT();
 }

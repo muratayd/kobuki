@@ -1,19 +1,36 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('futuristic-background.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }  
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Dark grey background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('futuristic-background.png'); /* Add a futuristic background image */
+  background-size: cover;
+  background-position: center;
+}
+
+#mapContainer {
+  position: relative; /* Position the container relative to the body */
+}
 
 #robotMap {
-margin-bottom: 20px;
-border: 2px solid #333;
+  border: 1px solid black;
+}
+
+#robot {
+  position: absolute; /* Position the robot image absolutely within the container */
+  transform: translate(-50%, -50%); /* Center the image */
+}
+
+#robotMap canvas {
+  background-color: #fff; /* White background for empty cells */
+}
+
+#robotMap canvas.obstacle {
+  background-color: #ff0000; /* Red background for obstacle cells */
 }
 
 input[type="number"] {

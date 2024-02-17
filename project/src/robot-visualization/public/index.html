@@ -7,12 +7,39 @@
 <script src="script.js" defer></script>
 <link rel="stylesheet" href="style.css">
 <style>
-    body { display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; }
-    #robotMap { border: 1px solid black; }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #333; /* Dark grey background */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url('futuristic-background.png'); /* Add a futuristic background image */
+        background-size: cover;
+        background-position: center;
+    }
+
+    #mapContainer {
+        position: relative; /* Position the container relative to the body */
+    }
+
+    #robotMap {
+        border: 1px solid black;
+    }
+
+    #robot {
+        position: absolute; /* Position the robot image absolutely within the container */
+        transform: translate(-50%, -50%); /* Center the image */
+    }
 </style>
 </head>
 <body>
-    <canvas id="robotMap" width="700" height="700"></canvas>
+    <div id="mapContainer">
+        <canvas id="robotMap" width="700" height="700"></canvas>
+        <img id="robot" src="robot.png" alt="Robot">
+    </div>
     <div id="controls">
         <input type="number" id="targetX" placeholder="Target X">
         <input type="number" id="targetY" placeholder="Target Y">

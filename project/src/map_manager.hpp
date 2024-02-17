@@ -16,6 +16,7 @@
 *****************************************************************************/
 
 #include <iostream>
+#include "mqtt/async_client.h"
 
 /*****************************************************************************
 ** Defines
@@ -27,6 +28,17 @@
 /*****************************************************************************
 ** Classes
 *****************************************************************************/
+
+class MapManagerCallback : public virtual mqtt::callback {
+public:
+    void connection_lost(const std::string& cause) override {
+        std::cout << "Connection lost: " << cause << std::endl;
+    }
+
+    void delivery_complete(mqtt::delivery_token_ptr token) override {
+        std::cout << "Message delivered" << std::endl;
+    }
+};
 
 class MapManager
 {
@@ -134,6 +146,8 @@ private:
     static const int MAP_SIZE = 200; // n of cells
     static const int MAP_ORIGIN = 100; // origin point is at [100][100]
     //static const double GRID_SIZE = 0.05; // m
+    mqtt::async_client client_;
+    MapManagerCallback callback_;
 
     /**
     * @brief 2D array representing the occupancy grid map.
@@ -165,7 +179,7 @@ private:
     */
     void dilateCell(int x, int y, int value, double radius = ROBOT_RADIUS);
 
-    void saveGridToFile(const std::string& filename);
+    void sendGridToMQTT();
 };
 
 #endif /* MAP_MANAGER_HPP_ */
