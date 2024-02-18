@@ -5,6 +5,9 @@
 using json = nlohmann::json;
 using namespace std;
 
+const string modeTopic("robot/mode");
+const string stateTopic("robot/state");
+
 void buttonHandler(const kobuki::ButtonEvent &event) {
     cout << "motion controller: buttonHandler" << endl;
     if (event.state == kobuki::ButtonEvent::Released) {
@@ -31,6 +34,8 @@ MotionController::MotionController() : mqtt_client("tcp://localhost:1883", "Moti
     std::unique_lock<std::mutex> lock(mtx);
     cv.wait(lock, [this] { return pozyx_position_received; });
     kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
+    sendModeToMQTT();
+    sendStateToMQTT();
 }
 
 MotionController::~MotionController() {
@@ -133,6 +138,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             temp_target_x = target_x = x;
             temp_target_y = target_y = y;
             moving_state = ADJUST_HEADING;
+            sendStateToMQTT();
             kobuki_manager.playSoundSequence(0x5);
             std::cout << "New robot target received: X: " << temp_target_x << ", Y: " << temp_target_y << std::endl;
         } catch (json::parse_error& e) {
@@ -157,6 +163,49 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
     }
 }
 
+void MotionController::sendModeToMQTT() {
+    std::string mode;
+    switch (robot_mode) {
+        case GO_TO_GOAL_MODE:
+            mode = "GO TO GOAL MODE";
+            break;
+        case WALL_FOLLOWING_MODE:
+            mode = "WALL FOLLOWING MODE";
+            break;
+        default:
+            mode = "UNKNOWN";
+            break;
+    }
+
+    // Publish the robot mode to the MQTT broker
+    mqtt::message_ptr msg = mqtt::make_message(modeTopic, mode);
+    mqtt_client.publish(msg);
+    std::cout << "Robot mode sent to MQTT: " << mode << std::endl;
+}
+
+void MotionController::sendStateToMQTT() {
+    std::string state;
+    switch (moving_state) {
+        case ADJUST_HEADING:
+            state = "ADJUST HEADING";
+            break;
+        case GO_STRAIGHT:
+            state = "GO STRAIGHT";
+            break;
+        case GOAL_ACHIEVED:
+            state = "GOAL ACHIEVED";
+            break;
+        default:
+            state = "UNKNOWN";
+            break;
+    }
+
+    // Publish the moving state to the MQTT broker
+    mqtt::message_ptr msg = mqtt::make_message(stateTopic, state);
+    mqtt_client.publish(msg);
+    std::cout << "Robot state sent to MQTT: " << state << std::endl;
+}
+
 
 void MotionController::Bug2Algorithm() {
     double longitudinal_velocity = 0.0;
@@ -172,6 +221,10 @@ void MotionController::Bug2Algorithm() {
     cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
     cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ecl::reset << endl;
 
+    if (kobuki_manager.getBumperState() != 0) {
+        map_manager.updateMapPolar(ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
+        map_manager.printMap(current_x, current_y);
+    }
     setObstacleFlags();
 
     // Start of BUG 2 Algorithm
@@ -179,6 +232,7 @@ void MotionController::Bug2Algorithm() {
         if ((moving_state == GO_STRAIGHT) && (kobuki_manager.getBumperState() != 0 || right_front_obstacle || front_obstacle || left_front_obstacle)) { // HIT!
             kobuki_manager.move(longitudinal_velocity, rotational_velocity);
             robot_mode = WALL_FOLLOWING_MODE; // wall following mode
+            sendModeToMQTT();
             // save hit point coordinates:
             hit_x = current_x;
             hit_y = current_y;
@@ -213,6 +267,7 @@ void MotionController::Bug2Algorithm() {
                 }
             } else {
                 moving_state = GO_STRAIGHT;
+                sendStateToMQTT();
                 cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
             }
         } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
@@ -228,11 +283,14 @@ void MotionController::Bug2Algorithm() {
                 // Adjust heading if heading is not good enough
                 if (fabs(yaw_error) > yaw_precision + 0.2) {
                     moving_state = ADJUST_HEADING; // ADJUST HEADING
+                    sendStateToMQTT();
                     cout << "GO_STRAIGHT -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
                 }
             } else {   // If distance to target is smaller than 20cm
                 moving_state = GOAL_ACHIEVED; // finish successfully
+                sendStateToMQTT();
                 cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+                kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
                 kobuki_manager.move(0.0, 0.0);
                 kobuki_manager.playSoundSequence(0x6);
                 cout << "DONE!" << endl;
@@ -244,6 +302,7 @@ void MotionController::Bug2Algorithm() {
                 target_x = 0.0;
                 target_y = 0.0;
                 moving_state = ADJUST_HEADING;
+                sendStateToMQTT();
                 kobuki_manager.playSoundSequence(0x5);
                 cout << "GOAL_ACHIEVED -> ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
                 button0_flag = false;
@@ -264,7 +323,9 @@ void MotionController::Bug2Algorithm() {
                 cout << "HIT the GOAL LINE! ";
                 map_manager.printMap(current_x, current_y);
                 robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
+                sendModeToMQTT();
                 moving_state = ADJUST_HEADING;
+                sendStateToMQTT();
                 cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
                 kobuki_manager.move(longitudinal_velocity, rotational_velocity);
                 return;
@@ -306,11 +367,6 @@ void MotionController::checkDistance(double sensor_distance) {
         map_manager.printMap(current_x, current_y);
     }
     map_manager.updateMap(current_x, current_y, 0);
-
-    if (kobuki_manager.getBumperState() != 0) {
-        map_manager.updateMapPolar(ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
-        map_manager.printMap(current_x, current_y);
-    }
 }
 
 void MotionController::stop() {

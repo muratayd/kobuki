@@ -8,6 +8,7 @@ GPIO_ECHO = 24
 
 # Set the GPIO modes
 GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
 GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN)
 GPIO.output(GPIO_TRIGGER, False)

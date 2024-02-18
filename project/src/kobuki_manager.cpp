@@ -65,6 +65,7 @@ void KobukiManager::setInitialPose(double x, double y, double angle) {
     pose[0] = x;
     pose[1] = y;
     pose[2] = initial_heading = angle;
+    kobuki.resetOdometry();
     cout << ecl::green;
     cout << "Initial pose set to x:" << x << " y:" << y << " angle:" << angle << endl << ecl::reset;
 }

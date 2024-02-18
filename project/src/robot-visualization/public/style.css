@@ -12,6 +12,14 @@ body {
   background-position: center;
 }
 
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Adds space between map and info div */
+    margin-top: 20px;
+}
+
 #mapContainer {
   position: relative; /* Position the container relative to the body */
 }
@@ -25,12 +33,47 @@ body {
   transform: translate(-50%, -50%); /* Center the image */
 }
 
-#robotMap canvas {
-  background-color: #fff; /* White background for empty cells */
+#robotInfo {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  width: 300px; /* Set a fixed width for the box */
+  margin-right: 20px; /* Add some space to the right of the map */
 }
 
-#robotMap canvas.obstacle {
-  background-color: #ff0000; /* Red background for obstacle cells */
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modeContainer,
+.stateContainer {
+  display: flex;
+  justify-content: center; /* Center vertically */
+  margin-top: 10px;
+}
+
+.mode,
+.state {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer; /* Add a cursor pointer for better UX */
+}
+
+.active {
+  background-color: #28a745; /* Green color for active mode/state */
+  color: #fff; /* White text color for active mode/state */
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds space between each control item */
+  margin-top: 20px;
 }
 
 input[type="number"] {
@@ -82,10 +125,10 @@ button:active {
 transform: scale(0.9); /* Slightly shrink the buttons on press */
 }
 
-div#controls {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px; /* Adds space between each control item */
+.targetIcon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transform: translate(-50%, -50%); /* Center the icon */
 }
-  
+

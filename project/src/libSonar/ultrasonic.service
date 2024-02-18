@@ -1,5 +1,5 @@
 [Unit]
-Description=Pozyx Serial
+Description=Ultrasonic GPIO
 After=multi-user.target
 
 [Service]

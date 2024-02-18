@@ -153,6 +153,13 @@ private:
     */
     void on_connected(const std::string& cause);
 
+    /* MQTT send Robot mode
+    */
+    void sendModeToMQTT();
+
+    /* MQTT send Robot state
+    */
+    void sendStateToMQTT();
 };
 
 #endif /* MOTION_CONTROLLER_HPP_ */

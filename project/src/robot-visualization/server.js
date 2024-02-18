@@ -14,6 +14,8 @@ app.use(express.static('public'));
 const controlTopic = 'robot/control'; // Topic for start/stop commands
 const targetTopic = 'robot/target'; // Topic for sending target position
 const mapTopic = 'robot/map'; // Topic for sending target position
+const modeTopic = 'robot/mode'; // Topic for receiving robot mode
+const stateTopic = 'robot/state'; // Topic for receiving robot state
 const positionTopic = 'pozyx/position'; // Topic for receiving robot position
 
 mqttClient.on('connect', () => {
@@ -26,6 +28,16 @@ mqttClient.on('connect', () => {
     mqttClient.subscribe(mapTopic, (err) => {
         if (!err) {
         console.log('Subscribed to "robot/map"');
+        }
+    });
+    mqttClient.subscribe(modeTopic, (err) => {
+        if (!err) {
+        console.log('Subscribed to "robot/mode"');
+        }
+    });
+    mqttClient.subscribe(stateTopic, (err) => {
+        if (!err) {
+        console.log('Subscribed to "robot/state"');
         }
     });
 });
@@ -48,6 +60,12 @@ mqttClient.on('message', (topic, message) => {
         // console.log('Received map update:', map);
 
         io.emit('map update', map); // Emit to all connected clients
+    } else if (topic === modeTopic) {
+        console.log('Received "robot/mode"');
+        io.emit('robot mode', message.toString()); // Emit to all connected clients
+    } else if (topic === stateTopic) {
+        console.log('Received "robot/state"');
+        io.emit('moving state', message.toString()); // Emit to all connected clients
     }
 });
 

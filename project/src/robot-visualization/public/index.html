@@ -6,39 +6,29 @@
 <script src="/socket.io/socket.io.js"></script>
 <script src="script.js" defer></script>
 <link rel="stylesheet" href="style.css">
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #333; /* Dark grey background */
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-image: url('futuristic-background.png'); /* Add a futuristic background image */
-        background-size: cover;
-        background-position: center;
-    }
 
-    #mapContainer {
-        position: relative; /* Position the container relative to the body */
-    }
-
-    #robotMap {
-        border: 1px solid black;
-    }
-
-    #robot {
-        position: absolute; /* Position the robot image absolutely within the container */
-        transform: translate(-50%, -50%); /* Center the image */
-    }
-</style>
 </head>
 <body>
-    <div id="mapContainer">
-        <canvas id="robotMap" width="700" height="700"></canvas>
-        <img id="robot" src="robot.png" alt="Robot">
+    <div id="content">
+        <div id="mapContainer">
+            <canvas id="robotMap" width="700" height="700"></canvas>
+            <img id="robot" src="robot.png" alt="Robot">
+            <svg class="targetIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="#0000FF" d="M12 2c-4.418 0-8 3.582-8 8 0 6.064 8 14 8 14s8-7.936 8-14c0-4.418-3.582-8-8-8zm0 11.75c-1.448 0-2.625-1.177-2.625-2.625s1.177-2.625 2.625-2.625 2.625 1.177 2.625 2.625-1.177 2.625-2.625 2.625z"/>
+            </svg>
+        </div>
+        <div id="robotInfo" class="infoContainer">
+            <h2>Robot Information</h2>
+            <div id="modeContainer" class="modeContainer">
+                <div id="mode-0" class="mode">GO TO GOAL MODE</div>
+                <div id="mode-1" class="mode">WALL FOLLOWING MODE</div>
+            </div>
+            <div id="stateContainer" class="stateContainer">
+                <div id="state-0" class="state">ADJUST HEADING</div>
+                <div id="state-1" class="state">GO STRAIGHT</div>
+                <div id="state-2" class="state">GOAL ACHIEVED</div>
+            </div>
+        </div>
     </div>
     <div id="controls">
         <input type="number" id="targetX" placeholder="Target X">

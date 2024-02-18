@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetXInput = document.getElementById('targetX');
     const targetYInput = document.getElementById('targetY');
     let grid = []; // Define grid at the top level of your script
-    let robotPosition = { x: 0, y: 0, heading: 0 }; // Initial robot position and heading
-    const MAP_SIZE = 200; // n of cells
+    let targetPosition = { x: 0, y: 0 }; // Initial target position
     const MAP_ORIGIN = 100; // origin point is at [100][100]
     const GRID_SIZE  = 50 // mm
 
@@ -29,10 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let row = 0; row < numRows; row++) {
             for (let col = 0; col < numCols; col++) {
                 ctx.fillStyle = grid[row][col] === -1 ? '#D3D3D3' :
-                    grid[row][col] === 0 ? '#FFFFFF' : '#000000';
+                    grid[row][col] === 0 ? '#FFFFFF' : '#FF0000';
                 ctx.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
             }
         }
+        // Draw target icon
+        ctx.fillStyle = '#00FF00'; // Green color for the target icon
+        ctx.fillRect(targetPosition.x * cellSize, targetPosition.y * cellSize, cellSize, cellSize);
     }
 
     function drawRobot(x, y, heading) {
@@ -52,10 +54,43 @@ document.addEventListener('DOMContentLoaded', () => {
         robotImg.style.transform = 'rotate(' + heading + 'deg)';
     }
 
+    function updateRobotInfoMode(mode) {
+        const modes = ["GO TO GOAL MODE", "WALL FOLLOWING MODE"];
+        modes.forEach((m, index) => {
+            const modeElement = document.getElementById(`mode-${index}`);
+            if (m === mode) {
+                modeElement.classList.add('active');
+            } else {
+                modeElement.classList.remove('active');
+            }
+        });
+    }
+
+    function updateRobotInfoState(state) {
+        const states = ["ADJUST HEADING", "GO STRAIGHT", "GOAL ACHIEVED"];
+        states.forEach((s, index) => {
+            const stateElement = document.getElementById(`state-${index}`);
+            if (s === state) {
+                stateElement.classList.add('active');
+            } else {
+                stateElement.classList.remove('active');
+            }
+        });
+    }
+
+    function updateTargetIcon(x, y) {
+        const cellSize = canvas.width / grid[0].length; // Assuming grid is already defined
+        x = (x * 1000 / GRID_SIZE) + MAP_ORIGIN;
+        y = MAP_ORIGIN - (y * 1000 / GRID_SIZE);
+        const centerX = (x + 0.5) * cellSize;
+        const centerY = (y + 0.5) * cellSize;
+        const targetIcon = document.querySelector('.targetIcon');
+        targetIcon.style.left = centerX + 'px';
+        targetIcon.style.top = centerY + 'px';
+      }
+
     socket.on('robot position', (position) => {
-        robotPosition = position; // Update robot position
-        drawGrid(); // Redraw the grid to clear previous positions
-        drawRobot(robotPosition.x, robotPosition.y, robotPosition.heading); // Draw the robot at the new position
+        drawRobot(position.x, position.y, position.heading); // Draw the robot at the new position
         console.log('Received robot position:', position);
     });
 
@@ -65,10 +100,19 @@ document.addEventListener('DOMContentLoaded', () => {
         drawGrid(); // Now safe to call drawGrid
     });
 
+    socket.on('robot mode', (mode) => {
+        updateRobotInfoMode(mode); // Update the robot mode display
+    });
+
+    socket.on('moving state', (state) => {
+        updateRobotInfoState(state); // Update the moving state display
+    });
+
     startButton.addEventListener('click', () => {
         const x = parseFloat(targetXInput.value); // Convert input value to float
         const y = parseFloat(targetYInput.value);
         const message = { x, y }; // Create the message object
+        updateTargetIcon(x, y);
         socket.emit('start command', message); // Emit the message object to the server
     });
 
