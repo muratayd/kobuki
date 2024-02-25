@@ -10,26 +10,10 @@
 using namespace std;
 
 bool shutdown_req = false;
-//KobukiManager kobuki_manager;
 
 void signalHandler(int /* signum */)
 {
     shutdown_req = true;
-}
-
-void exampleCliffHandlerPrint(const kobuki::ButtonEvent &event) {
-    std::cout << "HELLO CLIFF" << std::endl;
-}
-
-void exampleButtonHandler(const kobuki::ButtonEvent &event) {
-    std::cout << "exampleButtonHandler" << std::endl;
-    //if (event.state == kobuki::ButtonEvent::Released) {
-        //if (event.button == kobuki::ButtonEvent::Button0) {
-            //kobuki_manager.rotate(0.5);
-        //} else if (event.button == kobuki::ButtonEvent::Button1) {
-            //kobuki_manager.playSoundSequence(0x5);
-        //}
-    //}
 }
 
 /*****************************************************************************
@@ -57,9 +41,6 @@ int main(int argc, char **argv)
     signal(SIGINT, signalHandler);
 
     ecl::MilliSleep sleep(1000);
-    //kobuki_manager.setUserButtonEventCallBack(examplePrint);
-    //kobuki_manager.setUserButtonEventCallBack(exampleButtonHandler);
-    //kobuki_manager.setUserCliffEventCallBack(exampleCliffHandlerPrint);
     int ultrasonic_sensor_trigger_pin = 18;
     int ultrasonic_sensor_echo_pin = 24;
     MotionController motion_controller;

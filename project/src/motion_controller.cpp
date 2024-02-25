@@ -9,11 +9,10 @@ const string modeTopic("robot/mode");
 const string stateTopic("robot/state");
 
 void buttonHandler(const kobuki::ButtonEvent &event) {
-    cout << "motion controller: buttonHandler" << endl;
+    cout << "motion controller: ButtonEvent" << endl;
     if (event.state == kobuki::ButtonEvent::Released) {
         if (event.button == kobuki::ButtonEvent::Button0) {
-            //button0_flag = true;
-            cout << "here" << endl;
+            cout << "Button 0 Released" << endl;
         }
     }
 }
@@ -219,17 +218,22 @@ void MotionController::Bug2Algorithm() {
     //current_yaw = kobuki_manager.getAngle();
     current_yaw = UWB_yaw;
     cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
-    cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ecl::reset << endl;
+    cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ". Cliff State: " <<
+            kobuki_manager.getCliffState() << ecl::reset << endl;
 
-    if (kobuki_manager.getBumperState() != 0) {
+    if (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0) {
         map_manager.updateMapPolar(ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
         map_manager.printMap(current_x, current_y);
     }
     setObstacleFlags();
 
+    double position_error = sqrt(
+                pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
+
     // Start of BUG 2 Algorithm
     if (robot_mode == GO_TO_GOAL_MODE) { // "go to target mode"
-        if ((moving_state == GO_STRAIGHT) && (kobuki_manager.getBumperState() != 0 || right_front_obstacle || front_obstacle || left_front_obstacle)) { // HIT!
+        if ((moving_state == GO_STRAIGHT) && (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0
+                 || right_front_obstacle || front_obstacle || left_front_obstacle)) { // HIT!
             kobuki_manager.move(longitudinal_velocity, rotational_velocity);
             robot_mode = WALL_FOLLOWING_MODE; // wall following mode
             sendModeToMQTT();
@@ -268,11 +272,12 @@ void MotionController::Bug2Algorithm() {
             } else {
                 moving_state = GO_STRAIGHT;
                 sendStateToMQTT();
+                map_manager.printMap(current_x, current_y);
                 cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
             }
         } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
-            double position_error = sqrt(
-                pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
+            //double position_error = sqrt(
+            //    pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
 
             if (position_error > 0.25) {
                 longitudinal_velocity = FORWARD_SPEED;
@@ -284,11 +289,13 @@ void MotionController::Bug2Algorithm() {
                 if (fabs(yaw_error) > yaw_precision + 0.2) {
                     moving_state = ADJUST_HEADING; // ADJUST HEADING
                     sendStateToMQTT();
+                    map_manager.printMap(current_x, current_y);
                     cout << "GO_STRAIGHT -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
                 }
             } else {   // If distance to target is smaller than 20cm
                 moving_state = GOAL_ACHIEVED; // finish successfully
                 sendStateToMQTT();
+                map_manager.printMap(current_x, current_y);
                 cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
                 kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
                 kobuki_manager.move(0.0, 0.0);
@@ -303,12 +310,25 @@ void MotionController::Bug2Algorithm() {
                 target_y = 0.0;
                 moving_state = ADJUST_HEADING;
                 sendStateToMQTT();
+                map_manager.printMap(current_x, current_y);
                 kobuki_manager.playSoundSequence(0x5);
                 cout << "GOAL_ACHIEVED -> ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
                 button0_flag = false;
             }
         }
     } else if (robot_mode == WALL_FOLLOWING_MODE) { // "wall following mode"
+        if (position_error < 0.25) {
+            robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
+            moving_state = GOAL_ACHIEVED; // finish successfully
+            sendStateToMQTT();
+            map_manager.printMap(current_x, current_y);
+            cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+            kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
+            kobuki_manager.move(0.0, 0.0);
+            kobuki_manager.playSoundSequence(0x6);
+            cout << "DONE!" << endl;
+            return;
+        }
         // Distance to the line:
         double a = hit_y - target_y;
         double b = target_x - hit_x;
@@ -324,6 +344,7 @@ void MotionController::Bug2Algorithm() {
                 map_manager.printMap(current_x, current_y);
                 robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
                 sendModeToMQTT();
+                map_manager.printMap(current_x, current_y);
                 moving_state = ADJUST_HEADING;
                 sendStateToMQTT();
                 cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
@@ -333,7 +354,7 @@ void MotionController::Bug2Algorithm() {
         }
 
         // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
-        if (kobuki_manager.getBumperState() != 0 || center_obstacle) {
+        if (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0 || center_obstacle) {
             // move backwards
             cout << "Moving backwards" << endl;
             rotational_velocity = 0.0;
@@ -349,7 +370,7 @@ void MotionController::Bug2Algorithm() {
         } else if (right_obstacle) {
             // move straight to follow the wall
             longitudinal_velocity = FORWARD_SPEED;
-        } else if (kobuki_manager.getBumperState() == 0) {
+        } else if (kobuki_manager.getBumperState() == 0 || kobuki_manager.getCliffState() != 0) {
             // turn right and move forward slowly
             longitudinal_velocity = FORWARD_SPEED;
             rotational_velocity = -FAST_ROTATION_SPEED;

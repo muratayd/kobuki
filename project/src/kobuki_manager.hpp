@@ -98,6 +98,13 @@ public:
     int getBumperState();
 
     /**
+    * @brief There are 3 cliff sensors with unique values.
+    * Each bumper sensor adds up its own value to cliff state parameter.
+    * @return int: CLIFF: 0=NoHit, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
+    */
+    int getCliffState();
+
+    /**
     * @brief Plays the sound sequence of the given value
     * @param int: Possible values:
     * kobuki::On = 0x0, kobuki::Off = 0x1, kobuki::Recharge = 0x2, kobuki::Button = 0x3,

@@ -104,6 +104,10 @@ int KobukiManager::getBumperState() {
     return data.bumper;
 }
 
+int KobukiManager::getCliffState() {
+    return data.cliff;
+}
+
 void KobukiManager::playSoundSequence(int x) {
     if (x < 0x0 || x > 0x6) {
         cout << ecl::red;
@@ -179,7 +183,7 @@ void KobukiManager::processBumperEvent(const kobuki::BumperEvent &event) {
         return;
     }
     if (event.state == kobuki::BumperEvent::Pressed) {
-        move(0.0, 0.0);
+        stop();
     }
 }
 
@@ -196,7 +200,6 @@ void KobukiManager::processCliffEvent(const kobuki::CliffEvent &event) {
         return;
     }
     if (event.state == kobuki::CliffEvent::Cliff) {
-        move(0.0, 0.0);
+        stop();
     }
-    cout << "Default processCliffEvent." << endl;
 }
