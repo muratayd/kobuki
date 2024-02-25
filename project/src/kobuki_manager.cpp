@@ -180,7 +180,6 @@ void KobukiManager::processBumperEvent(const kobuki::BumperEvent &event) {
             + ", state: " + bumper_event_state_txt[event.state]);
     if (userBumperEventCallBack != NULL) {
         userBumperEventCallBack(event);
-        return;
     }
     if (event.state == kobuki::BumperEvent::Pressed) {
         stop();
@@ -197,7 +196,6 @@ void KobukiManager::processCliffEvent(const kobuki::CliffEvent &event) {
             + " " + cliff_event_state_txt[event.state] + "!");
     if (userCliffEventCallBack != NULL) {
         userCliffEventCallBack(event);
-        return;
     }
     if (event.state == kobuki::CliffEvent::Cliff) {
         stop();

@@ -17,7 +17,8 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
     }
 }
 
-MotionController::MotionController() : mqtt_client("tcp://localhost:1883", "MotionControllerClient")  {
+MotionController::MotionController(KobukiManager& kobuki_manager)
+    : mqtt_client("tcp://localhost:1883", "MotionControllerClient"), kobuki_manager(kobuki_manager) {
     this->temp_target_x = this->target_x = 0.0;
     this->temp_target_y = this->target_y = 0.0;
     UWB_x = 0.0;

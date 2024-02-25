@@ -52,7 +52,7 @@ public:
      * Initializes the controller with target coordinates and sets up necessary
      * parameters for motion control.
      */
-    MotionController();
+    MotionController(KobukiManager& kobuki_manager);
 
     ~MotionController();
 
@@ -74,7 +74,7 @@ private:
     static const int DEFAULT_TRIGGER_PIN = 18;
     static const int DEFAULT_ECHO_PIN = 24;
 
-    KobukiManager kobuki_manager;
+    KobukiManager& kobuki_manager;
     MapManager map_manager;
     double current_x;
     double current_y;
@@ -143,10 +143,6 @@ private:
     */
     void setObstacleFlags();
     /*
-
-    * Button handler callback function
-    */
-    //static void buttonHandler(const kobuki::ButtonEvent &event);
 
     /* Add this line for the MQTT connection success handler
     * MQTT connection success handler
