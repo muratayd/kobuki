@@ -24,8 +24,22 @@ mqtt::async_client mqtt_client("tcp://localhost:1883", "MainClient");
 void bumperHandler(const kobuki::BumperEvent &event) {
     cout << "sending BumperEvent" << endl;
     // Convert the bumper state to a string
-    std::string bumper = std::to_string(event.bumper);
-    std::string state = std::to_string(event.state);
+    std::string bumper;
+    switch (event.bumper) {
+        case kobuki::BumperEvent::Bumper::Left:
+            bumper = "Left";
+            break;
+        case kobuki::BumperEvent::Bumper::Center:
+            bumper = "Center";
+            break;
+        case kobuki::BumperEvent::Bumper::Right:
+            bumper = "Right";
+            break;
+        default:
+            bumper = "Unknown";
+    }
+    // Map state enum to string representation
+    std::string state = event.state == kobuki::BumperEvent::State::Pressed ? "Pressed" : "Released";
     // Create a JSON object
     nlohmann::json j;
     j["bumper"] = bumper;
@@ -33,14 +47,28 @@ void bumperHandler(const kobuki::BumperEvent &event) {
     // Convert the JSON object to a string
     std::string message = j.dump();
     // Publish the message to the MQTT topic
-    mqtt_client.publish("bumperTopic", message);
+    mqtt_client.publish("robot/bumper", message);
 }
 
 void cliffHandler(const kobuki::CliffEvent &event) {
     cout << "sending CliffEvent" << endl;
-    // Convert the cliff state to a string
-    std::string sensor = std::to_string(event.sensor);
-    std::string state = std::to_string(event.state);
+    // Map sensor enum to string representation
+    std::string sensor;
+    switch (event.sensor) {
+        case kobuki::CliffEvent::Sensor::Left:
+            sensor = "Left";
+            break;
+        case kobuki::CliffEvent::Sensor::Center:
+            sensor = "Center";
+            break;
+        case kobuki::CliffEvent::Sensor::Right:
+            sensor = "Right";
+            break;
+        default:
+            sensor = "Unknown";
+    }
+    // Map state enum to string representation
+    std::string state = event.state == kobuki::CliffEvent::State::Floor ? "Floor" : "Cliff";
     // Create a JSON object
     nlohmann::json j;
     j["state"] = state;
@@ -48,7 +76,7 @@ void cliffHandler(const kobuki::CliffEvent &event) {
     // Convert the JSON object to a string
     std::string message = j.dump();
     // Publish the message to the MQTT topic
-    mqtt_client.publish("cliffTopic", message);
+    mqtt_client.publish("robot/cliff", message);
 }
 
 // MQTT Client Initialization

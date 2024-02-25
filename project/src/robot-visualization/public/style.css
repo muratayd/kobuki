@@ -68,6 +68,81 @@ body {
   color: #fff; /* White text color for active mode/state */
 }
 
+.sensorContainer {
+  position: relative; /* Position the container relative to the body */
+  margin-top: 10px;
+}
+
+.sensorContainer h3 {
+  margin: 10px 0; /* Add margin above and below the sensor headings */
+}
+
+#kobukiImageBumper {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 40px;
+  left: 20px;
+}
+
+#kobukiImageCliff {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 170px;
+  left: 20px;
+}
+
+.sensor {
+  position: absolute; /* Position the sensors absolutely within the container */
+  background-color: #0f0; /* Make the sensor elements transparent */
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  border-radius: 50%;
+}
+
+#bumperLeft {
+  top: 70px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+}
+
+#bumperCenter {
+  top: 40px; /* Adjust top position as needed */
+  left: 55px; /* Adjust left position as needed */
+}
+
+#bumperRight {
+  top: 70px; /* Adjust top position as needed */
+  left: 90px; /* Adjust left position as needed */
+}
+
+#cliffLeft {
+  top: 200px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+}
+
+#cliffCenter {
+  top: 170px; /* Adjust top position as needed */
+  left: 55px; /* Adjust left position as needed */
+}
+
+#cliffRight {
+  top: 200px; /* Adjust top position as needed */
+  left: 90px; /* Adjust left position as needed */
+}
+
+.pressed {
+  background-color: #f00; /* Red color for bumper sensor */
+}
+
+.released {
+  background-color: #0f0; /* Green color for cliff sensor */
+}
+
+.floor {
+  background-color: #0f0; /* Green color for cliff sensor */
+}
+
+.cliff {
+  background-color: #f00; /* Red color for bumper sensor */
+}
+
 #controls {
   display: flex;
   justify-content: center;

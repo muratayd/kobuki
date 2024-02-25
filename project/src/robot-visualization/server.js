@@ -17,6 +17,8 @@ const mapTopic = 'robot/map'; // Topic for sending target position
 const modeTopic = 'robot/mode'; // Topic for receiving robot mode
 const stateTopic = 'robot/state'; // Topic for receiving robot state
 const positionTopic = 'pozyx/position'; // Topic for receiving robot position
+const bumperTopic = 'robot/bumper'; // Topic for receiving bumper state
+const cliffTopic = 'robot/cliff'; // Topic for receiving cliff state
 
 mqttClient.on('connect', () => {
     console.log('Connected to MQTT broker');
@@ -38,6 +40,16 @@ mqttClient.on('connect', () => {
     mqttClient.subscribe(stateTopic, (err) => {
         if (!err) {
         console.log('Subscribed to "robot/state"');
+        }
+    });
+    mqttClient.subscribe(bumperTopic, (err) => {
+        if (!err) {
+        console.log('Subscribed to "robot/bumper"');
+        }
+    });
+    mqttClient.subscribe(cliffTopic, (err) => {
+        if (!err) {
+        console.log('Subscribed to "robot/cliff"');
         }
     });
 });
@@ -66,6 +78,16 @@ mqttClient.on('message', (topic, message) => {
     } else if (topic === stateTopic) {
         console.log('Received "robot/state"');
         io.emit('moving state', message.toString()); // Emit to all connected clients
+    } else if (topic === bumperTopic) {
+        console.log('Received "bumperTopic"');
+        // Parse bumper message
+        const data = JSON.parse(message.toString());
+        io.emit('bumper state', data);
+    } else if (topic === cliffTopic) {
+        console.log('Received "cliffTopic"');
+        // Parse cliff message
+        const data = JSON.parse(message.toString());
+        io.emit('cliff state', data);
     }
 });
 

@@ -87,11 +87,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetIcon = document.querySelector('.targetIcon');
         targetIcon.style.left = centerX + 'px';
         targetIcon.style.top = centerY + 'px';
-      }
+    }
+
+    function updateSensorState(sensorType, sensor, state) {
+        const sensorElement = document.getElementById(`${sensorType}${sensor}`);
+        if (!sensorElement) return; // Sensor element not found, return early
+        console.log('sensorElement', sensorElement);
+        sensorElement.classList.remove('pressed', 'released', 'floor', 'cliff');
+        sensorElement.classList.add(state.toLowerCase());
+    }
 
     socket.on('robot position', (position) => {
         drawRobot(position.x, position.y, position.heading); // Draw the robot at the new position
-        console.log('Received robot position:', position);
+        //console.log('Received robot position:', position);
     });
 
     socket.on('map update', (newGrid) => {
@@ -106,6 +114,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('moving state', (state) => {
         updateRobotInfoState(state); // Update the moving state display
+    });
+
+    socket.on('bumper state', (data) => {
+        updateSensorState('bumper', data.bumper, data.state);
+        console.log('Received bumper state:', data);
+    });
+
+    socket.on('cliff state', (data) => {
+        updateSensorState('cliff', data.sensor, data.state);
+        console.log('Received cliff state:', data);
     });
 
     startButton.addEventListener('click', () => {
