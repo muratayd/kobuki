@@ -111,6 +111,7 @@ private:
         "wall following mode": Robot will follow a wall */
     enum robot_mode_enum
     {
+        CUSTOM_MODE,
         GO_TO_GOAL_MODE,
         WALL_FOLLOWING_MODE
     } robot_mode;

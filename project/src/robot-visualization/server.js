@@ -11,9 +11,10 @@ const mqttClient = mqtt.connect('mqtt://localhost'); // Replace with your MQTT b
 app.use(express.static('public'));
 
 // MQTT Topics
-const controlTopic = 'robot/control'; // Topic for start/stop commands
-const targetTopic = 'robot/target'; // Topic for sending target position
-const mapTopic = 'robot/map'; // Topic for sending target position
+const stopTopic = 'webUI/stop'; // Topic for start/stop commands
+const targetTopic = 'webUI/target'; // Topic for sending target position
+const moveTopic = 'webUI/move'; // Topic for sending target position
+const mapTopic = 'robot/map'; // Topic for receiving map
 const modeTopic = 'robot/mode'; // Topic for receiving robot mode
 const stateTopic = 'robot/state'; // Topic for receiving robot state
 const positionTopic = 'pozyx/position'; // Topic for receiving robot position
@@ -73,10 +74,10 @@ mqttClient.on('message', (topic, message) => {
 
         io.emit('map update', map); // Emit to all connected clients
     } else if (topic === modeTopic) {
-        console.log('Received "robot/mode"');
+        console.log('Received "robot/mode"', message.toString());
         io.emit('robot mode', message.toString()); // Emit to all connected clients
     } else if (topic === stateTopic) {
-        console.log('Received "robot/state"');
+        console.log('Received "robot/state"', message.toString());
         io.emit('moving state', message.toString()); // Emit to all connected clients
     } else if (topic === bumperTopic) {
         console.log('Received "bumperTopic"');
@@ -102,10 +103,17 @@ io.on('connection', (socket) => {
         console.log(`Publishing start command to ${targetTopic}:`, message);
     });
 
+    // Handle 'move command' from clients
+    socket.on('move command', (data) => {
+        const message = JSON.stringify(data);
+        mqttClient.publish(moveTopic, message);
+        console.log(`Publishing move command to ${moveTopic}:`, message);
+    });
+
     // Handle 'stop command' from clients
     socket.on('stop command', () => {
-        mqttClient.publish(controlTopic, 'STOP');
-        console.log(`Publishing stop command to ${controlTopic}`);
+        mqttClient.publish(stopTopic, 'STOP');
+        console.log(`Publishing stop command to ${stopTopic}`);
     });
 });
 

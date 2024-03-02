@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const robotImg = document.getElementById('robot');
     const startButton = document.getElementById('start');
     const stopButton = document.getElementById('stop');
+    const stop2Button = document.getElementById('stop2');
+    const moveButton = document.getElementById('move');
     const targetXInput = document.getElementById('targetX');
     const targetYInput = document.getElementById('targetY');
+    const longitudinalInput = document.getElementById('longitudinal_velocity');
+    const rotationalInput = document.getElementById('rotational_velocity');
     let grid = []; // Define grid at the top level of your script
     let targetPosition = { x: 0, y: 0 }; // Initial target position
     const MAP_ORIGIN = 100; // origin point is at [100][100]
@@ -55,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateRobotInfoMode(mode) {
-        const modes = ["GO TO GOAL MODE", "WALL FOLLOWING MODE"];
+        const modes = ["CUSTOM MODE", "GO TO GOAL MODE", "WALL FOLLOWING MODE"];
         modes.forEach((m, index) => {
             const modeElement = document.getElementById(`mode-${index}`);
             if (m === mode) {
@@ -136,5 +140,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     stopButton.addEventListener('click', () => {
         socket.emit('stop command'); // Emit a stop command event without additional data
+    });
+
+    stop2Button.addEventListener('click', () => {
+        socket.emit('stop command'); // Emit a stop command event without additional data
+    });
+
+    moveButton.addEventListener('click', () => {
+        const longitudinal_velocity = parseFloat(longitudinalInput.value); // Convert input value to float
+        const rotational_velocity = parseFloat(rotationalInput.value);
+        const message = { longitudinal_velocity, rotational_velocity }; // Create the message object
+        socket.emit('move command', message); // Emit the message object to the server
     });
 });

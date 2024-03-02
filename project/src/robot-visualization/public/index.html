@@ -20,8 +20,9 @@
         <div id="robotInfo" class="infoContainer">
             <h2>Robot Information</h2>
             <div id="modeContainer" class="modeContainer">
-                <div id="mode-0" class="mode">GO TO GOAL MODE</div>
-                <div id="mode-1" class="mode">WALL FOLLOWING MODE</div>
+                <div id="mode-0" class="mode">FREE MODE</div>
+                <div id="mode-1" class="mode">GO TO GOAL MODE</div>
+                <div id="mode-2" class="mode">WALL FOLLOWING MODE</div>
             </div>
             <div id="stateContainer" class="stateContainer">
                 <div id="state-0" class="state">ADJUST HEADING</div>
@@ -43,12 +44,22 @@
                 <br><br><br><br><br>
             </div>
         </div>
+        <div id="inputs">
+            <div id="controls">
+                <input type="number" id="targetX" placeholder="Target X">
+                <input type="number" id="targetY" placeholder="Target Y">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+            </div>
+            <div class="line-break"></div>
+            <div id="movement">
+                <input type="number" id="longitudinal_velocity" placeholder="Longitudinal">
+                <input type="number" id="rotational_velocity" placeholder="Rotational">
+                <button id="move">Move</button>
+                <button id="stop2">Stop</button>
+            </div>
+        </div>
     </div>
-    <div id="controls">
-        <input type="number" id="targetX" placeholder="Target X">
-        <input type="number" id="targetY" placeholder="Target Y">
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-    </div>
+
 </body>
 </html>

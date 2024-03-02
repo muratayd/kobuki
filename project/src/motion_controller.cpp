@@ -74,8 +74,9 @@ void MotionController::on_connected(const std::string& cause) {
     // Subscribe to topics
     mqtt_client.subscribe("sensor/distance", 1);
     mqtt_client.subscribe("pozyx/position", 1);
-    mqtt_client.subscribe("robot/target", 1);
-    mqtt_client.subscribe("robot/control", 1);
+    mqtt_client.subscribe("webUI/target", 1);
+    mqtt_client.subscribe("webUI/stop", 1);
+    mqtt_client.subscribe("webUI/move", 1);
 }
 
 // MQTT Message Arrival Handler
@@ -127,7 +128,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         // Set the flag and notify
         pozyx_position_received = true;
         cv.notify_one();
-    } else if (msg->get_topic() == "robot/target") {
+    } else if (msg->get_topic() == "webUI/target") {
         // Update based on target message
         std::string payload = msg->to_string();
         try {
@@ -137,6 +138,8 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             double y = j["y"];
             temp_target_x = target_x = x;
             temp_target_y = target_y = y;
+            robot_mode = GO_TO_GOAL_MODE;
+            sendModeToMQTT();
             moving_state = ADJUST_HEADING;
             sendStateToMQTT();
             kobuki_manager.playSoundSequence(0x5);
@@ -148,17 +151,42 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         } catch (std::exception& e) {
             std::cerr << "Some other error: " << e.what() << '\n';
         }
-    } else if (msg->get_topic() == "robot/control") {
+    } else if (msg->get_topic() == "webUI/stop") {
         std::string payload = msg->to_string();
         if (payload == "STOP") {
             // Handle the stop command, e.g., stop the robot
             kobuki_manager.stop();
             std::cout << "Stop command received." << std::endl;
             robot_mode = GO_TO_GOAL_MODE;
+            sendModeToMQTT();
             moving_state = GOAL_ACHIEVED;
+            sendStateToMQTT();
             kobuki_manager.playSoundSequence(0x6);
         } else {
             std::cout << "Received message: " << payload << std::endl;
+        }
+    } else if (msg->get_topic() == "webUI/move") {
+        // Update based on target message
+        std::string payload = msg->to_string();
+        try {
+            // Attempt to convert the string payload to a double
+            auto j = json::parse(payload);
+            double longitudinal_velocity = j["longitudinal_velocity"];
+            double rotational_velocity = j["rotational_velocity"];
+            robot_mode = CUSTOM_MODE;
+            sendModeToMQTT();
+            moving_state = GOAL_ACHIEVED;
+            sendStateToMQTT();
+            kobuki_manager.move(longitudinal_velocity, rotational_velocity);
+            kobuki_manager.playSoundSequence(0x5);
+            std::cout << "New robot movement received: longitudinal_velocity: " << longitudinal_velocity << 
+                    ", rotational_velocity: " << rotational_velocity << std::endl;
+        } catch (json::parse_error& e) {
+            std::cerr << "Parsing error: " << e.what() << '\n';
+        } catch (json::type_error& e) {
+            std::cerr << "Type error: " << e.what() << '\n';
+        } catch (std::exception& e) {
+            std::cerr << "Some other error: " << e.what() << '\n';
         }
     }
 }
@@ -166,6 +194,9 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
 void MotionController::sendModeToMQTT() {
     std::string mode;
     switch (robot_mode) {
+        case CUSTOM_MODE:
+            mode = "CUSTOM MODE";
+            break;
         case GO_TO_GOAL_MODE:
             mode = "GO TO GOAL MODE";
             break;
@@ -208,6 +239,11 @@ void MotionController::sendStateToMQTT() {
 
 
 void MotionController::Bug2Algorithm() {
+
+    if (robot_mode == CUSTOM_MODE) {
+        return;
+    }
+
     double longitudinal_velocity = 0.0;
     double rotational_velocity = 0.0;
 
@@ -299,7 +335,7 @@ void MotionController::Bug2Algorithm() {
                 map_manager.printMap(current_x, current_y);
                 cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
                 kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
-                kobuki_manager.move(0.0, 0.0);
+                kobuki_manager.stop();
                 kobuki_manager.playSoundSequence(0x6);
                 cout << "DONE!" << endl;
             }
@@ -325,7 +361,7 @@ void MotionController::Bug2Algorithm() {
             map_manager.printMap(current_x, current_y);
             cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
             kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
-            kobuki_manager.move(0.0, 0.0);
+            kobuki_manager.stop();
             kobuki_manager.playSoundSequence(0x6);
             cout << "DONE!" << endl;
             return;
