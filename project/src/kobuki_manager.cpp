@@ -141,7 +141,8 @@ void KobukiManager::processStreamData() {
     ecl::linear_algebra::Vector3d pose_update_rates;
     kobuki.updateOdometry(pose_update, pose_update_rates);
     pose = ecl::concatenate_poses(pose, pose_update);
-    pose[2] = ecl::wrap_angle(initial_heading + kobuki.getHeading()); // override odometry heading with more precise gyro data
+    // override odometry heading with more precise gyro data:
+    pose[2] = ecl::wrap_angle(initial_heading + kobuki.getHeading());
     data = kobuki.getCoreSensorData();
 }
 
@@ -175,20 +176,23 @@ void KobukiManager::processButtonEvent(const kobuki::ButtonEvent &event) {
 void KobukiManager::processBumperEvent(const kobuki::BumperEvent &event) {
     static const string bumper_event_state_txt[] = {"Released", "Pressed"};
     static const string bumper_event_bumper_txt[] = {"Left", "Center", "Right"};
+    if (event.state == kobuki::BumperEvent::Pressed) {
+        stop();
+    }
     cout << ecl::red;
     customLogger("Bumper: " + bumper_event_bumper_txt[event.bumper]
             + ", state: " + bumper_event_state_txt[event.state]);
     if (userBumperEventCallBack != NULL) {
         userBumperEventCallBack(event);
     }
-    if (event.state == kobuki::BumperEvent::Pressed) {
-        stop();
-    }
 }
 
 void KobukiManager::processCliffEvent(const kobuki::CliffEvent &event) {
     static const string cliff_event_state_txt[] = {"Floor", "Cliff"};
     static const string cliff_event_sensor_txt[] = {"Left", "Center", "Right"};
+    if (event.state == kobuki::CliffEvent::Cliff) {
+        stop();
+    }
      // Ref: ecl/console.hpp for console formatting
     if (event.state == kobuki::CliffEvent::Cliff) cout << ecl::red << ecl::underline;
     else cout << ecl::cyan << ecl::concealed;
@@ -196,8 +200,5 @@ void KobukiManager::processCliffEvent(const kobuki::CliffEvent &event) {
             + " " + cliff_event_state_txt[event.state] + "!");
     if (userCliffEventCallBack != NULL) {
         userCliffEventCallBack(event);
-    }
-    if (event.state == kobuki::CliffEvent::Cliff) {
-        stop();
     }
 }
