@@ -17,15 +17,21 @@ const moveTopic = 'webUI/move'; // Topic for sending target position
 const mapTopic = 'robot/map'; // Topic for receiving map
 const modeTopic = 'robot/mode'; // Topic for receiving robot mode
 const stateTopic = 'robot/state'; // Topic for receiving robot state
-const positionTopic = 'pozyx/position'; // Topic for receiving robot position
+const positionTopic = 'pozyx/position'; // Topic for receiving robot position from pozyx
 const bumperTopic = 'robot/bumper'; // Topic for receiving bumper state
 const cliffTopic = 'robot/cliff'; // Topic for receiving cliff state
+const coordinatesTopic = 'robot/coordinates'; // Topic for receiving robot coordinates
 
 mqttClient.on('connect', () => {
     console.log('Connected to MQTT broker');
     mqttClient.subscribe(positionTopic, (err) => {
         if (!err) {
         console.log('Subscribed to "pozyx/position"');
+        }
+    });
+    mqttClient.subscribe(coordinatesTopic, (err) => {
+        if (!err) {
+        console.log('Subscribed to "robot/coordinates"');
         }
     });
     mqttClient.subscribe(mapTopic, (err) => {
@@ -59,7 +65,11 @@ mqttClient.on('message', (topic, message) => {
     if (topic === positionTopic) {
         //console.log('Received "pozyx/position"');
         const positionData = JSON.parse(message.toString()); // Assuming the message is a JSON string
-        io.emit('robot position', positionData); // Emit to all connected clients
+        io.emit('pozyx position', positionData); // Emit to all connected clients
+    } else if (topic === coordinatesTopic) {
+        //console.log('Received "robot/coordinates"');
+        const positionData = JSON.parse(message.toString()); // Assuming the message is a JSON string
+        io.emit('robot coordinates', positionData); // Emit to all connected clients
     } else if (topic === mapTopic) {
         console.log('Received "robot/map"');
         // Assuming the message contains a flattened array of integers

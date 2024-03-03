@@ -32,13 +32,14 @@
 *****************************************************************************/
 
 #define FORWARD_SPEED 0.2
-#define ROTATION_SPEED 0.8
-#define FAST_ROTATION_SPEED 1.1
+#define ROTATION_SPEED 0.7
+#define FAST_ROTATION_SPEED 1.0
 #define LEFT_BUMPER 4
 #define RIGHT_BUMPER 1
 #define CENTER_BUMPER 2
 #define CM_TO_M 0.01
 #define MM_TO_M 0.001
+#define M_TO_MM 1000
 
 /*****************************************************************************
 ** Classes
@@ -157,6 +158,10 @@ private:
     /* MQTT send Robot state
     */
     void sendStateToMQTT();
+
+    /* MQTT send Robot coordinates
+    */
+    void sendCoordinatesToMQTT();
 };
 
 #endif /* MOTION_CONTROLLER_HPP_ */

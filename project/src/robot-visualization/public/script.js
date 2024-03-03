@@ -101,7 +101,30 @@ document.addEventListener('DOMContentLoaded', () => {
         sensorElement.classList.add(state.toLowerCase());
     }
 
-    socket.on('robot position', (position) => {
+    function updatePozyxInfoPos(x, y, heading) {
+        const posElement = document.getElementById(`pozyxPos`);
+        if (!posElement) return; // Position element not found, return early
+        posElement.innerText = `Pozyx: (${x}, ${y}, ${heading})`;
+    }
+
+    function updateRobotInfoPos(x, y, heading) {
+        const posElement = document.getElementById(`robotPos`);
+        if (!posElement) return; // Position element not found, return early
+        // Limit the number of characters in the heading field to 10
+        if (heading.length > 10) {
+            heading = heading.substring(0, 10);
+        }
+        posElement.innerText = `Odometry: (${x}, ${y}, ${heading})`;
+    }
+
+    socket.on('robot coordinates', (position) => {
+        updateRobotInfoPos(position.x, position.y, position.heading);
+        //drawRobot(position.x, position.y, position.heading); // Draw the robot at the new position
+        //console.log('Received robot position:', position);
+    });
+
+    socket.on('pozyx position', (position) => {
+        updatePozyxInfoPos(position.x, position.y, position.heading);
         drawRobot(position.x, position.y, position.heading); // Draw the robot at the new position
         //console.log('Received robot position:', position);
     });

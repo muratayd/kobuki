@@ -7,6 +7,7 @@ using namespace std;
 
 const string modeTopic("robot/mode");
 const string stateTopic("robot/state");
+const string coordinatesTopic("robot/coordinates");
 
 void buttonHandler(const kobuki::ButtonEvent &event) {
     cout << "motion controller: ButtonEvent" << endl;
@@ -128,6 +129,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         // Set the flag and notify
         pozyx_position_received = true;
         cv.notify_one();
+        sendCoordinatesToMQTT();
     } else if (msg->get_topic() == "webUI/target") {
         // Update based on target message
         std::string payload = msg->to_string();
@@ -177,7 +179,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             sendModeToMQTT();
             moving_state = GOAL_ACHIEVED;
             sendStateToMQTT();
-            kobuki_manager.move(longitudinal_velocity, rotational_velocity);
+            kobuki_manager.move(longitudinal_velocity * CM_TO_M, rotational_velocity);
             kobuki_manager.playSoundSequence(0x5);
             std::cout << "New robot movement received: longitudinal_velocity: " << longitudinal_velocity << 
                     ", rotational_velocity: " << rotational_velocity << std::endl;
@@ -212,6 +214,25 @@ void MotionController::sendModeToMQTT() {
     mqtt::message_ptr msg = mqtt::make_message(modeTopic, mode);
     mqtt_client.publish(msg);
     std::cout << "Robot mode sent to MQTT: " << mode << std::endl;
+}
+
+void MotionController::sendCoordinatesToMQTT() {
+    // Create a JSON object
+    json j;
+    j["x"] = (int) (kobuki_manager.getCoordinates()[0] * M_TO_MM);
+    j["y"] = (int) (kobuki_manager.getCoordinates()[1] * M_TO_MM);
+    // Convert heading to string
+    std::string headingStr = std::to_string(kobuki_manager.getAngle() * (180.0 / ecl::pi));
+    // Limit the number of characters in heading field to 6
+    j["heading"] = headingStr.substr(0, 7);
+
+    // Convert the JSON object to a string
+    std::string payload = j.dump();
+
+    // Publish the coordinates to the MQTT broker
+    mqtt::message_ptr msg = mqtt::make_message(coordinatesTopic, payload);
+    mqtt_client.publish(msg);
+    //std::cout << "Robot coordinates sent to MQTT: " << payload << std::endl;
 }
 
 void MotionController::sendStateToMQTT() {
@@ -249,12 +270,14 @@ void MotionController::Bug2Algorithm() {
 
     // Get the most recent coordinates from UWB and Kobuki, and calculate the average
     vector<double> kobuki_coordinates = kobuki_manager.getCoordinates();
-    cout << ecl::green << "kobuki_coordinates: [x: " << kobuki_coordinates[0] << ", y: " << kobuki_coordinates[1] << ecl::reset << endl;
+    cout << ecl::green << "kobuki_coordinates: [x: " << kobuki_coordinates[0] 
+            << ", y: " << kobuki_coordinates[1] << ecl::reset << endl;
     current_x = (0.2 * UWB_x + 0.8 * kobuki_coordinates[0]);
     current_y = (0.2 * UWB_y + 0.8 * kobuki_coordinates[1]);
     //current_yaw = kobuki_manager.getAngle();
     current_yaw = UWB_yaw;
-    cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". [x: " << current_x << ", y: " << current_y;
+    cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << 
+            ". [x: " << current_x << ", y: " << current_y;
     cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ". Cliff State: " <<
             kobuki_manager.getCliffState() << ecl::reset << endl;
 
@@ -281,8 +304,10 @@ void MotionController::Bug2Algorithm() {
                     pow(target_x - hit_x, 2)) +
                     (pow(target_y - hit_y, 2)));
             map_manager.printMap(current_x, current_y);
-            cout << "hit_x: " << hit_x << " hit_y: " << hit_y << " distance_to_goal_from_hit_point: " << distance_to_goal_from_hit_point << endl;
-            cout << "GO_TO_GOAL_MODE, GO_STRAIGHT -> WALL_FOLLOWING_MODE robot_mode: " << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
+            cout << "hit_x: " << hit_x << " hit_y: " << hit_y << " distance_to_goal_from_hit_point: " 
+                    << distance_to_goal_from_hit_point << endl;
+                    cout << "GO_TO_GOAL_MODE, GO_STRAIGHT -> WALL_FOLLOWING_MODE robot_mode: " 
+                    << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
             // stop and switch to wall mode
             return;
         }
@@ -310,7 +335,8 @@ void MotionController::Bug2Algorithm() {
                 moving_state = GO_STRAIGHT;
                 sendStateToMQTT();
                 map_manager.printMap(current_x, current_y);
-                cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
+                cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode 
+                        << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
             }
         } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
             //double position_error = sqrt(
@@ -327,13 +353,15 @@ void MotionController::Bug2Algorithm() {
                     moving_state = ADJUST_HEADING; // ADJUST HEADING
                     sendStateToMQTT();
                     map_manager.printMap(current_x, current_y);
-                    cout << "GO_STRAIGHT -> ADJUST_HEADING robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+                    cout << "GO_STRAIGHT -> ADJUST_HEADING robot_mode: " << robot_mode 
+                            << ", moving_mode: " << moving_state << endl;
                 }
             } else {   // If distance to target is smaller than 20cm
                 moving_state = GOAL_ACHIEVED; // finish successfully
                 sendStateToMQTT();
                 map_manager.printMap(current_x, current_y);
-                cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+                cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode 
+                        << ", moving_mode: " << moving_state << endl;
                 kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
                 kobuki_manager.stop();
                 kobuki_manager.playSoundSequence(0x6);
@@ -349,7 +377,8 @@ void MotionController::Bug2Algorithm() {
                 sendStateToMQTT();
                 map_manager.printMap(current_x, current_y);
                 kobuki_manager.playSoundSequence(0x5);
-                cout << "GOAL_ACHIEVED -> ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
+                cout << "GOAL_ACHIEVED -> ADJUST_HEADING Robot mode: " 
+                        << robot_mode << ", moving mode: " << moving_state << endl;
                 button0_flag = false;
             }
         }
@@ -359,7 +388,8 @@ void MotionController::Bug2Algorithm() {
             moving_state = GOAL_ACHIEVED; // finish successfully
             sendStateToMQTT();
             map_manager.printMap(current_x, current_y);
-            cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode << ", moving_mode: " << moving_state << endl;
+            cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode 
+                    << ", moving_mode: " << moving_state << endl;
             kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
             kobuki_manager.stop();
             kobuki_manager.playSoundSequence(0x6);
@@ -384,7 +414,8 @@ void MotionController::Bug2Algorithm() {
                 map_manager.printMap(current_x, current_y);
                 moving_state = ADJUST_HEADING;
                 sendStateToMQTT();
-                cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " << robot_mode << ", moving mode: " << moving_state << endl;
+                cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " 
+                        << robot_mode << ", moving mode: " << moving_state << endl;
                 kobuki_manager.move(longitudinal_velocity, rotational_velocity);
                 return;
             }
@@ -465,7 +496,8 @@ void MotionController::setObstacleFlags() {
     cout << "OBSTACLES:" << left_obstacle << "   " << center_obstacle << "   " << right_obstacle << endl;
 }
 
-double MotionController::getYawError(double current_x, double current_y, double current_yaw, double target_x, double target_y) {
+double MotionController::getYawError(double current_x, double current_y, 
+        double current_yaw, double target_x, double target_y) {
     double desired_yaw = atan2(
         target_y - current_y,
         target_x - current_x);
