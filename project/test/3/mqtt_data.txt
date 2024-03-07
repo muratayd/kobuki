@@ -1,0 +1,2530 @@
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 485.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -575.0, "y": 482.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -576.0, "y": 483.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 488.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 482.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -575.0, "y": 483.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 488.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 492.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -575.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -576.0, "y": 499.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -579.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -577.0, "y": 498.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -577.0, "y": 488.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 490.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -569.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -567.0, "y": 500.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -569.0, "y": 499.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 498.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 499.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 502.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 503.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": 498.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 500.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 495.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": 493.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 494.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 499.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 502.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 500.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 499.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 501.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 489.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -569.0, "y": 479.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -568.0, "y": 480.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -569.0, "y": 485.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": 485.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 489.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -575.0, "y": 490.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 488.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 492.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 495.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 499.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -578.0, "y": 498.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -576.0, "y": 493.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -579.0, "y": 482.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -580.0, "y": 479.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -580.0, "y": 479.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -580.0, "y": 482.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -578.0, "y": 487.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -579.0, "y": 493.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 491.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -576.0, "y": 490.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -577.0, "y": 489.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -575.0, "y": 490.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -577.0, "y": 484.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 488.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": 486.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -571.0, "y": 482.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 486.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -569.0, "y": 488.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": 490.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": 494.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -569.0, "y": 497.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 496.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -573.0, "y": 496.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 491.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 483.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -566.0, "y": 481.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -569.0, "y": 482.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -567.0, "y": 479.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -564.0, "y": 484.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -562.0, "y": 486.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -563.0, "y": 480.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -566.0, "y": 483.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -568.0, "y": 482.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -575.0, "y": 486.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -578.0, "y": 490.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -577.0, "y": 485.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 489.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.81","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -575.0, "y": 491.0, "heading": 178.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.80","x":-569,"y":504}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 494.0, "heading": 177.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.36","x":-569,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": -577.0, "y": 500.0, "heading": 169.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-171.25","x":-570,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": -590.0, "y": 496.0, "heading": 161.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-162.88","x":-570,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": -587.0, "y": 478.0, "heading": 152.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-153.86","x":-570,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": -593.0, "y": 460.0, "heading": 143.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-145.14","x":-571,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": -596.0, "y": 441.0, "heading": 134.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-136.61","x":-571,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": -619.0, "y": 445.0, "heading": 125.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-126.79","x":-571,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": -628.0, "y": 451.0, "heading": 116.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-118.07","x":-571,"y":502}'
+Topic: pozyx/position
+Message: b'{"x": -620.0, "y": 442.0, "heading": 106.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-108.07","x":-571,"y":502}'
+Topic: pozyx/position
+Message: b'{"x": -611.0, "y": 442.0, "heading": 97.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-99.172","x":-571,"y":502}'
+Topic: pozyx/position
+Message: b'{"x": -589.0, "y": 432.0, "heading": 87.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-89.812","x":-571,"y":502}'
+Topic: pozyx/position
+Message: b'{"x": -574.0, "y": 420.0, "heading": 77.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-79.952","x":-571,"y":502}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 415.0, "heading": 68.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-70.432","x":-571,"y":501}'
+Topic: pozyx/position
+Message: b'{"x": -585.0, "y": 399.0, "heading": 58.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-58.842","x":-571,"y":501}'
+Topic: pozyx/position
+Message: b'{"x": -572.0, "y": 404.0, "heading": 48.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-50.302","x":-571,"y":501}'
+Topic: pozyx/position
+Message: b'{"x": -557.0, "y": 421.0, "heading": 37.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-40.752","x":-571,"y":501}'
+Topic: pozyx/position
+Message: b'{"x": -541.0, "y": 424.0, "heading": 27.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-29.852","x":-569,"y":500}'
+Topic: pozyx/position
+Message: b'{"x": -527.0, "y": 443.0, "heading": 21.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-22.902","x":-563,"y":497}'
+Topic: pozyx/position
+Message: b'{"x": -520.0, "y": 444.0, "heading": 13.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-14.702","x":-556,"y":495}'
+Topic: pozyx/position
+Message: b'{"x": -512.0, "y": 416.0, "heading": 5.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-7.5325","x":-553,"y":494}'
+Topic: pozyx/position
+Message: b'{"x": -495.0, "y": 417.0, "heading": 4.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-5.8125","x":-548,"y":493}'
+Topic: pozyx/position
+Message: b'{"x": -478.0, "y": 404.0, "heading": 3.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-4.8625","x":-529,"y":491}'
+Topic: pozyx/position
+Message: b'{"x": -453.0, "y": 405.0, "heading": 3.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-4.1125","x":-494,"y":489}'
+Topic: pozyx/position
+Message: b'{"x": -426.0, "y": 399.0, "heading": 2.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-3.3725","x":-462,"y":487}'
+Topic: pozyx/position
+Message: b'{"x": -386.0, "y": 384.0, "heading": 1.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-2.6025","x":-427,"y":485}'
+Topic: pozyx/position
+Message: b'{"x": -354.0, "y": 358.0, "heading": 0.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-1.9525","x":-394,"y":483}'
+Topic: pozyx/position
+Message: b'{"x": -307.0, "y": 334.0, "heading": 0.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-1.0225","x":-358,"y":482}'
+Topic: pozyx/position
+Message: b'{"x": -279.0, "y": 316.0, "heading": 359.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.3725","x":-325,"y":482}'
+Topic: pozyx/position
+Message: b'{"x": -248.0, "y": 311.0, "heading": 358.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.41750","x":-285,"y":482}'
+Topic: pozyx/position
+Message: b'{"x": -200.0, "y": 337.0, "heading": 358.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.95750","x":-255,"y":482}'
+Topic: pozyx/position
+Message: b'{"x": -172.0, "y": 344.0, "heading": 357.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"1.51750","x":-221,"y":483}'
+Topic: pozyx/position
+Message: b'{"x": -127.0, "y": 354.0, "heading": 356.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.25750","x":-184,"y":484}'
+Topic: pozyx/position
+Message: b'{"x": -101.0, "y": 354.0, "heading": 356.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.96750","x":-147,"y":486}'
+Topic: pozyx/position
+Message: b'{"x": -77.0, "y": 342.0, "heading": 355.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"3.50750","x":-113,"y":488}'
+Topic: pozyx/position
+Message: b'{"x": -46.0, "y": 326.0, "heading": 355.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"3.94750","x":-78,"y":490}'
+Topic: pozyx/position
+Message: b'{"x": -1.0, "y": 315.0, "heading": 354.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"4.56750","x":-44,"y":493}'
+Topic: pozyx/position
+Message: b'{"x": 24.0, "y": 314.0, "heading": 353.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05750","x":-6,"y":496}'
+Topic: pozyx/position
+Message: b'{"x": 54.0, "y": 311.0, "heading": 353.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.55750","x":35,"y":500}'
+Topic: pozyx/position
+Message: b'{"x": 71.0, "y": 338.0, "heading": 354.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.40750","x":60,"y":502}'
+Topic: pozyx/position
+Message: b'{"x": 132.0, "y": 337.0, "heading": 1.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.8825","x":71,"y":503}'
+Topic: pozyx/position
+Message: b'{"x": 161.0, "y": 330.0, "heading": 8.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-7.7725","x":80,"y":502}'
+Topic: pozyx/position
+Message: b'{"x": 183.0, "y": 315.0, "heading": 13.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-13.922","x":85,"y":501}'
+Topic: pozyx/position
+Message: b'{"x": 222.0, "y": 278.0, "heading": 14.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-15.162","x":94,"y":499}'
+Topic: pozyx/position
+Message: b'{"x": 223.0, "y": 255.0, "heading": 15.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-16.392","x":121,"y":491}'
+Topic: pozyx/position
+Message: b'{"x": 224.0, "y": 256.0, "heading": 16.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-17.302","x":159,"y":480}'
+Topic: pozyx/position
+Message: b'{"x": 228.0, "y": 259.0, "heading": 17.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-18.062","x":187,"y":471}'
+Topic: pozyx/position
+Message: b'{"x": 227.0, "y": 270.0, "heading": 17.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-18.792","x":218,"y":461}'
+Topic: pozyx/position
+Message: b'{"x": 246.0, "y": 262.0, "heading": 18.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-19.512","x":250,"y":450}'
+Topic: pozyx/position
+Message: b'{"x": 275.0, "y": 249.0, "heading": 19.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-20.302","x":284,"y":437}'
+Topic: pozyx/position
+Message: b'{"x": 317.0, "y": 219.0, "heading": 20.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-21.062","x":316,"y":425}'
+Topic: pozyx/position
+Message: b'{"x": 343.0, "y": 200.0, "heading": 20.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-21.872","x":350,"y":412}'
+Topic: pozyx/position
+Message: b'{"x": 370.0, "y": 179.0, "heading": 21.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-22.632","x":382,"y":399}'
+Topic: pozyx/position
+Message: b'{"x": 407.0, "y": 156.0, "heading": 22.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-23.292","x":416,"y":384}'
+Topic: pozyx/position
+Message: b'{"x": 431.0, "y": 139.0, "heading": 22.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-23.832","x":448,"y":370}'
+Topic: pozyx/position
+Message: b'{"x": 456.0, "y": 123.0, "heading": 23.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-24.522","x":482,"y":355}'
+Topic: pozyx/position
+Message: b'{"x": 483.0, "y": 101.0, "heading": 24.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-25.162","x":514,"y":340}'
+Topic: pozyx/position
+Message: b'{"x": 529.0, "y": 73.0, "heading": 24.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-25.842","x":549,"y":324}'
+Topic: pozyx/position
+Message: b'{"x": 556.0, "y": 65.0, "heading": 25.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-26.472","x":580,"y":308}'
+Topic: pozyx/position
+Message: b'{"x": 584.0, "y": 58.0, "heading": 25.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-27.022","x":612,"y":293}'
+Topic: pozyx/position
+Message: b'{"x": 622.0, "y": 56.0, "heading": 26.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-27.582","x":646,"y":275}'
+Topic: pozyx/position
+Message: b'{"x": 645.0, "y": 49.0, "heading": 26.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-28.072","x":678,"y":258}'
+Topic: pozyx/position
+Message: b'{"x": 668.0, "y": 42.0, "heading": 27.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-28.792","x":712,"y":240}'
+Topic: pozyx/position
+Message: b'{"x": 698.0, "y": 25.0, "heading": 28.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-29.412","x":746,"y":220}'
+Topic: pozyx/position
+Message: b'{"x": 719.0, "y": 18.0, "heading": 28.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-29.882","x":776,"y":204}'
+Topic: pozyx/position
+Message: b'{"x": 745.0, "y": 20.0, "heading": 23.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-26.132","x":789,"y":196}'
+Topic: pozyx/position
+Message: b'{"x": 776.0, "y": -25.0, "heading": 16.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-19.762","x":798,"y":192}'
+Topic: pozyx/position
+Message: b'{"x": 792.0, "y": 41.0, "heading": 9.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-12.032","x":807,"y":190}'
+Topic: pozyx/position
+Message: b'{"x": 816.0, "y": 43.0, "heading": 4.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-6.1425","x":812,"y":189}'
+Topic: pozyx/position
+Message: b'{"x": 841.0, "y": 33.0, "heading": 3.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-4.6825","x":823,"y":188}'
+Topic: pozyx/position
+Message: b'{"x": 869.0, "y": 50.0, "heading": 1.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-3.5225","x":850,"y":186}'
+Topic: pozyx/position
+Message: b'{"x": 901.0, "y": 30.0, "heading": 1.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-2.6025","x":883,"y":184}'
+Topic: pozyx/position
+Message: b'{"x": 928.0, "y": -9.0, "heading": 359.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-1.3725","x":919,"y":183}'
+Topic: pozyx/position
+Message: b'{"x": 968.0, "y": -25.0, "heading": 358.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.2825","x":952,"y":182}'
+Topic: pozyx/position
+Message: b'{"x": 1002.0, "y": -32.0, "heading": 357.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.76750","x":991,"y":182}'
+Topic: pozyx/position
+Message: b'{"x": 1032.0, "y": -43.0, "heading": 356.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"1.72750","x":1021,"y":183}'
+Topic: pozyx/position
+Message: b'{"x": 1084.0, "y": -62.0, "heading": 355.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.70750","x":1055,"y":184}'
+Topic: pozyx/position
+Message: b'{"x": 1117.0, "y": -63.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"3.70750","x":1092,"y":186}'
+Topic: pozyx/position
+Message: b'{"x": 1160.0, "y": -65.0, "heading": 353.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"4.48750","x":1126,"y":189}'
+Topic: pozyx/position
+Message: b'{"x": 1195.0, "y": -63.0, "heading": 353.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.44750","x":1164,"y":192}'
+Topic: pozyx/position
+Message: b'{"x": 1218.0, "y": -58.0, "heading": 352.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"6.22750","x":1198,"y":195}'
+Topic: pozyx/position
+Message: b'{"x": 1261.0, "y": -50.0, "heading": 351.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"7.00750","x":1236,"y":200}'
+Topic: pozyx/position
+Message: b'{"x": 1284.0, "y": -35.0, "heading": 350.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"7.70750","x":1269,"y":204}'
+Topic: pozyx/position
+Message: b'{"x": 1314.0, "y": -29.0, "heading": 355.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"4.99750","x":1287,"y":207}'
+Topic: pozyx/position
+Message: b'{"x": 1354.0, "y": -42.0, "heading": 1.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-2.0925","x":1296,"y":207}'
+Topic: pozyx/position
+Message: b'{"x": 1365.0, "y": -9.0, "heading": 8.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-8.4625","x":1304,"y":206}'
+Topic: pozyx/position
+Message: b'{"x": 1367.0, "y": 41.0, "heading": 14.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-15.242","x":1309,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 1368.0, "y": 48.0, "heading": 15.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-16.712","x":1315,"y":203}'
+Topic: pozyx/position
+Message: b'{"x": 1365.0, "y": 87.0, "heading": 16.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-17.602","x":1339,"y":196}'
+Topic: pozyx/position
+Message: b'{"x": 1370.0, "y": 55.0, "heading": 16.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-18.482","x":1376,"y":184}'
+Topic: pozyx/position
+Message: b'{"x": 1399.0, "y": 16.0, "heading": 17.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-19.092","x":1403,"y":175}'
+Topic: pozyx/position
+Message: b'{"x": 1434.0, "y": 31.0, "heading": 18.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-19.772","x":1434,"y":164}'
+Topic: pozyx/position
+Message: b'{"x": 1461.0, "y": 16.0, "heading": 18.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-20.432","x":1467,"y":152}'
+Topic: pozyx/position
+Message: b'{"x": 1490.0, "y": 34.0, "heading": 19.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-20.952","x":1498,"y":140}'
+Topic: pozyx/position
+Message: b'{"x": 1517.0, "y": 41.0, "heading": 20.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-21.672","x":1535,"y":126}'
+Topic: pozyx/position
+Message: b'{"x": 1547.0, "y": -16.0, "heading": 20.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-22.252","x":1563,"y":114}'
+Topic: pozyx/position
+Message: b'{"x": 1598.0, "y": -131.0, "heading": 21.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-22.922","x":1597,"y":100}'
+Topic: pozyx/position
+Message: b'{"x": 1639.0, "y": -181.0, "heading": 21.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-23.502","x":1628,"y":87}'
+Topic: pozyx/position
+Message: b'{"x": 1692.0, "y": -251.0, "heading": 22.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-24.182","x":1663,"y":72}'
+Topic: pozyx/position
+Message: b'{"x": 1718.0, "y": -261.0, "heading": 22.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-24.632","x":1697,"y":56}'
+Topic: pozyx/position
+Message: b'{"x": 1743.0, "y": -258.0, "heading": 21.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-24.282","x":1717,"y":47}'
+Topic: pozyx/position
+Message: b'{"x": 1762.0, "y": -259.0, "heading": 15.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-18.582","x":1726,"y":43}'
+Topic: pozyx/position
+Message: b'{"x": 1767.0, "y": -258.0, "heading": 8.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-11.392","x":1735,"y":41}'
+Topic: pozyx/position
+Message: b'{"x": 1787.0, "y": -254.0, "heading": 2.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-5.3325","x":1743,"y":39}'
+Topic: pozyx/position
+Message: b'{"x": 1808.0, "y": -249.0, "heading": 355.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.18750","x":1750,"y":39}'
+Topic: pozyx/position
+Message: b'{"x": 1823.0, "y": -218.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.07500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1845.0, "y": -164.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1852.0, "y": -140.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1859.0, "y": -100.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1857.0, "y": -107.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1862.0, "y": -106.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1865.0, "y": -105.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1863.0, "y": -105.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1865.0, "y": -102.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1865.0, "y": -100.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1866.0, "y": -105.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1863.0, "y": -104.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1862.0, "y": -109.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1860.0, "y": -110.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1861.0, "y": -112.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1856.0, "y": -105.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1860.0, "y": -102.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1860.0, "y": -96.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1858.0, "y": -88.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1861.0, "y": -86.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1865.0, "y": -90.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1865.0, "y": -90.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1868.0, "y": -97.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1866.0, "y": -100.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1867.0, "y": -105.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1860.0, "y": -104.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1857.0, "y": -105.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1857.0, "y": -108.0, "heading": 353.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.46500","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1853.0, "y": -113.0, "heading": 345.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"12.8950","x":1808,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1853.0, "y": -142.0, "heading": 336.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"20.9550","x":1809,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1864.0, "y": -246.0, "heading": 328.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"30.2550","x":1809,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1849.0, "y": -271.0, "heading": 319.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"38.6350","x":1810,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1825.0, "y": -290.0, "heading": 310.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"48.3650","x":1810,"y":-247}'
+Topic: pozyx/position
+Message: b'{"x": 1798.0, "y": -276.0, "heading": 301.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"56.9550","x":1810,"y":-247}'
+Topic: pozyx/position
+Message: b'{"x": 1777.0, "y": -229.0, "heading": 292.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"66.1250","x":1811,"y":-247}'
+Topic: pozyx/position
+Message: b'{"x": 1781.0, "y": -200.0, "heading": 282.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"74.9450","x":1811,"y":-246}'
+Topic: pozyx/position
+Message: b'{"x": 1787.0, "y": -205.0, "heading": 273.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"86.0250","x":1811,"y":-245}'
+Topic: pozyx/position
+Message: b'{"x": 1792.0, "y": -216.0, "heading": 263.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"94.2350","x":1811,"y":-245}'
+Topic: pozyx/position
+Message: b'{"x": 1787.0, "y": -209.0, "heading": 253.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"104.615","x":1811,"y":-244}'
+Topic: pozyx/position
+Message: b'{"x": 1783.0, "y": -186.0, "heading": 243.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"113.835","x":1811,"y":-244}'
+Topic: pozyx/position
+Message: b'{"x": 1777.0, "y": -158.0, "heading": 233.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"124.405","x":1810,"y":-243}'
+Topic: pozyx/position
+Message: b'{"x": 1765.0, "y": -119.0, "heading": 224.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"135.945","x":1810,"y":-243}'
+Topic: pozyx/position
+Message: b'{"x": 1758.0, "y": -127.0, "heading": 214.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"144.405","x":1810,"y":-243}'
+Topic: pozyx/position
+Message: b'{"x": 1725.0, "y": -119.0, "heading": 203.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"153.865","x":1808,"y":-242}'
+Topic: pozyx/position
+Message: b'{"x": 1714.0, "y": -119.0, "heading": 196.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.135","x":1801,"y":-239}'
+Topic: pozyx/position
+Message: b'{"x": 1703.0, "y": -125.0, "heading": 189.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"168.215","x":1795,"y":-237}'
+Topic: pozyx/position
+Message: b'{"x": 1688.0, "y": -102.0, "heading": 182.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"176.235","x":1790,"y":-236}'
+Topic: pozyx/position
+Message: b'{"x": 1675.0, "y": -103.0, "heading": 181.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"177.855","x":1785,"y":-236}'
+Topic: pozyx/position
+Message: b'{"x": 1665.0, "y": -101.0, "heading": 180.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"179.005","x":1759,"y":-235}'
+Topic: pozyx/position
+Message: b'{"x": 1643.0, "y": -88.0, "heading": 179.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"179.615","x":1730,"y":-235}'
+Topic: pozyx/position
+Message: b'{"x": 1634.0, "y": -64.0, "heading": 178.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-179.54","x":1695,"y":-235}'
+Topic: pozyx/position
+Message: b'{"x": 1635.0, "y": -50.0, "heading": 177.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.78","x":1662,"y":-235}'
+Topic: pozyx/position
+Message: b'{"x": 1616.0, "y": -47.0, "heading": 177.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-177.95","x":1626,"y":-236}'
+Topic: pozyx/position
+Message: b'{"x": 1584.0, "y": -47.0, "heading": 176.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-177.42","x":1593,"y":-238}'
+Topic: pozyx/position
+Message: b'{"x": 1556.0, "y": -43.0, "heading": 175.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-176.80","x":1557,"y":-240}'
+Topic: pozyx/position
+Message: b'{"x": 1508.0, "y": -34.0, "heading": 175.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-176.18","x":1523,"y":-242}'
+Topic: pozyx/position
+Message: b'{"x": 1483.0, "y": -1.0, "heading": 174.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-175.64","x":1490,"y":-244}'
+Topic: pozyx/position
+Message: b'{"x": 1490.0, "y": 48.0, "heading": 173.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-174.75","x":1446,"y":-248}'
+Topic: pozyx/position
+Message: b'{"x": 1477.0, "y": 18.0, "heading": 173.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-174.29","x":1419,"y":-250}'
+Topic: pozyx/position
+Message: b'{"x": 1432.0, "y": -38.0, "heading": 172.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-173.74","x":1381,"y":-254}'
+Topic: pozyx/position
+Message: b'{"x": 1395.0, "y": -89.0, "heading": 172.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-173.29","x":1347,"y":-258}'
+Topic: pozyx/position
+Message: b'{"x": 1368.0, "y": -137.0, "heading": 171.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-172.68","x":1306,"y":-263}'
+Topic: pozyx/position
+Message: b'{"x": 1328.0, "y": -129.0, "heading": 171.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-172.29","x":1275,"y":-267}'
+Topic: pozyx/position
+Message: b'{"x": 1300.0, "y": -109.0, "heading": 172.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-172.75","x":1249,"y":-271}'
+Topic: pozyx/position
+Message: b'{"x": 1253.0, "y": -79.0, "heading": 179.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-179.57","x":1238,"y":-272}'
+Topic: pozyx/position
+Message: b'{"x": 1216.0, "y": -69.0, "heading": 186.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"174.255","x":1229,"y":-271}'
+Topic: pozyx/position
+Message: b'{"x": 1164.0, "y": -93.0, "heading": 192.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"167.835","x":1220,"y":-270}'
+Topic: pozyx/position
+Message: b'{"x": 1139.0, "y": -99.0, "heading": 195.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"164.155","x":1218,"y":-269}'
+Topic: pozyx/position
+Message: b'{"x": 1119.0, "y": -111.0, "heading": 196.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"163.285","x":1202,"y":-265}'
+Topic: pozyx/position
+Message: b'{"x": 1110.0, "y": -129.0, "heading": 196.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"162.465","x":1173,"y":-256}'
+Topic: pozyx/position
+Message: b'{"x": 1075.0, "y": -134.0, "heading": 197.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.725","x":1135,"y":-244}'
+Topic: pozyx/position
+Message: b'{"x": 1055.0, "y": -120.0, "heading": 198.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.135","x":1107,"y":-234}'
+Topic: pozyx/position
+Message: b'{"x": 1024.0, "y": -103.0, "heading": 198.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"160.465","x":1076,"y":-223}'
+Topic: pozyx/position
+Message: b'{"x": 991.0, "y": -79.0, "heading": 199.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"159.595","x":1035,"y":-208}'
+Topic: pozyx/position
+Message: b'{"x": 948.0, "y": -35.0, "heading": 200.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"159.105","x":1010,"y":-199}'
+Topic: pozyx/position
+Message: b'{"x": 923.0, "y": -21.0, "heading": 201.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"158.425","x":978,"y":-187}'
+Topic: pozyx/position
+Message: b'{"x": 893.0, "y": -5.0, "heading": 201.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"157.585","x":938,"y":-170}'
+Topic: pozyx/position
+Message: b'{"x": 877.0, "y": -4.0, "heading": 202.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"157.135","x":912,"y":-160}'
+Topic: pozyx/position
+Message: b'{"x": 848.0, "y": 8.0, "heading": 202.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"156.605","x":878,"y":-145}'
+Topic: pozyx/position
+Message: b'{"x": 828.0, "y": 29.0, "heading": 203.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"155.995","x":846,"y":-131}'
+Topic: pozyx/position
+Message: b'{"x": 794.0, "y": 64.0, "heading": 203.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"155.425","x":815,"y":-117}'
+Topic: pozyx/position
+Message: b'{"x": 772.0, "y": 87.0, "heading": 204.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"154.825","x":780,"y":-101}'
+Topic: pozyx/position
+Message: b'{"x": 744.0, "y": 104.0, "heading": 204.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"154.345","x":746,"y":-85}'
+Topic: pozyx/position
+Message: b'{"x": 723.0, "y": 123.0, "heading": 202.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"156.235","x":729,"y":-76}'
+Topic: pozyx/position
+Message: b'{"x": 695.0, "y": 126.0, "heading": 195.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"162.565","x":720,"y":-73}'
+Topic: pozyx/position
+Message: b'{"x": 667.0, "y": 115.0, "heading": 188.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"169.035","x":712,"y":-71}'
+Topic: pozyx/position
+Message: b'{"x": 633.0, "y": 81.0, "heading": 182.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"175.845","x":705,"y":-70}'
+Topic: pozyx/position
+Message: b'{"x": 618.0, "y": 56.0, "heading": 181.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"177.035","x":699,"y":-70}'
+Topic: pozyx/position
+Message: b'{"x": 600.0, "y": 44.0, "heading": 180.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"178.155","x":677,"y":-69}'
+Topic: pozyx/position
+Message: b'{"x": 587.0, "y": 60.0, "heading": 179.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"179.245","x":635,"y":-68}'
+Topic: pozyx/position
+Message: b'{"x": 581.0, "y": 85.0, "heading": 178.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"179.975","x":609,"y":-68}'
+Topic: pozyx/position
+Message: b'{"x": 545.0, "y": 105.0, "heading": 177.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-179.20","x":576,"y":-68}'
+Topic: pozyx/position
+Message: b'{"x": 531.0, "y": 111.0, "heading": 177.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-178.40","x":540,"y":-69}'
+Topic: pozyx/position
+Message: b'{"x": 492.0, "y": 102.0, "heading": 176.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-177.68","x":507,"y":-70}'
+Topic: pozyx/position
+Message: b'{"x": 455.0, "y": 99.0, "heading": 175.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-176.99","x":470,"y":-71}'
+Topic: pozyx/position
+Message: b'{"x": 431.0, "y": 103.0, "heading": 174.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-176.24","x":436,"y":-73}'
+Topic: pozyx/position
+Message: b'{"x": 392.0, "y": 107.0, "heading": 174.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-175.48","x":399,"y":-76}'
+Topic: pozyx/position
+Message: b'{"x": 363.0, "y": 109.0, "heading": 173.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-174.80","x":365,"y":-79}'
+Topic: pozyx/position
+Message: b'{"x": 332.0, "y": 111.0, "heading": 172.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-174.13","x":331,"y":-82}'
+Topic: pozyx/position
+Message: b'{"x": 299.0, "y": 103.0, "heading": 172.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-173.50","x":287,"y":-87}'
+Topic: pozyx/position
+Message: b'{"x": 276.0, "y": 96.0, "heading": 171.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-173.09","x":259,"y":-90}'
+Topic: pozyx/position
+Message: b'{"x": 248.0, "y": 84.0, "heading": 171.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-172.36","x":221,"y":-95}'
+Topic: pozyx/position
+Message: b'{"x": 227.0, "y": 92.0, "heading": 171.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-171.91","x":190,"y":-99}'
+Topic: pozyx/position
+Message: b'{"x": 200.0, "y": 132.0, "heading": 177.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-177.01","x":177,"y":-101}'
+Topic: pozyx/position
+Message: b'{"x": 159.0, "y": 181.0, "heading": 184.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"175.005","x":166,"y":-101}'
+Topic: pozyx/position
+Message: b'{"x": 137.0, "y": 190.0, "heading": 190.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"169.705","x":159,"y":-100}'
+Topic: pozyx/position
+Message: b'{"x": 120.0, "y": 205.0, "heading": 197.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"162.535","x":151,"y":-98}'
+Topic: pozyx/position
+Message: b'{"x": 109.0, "y": 190.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.285","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 89.0, "y": 154.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.215","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 84.0, "y": 149.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 76.0, "y": 145.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 75.0, "y": 146.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 77.0, "y": 150.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 79.0, "y": 151.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 80.0, "y": 158.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 81.0, "y": 150.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 82.0, "y": 148.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 82.0, "y": 145.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 85.0, "y": 138.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 86.0, "y": 135.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 84.0, "y": 128.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 81.0, "y": 121.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 80.0, "y": 124.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 78.0, "y": 120.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 75.0, "y": 124.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 73.0, "y": 132.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 72.0, "y": 137.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 71.0, "y": 137.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 67.0, "y": 141.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 71.0, "y": 149.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 74.0, "y": 147.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 74.0, "y": 150.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 72.0, "y": 163.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 73.0, "y": 162.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 75.0, "y": 156.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 76.0, "y": 156.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 79.0, "y": 144.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.205","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 79.0, "y": 137.0, "heading": 200.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"161.185","x":119,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 79.0, "y": 143.0, "heading": 193.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"165.675","x":118,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 75.0, "y": 141.0, "heading": 185.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"174.675","x":118,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 77.0, "y": 165.0, "heading": 176.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-176.69","x":117,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 89.0, "y": 192.0, "heading": 167.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-168.36","x":117,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 85.0, "y": 201.0, "heading": 158.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-158.74","x":116,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 72.0, "y": 226.0, "heading": 149.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-150.26","x":116,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 65.0, "y": 248.0, "heading": 140.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-141.28","x":116,"y":205}'
+Topic: pozyx/position
+Message: b'{"x": 52.0, "y": 244.0, "heading": 131.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-131.77","x":115,"y":204}'
+Topic: pozyx/position
+Message: b'{"x": 27.0, "y": 201.0, "heading": 121.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.55","x":115,"y":204}'
+Topic: pozyx/position
+Message: b'{"x": 31.0, "y": 188.0, "heading": 112.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-113.67","x":114,"y":202}'
+Topic: pozyx/position
+Message: b'{"x": 35.0, "y": 141.0, "heading": 106.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-106.23","x":112,"y":195}'
+Topic: pozyx/position
+Message: b'{"x": 30.0, "y": 100.0, "heading": 99.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-98.965","x":110,"y":188}'
+Topic: pozyx/position
+Message: b'{"x": 42.0, "y": 91.0, "heading": 92.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-92.575","x":110,"y":184}'
+Topic: pozyx/position
+Message: b'{"x": 36.0, "y": 88.0, "heading": 91.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-90.745","x":109,"y":179}'
+Topic: pozyx/position
+Message: b'{"x": 31.0, "y": 77.0, "heading": 90.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-89.985","x":109,"y":158}'
+Topic: pozyx/position
+Message: b'{"x": 23.0, "y": 67.0, "heading": 90.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-89.585","x":109,"y":123}'
+Topic: pozyx/position
+Message: b'{"x": 19.0, "y": 60.0, "heading": 89.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-88.975","x":110,"y":92}'
+Topic: pozyx/position
+Message: b'{"x": 13.0, "y": 31.0, "heading": 89.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-88.295","x":111,"y":57}'
+Topic: pozyx/position
+Message: b'{"x": 10.0, "y": -8.0, "heading": 88.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-87.785","x":112,"y":25}'
+Topic: pozyx/position
+Message: b'{"x": 7.0, "y": -63.0, "heading": 88.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-87.315","x":113,"y":-10}'
+Topic: pozyx/position
+Message: b'{"x": 9.0, "y": -100.0, "heading": 87.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-86.875","x":115,"y":-42}'
+Topic: pozyx/position
+Message: b'{"x": 11.0, "y": -139.0, "heading": 87.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-86.425","x":117,"y":-79}'
+Topic: pozyx/position
+Message: b'{"x": 19.0, "y": -200.0, "heading": 86.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-86.065","x":119,"y":-112}'
+Topic: pozyx/position
+Message: b'{"x": 34.0, "y": -195.0, "heading": 86.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-85.555","x":122,"y":-148}'
+Topic: pozyx/position
+Message: b'{"x": 29.0, "y": -234.0, "heading": 85.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-85.035","x":125,"y":-181}'
+Topic: pozyx/position
+Message: b'{"x": 35.0, "y": -254.0, "heading": 90.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-87.925","x":126,"y":-198}'
+Topic: pozyx/position
+Message: b'{"x": 30.0, "y": -310.0, "heading": 96.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-94.515","x":126,"y":-206}'
+Topic: pozyx/position
+Message: b'{"x": 22.0, "y": -354.0, "heading": 103.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-101.18","x":125,"y":-215}'
+Topic: pozyx/position
+Message: b'{"x": 19.0, "y": -384.0, "heading": 110.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-107.89","x":123,"y":-222}'
+Topic: pozyx/position
+Message: b'{"x": 15.0, "y": -398.0, "heading": 117.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-115.17","x":120,"y":-230}'
+Topic: pozyx/position
+Message: b'{"x": 7.0, "y": -375.0, "heading": 120.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-119.33","x":118,"y":-233}'
+Topic: pozyx/position
+Message: b'{"x": 0.0, "y": -347.0, "heading": 121.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-120.30","x":111,"y":-245}'
+Topic: pozyx/position
+Message: b'{"x": -6.0, "y": -322.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.23","x":-8,"y":-360}'
+Topic: pozyx/position
+Message: b'{"x": -16.0, "y": -304.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -19.0, "y": -295.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -19.0, "y": -289.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -15.0, "y": -299.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -15.0, "y": -294.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -19.0, "y": -292.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -17.0, "y": -306.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -22.0, "y": -301.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -21.0, "y": -295.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -21.0, "y": -313.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -23.0, "y": -315.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -25.0, "y": -301.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -23.0, "y": -309.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -28.0, "y": -312.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -26.0, "y": -315.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -23.0, "y": -328.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -24.0, "y": -321.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -20.0, "y": -302.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -25.0, "y": -304.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -25.0, "y": -298.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -24.0, "y": -296.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -22.0, "y": -298.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -21.0, "y": -303.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -25.0, "y": -309.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -26.0, "y": -307.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -26.0, "y": -307.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -26.0, "y": -296.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -24.0, "y": -294.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -24.0, "y": -287.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -25.0, "y": -290.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -26.0, "y": -298.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -25.0, "y": -294.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -21.0, "y": -300.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -19.0, "y": -295.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -13.0, "y": -304.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -13.0, "y": -304.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -21.0, "y": -293.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -24.0, "y": -296.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -24.0, "y": -295.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -24.0, "y": -289.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -19.0, "y": -297.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -16.0, "y": -287.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -15.0, "y": -286.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -16.0, "y": -290.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -20.0, "y": -283.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -23.0, "y": -286.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -20.0, "y": -291.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -18.0, "y": -296.0, "heading": 122.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.34","x":-8,"y":-361}'
+Topic: pozyx/position
+Message: b'{"x": -13.0, "y": -290.0, "heading": 126.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-126.08","x":-12,"y":-367}'
+Topic: pozyx/position
+Message: b'{"x": -21.0, "y": -314.0, "heading": 132.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-131.50","x":-16,"y":-372}'
+Topic: pozyx/position
+Message: b'{"x": -26.0, "y": -365.0, "heading": 138.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-136.94","x":-21,"y":-377}'
+Topic: pozyx/position
+Message: b'{"x": -40.0, "y": -400.0, "heading": 143.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-143.37","x":-27,"y":-381}'
+Topic: pozyx/position
+Message: b'{"x": -68.0, "y": -420.0, "heading": 150.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-149.15","x":-32,"y":-385}'
+Topic: pozyx/position
+Message: b'{"x": -89.0, "y": -431.0, "heading": 151.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-151.73","x":-34,"y":-386}'
+Topic: pozyx/position
+Message: b'{"x": -106.0, "y": -417.0, "heading": 151.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-152.09","x":-50,"y":-394}'
+Topic: pozyx/position
+Message: b'{"x": -109.0, "y": -406.0, "heading": 151.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-152.26","x":-77,"y":-409}'
+Topic: pozyx/position
+Message: b'{"x": -120.0, "y": -400.0, "heading": 152.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-152.60","x":-107,"y":-425}'
+Topic: pozyx/position
+Message: b'{"x": -111.0, "y": -424.0, "heading": 152.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-152.88","x":-138,"y":-440}'
+Topic: pozyx/position
+Message: b'{"x": -117.0, "y": -457.0, "heading": 152.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-153.07","x":-166,"y":-455}'
+Topic: pozyx/position
+Message: b'{"x": -147.0, "y": -490.0, "heading": 153.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-153.37","x":-195,"y":-469}'
+Topic: pozyx/position
+Message: b'{"x": -173.0, "y": -508.0, "heading": 153.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-153.62","x":-226,"y":-485}'
+Topic: pozyx/position
+Message: b'{"x": -222.0, "y": -529.0, "heading": 153.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-153.73","x":-256,"y":-500}'
+Topic: pozyx/position
+Message: b'{"x": -260.0, "y": -532.0, "heading": 153.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-153.90","x":-288,"y":-515}'
+Topic: pozyx/position
+Message: b'{"x": -303.0, "y": -535.0, "heading": 153.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-154.12","x":-317,"y":-530}'
+Topic: pozyx/position
+Message: b'{"x": -335.0, "y": -561.0, "heading": 153.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-154.28","x":-347,"y":-544}'
+Topic: pozyx/position
+Message: b'{"x": -361.0, "y": -584.0, "heading": 154.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-154.51","x":-380,"y":-560}'
+Topic: pozyx/position
+Message: b'{"x": -382.0, "y": -623.0, "heading": 154.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-154.68","x":-410,"y":-574}'
+Topic: pozyx/position
+Message: b'{"x": -385.0, "y": -690.0, "heading": 154.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-154.95","x":-444,"y":-590}'
+Topic: pozyx/position
+Message: b'{"x": -404.0, "y": -700.0, "heading": 154.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-155.18","x":-475,"y":-605}'
+Topic: pozyx/position
+Message: b'{"x": -429.0, "y": -684.0, "heading": 154.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-155.39","x":-509,"y":-620}'
+Topic: pozyx/position
+Message: b'{"x": -444.0, "y": -719.0, "heading": 155.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-155.58","x":-540,"y":-635}'
+Topic: pozyx/position
+Message: b'{"x": -458.0, "y": -830.0, "heading": 155.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-155.78","x":-575,"y":-650}'
+Topic: pozyx/position
+Message: b'{"x": -477.0, "y": -844.0, "heading": 155.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-155.93","x":-606,"y":-664}'
+Topic: pozyx/position
+Message: b'{"x": -485.0, "y": -935.0, "heading": 155.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-156.16","x":-641,"y":-680}'
+Topic: pozyx/position
+Message: b'{"x": -528.0, "y": -901.0, "heading": 155.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-156.34","x":-673,"y":-694}'
+Topic: pozyx/position
+Message: b'{"x": -596.0, "y": -804.0, "heading": 155.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-156.47","x":-706,"y":-708}'
+Topic: pozyx/position
+Message: b'{"x": -643.0, "y": -744.0, "heading": 156.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-156.69","x":-741,"y":-724}'
+Topic: pozyx/position
+Message: b'{"x": -682.0, "y": -711.0, "heading": 156.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-156.74","x":-774,"y":-738}'
+Topic: pozyx/position
+Message: b'{"x": -728.0, "y": -731.0, "heading": 153.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-154.26","x":-801,"y":-749}'
+Topic: pozyx/position
+Message: b'{"x": -748.0, "y": -787.0, "heading": 146.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-148.50","x":-807,"y":-753}'
+Topic: pozyx/position
+Message: b'{"x": -759.0, "y": -806.0, "heading": 139.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-141.04","x":-816,"y":-759}'
+Topic: pozyx/position
+Message: b'{"x": -798.0, "y": -808.0, "heading": 132.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-134.15","x":-823,"y":-765}'
+Topic: pozyx/position
+Message: b'{"x": -841.0, "y": -803.0, "heading": 126.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-126.92","x":-827,"y":-769}'
+Topic: pozyx/position
+Message: b'{"x": -857.0, "y": -756.0, "heading": 124.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-125.83","x":-831,"y":-775}'
+Topic: pozyx/position
+Message: b'{"x": -865.0, "y": -727.0, "heading": 123.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-124.54","x":-845,"y":-795}'
+Topic: pozyx/position
+Message: b'{"x": -862.0, "y": -758.0, "heading": 122.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-123.39","x":-868,"y":-732}'
+Topic: pozyx/position
+Message: b'{"x": -827.0, "y": -778.0, "heading": 121.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-122.62","x":-879,"y":-748}'
+Topic: pozyx/position
+Message: b'{"x": -835.0, "y": -793.0, "heading": 121.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.99","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -837.0, "y": -806.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -844.0, "y": -813.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -850.0, "y": -806.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -848.0, "y": -801.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -846.0, "y": -800.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -839.0, "y": -799.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -842.0, "y": -797.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -841.0, "y": -799.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -844.0, "y": -809.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -847.0, "y": -806.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -852.0, "y": -807.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -850.0, "y": -805.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -852.0, "y": -801.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -851.0, "y": -796.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -847.0, "y": -795.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -847.0, "y": -795.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -846.0, "y": -787.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -846.0, "y": -792.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -850.0, "y": -797.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -850.0, "y": -799.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -850.0, "y": -792.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -848.0, "y": -790.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -842.0, "y": -798.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -843.0, "y": -792.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -845.0, "y": -795.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -842.0, "y": -795.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -842.0, "y": -799.0, "heading": 121.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.97","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -835.0, "y": -797.0, "heading": 120.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-121.89","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -838.0, "y": -794.0, "heading": 113.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-115.70","x":-881,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -844.0, "y": -831.0, "heading": 104.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-107.49","x":-880,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -857.0, "y": -844.0, "heading": 96.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-98.985","x":-880,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -855.0, "y": -865.0, "heading": 87.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-89.915","x":-880,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -853.0, "y": -885.0, "heading": 78.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-81.125","x":-880,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -855.0, "y": -856.0, "heading": 68.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-69.705","x":-880,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -846.0, "y": -843.0, "heading": 59.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-62.755","x":-880,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -853.0, "y": -843.0, "heading": 50.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-53.115","x":-880,"y":-751}'
+Topic: pozyx/position
+Message: b'{"x": -858.0, "y": -845.0, "heading": 40.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-43.735","x":-880,"y":-752}'
+Topic: pozyx/position
+Message: b'{"x": -854.0, "y": -849.0, "heading": 31.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"-33.855","x":-880,"y":-752}'
+Topic: pozyx/position
+Message: b'{"x": -837.0, "y": -861.0, "heading": 21.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-24.425","x":-880,"y":-752}'
+Topic: pozyx/position
+Message: b'{"x": -814.0, "y": -842.0, "heading": 11.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"-15.235","x":-879,"y":-752}'
+Topic: pozyx/position
+Message: b'{"x": -797.0, "y": -818.0, "heading": 2.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-4.9250","x":-879,"y":-752}'
+Topic: pozyx/position
+Message: b'{"x": -788.0, "y": -808.0, "heading": 354.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.33500","x":-872,"y":-752}'
+Topic: pozyx/position
+Message: b'{"x": -780.0, "y": -801.0, "heading": 347.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"9.68500","x":-865,"y":-752}'
+Topic: pozyx/position
+Message: b'{"x": -771.0, "y": -799.0, "heading": 339.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"17.4150","x":-859,"y":-750}'
+Topic: pozyx/position
+Message: b'{"x": -753.0, "y": -799.0, "heading": 337.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"21.1150","x":-858,"y":-750}'
+Topic: pozyx/position
+Message: b'{"x": -728.0, "y": -796.0, "heading": 336.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"21.8450","x":-844,"y":-744}'
+Topic: pozyx/position
+Message: b'{"x": -718.0, "y": -791.0, "heading": 335.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"22.7250","x":-813,"y":-732}'
+Topic: pozyx/position
+Message: b'{"x": -705.0, "y": -785.0, "heading": 335.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"23.2750","x":-783,"y":-719}'
+Topic: pozyx/position
+Message: b'{"x": -672.0, "y": -766.0, "heading": 334.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"23.8450","x":-754,"y":-706}'
+Topic: pozyx/position
+Message: b'{"x": -649.0, "y": -752.0, "heading": 334.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"24.3950","x":-721,"y":-692}'
+Topic: pozyx/position
+Message: b'{"x": -624.0, "y": -747.0, "heading": 333.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"25.1450","x":-691,"y":-678}'
+Topic: pozyx/position
+Message: b'{"x": -570.0, "y": -714.0, "heading": 332.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"25.8950","x":-659,"y":-662}'
+Topic: pozyx/position
+Message: b'{"x": -554.0, "y": -710.0, "heading": 332.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"26.3950","x":-629,"y":-648}'
+Topic: pozyx/position
+Message: b'{"x": -536.0, "y": -719.0, "heading": 331.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"26.9450","x":-596,"y":-631}'
+Topic: pozyx/position
+Message: b'{"x": -523.0, "y": -717.0, "heading": 330.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"27.5150","x":-566,"y":-616}'
+Topic: pozyx/position
+Message: b'{"x": -508.0, "y": -718.0, "heading": 330.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"27.9950","x":-536,"y":-600}'
+Topic: pozyx/position
+Message: b'{"x": -480.0, "y": -704.0, "heading": 329.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"28.4750","x":-506,"y":-584}'
+Topic: pozyx/position
+Message: b'{"x": -462.0, "y": -695.0, "heading": 329.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"28.9950","x":-473,"y":-566}'
+Topic: pozyx/position
+Message: b'{"x": -445.0, "y": -687.0, "heading": 328.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"29.4950","x":-443,"y":-549}'
+Topic: pozyx/position
+Message: b'{"x": -404.0, "y": -667.0, "heading": 328.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"30.1050","x":-413,"y":-532}'
+Topic: pozyx/position
+Message: b'{"x": -376.0, "y": -662.0, "heading": 328.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"30.4350","x":-380,"y":-513}'
+Topic: pozyx/position
+Message: b'{"x": -324.0, "y": -647.0, "heading": 329.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"30.2150","x":-355,"y":-498}'
+Topic: pozyx/position
+Message: b'{"x": -290.0, "y": -619.0, "heading": 335.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"24.0850","x":-345,"y":-493}'
+Topic: pozyx/position
+Message: b'{"x": -266.0, "y": -595.0, "heading": 342.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"17.0850","x":-337,"y":-489}'
+Topic: pozyx/position
+Message: b'{"x": -255.0, "y": -563.0, "heading": 347.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"11.1850","x":-332,"y":-488}'
+Topic: pozyx/position
+Message: b'{"x": -254.0, "y": -560.0, "heading": 348.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"9.82500","x":-323,"y":-487}'
+Topic: pozyx/position
+Message: b'{"x": -260.0, "y": -564.0, "heading": 349.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"9.11500","x":-298,"y":-482}'
+Topic: pozyx/position
+Message: b'{"x": -257.0, "y": -572.0, "heading": 350.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"8.25500","x":-259,"y":-476}'
+Topic: pozyx/position
+Message: b'{"x": -236.0, "y": -577.0, "heading": 351.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"7.57500","x":-230,"y":-472}'
+Topic: pozyx/position
+Message: b'{"x": -201.0, "y": -571.0, "heading": 351.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"6.98500","x":-194,"y":-468}'
+Topic: pozyx/position
+Message: b'{"x": -167.0, "y": -576.0, "heading": 352.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"6.32500","x":-161,"y":-464}'
+Topic: pozyx/position
+Message: b'{"x": -134.0, "y": -585.0, "heading": 352.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.54500","x":-122,"y":-460}'
+Topic: pozyx/position
+Message: b'{"x": -101.0, "y": -594.0, "heading": 353.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.05500","x":-92,"y":-457}'
+Topic: pozyx/position
+Message: b'{"x": -54.0, "y": -592.0, "heading": 354.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"4.45500","x":-58,"y":-454}'
+Topic: pozyx/position
+Message: b'{"x": -28.0, "y": -583.0, "heading": 354.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"3.82500","x":-25,"y":-452}'
+Topic: pozyx/position
+Message: b'{"x": 2.0, "y": -575.0, "heading": 355.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"3.17500","x":12,"y":-449}'
+Topic: pozyx/position
+Message: b'{"x": 51.0, "y": -576.0, "heading": 355.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.65500","x":46,"y":-448}'
+Topic: pozyx/position
+Message: b'{"x": 83.0, "y": -584.0, "heading": 356.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.28500","x":84,"y":-446}'
+Topic: pozyx/position
+Message: b'{"x": 116.0, "y": -588.0, "heading": 356.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"1.78500","x":119,"y":-445}'
+Topic: pozyx/position
+Message: b'{"x": 163.0, "y": -616.0, "heading": 357.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"1.15500","x":157,"y":-444}'
+Topic: pozyx/position
+Message: b'{"x": 195.0, "y": -613.0, "heading": 357.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.69500","x":196,"y":-443}'
+Topic: pozyx/position
+Message: b'{"x": 227.0, "y": -610.0, "heading": 358.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.14500","x":231,"y":-443}'
+Topic: pozyx/position
+Message: b'{"x": 280.0, "y": -599.0, "heading": 358.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.3450","x":266,"y":-443}'
+Topic: pozyx/position
+Message: b'{"x": 318.0, "y": -582.0, "heading": 359.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.8750","x":305,"y":-443}'
+Topic: pozyx/position
+Message: b'{"x": 348.0, "y": -574.0, "heading": 359.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-1.2650","x":341,"y":-444}'
+Topic: pozyx/position
+Message: b'{"x": 378.0, "y": -580.0, "heading": 0.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-1.7950","x":380,"y":-445}'
+Topic: pozyx/position
+Message: b'{"x": 424.0, "y": -598.0, "heading": 0.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-2.2350","x":416,"y":-446}'
+Topic: pozyx/position
+Message: b'{"x": 451.0, "y": -607.0, "heading": 1.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"-2.8050","x":456,"y":-448}'
+Topic: pozyx/position
+Message: b'{"x": 495.0, "y": -630.0, "heading": 1.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"-3.2850","x":492,"y":-450}'
+Topic: pozyx/position
+Message: b'{"x": 523.0, "y": -637.0, "heading": 2.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"-3.6450","x":526,"y":-452}'
+Topic: pozyx/position
+Message: b'{"x": 550.0, "y": -644.0, "heading": 356.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.0050","x":545,"y":-453}'
+Topic: pozyx/position
+Message: b'{"x": 594.0, "y": -642.0, "heading": 349.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"7.48500","x":554,"y":-452}'
+Topic: pozyx/position
+Message: b'{"x": 618.0, "y": -641.0, "heading": 342.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"14.6150","x":564,"y":-451}'
+Topic: pozyx/position
+Message: b'{"x": 638.0, "y": -615.0, "heading": 337.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"21.2450","x":568,"y":-449}'
+Topic: pozyx/position
+Message: b'{"x": 651.0, "y": -591.0, "heading": 335.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"22.5050","x":577,"y":-446}'
+Topic: pozyx/position
+Message: b'{"x": 672.0, "y": -570.0, "heading": 334.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"24.1850","x":607,"y":-433}'
+Topic: pozyx/position
+Message: b'{"x": 692.0, "y": -563.0, "heading": 333.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"24.9550","x":631,"y":-422}'
+Topic: pozyx/position
+Message: b'{"x": 714.0, "y": -564.0, "heading": 331.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"26.1950","x":661,"y":-408}'
+Topic: pozyx/position
+Message: b'{"x": 741.0, "y": -560.0, "heading": 330.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"27.2050","x":693,"y":-391}'
+Topic: pozyx/position
+Message: b'{"x": 779.0, "y": -566.0, "heading": 329.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"28.2750","x":723,"y":-376}'
+Topic: pozyx/position
+Message: b'{"x": 839.0, "y": -556.0, "heading": 328.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"29.1850","x":753,"y":-359}'
+Topic: pozyx/position
+Message: b'{"x": 901.0, "y": -553.0, "heading": 327.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"30.4750","x":788,"y":-339}'
+Topic: pozyx/position
+Message: b'{"x": 936.0, "y": -555.0, "heading": 326.75}'
+Topic: robot/coordinates
+Message: b'{"heading":"31.4350","x":815,"y":-323}'
+Topic: pozyx/position
+Message: b'{"x": 953.0, "y": -542.0, "heading": 325.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"32.3850","x":844,"y":-305}'
+Topic: pozyx/position
+Message: b'{"x": 965.0, "y": -524.0, "heading": 325.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.3050","x":876,"y":-285}'
+Topic: pozyx/position
+Message: b'{"x": 983.0, "y": -501.0, "heading": 324.25}'
+Topic: robot/coordinates
+Message: b'{"heading":"34.0850","x":905,"y":-265}'
+Topic: pozyx/position
+Message: b'{"x": 998.0, "y": -470.0, "heading": 323.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"34.8950","x":936,"y":-244}'
+Topic: pozyx/position
+Message: b'{"x": 1039.0, "y": -420.0, "heading": 324.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"34.8350","x":958,"y":-228}'
+Topic: pozyx/position
+Message: b'{"x": 1058.0, "y": -403.0, "heading": 331.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"28.6550","x":966,"y":-223}'
+Topic: pozyx/position
+Message: b'{"x": 1087.0, "y": -403.0, "heading": 337.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"22.4950","x":974,"y":-219}'
+Topic: pozyx/position
+Message: b'{"x": 1101.0, "y": -399.0, "heading": 343.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"15.6550","x":982,"y":-216}'
+Topic: pozyx/position
+Message: b'{"x": 1099.0, "y": -399.0, "heading": 350.8125}'
+Topic: robot/coordinates
+Message: b'{"heading":"8.95500","x":989,"y":-215}'
+Topic: pozyx/position
+Message: b'{"x": 1107.0, "y": -425.0, "heading": 352.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"6.13500","x":994,"y":-214}'
+Topic: pozyx/position
+Message: b'{"x": 1119.0, "y": -450.0, "heading": 353.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"5.43500","x":1011,"y":-213}'
+Topic: pozyx/position
+Message: b'{"x": 1121.0, "y": -458.0, "heading": 354.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"4.67500","x":1043,"y":-210}'
+Topic: pozyx/position
+Message: b'{"x": 1143.0, "y": -473.0, "heading": 354.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"3.93500","x":1078,"y":-207}'
+Topic: pozyx/position
+Message: b'{"x": 1164.0, "y": -468.0, "heading": 355.4375}'
+Topic: robot/coordinates
+Message: b'{"heading":"3.38500","x":1110,"y":-205}'
+Topic: pozyx/position
+Message: b'{"x": 1180.0, "y": -436.0, "heading": 356.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.66500","x":1150,"y":-203}'
+Topic: pozyx/position
+Message: b'{"x": 1203.0, "y": -424.0, "heading": 356.625}'
+Topic: robot/coordinates
+Message: b'{"heading":"2.14500","x":1179,"y":-202}'
+Topic: pozyx/position
+Message: b'{"x": 1226.0, "y": -421.0, "heading": 357.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"1.54500","x":1216,"y":-200}'
+Topic: pozyx/position
+Message: b'{"x": 1280.0, "y": -437.0, "heading": 357.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.84500","x":1249,"y":-200}'
+Topic: pozyx/position
+Message: b'{"x": 1317.0, "y": -452.0, "heading": 358.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.33500","x":1283,"y":-199}'
+Topic: pozyx/position
+Message: b'{"x": 1353.0, "y": -455.0, "heading": 358.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.2450","x":1320,"y":-199}'
+Topic: pozyx/position
+Message: b'{"x": 1387.0, "y": -458.0, "heading": 359.3125}'
+Topic: robot/coordinates
+Message: b'{"heading":"-0.7150","x":1357,"y":-200}'
+Topic: pozyx/position
+Message: b'{"x": 1419.0, "y": -451.0, "heading": 357.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"0.37500","x":1379,"y":-200}'
+Topic: pozyx/position
+Message: b'{"x": 1484.0, "y": -458.0, "heading": 350.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"6.81500","x":1387,"y":-200}'
+Topic: pozyx/position
+Message: b'{"x": 1502.0, "y": -423.0, "heading": 343.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"13.6350","x":1397,"y":-198}'
+Topic: pozyx/position
+Message: b'{"x": 1536.0, "y": -426.0, "heading": 337.125}'
+Topic: robot/coordinates
+Message: b'{"heading":"20.6350","x":1403,"y":-196}'
+Topic: pozyx/position
+Message: b'{"x": 1563.0, "y": -432.0, "heading": 336.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"22.3550","x":1407,"y":-195}'
+Topic: pozyx/position
+Message: b'{"x": 1584.0, "y": -425.0, "heading": 335.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"23.2950","x":1424,"y":-187}'
+Topic: pozyx/position
+Message: b'{"x": 1597.0, "y": -416.0, "heading": 334.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"23.9750","x":1455,"y":-174}'
+Topic: pozyx/position
+Message: b'{"x": 1624.0, "y": -415.0, "heading": 333.5625}'
+Topic: robot/coordinates
+Message: b'{"heading":"24.9050","x":1484,"y":-160}'
+Topic: pozyx/position
+Message: b'{"x": 1633.0, "y": -344.0, "heading": 332.9375}'
+Topic: robot/coordinates
+Message: b'{"heading":"25.5850","x":1517,"y":-145}'
+Topic: pozyx/position
+Message: b'{"x": 1642.0, "y": -305.0, "heading": 332.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"26.1350","x":1546,"y":-131}'
+Topic: pozyx/position
+Message: b'{"x": 1652.0, "y": -281.0, "heading": 331.6875}'
+Topic: robot/coordinates
+Message: b'{"heading":"26.7050","x":1576,"y":-116}'
+Topic: pozyx/position
+Message: b'{"x": 1678.0, "y": -256.0, "heading": 330.875}'
+Topic: robot/coordinates
+Message: b'{"heading":"27.5750","x":1608,"y":-100}'
+Topic: pozyx/position
+Message: b'{"x": 1697.0, "y": -282.0, "heading": 330.1875}'
+Topic: robot/coordinates
+Message: b'{"heading":"28.2150","x":1637,"y":-84}'
+Topic: pozyx/position
+Message: b'{"x": 1705.0, "y": -288.0, "heading": 329.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"28.9050","x":1670,"y":-67}'
+Topic: pozyx/position
+Message: b'{"x": 1722.0, "y": -283.0, "heading": 329.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"29.4750","x":1699,"y":-50}'
+Topic: pozyx/position
+Message: b'{"x": 1766.0, "y": -352.0, "heading": 328.5}'
+Topic: robot/coordinates
+Message: b'{"heading":"29.9650","x":1732,"y":-32}'
+Topic: pozyx/position
+Message: b'{"x": 1792.0, "y": -382.0, "heading": 328.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"30.4650","x":1761,"y":-15}'
+Topic: pozyx/position
+Message: b'{"x": 1829.0, "y": -419.0, "heading": 327.375}'
+Topic: robot/coordinates
+Message: b'{"heading":"32.5100","x":1811,"y":-369}'
+Topic: pozyx/position
+Message: b'{"x": 1863.0, "y": -441.0, "heading": 327.0625}'
+Topic: robot/coordinates
+Message: b'{"heading":"32.8400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1889.0, "y": -447.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0200","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1904.0, "y": -436.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1912.0, "y": -426.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1919.0, "y": -423.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1918.0, "y": -424.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1920.0, "y": -422.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1921.0, "y": -419.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1927.0, "y": -429.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1926.0, "y": -429.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1922.0, "y": -433.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1925.0, "y": -434.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1921.0, "y": -429.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1920.0, "y": -426.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1924.0, "y": -422.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1924.0, "y": -424.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1921.0, "y": -429.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1922.0, "y": -427.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1920.0, "y": -425.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1910.0, "y": -399.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1901.0, "y": -396.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1905.0, "y": -398.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1905.0, "y": -397.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1915.0, "y": -425.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1921.0, "y": -421.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1915.0, "y": -412.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1911.0, "y": -407.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1908.0, "y": -406.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1911.0, "y": -407.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1915.0, "y": -418.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1917.0, "y": -420.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1925.0, "y": -424.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1923.0, "y": -425.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1927.0, "y": -431.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1924.0, "y": -432.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1921.0, "y": -430.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1922.0, "y": -424.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1921.0, "y": -418.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1919.0, "y": -421.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1922.0, "y": -420.0, "heading": 327.0}'
+Topic: robot/coordinates
+Message: b'{"heading":"33.0400","x":1819,"y":-364}'
+Topic: pozyx/position
+Message: b'{"x": 1921.0, "y": -425.0, "heading": 327.0}'
+Topic: pozyx/position
+Message: b'{"x": 1917.0, "y": -421.0, "heading": 327.0}'
+Topic: pozyx/position
+Message: b'{"x": 1918.0, "y": -421.0, "heading": 327.0}'
+Topic: pozyx/position
+Message: b'{"x": 1919.0, "y": -417.0, "heading": 327.0}'
+Topic: pozyx/position
+Message: b'{"x": 1916.0, "y": -415.0, "heading": 327.0}'
+Topic: pozyx/position
+Message: b'{"x": 1916.0, "y": -415.0, "heading": 327.0}'
+Topic: pozyx/position
+Message: b'{"x": 1914.0, "y": -415.0, "heading": 327.0}'
