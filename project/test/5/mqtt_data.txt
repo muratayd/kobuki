@@ -1,0 +1,3665 @@
+Timestamp: 2024-03-09 13:19:04.550733
+Topic: pozyx/position
+{"x": -1032.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:04.556591
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:04.653462
+Topic: pozyx/position
+{"x": -1033.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:04.654665
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:04.759847
+Topic: pozyx/position
+{"x": -1033.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:04.760990
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:04.865037
+Topic: pozyx/position
+{"x": -1036.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:04.865960
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:04.971493
+Topic: pozyx/position
+{"x": -1036.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:04.991729
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.078434
+Topic: pozyx/position
+{"x": -1032.0, "y": 978.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.079501
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.188580
+Topic: pozyx/position
+{"x": -1030.0, "y": 981.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.189945
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.294852
+Topic: pozyx/position
+{"x": -1031.0, "y": 984.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.296422
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.403479
+Topic: pozyx/position
+{"x": -1032.0, "y": 987.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.405911
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.509930
+Topic: pozyx/position
+{"x": -1032.0, "y": 987.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.532196
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.615745
+Topic: pozyx/position
+{"x": -1033.0, "y": 988.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.617100
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.722949
+Topic: pozyx/position
+{"x": -1032.0, "y": 987.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.724489
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.832574
+Topic: pozyx/position
+{"x": -1032.0, "y": 991.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.833710
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:05.936346
+Topic: pozyx/position
+{"x": -1032.0, "y": 991.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:05.937666
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.040720
+Topic: pozyx/position
+{"x": -1032.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.081878
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.147452
+Topic: pozyx/position
+{"x": -1032.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.150252
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.254147
+Topic: pozyx/position
+{"x": -1032.0, "y": 991.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.256109
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.358770
+Topic: pozyx/position
+{"x": -1031.0, "y": 990.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.360879
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.465788
+Topic: pozyx/position
+{"x": -1031.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.467763
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.572623
+Topic: pozyx/position
+{"x": -1025.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.575009
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.678628
+Topic: pozyx/position
+{"x": -1025.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.680792
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.785930
+Topic: pozyx/position
+{"x": -1029.0, "y": 983.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.787467
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:06.894307
+Topic: pozyx/position
+{"x": -1027.0, "y": 982.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:06.902807
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.004358
+Topic: pozyx/position
+{"x": -1028.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.005925
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.111532
+Topic: pozyx/position
+{"x": -1026.0, "y": 978.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.112973
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.218042
+Topic: pozyx/position
+{"x": -1026.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.219480
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.325289
+Topic: pozyx/position
+{"x": -1026.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.326553
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.433057
+Topic: pozyx/position
+{"x": -1028.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.451904
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.540792
+Topic: pozyx/position
+{"x": -1031.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.542709
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.647461
+Topic: pozyx/position
+{"x": -1028.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.649091
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.752126
+Topic: pozyx/position
+{"x": -1031.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.753753
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.858947
+Topic: pozyx/position
+{"x": -1028.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.860722
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:07.965616
+Topic: pozyx/position
+{"x": -1030.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:07.992009
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.073277
+Topic: pozyx/position
+{"x": -1030.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.075182
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.180159
+Topic: pozyx/position
+{"x": -1030.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.181879
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.287502
+Topic: pozyx/position
+{"x": -1031.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.289266
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.395499
+Topic: pozyx/position
+{"x": -1030.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.397261
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.502072
+Topic: pozyx/position
+{"x": -1028.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.542088
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.609476
+Topic: pozyx/position
+{"x": -1026.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.611199
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.716336
+Topic: pozyx/position
+{"x": -1024.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.718232
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.824550
+Topic: pozyx/position
+{"x": -1024.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.826240
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:08.931958
+Topic: pozyx/position
+{"x": -1024.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:08.933447
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.038765
+Topic: pozyx/position
+{"x": -1025.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.041198
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.146613
+Topic: pozyx/position
+{"x": -1025.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.148949
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.254740
+Topic: pozyx/position
+{"x": -1022.0, "y": 981.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.256762
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.362021
+Topic: pozyx/position
+{"x": -1022.0, "y": 978.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.363982
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.468936
+Topic: pozyx/position
+{"x": -1022.0, "y": 978.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.472154
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.575667
+Topic: pozyx/position
+{"x": -1021.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.577737
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.682320
+Topic: pozyx/position
+{"x": -1021.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.685546
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.790584
+Topic: pozyx/position
+{"x": -1022.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.792512
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:09.897869
+Topic: pozyx/position
+{"x": -1019.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:09.902206
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.005975
+Topic: pozyx/position
+{"x": -1019.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.007782
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.113789
+Topic: pozyx/position
+{"x": -1018.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.115596
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.221633
+Topic: pozyx/position
+{"x": -1017.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.222897
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.328698
+Topic: pozyx/position
+{"x": -1016.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.330214
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.435580
+Topic: pozyx/position
+{"x": -1019.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.451906
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.542002
+Topic: pozyx/position
+{"x": -1019.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.543768
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.648975
+Topic: pozyx/position
+{"x": -1021.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.651159
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.756697
+Topic: pozyx/position
+{"x": -1024.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.757958
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.864865
+Topic: pozyx/position
+{"x": -1026.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:10.866278
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:10.971649
+Topic: pozyx/position
+{"x": -1024.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.001960
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.079148
+Topic: pozyx/position
+{"x": -1024.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.080605
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.186872
+Topic: pozyx/position
+{"x": -1025.0, "y": 965.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.188250
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.294388
+Topic: pozyx/position
+{"x": -1024.0, "y": 963.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.295628
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.401172
+Topic: pozyx/position
+{"x": -1026.0, "y": 960.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.402515
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.508259
+Topic: pozyx/position
+{"x": -1026.0, "y": 960.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.552008
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.616336
+Topic: pozyx/position
+{"x": -1029.0, "y": 958.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.617582
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.724320
+Topic: pozyx/position
+{"x": -1029.0, "y": 957.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.725710
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.832141
+Topic: pozyx/position
+{"x": -1027.0, "y": 956.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.833581
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:11.939398
+Topic: pozyx/position
+{"x": -1026.0, "y": 956.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:11.940664
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.047593
+Topic: pozyx/position
+{"x": -1027.0, "y": 956.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.049608
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.155433
+Topic: pozyx/position
+{"x": -1027.0, "y": 955.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.156810
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.262969
+Topic: pozyx/position
+{"x": -1028.0, "y": 954.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.264310
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.369995
+Topic: pozyx/position
+{"x": -1027.0, "y": 951.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.372300
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.479099
+Topic: pozyx/position
+{"x": -1030.0, "y": 952.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.480569
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.586169
+Topic: pozyx/position
+{"x": -1029.0, "y": 958.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.587574
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.693994
+Topic: pozyx/position
+{"x": -1029.0, "y": 958.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.695483
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.801275
+Topic: pozyx/position
+{"x": -1025.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.803350
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:12.908764
+Topic: pozyx/position
+{"x": -1021.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:12.912352
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.016244
+Topic: pozyx/position
+{"x": -1024.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.018382
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.124270
+Topic: pozyx/position
+{"x": -1025.0, "y": 980.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.126731
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.232084
+Topic: pozyx/position
+{"x": -1024.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.234112
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.339789
+Topic: pozyx/position
+{"x": -1025.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.341714
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.448995
+Topic: pozyx/position
+{"x": -1026.0, "y": 983.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.471682
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.555152
+Topic: pozyx/position
+{"x": -1027.0, "y": 986.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.557142
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.664355
+Topic: pozyx/position
+{"x": -1024.0, "y": 984.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.671135
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.772740
+Topic: pozyx/position
+{"x": -1024.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.774111
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.880273
+Topic: pozyx/position
+{"x": -1027.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:13.881927
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:13.986973
+Topic: pozyx/position
+{"x": -1032.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.011960
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.094572
+Topic: pozyx/position
+{"x": -1032.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.096942
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.202584
+Topic: pozyx/position
+{"x": -1031.0, "y": 962.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.204250
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.309013
+Topic: pozyx/position
+{"x": -1032.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.310539
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.417807
+Topic: pozyx/position
+{"x": -1032.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.420357
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.524843
+Topic: pozyx/position
+{"x": -1032.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.561985
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.631367
+Topic: pozyx/position
+{"x": -1035.0, "y": 965.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.633020
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.738190
+Topic: pozyx/position
+{"x": -1032.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.740193
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.845023
+Topic: pozyx/position
+{"x": -1036.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.846581
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:14.949227
+Topic: pozyx/position
+{"x": -1033.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:14.950786
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.056573
+Topic: pozyx/position
+{"x": -1033.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.103345
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.162740
+Topic: pozyx/position
+{"x": -1033.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.164472
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.269248
+Topic: pozyx/position
+{"x": -1031.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.271061
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.375583
+Topic: pozyx/position
+{"x": -1028.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.377079
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.482500
+Topic: pozyx/position
+{"x": -1026.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.484398
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.590398
+Topic: pozyx/position
+{"x": -1025.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.591976
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.696394
+Topic: pozyx/position
+{"x": -1023.0, "y": 965.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.698003
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.803680
+Topic: pozyx/position
+{"x": -1022.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.805216
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:15.909726
+Topic: pozyx/position
+{"x": -1023.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:15.922246
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.016411
+Topic: pozyx/position
+{"x": -1019.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.017959
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.123004
+Topic: pozyx/position
+{"x": -1019.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.124926
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.228807
+Topic: pozyx/position
+{"x": -1022.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.230657
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.335948
+Topic: pozyx/position
+{"x": -1023.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.337623
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.442135
+Topic: pozyx/position
+{"x": -1022.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.471983
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.547463
+Topic: pozyx/position
+{"x": -1025.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.548904
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.654249
+Topic: pozyx/position
+{"x": -1026.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.655760
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.760637
+Topic: pozyx/position
+{"x": -1028.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.762575
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.867094
+Topic: pozyx/position
+{"x": -1031.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:16.868487
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:16.973505
+Topic: pozyx/position
+{"x": -1030.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.011863
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.081385
+Topic: pozyx/position
+{"x": -1031.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.083151
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.189066
+Topic: pozyx/position
+{"x": -1031.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.190816
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.296208
+Topic: pozyx/position
+{"x": -1033.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.297718
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.404666
+Topic: pozyx/position
+{"x": -1035.0, "y": 980.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.406302
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.515055
+Topic: pozyx/position
+{"x": -1035.0, "y": 980.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.516348
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.622208
+Topic: pozyx/position
+{"x": -1035.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.624373
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.730357
+Topic: pozyx/position
+{"x": -1031.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.732543
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.838696
+Topic: pozyx/position
+{"x": -1029.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.840765
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:17.946862
+Topic: pozyx/position
+{"x": -1029.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:17.949256
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.055948
+Topic: pozyx/position
+{"x": -1026.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.058086
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.163262
+Topic: pozyx/position
+{"x": -1027.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.165254
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.273874
+Topic: pozyx/position
+{"x": -1029.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.276140
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.381623
+Topic: pozyx/position
+{"x": -1026.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.383554
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.489637
+Topic: pozyx/position
+{"x": -1026.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.491689
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.596949
+Topic: pozyx/position
+{"x": -1024.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.598926
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.703224
+Topic: pozyx/position
+{"x": -1022.0, "y": 964.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.705114
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.811274
+Topic: pozyx/position
+{"x": -1022.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.813212
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:18.916925
+Topic: pozyx/position
+{"x": -1025.0, "y": 963.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:18.931792
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.025444
+Topic: pozyx/position
+{"x": -1024.0, "y": 965.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.027937
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.133202
+Topic: pozyx/position
+{"x": -1022.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.134519
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.238923
+Topic: pozyx/position
+{"x": -1022.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.240230
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.345515
+Topic: pozyx/position
+{"x": -1023.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.347263
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.451681
+Topic: pozyx/position
+{"x": -1021.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.472164
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.557701
+Topic: pozyx/position
+{"x": -1021.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.559286
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.664807
+Topic: pozyx/position
+{"x": -1021.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.666661
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.769804
+Topic: pozyx/position
+{"x": -1020.0, "y": 978.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.771509
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.874966
+Topic: pozyx/position
+{"x": -1020.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:19.876628
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:19.981969
+Topic: pozyx/position
+{"x": -1018.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.021850
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.087951
+Topic: pozyx/position
+{"x": -1016.0, "y": 982.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.089722
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.194866
+Topic: pozyx/position
+{"x": -1018.0, "y": 986.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.196251
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.301549
+Topic: pozyx/position
+{"x": -1020.0, "y": 984.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.302821
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.407578
+Topic: pozyx/position
+{"x": -1017.0, "y": 987.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.409531
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.514344
+Topic: pozyx/position
+{"x": -1018.0, "y": 983.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.516214
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.620195
+Topic: pozyx/position
+{"x": -1019.0, "y": 983.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.621888
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.726936
+Topic: pozyx/position
+{"x": -1019.0, "y": 983.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.728804
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.831956
+Topic: pozyx/position
+{"x": -1019.0, "y": 984.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.842397
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:20.938756
+Topic: pozyx/position
+{"x": -1023.0, "y": 984.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:20.941248
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.046533
+Topic: pozyx/position
+{"x": -1008.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.048507
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.151608
+Topic: pozyx/position
+{"x": -1011.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.153566
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.259973
+Topic: pozyx/position
+{"x": -1012.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.262014
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.367094
+Topic: pozyx/position
+{"x": -1012.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.391988
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.472308
+Topic: pozyx/position
+{"x": -1018.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.473845
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.579104
+Topic: pozyx/position
+{"x": -1019.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.580771
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.686773
+Topic: pozyx/position
+{"x": -1015.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.688557
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.791890
+Topic: pozyx/position
+{"x": -1017.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.793364
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:21.898840
+Topic: pozyx/position
+{"x": -1018.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:21.931954
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.006194
+Topic: pozyx/position
+{"x": -1013.0, "y": 963.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.008036
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.112811
+Topic: pozyx/position
+{"x": -1027.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.114832
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.217860
+Topic: pozyx/position
+{"x": -1027.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.220142
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.324642
+Topic: pozyx/position
+{"x": -1034.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.326310
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.431904
+Topic: pozyx/position
+{"x": -1034.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.433503
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.536167
+Topic: pozyx/position
+{"x": -1026.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.538015
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.644468
+Topic: pozyx/position
+{"x": -1028.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.645805
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.751610
+Topic: pozyx/position
+{"x": -1028.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.752909
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.857342
+Topic: pozyx/position
+{"x": -1030.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.859724
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:22.964957
+Topic: pozyx/position
+{"x": -1027.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:22.967342
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.071146
+Topic: pozyx/position
+{"x": -1028.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.072697
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.178020
+Topic: pozyx/position
+{"x": -1031.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.179771
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.284389
+Topic: pozyx/position
+{"x": -1029.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.302020
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.389497
+Topic: pozyx/position
+{"x": -1024.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.391071
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.496311
+Topic: pozyx/position
+{"x": -1022.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.498606
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.603898
+Topic: pozyx/position
+{"x": -1022.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.605351
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.710433
+Topic: pozyx/position
+{"x": -1023.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.712118
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.815007
+Topic: pozyx/position
+{"x": -1021.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.851921
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:23.923752
+Topic: pozyx/position
+{"x": -1018.0, "y": 965.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:23.926298
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.033183
+Topic: pozyx/position
+{"x": -1019.0, "y": 963.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.034388
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.140798
+Topic: pozyx/position
+{"x": -1019.0, "y": 965.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.142280
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.248119
+Topic: pozyx/position
+{"x": -1018.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.250084
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.355643
+Topic: pozyx/position
+{"x": -1018.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.402891
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.463542
+Topic: pozyx/position
+{"x": -1019.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.465197
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.570429
+Topic: pozyx/position
+{"x": -1021.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.572684
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.676874
+Topic: pozyx/position
+{"x": -1021.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.678635
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.781997
+Topic: pozyx/position
+{"x": -1023.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.783585
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.889146
+Topic: pozyx/position
+{"x": -1023.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.891040
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:24.994805
+Topic: pozyx/position
+{"x": -1026.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:24.996482
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.102145
+Topic: pozyx/position
+{"x": -1028.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.103857
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.209134
+Topic: pozyx/position
+{"x": -1028.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.222225
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.315622
+Topic: pozyx/position
+{"x": -1027.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.317216
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.422387
+Topic: pozyx/position
+{"x": -1027.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.424231
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.530120
+Topic: pozyx/position
+{"x": -1028.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.531782
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.636650
+Topic: pozyx/position
+{"x": -1030.0, "y": 968.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.638475
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.741354
+Topic: pozyx/position
+{"x": -1028.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.763149
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.848768
+Topic: pozyx/position
+{"x": -1025.0, "y": 960.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.850972
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:25.957849
+Topic: pozyx/position
+{"x": -1022.0, "y": 960.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:25.959520
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.062743
+Topic: pozyx/position
+{"x": -1022.0, "y": 961.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.064864
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.169713
+Topic: pozyx/position
+{"x": -1020.0, "y": 963.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.171762
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.276699
+Topic: pozyx/position
+{"x": -1019.0, "y": 957.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.322895
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.381992
+Topic: pozyx/position
+{"x": -1019.0, "y": 961.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.383807
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.488934
+Topic: pozyx/position
+{"x": -1020.0, "y": 961.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.491123
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.596657
+Topic: pozyx/position
+{"x": -1019.0, "y": 960.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.598880
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.703166
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.706023
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.810035
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.812761
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:26.917169
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:26.919075
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.024127
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.025945
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.131761
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.133303
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.238323
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.240041
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.346114
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.348336
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.451023
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.452987
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.557863
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.559650
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.664919
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.682335
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.772335
+Topic: pozyx/position
+{"x": -1015.0, "y": 959.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.774243
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.879782
+Topic: pozyx/position
+{"x": -1014.0, "y": 965.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.881561
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:27.986859
+Topic: pozyx/position
+{"x": -1015.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:27.988555
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.094724
+Topic: pozyx/position
+{"x": -1018.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.096924
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.202600
+Topic: pozyx/position
+{"x": -1017.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.222263
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.310609
+Topic: pozyx/position
+{"x": -1018.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.313475
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.417823
+Topic: pozyx/position
+{"x": -1019.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.420144
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.525681
+Topic: pozyx/position
+{"x": -1021.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.527483
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.630756
+Topic: pozyx/position
+{"x": -1018.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.632093
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.735987
+Topic: pozyx/position
+{"x": -1018.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.771868
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.843062
+Topic: pozyx/position
+{"x": -1020.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.844652
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:28.951031
+Topic: pozyx/position
+{"x": -1020.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:28.952624
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.057272
+Topic: pozyx/position
+{"x": -1020.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.058929
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.163827
+Topic: pozyx/position
+{"x": -1019.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.165458
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.271511
+Topic: pozyx/position
+{"x": -1019.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.273534
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.377085
+Topic: pozyx/position
+{"x": -1021.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.378739
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.483714
+Topic: pozyx/position
+{"x": -1018.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.485413
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.589996
+Topic: pozyx/position
+{"x": -1003.0, "y": 962.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.592377
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.695409
+Topic: pozyx/position
+{"x": -1003.0, "y": 966.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.697750
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.802337
+Topic: pozyx/position
+{"x": -1005.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.804081
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:29.909740
+Topic: pozyx/position
+{"x": -1005.0, "y": 967.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:29.912071
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.015745
+Topic: pozyx/position
+{"x": -1006.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.017633
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.123231
+Topic: pozyx/position
+{"x": -1005.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.141846
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.229462
+Topic: pozyx/position
+{"x": -1007.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.231617
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.337865
+Topic: pozyx/position
+{"x": -1008.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.339887
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.445220
+Topic: pozyx/position
+{"x": -1008.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.447204
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.553449
+Topic: pozyx/position
+{"x": -1009.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.555456
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.660957
+Topic: pozyx/position
+{"x": -1011.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.681967
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.768682
+Topic: pozyx/position
+{"x": -1025.0, "y": 981.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.770655
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.876598
+Topic: pozyx/position
+{"x": -1024.0, "y": 978.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.878517
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:30.985035
+Topic: pozyx/position
+{"x": -1027.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:30.986935
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.093071
+Topic: pozyx/position
+{"x": -1027.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.094990
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.200928
+Topic: pozyx/position
+{"x": -1030.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.232282
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.306809
+Topic: pozyx/position
+{"x": -1032.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.308360
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.413974
+Topic: pozyx/position
+{"x": -1034.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.415663
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.521854
+Topic: pozyx/position
+{"x": -1034.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.523488
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.627857
+Topic: pozyx/position
+{"x": -1032.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.629413
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.736247
+Topic: pozyx/position
+{"x": -1032.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.781844
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.844083
+Topic: pozyx/position
+{"x": -1034.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.845545
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:31.952698
+Topic: pozyx/position
+{"x": -1034.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:31.954195
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.058817
+Topic: pozyx/position
+{"x": -1033.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.060710
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.166975
+Topic: pozyx/position
+{"x": -1029.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.168488
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.274591
+Topic: pozyx/position
+{"x": -1028.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.277006
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.380834
+Topic: pozyx/position
+{"x": -1026.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.382563
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.490181
+Topic: pozyx/position
+{"x": -1025.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.491909
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.597724
+Topic: pozyx/position
+{"x": -1026.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.602243
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.704513
+Topic: pozyx/position
+{"x": -1025.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.706490
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.811053
+Topic: pozyx/position
+{"x": -1027.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.812887
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:32.915912
+Topic: pozyx/position
+{"x": -1027.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:32.917977
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.023045
+Topic: pozyx/position
+{"x": -1030.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.025973
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.130416
+Topic: pozyx/position
+{"x": -1033.0, "y": 973.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.161939
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.236686
+Topic: pozyx/position
+{"x": -1037.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.238220
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.345496
+Topic: pozyx/position
+{"x": -1038.0, "y": 969.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.347390
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.452532
+Topic: pozyx/position
+{"x": -1040.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.454210
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.561673
+Topic: pozyx/position
+{"x": -1039.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.563682
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.667569
+Topic: pozyx/position
+{"x": -1038.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.692054
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.775972
+Topic: pozyx/position
+{"x": -1036.0, "y": 982.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.777595
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.885002
+Topic: pozyx/position
+{"x": -1033.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.886569
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:33.991973
+Topic: pozyx/position
+{"x": -1031.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:33.993710
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.100541
+Topic: pozyx/position
+{"x": -1030.0, "y": 990.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.102704
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.207943
+Topic: pozyx/position
+{"x": -1027.0, "y": 990.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.242230
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.314371
+Topic: pozyx/position
+{"x": -1026.0, "y": 990.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.315927
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.422464
+Topic: pozyx/position
+{"x": -1027.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.424195
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.530181
+Topic: pozyx/position
+{"x": -1027.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.531598
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.637984
+Topic: pozyx/position
+{"x": -1030.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.639413
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.746513
+Topic: pozyx/position
+{"x": -1030.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.791944
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.854614
+Topic: pozyx/position
+{"x": -1029.0, "y": 988.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.856087
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:34.962525
+Topic: pozyx/position
+{"x": -1030.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:34.964139
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.069966
+Topic: pozyx/position
+{"x": -1032.0, "y": 987.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.071451
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.177932
+Topic: pozyx/position
+{"x": -1033.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.179705
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.285892
+Topic: pozyx/position
+{"x": -1033.0, "y": 982.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.287201
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.392093
+Topic: pozyx/position
+{"x": -1034.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.393549
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.499968
+Topic: pozyx/position
+{"x": -1033.0, "y": 989.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.501730
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.607068
+Topic: pozyx/position
+{"x": -1034.0, "y": 988.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.612493
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.715778
+Topic: pozyx/position
+{"x": -1033.0, "y": 988.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.717614
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.825668
+Topic: pozyx/position
+{"x": -1033.0, "y": 988.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.827451
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:35.933505
+Topic: pozyx/position
+{"x": -1034.0, "y": 992.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:35.934906
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.041180
+Topic: pozyx/position
+{"x": -1035.0, "y": 991.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.043346
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.148639
+Topic: pozyx/position
+{"x": -1036.0, "y": 991.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.152426
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.256569
+Topic: pozyx/position
+{"x": -1037.0, "y": 987.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.258075
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.367707
+Topic: pozyx/position
+{"x": -1039.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.369398
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.475088
+Topic: pozyx/position
+{"x": -1038.0, "y": 985.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.477644
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.583763
+Topic: pozyx/position
+{"x": -1036.0, "y": 984.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.585549
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.689860
+Topic: pozyx/position
+{"x": -1036.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.702018
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.797302
+Topic: pozyx/position
+{"x": -1034.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.799329
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:36.904695
+Topic: pozyx/position
+{"x": -1033.0, "y": 979.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:36.906279
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.009711
+Topic: pozyx/position
+{"x": -1032.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.011209
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.117620
+Topic: pozyx/position
+{"x": -1031.0, "y": 975.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.119221
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.224797
+Topic: pozyx/position
+{"x": -1030.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.252055
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.330132
+Topic: pozyx/position
+{"x": -1030.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.331833
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.438400
+Topic: pozyx/position
+{"x": -1028.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.440322
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.546597
+Topic: pozyx/position
+{"x": -1028.0, "y": 972.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.548316
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.656094
+Topic: pozyx/position
+{"x": -1027.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.658364
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.762417
+Topic: pozyx/position
+{"x": -1026.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.801838
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.868814
+Topic: pozyx/position
+{"x": -1026.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.870446
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:37.975602
+Topic: pozyx/position
+{"x": -1028.0, "y": 977.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:37.977305
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:38.083160
+Topic: pozyx/position
+{"x": -1029.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:38.084494
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:38.189801
+Topic: pozyx/position
+{"x": -1029.0, "y": 976.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:38.191742
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:38.296072
+Topic: pozyx/position
+{"x": -1027.0, "y": 974.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:38.297807
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:38.402883
+Topic: pozyx/position
+{"x": -1022.0, "y": 970.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:38.450863
+Topic: robot/coordinates
+{"heading":"-1.4375","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:38.510483
+Topic: pozyx/position
+{"x": -1020.0, "y": 971.0, "heading": 1.4375}
+Timestamp: 2024-03-09 13:19:38.512382
+Topic: robot/coordinates
+{"heading":"-1.4275","x":-1024,"y":973}
+Timestamp: 2024-03-09 13:19:38.615214
+Topic: pozyx/position
+{"x": -1020.0, "y": 971.0, "heading": 1.25}
+Timestamp: 2024-03-09 13:19:38.621804
+Topic: robot/coordinates
+{"heading":"-1.2975","x":-1017,"y":972}
+Timestamp: 2024-03-09 13:19:38.722285
+Topic: pozyx/position
+{"x": -1021.0, "y": 973.0, "heading": 1.125}
+Timestamp: 2024-03-09 13:19:38.723705
+Topic: robot/coordinates
+{"heading":"-1.1175","x":-1007,"y":972}
+Timestamp: 2024-03-09 13:19:38.829944
+Topic: pozyx/position
+{"x": -1021.0, "y": 973.0, "heading": 0.875}
+Timestamp: 2024-03-09 13:19:38.833054
+Topic: robot/coordinates
+{"heading":"-0.9375","x":-993,"y":972}
+Timestamp: 2024-03-09 13:19:38.936612
+Topic: pozyx/position
+{"x": -1016.0, "y": 971.0, "heading": 0.75}
+Timestamp: 2024-03-09 13:19:38.939077
+Topic: robot/coordinates
+{"heading":"-0.7775","x":-978,"y":972}
+Timestamp: 2024-03-09 13:19:39.043029
+Topic: pozyx/position
+{"x": -1011.0, "y": 972.0, "heading": 0.5625}
+Timestamp: 2024-03-09 13:19:39.045405
+Topic: robot/coordinates
+{"heading":"-0.5775","x":-960,"y":971}
+Timestamp: 2024-03-09 13:19:39.149521
+Topic: pozyx/position
+{"x": -1001.0, "y": 974.0, "heading": 0.5}
+Timestamp: 2024-03-09 13:19:39.162579
+Topic: robot/coordinates
+{"heading":"-0.4975","x":-942,"y":971}
+Timestamp: 2024-03-09 13:19:39.254497
+Topic: pozyx/position
+{"x": -989.0, "y": 975.0, "heading": 0.5}
+Timestamp: 2024-03-09 13:19:39.256691
+Topic: robot/coordinates
+{"heading":"-0.4675","x":-930,"y":971}
+Timestamp: 2024-03-09 13:19:39.361387
+Topic: pozyx/position
+{"x": -977.0, "y": 978.0, "heading": 0.375}
+Timestamp: 2024-03-09 13:19:39.363753
+Topic: robot/coordinates
+{"heading":"-0.3875","x":-915,"y":971}
+Timestamp: 2024-03-09 13:19:39.467518
+Topic: pozyx/position
+{"x": -962.0, "y": 979.0, "heading": 0.3125}
+Timestamp: 2024-03-09 13:19:39.469048
+Topic: robot/coordinates
+{"heading":"-0.2775","x":-897,"y":971}
+Timestamp: 2024-03-09 13:19:39.574439
+Topic: pozyx/position
+{"x": -944.0, "y": 975.0, "heading": 0.25}
+Timestamp: 2024-03-09 13:19:39.576111
+Topic: robot/coordinates
+{"heading":"-0.1875","x":-882,"y":971}
+Timestamp: 2024-03-09 13:19:39.680896
+Topic: pozyx/position
+{"x": -925.0, "y": 977.0, "heading": 0.1875}
+Timestamp: 2024-03-09 13:19:39.711950
+Topic: robot/coordinates
+{"heading":"-0.1175","x":-861,"y":971}
+Timestamp: 2024-03-09 13:19:39.785774
+Topic: pozyx/position
+{"x": -905.0, "y": 973.0, "heading": 0.0625}
+Timestamp: 2024-03-09 13:19:39.787448
+Topic: robot/coordinates
+{"heading":"-0.0275","x":-848,"y":971}
+Timestamp: 2024-03-09 13:19:39.892751
+Topic: pozyx/position
+{"x": -881.0, "y": 968.0, "heading": 359.9375}
+Timestamp: 2024-03-09 13:19:39.894421
+Topic: robot/coordinates
+{"heading":"0.06250","x":-833,"y":971}
+Timestamp: 2024-03-09 13:19:40.000235
+Topic: pozyx/position
+{"x": -860.0, "y": 962.0, "heading": 359.875}
+Timestamp: 2024-03-09 13:19:40.001930
+Topic: robot/coordinates
+{"heading":"0.19250","x":-817,"y":971}
+Timestamp: 2024-03-09 13:19:40.106983
+Topic: pozyx/position
+{"x": -839.0, "y": 954.0, "heading": 359.8125}
+Timestamp: 2024-03-09 13:19:40.108508
+Topic: robot/coordinates
+{"heading":"0.30250","x":-799,"y":971}
+Timestamp: 2024-03-09 13:19:40.213173
+Topic: pozyx/position
+{"x": -818.0, "y": 945.0, "heading": 359.75}
+Timestamp: 2024-03-09 13:19:40.252053
+Topic: robot/coordinates
+{"heading":"0.33250","x":-777,"y":971}
+Timestamp: 2024-03-09 13:19:40.320102
+Topic: pozyx/position
+{"x": -800.0, "y": 935.0, "heading": 359.75}
+Timestamp: 2024-03-09 13:19:40.321520
+Topic: robot/coordinates
+{"heading":"0.34250","x":-767,"y":971}
+Timestamp: 2024-03-09 13:19:40.426477
+Topic: pozyx/position
+{"x": -789.0, "y": 931.0, "heading": 359.6875}
+Timestamp: 2024-03-09 13:19:40.428076
+Topic: robot/coordinates
+{"heading":"0.37250","x":-748,"y":971}
+Timestamp: 2024-03-09 13:19:40.531409
+Topic: pozyx/position
+{"x": -781.0, "y": 931.0, "heading": 359.5625}
+Timestamp: 2024-03-09 13:19:40.532848
+Topic: robot/coordinates
+{"heading":"0.45250","x":-732,"y":971}
+Timestamp: 2024-03-09 13:19:40.638173
+Topic: pozyx/position
+{"x": -772.0, "y": 925.0, "heading": 359.5625}
+Timestamp: 2024-03-09 13:19:40.639817
+Topic: robot/coordinates
+{"heading":"0.50250","x":-716,"y":971}
+Timestamp: 2024-03-09 13:19:40.744892
+Topic: pozyx/position
+{"x": -764.0, "y": 939.0, "heading": 359.4375}
+Timestamp: 2024-03-09 13:19:40.747397
+Topic: robot/coordinates
+{"heading":"0.62250","x":-697,"y":972}
+Timestamp: 2024-03-09 13:19:40.850077
+Topic: pozyx/position
+{"x": -764.0, "y": 939.0, "heading": 359.3125}
+Timestamp: 2024-03-09 13:19:40.851452
+Topic: robot/coordinates
+{"heading":"0.72250","x":-681,"y":972}
+Timestamp: 2024-03-09 13:19:40.956914
+Topic: pozyx/position
+{"x": -747.0, "y": 955.0, "heading": 359.25}
+Timestamp: 2024-03-09 13:19:40.958506
+Topic: robot/coordinates
+{"heading":"0.80250","x":-665,"y":972}
+Timestamp: 2024-03-09 13:19:41.063837
+Topic: pozyx/position
+{"x": -733.0, "y": 983.0, "heading": 359.1875}
+Timestamp: 2024-03-09 13:19:41.065527
+Topic: robot/coordinates
+{"heading":"0.88250","x":-648,"y":972}
+Timestamp: 2024-03-09 13:19:41.169529
+Topic: pozyx/position
+{"x": -717.0, "y": 1011.0, "heading": 359.1875}
+Timestamp: 2024-03-09 13:19:41.171045
+Topic: robot/coordinates
+{"heading":"0.89250","x":-629,"y":973}
+Timestamp: 2024-03-09 13:19:41.276208
+Topic: pozyx/position
+{"x": -701.0, "y": 1042.0, "heading": 359.125}
+Timestamp: 2024-03-09 13:19:41.277875
+Topic: robot/coordinates
+{"heading":"0.99250","x":-613,"y":973}
+Timestamp: 2024-03-09 13:19:41.381164
+Topic: pozyx/position
+{"x": -685.0, "y": 1070.0, "heading": 359.0}
+Timestamp: 2024-03-09 13:19:41.382840
+Topic: robot/coordinates
+{"heading":"1.06250","x":-596,"y":973}
+Timestamp: 2024-03-09 13:19:41.488352
+Topic: pozyx/position
+{"x": -666.0, "y": 1095.0, "heading": 358.9375}
+Timestamp: 2024-03-09 13:19:41.490129
+Topic: robot/coordinates
+{"heading":"1.20250","x":-577,"y":973}
+Timestamp: 2024-03-09 13:19:41.595332
+Topic: pozyx/position
+{"x": -641.0, "y": 1113.0, "heading": 358.875}
+Timestamp: 2024-03-09 13:19:41.611923
+Topic: robot/coordinates
+{"heading":"1.26250","x":-557,"y":974}
+Timestamp: 2024-03-09 13:19:41.701418
+Topic: pozyx/position
+{"x": -609.0, "y": 1134.0, "heading": 358.8125}
+Timestamp: 2024-03-09 13:19:41.702899
+Topic: robot/coordinates
+{"heading":"1.30250","x":-544,"y":974}
+Timestamp: 2024-03-09 13:19:41.808070
+Topic: pozyx/position
+{"x": -581.0, "y": 1159.0, "heading": 358.75}
+Timestamp: 2024-03-09 13:19:41.809389
+Topic: robot/coordinates
+{"heading":"1.39250","x":-524,"y":975}
+Timestamp: 2024-03-09 13:19:41.912842
+Topic: pozyx/position
+{"x": -550.0, "y": 1165.0, "heading": 358.625}
+Timestamp: 2024-03-09 13:19:41.914224
+Topic: robot/coordinates
+{"heading":"1.48250","x":-507,"y":975}
+Timestamp: 2024-03-09 13:19:42.019405
+Topic: pozyx/position
+{"x": -525.0, "y": 1175.0, "heading": 358.5625}
+Timestamp: 2024-03-09 13:19:42.020999
+Topic: robot/coordinates
+{"heading":"1.57250","x":-490,"y":976}
+Timestamp: 2024-03-09 13:19:42.126584
+Topic: pozyx/position
+{"x": -500.0, "y": 1163.0, "heading": 358.5}
+Timestamp: 2024-03-09 13:19:42.161790
+Topic: robot/coordinates
+{"heading":"1.62250","x":-467,"y":976}
+Timestamp: 2024-03-09 13:19:42.233590
+Topic: pozyx/position
+{"x": -477.0, "y": 1147.0, "heading": 358.5}
+Timestamp: 2024-03-09 13:19:42.235106
+Topic: robot/coordinates
+{"heading":"1.64250","x":-453,"y":977}
+Timestamp: 2024-03-09 13:19:42.340121
+Topic: pozyx/position
+{"x": -453.0, "y": 1130.0, "heading": 358.375}
+Timestamp: 2024-03-09 13:19:42.341760
+Topic: robot/coordinates
+{"heading":"1.71250","x":-436,"y":977}
+Timestamp: 2024-03-09 13:19:42.444900
+Topic: pozyx/position
+{"x": -435.0, "y": 1112.0, "heading": 358.3125}
+Timestamp: 2024-03-09 13:19:42.446244
+Topic: robot/coordinates
+{"heading":"1.78250","x":-420,"y":978}
+Timestamp: 2024-03-09 13:19:42.552411
+Topic: pozyx/position
+{"x": -416.0, "y": 1096.0, "heading": 358.3125}
+Timestamp: 2024-03-09 13:19:42.554082
+Topic: robot/coordinates
+{"heading":"1.79250","x":-399,"y":978}
+Timestamp: 2024-03-09 13:19:42.659184
+Topic: pozyx/position
+{"x": -399.0, "y": 1084.0, "heading": 358.25}
+Timestamp: 2024-03-09 13:19:42.692225
+Topic: robot/coordinates
+{"heading":"1.80250","x":-375,"y":979}
+Timestamp: 2024-03-09 13:19:42.764474
+Topic: pozyx/position
+{"x": -384.0, "y": 1068.0, "heading": 358.1875}
+Timestamp: 2024-03-09 13:19:42.765877
+Topic: robot/coordinates
+{"heading":"1.86250","x":-365,"y":979}
+Timestamp: 2024-03-09 13:19:42.871355
+Topic: pozyx/position
+{"x": -384.0, "y": 1068.0, "heading": 358.1875}
+Timestamp: 2024-03-09 13:19:42.872683
+Topic: robot/coordinates
+{"heading":"1.91250","x":-345,"y":980}
+Timestamp: 2024-03-09 13:19:42.980168
+Topic: pozyx/position
+{"x": -372.0, "y": 1053.0, "heading": 358.1875}
+Timestamp: 2024-03-09 13:19:42.981621
+Topic: robot/coordinates
+{"heading":"1.93250","x":-327,"y":981}
+Timestamp: 2024-03-09 13:19:43.087582
+Topic: pozyx/position
+{"x": -360.0, "y": 1033.0, "heading": 358.1875}
+Timestamp: 2024-03-09 13:19:43.089938
+Topic: robot/coordinates
+{"heading":"1.95250","x":-310,"y":981}
+Timestamp: 2024-03-09 13:19:43.195211
+Topic: pozyx/position
+{"x": -337.0, "y": 1002.0, "heading": 358.125}
+Timestamp: 2024-03-09 13:19:43.221851
+Topic: robot/coordinates
+{"heading":"1.99250","x":-286,"y":982}
+Timestamp: 2024-03-09 13:19:43.301533
+Topic: pozyx/position
+{"x": -337.0, "y": 1002.0, "heading": 358.0625}
+Timestamp: 2024-03-09 13:19:43.303292
+Topic: robot/coordinates
+{"heading":"2.06250","x":-272,"y":982}
+Timestamp: 2024-03-09 13:19:43.411338
+Topic: pozyx/position
+{"x": -311.0, "y": 993.0, "heading": 358.0625}
+Timestamp: 2024-03-09 13:19:43.413764
+Topic: robot/coordinates
+{"heading":"2.06250","x":-251,"y":983}
+Timestamp: 2024-03-09 13:19:43.518583
+Topic: pozyx/position
+{"x": -311.0, "y": 993.0, "heading": 358.0625}
+Timestamp: 2024-03-09 13:19:43.520506
+Topic: robot/coordinates
+{"heading":"2.08250","x":-234,"y":984}
+Timestamp: 2024-03-09 13:19:43.625521
+Topic: pozyx/position
+{"x": -292.0, "y": 995.0, "heading": 358.0}
+Timestamp: 2024-03-09 13:19:43.627766
+Topic: robot/coordinates
+{"heading":"2.10250","x":-216,"y":984}
+Timestamp: 2024-03-09 13:19:43.733122
+Topic: pozyx/position
+{"x": -270.0, "y": 997.0, "heading": 357.9375}
+Timestamp: 2024-03-09 13:19:43.762289
+Topic: robot/coordinates
+{"heading":"2.15250","x":-192,"y":985}
+Timestamp: 2024-03-09 13:19:43.840996
+Topic: pozyx/position
+{"x": -246.0, "y": 999.0, "heading": 357.875}
+Timestamp: 2024-03-09 13:19:43.842936
+Topic: robot/coordinates
+{"heading":"2.21250","x":-178,"y":986}
+Timestamp: 2024-03-09 13:19:43.948619
+Topic: pozyx/position
+{"x": -224.0, "y": 1002.0, "heading": 357.8125}
+Timestamp: 2024-03-09 13:19:43.950760
+Topic: robot/coordinates
+{"heading":"2.27250","x":-160,"y":987}
+Timestamp: 2024-03-09 13:19:44.055816
+Topic: pozyx/position
+{"x": -202.0, "y": 1006.0, "heading": 357.75}
+Timestamp: 2024-03-09 13:19:44.058998
+Topic: robot/coordinates
+{"heading":"2.35250","x":-139,"y":987}
+Timestamp: 2024-03-09 13:19:44.163143
+Topic: pozyx/position
+{"x": -184.0, "y": 1012.0, "heading": 357.75}
+Timestamp: 2024-03-09 13:19:44.164848
+Topic: robot/coordinates
+{"heading":"2.39250","x":-122,"y":988}
+Timestamp: 2024-03-09 13:19:44.270912
+Topic: pozyx/position
+{"x": -168.0, "y": 1014.0, "heading": 357.75}
+Timestamp: 2024-03-09 13:19:44.302513
+Topic: robot/coordinates
+{"heading":"2.41250","x":-97,"y":989}
+Timestamp: 2024-03-09 13:19:44.378133
+Topic: pozyx/position
+{"x": -148.0, "y": 1015.0, "heading": 357.75}
+Timestamp: 2024-03-09 13:19:44.379863
+Topic: robot/coordinates
+{"heading":"2.38250","x":-83,"y":990}
+Timestamp: 2024-03-09 13:19:44.485153
+Topic: pozyx/position
+{"x": -129.0, "y": 1015.0, "heading": 357.75}
+Timestamp: 2024-03-09 13:19:44.486806
+Topic: robot/coordinates
+{"heading":"2.43250","x":-65,"y":991}
+Timestamp: 2024-03-09 13:19:44.594728
+Topic: pozyx/position
+{"x": -109.0, "y": 1016.0, "heading": 357.6875}
+Timestamp: 2024-03-09 13:19:44.597476
+Topic: robot/coordinates
+{"heading":"2.47250","x":-43,"y":991}
+Timestamp: 2024-03-09 13:19:44.700096
+Topic: pozyx/position
+{"x": -88.0, "y": 1018.0, "heading": 357.625}
+Timestamp: 2024-03-09 13:19:44.701619
+Topic: robot/coordinates
+{"heading":"2.51250","x":-26,"y":992}
+Timestamp: 2024-03-09 13:19:44.805257
+Topic: pozyx/position
+{"x": -74.0, "y": 1024.0, "heading": 357.625}
+Timestamp: 2024-03-09 13:19:44.831488
+Topic: robot/coordinates
+{"heading":"2.51250","x":-4,"y":993}
+Timestamp: 2024-03-09 13:19:44.910887
+Topic: pozyx/position
+{"x": -62.0, "y": 1034.0, "heading": 357.625}
+Timestamp: 2024-03-09 13:19:44.916774
+Topic: robot/coordinates
+{"heading":"2.55250","x":9,"y":994}
+Timestamp: 2024-03-09 13:19:45.015925
+Topic: pozyx/position
+{"x": -62.0, "y": 1034.0, "heading": 357.5625}
+Timestamp: 2024-03-09 13:19:45.017371
+Topic: robot/coordinates
+{"heading":"2.57250","x":31,"y":995}
+Timestamp: 2024-03-09 13:19:45.121155
+Topic: pozyx/position
+{"x": -47.0, "y": 1042.0, "heading": 357.5625}
+Timestamp: 2024-03-09 13:19:45.122607
+Topic: robot/coordinates
+{"heading":"2.62250","x":48,"y":996}
+Timestamp: 2024-03-09 13:19:45.226349
+Topic: pozyx/position
+{"x": -28.0, "y": 1049.0, "heading": 357.5}
+Timestamp: 2024-03-09 13:19:45.227782
+Topic: robot/coordinates
+{"heading":"2.66250","x":66,"y":996}
+Timestamp: 2024-03-09 13:19:45.334808
+Topic: pozyx/position
+{"x": -8.0, "y": 1050.0, "heading": 357.4375}
+Timestamp: 2024-03-09 13:19:45.362475
+Topic: robot/coordinates
+{"heading":"2.75250","x":91,"y":998}
+Timestamp: 2024-03-09 13:19:45.442190
+Topic: pozyx/position
+{"x": 16.0, "y": 1057.0, "heading": 357.375}
+Timestamp: 2024-03-09 13:19:45.444502
+Topic: robot/coordinates
+{"heading":"2.78250","x":106,"y":998}
+Timestamp: 2024-03-09 13:19:45.550087
+Topic: pozyx/position
+{"x": 37.0, "y": 1060.0, "heading": 357.375}
+Timestamp: 2024-03-09 13:19:45.552622
+Topic: robot/coordinates
+{"heading":"2.82250","x":124,"y":999}
+Timestamp: 2024-03-09 13:19:45.658157
+Topic: pozyx/position
+{"x": 60.0, "y": 1059.0, "heading": 357.375}
+Timestamp: 2024-03-09 13:19:45.660343
+Topic: robot/coordinates
+{"heading":"2.79250","x":146,"y":1000}
+Timestamp: 2024-03-09 13:19:45.765751
+Topic: pozyx/position
+{"x": 79.0, "y": 1060.0, "heading": 357.25}
+Timestamp: 2024-03-09 13:19:45.767983
+Topic: robot/coordinates
+{"heading":"2.86250","x":164,"y":1001}
+Timestamp: 2024-03-09 13:19:45.873209
+Topic: pozyx/position
+{"x": 99.0, "y": 1062.0, "heading": 357.25}
+Timestamp: 2024-03-09 13:19:45.902802
+Topic: robot/coordinates
+{"heading":"2.95250","x":189,"y":1002}
+Timestamp: 2024-03-09 13:19:45.981278
+Topic: pozyx/position
+{"x": 119.0, "y": 1067.0, "heading": 357.25}
+Timestamp: 2024-03-09 13:19:45.983235
+Topic: robot/coordinates
+{"heading":"3.00250","x":204,"y":1003}
+Timestamp: 2024-03-09 13:19:46.088963
+Topic: pozyx/position
+{"x": 142.0, "y": 1064.0, "heading": 357.1875}
+Timestamp: 2024-03-09 13:19:46.090798
+Topic: robot/coordinates
+{"heading":"3.01250","x":222,"y":1004}
+Timestamp: 2024-03-09 13:19:46.196561
+Topic: pozyx/position
+{"x": 165.0, "y": 1065.0, "heading": 357.125}
+Timestamp: 2024-03-09 13:19:46.198253
+Topic: robot/coordinates
+{"heading":"3.06250","x":240,"y":1005}
+Timestamp: 2024-03-09 13:19:46.303385
+Topic: pozyx/position
+{"x": 190.0, "y": 1064.0, "heading": 357.0625}
+Timestamp: 2024-03-09 13:19:46.305234
+Topic: robot/coordinates
+{"heading":"3.09250","x":262,"y":1006}
+Timestamp: 2024-03-09 13:19:46.410877
+Topic: pozyx/position
+{"x": 216.0, "y": 1067.0, "heading": 357.0625}
+Timestamp: 2024-03-09 13:19:46.432492
+Topic: robot/coordinates
+{"heading":"3.11250","x":284,"y":1007}
+Timestamp: 2024-03-09 13:19:46.519539
+Topic: pozyx/position
+{"x": 240.0, "y": 1070.0, "heading": 357.0625}
+Timestamp: 2024-03-09 13:19:46.521244
+Topic: robot/coordinates
+{"heading":"3.14250","x":302,"y":1008}
+Timestamp: 2024-03-09 13:19:46.626657
+Topic: pozyx/position
+{"x": 264.0, "y": 1073.0, "heading": 357.0625}
+Timestamp: 2024-03-09 13:19:46.628304
+Topic: robot/coordinates
+{"heading":"3.16250","x":321,"y":1009}
+Timestamp: 2024-03-09 13:19:46.733216
+Topic: pozyx/position
+{"x": 279.0, "y": 1085.0, "heading": 357.0}
+Timestamp: 2024-03-09 13:19:46.734999
+Topic: robot/coordinates
+{"heading":"3.17250","x":339,"y":1010}
+Timestamp: 2024-03-09 13:19:46.840759
+Topic: pozyx/position
+{"x": 300.0, "y": 1095.0, "heading": 357.0}
+Timestamp: 2024-03-09 13:19:46.842359
+Topic: robot/coordinates
+{"heading":"3.17250","x":361,"y":1012}
+Timestamp: 2024-03-09 13:19:46.948150
+Topic: pozyx/position
+{"x": 317.0, "y": 1097.0, "heading": 357.0625}
+Timestamp: 2024-03-09 13:19:46.962252
+Topic: robot/coordinates
+{"heading":"3.16250","x":383,"y":1013}
+Timestamp: 2024-03-09 13:19:47.056035
+Topic: pozyx/position
+{"x": 334.0, "y": 1094.0, "heading": 357.0}
+Timestamp: 2024-03-09 13:19:47.057706
+Topic: robot/coordinates
+{"heading":"3.16250","x":398,"y":1014}
+Timestamp: 2024-03-09 13:19:47.163850
+Topic: pozyx/position
+{"x": 349.0, "y": 1097.0, "heading": 356.9375}
+Timestamp: 2024-03-09 13:19:47.165957
+Topic: robot/coordinates
+{"heading":"3.27250","x":420,"y":1015}
+Timestamp: 2024-03-09 13:19:47.271489
+Topic: pozyx/position
+{"x": 364.0, "y": 1101.0, "heading": 356.875}
+Timestamp: 2024-03-09 13:19:47.273209
+Topic: robot/coordinates
+{"heading":"3.27250","x":439,"y":1016}
+Timestamp: 2024-03-09 13:19:47.378229
+Topic: pozyx/position
+{"x": 380.0, "y": 1108.0, "heading": 356.875}
+Timestamp: 2024-03-09 13:19:47.379967
+Topic: robot/coordinates
+{"heading":"3.28250","x":457,"y":1017}
+Timestamp: 2024-03-09 13:19:47.485678
+Topic: pozyx/position
+{"x": 397.0, "y": 1116.0, "heading": 356.875}
+Timestamp: 2024-03-09 13:19:47.492350
+Topic: robot/coordinates
+{"heading":"3.28250","x":480,"y":1018}
+Timestamp: 2024-03-09 13:19:47.593612
+Topic: pozyx/position
+{"x": 397.0, "y": 1116.0, "heading": 356.8125}
+Timestamp: 2024-03-09 13:19:47.595665
+Topic: robot/coordinates
+{"heading":"3.32250","x":498,"y":1019}
+Timestamp: 2024-03-09 13:19:47.701501
+Topic: pozyx/position
+{"x": 415.0, "y": 1123.0, "heading": 356.8125}
+Timestamp: 2024-03-09 13:19:47.703384
+Topic: robot/coordinates
+{"heading":"3.35250","x":520,"y":1021}
+Timestamp: 2024-03-09 13:19:47.810473
+Topic: pozyx/position
+{"x": 436.0, "y": 1128.0, "heading": 356.75}
+Timestamp: 2024-03-09 13:19:47.812458
+Topic: robot/coordinates
+{"heading":"3.38250","x":539,"y":1022}
+Timestamp: 2024-03-09 13:19:47.918411
+Topic: pozyx/position
+{"x": 464.0, "y": 1129.0, "heading": 356.75}
+Timestamp: 2024-03-09 13:19:47.920479
+Topic: robot/coordinates
+{"heading":"3.43250","x":558,"y":1023}
+Timestamp: 2024-03-09 13:19:48.027194
+Topic: pozyx/position
+{"x": 490.0, "y": 1132.0, "heading": 356.6875}
+Timestamp: 2024-03-09 13:19:48.029196
+Topic: robot/coordinates
+{"heading":"3.44250","x":580,"y":1024}
+Timestamp: 2024-03-09 13:19:48.135462
+Topic: pozyx/position
+{"x": 518.0, "y": 1135.0, "heading": 356.6875}
+Timestamp: 2024-03-09 13:19:48.137015
+Topic: robot/coordinates
+{"heading":"3.50250","x":599,"y":1025}
+Timestamp: 2024-03-09 13:19:48.243762
+Topic: pozyx/position
+{"x": 533.0, "y": 1143.0, "heading": 356.75}
+Timestamp: 2024-03-09 13:19:48.282661
+Topic: robot/coordinates
+{"heading":"3.46250","x":625,"y":1027}
+Timestamp: 2024-03-09 13:19:48.352474
+Topic: pozyx/position
+{"x": 558.0, "y": 1142.0, "heading": 356.6875}
+Timestamp: 2024-03-09 13:19:48.354100
+Topic: robot/coordinates
+{"heading":"3.51250","x":640,"y":1028}
+Timestamp: 2024-03-09 13:19:48.459173
+Topic: pozyx/position
+{"x": 580.0, "y": 1137.0, "heading": 356.8125}
+Timestamp: 2024-03-09 13:19:48.460946
+Topic: robot/coordinates
+{"heading":"3.41250","x":659,"y":1029}
+Timestamp: 2024-03-09 13:19:48.565658
+Topic: pozyx/position
+{"x": 597.0, "y": 1134.0, "heading": 356.75}
+Timestamp: 2024-03-09 13:19:48.567505
+Topic: robot/coordinates
+{"heading":"3.46250","x":681,"y":1030}
+Timestamp: 2024-03-09 13:19:48.673389
+Topic: pozyx/position
+{"x": 619.0, "y": 1129.0, "heading": 356.75}
+Timestamp: 2024-03-09 13:19:48.675147
+Topic: robot/coordinates
+{"heading":"3.50250","x":700,"y":1032}
+Timestamp: 2024-03-09 13:19:48.779913
+Topic: pozyx/position
+{"x": 638.0, "y": 1128.0, "heading": 356.6875}
+Timestamp: 2024-03-09 13:19:48.812140
+Topic: robot/coordinates
+{"heading":"3.55250","x":726,"y":1033}
+Timestamp: 2024-03-09 13:19:48.887678
+Topic: pozyx/position
+{"x": 656.0, "y": 1130.0, "heading": 356.6875}
+Timestamp: 2024-03-09 13:19:48.889404
+Topic: robot/coordinates
+{"heading":"3.53250","x":741,"y":1034}
+Timestamp: 2024-03-09 13:19:48.994166
+Topic: pozyx/position
+{"x": 675.0, "y": 1137.0, "heading": 356.6875}
+Timestamp: 2024-03-09 13:19:48.995964
+Topic: robot/coordinates
+{"heading":"3.54250","x":760,"y":1035}
+Timestamp: 2024-03-09 13:19:49.100885
+Topic: pozyx/position
+{"x": 675.0, "y": 1137.0, "heading": 356.625}
+Timestamp: 2024-03-09 13:19:49.102726
+Topic: robot/coordinates
+{"heading":"3.59250","x":779,"y":1036}
+Timestamp: 2024-03-09 13:19:49.208360
+Topic: pozyx/position
+{"x": 693.0, "y": 1140.0, "heading": 356.625}
+Timestamp: 2024-03-09 13:19:49.210231
+Topic: robot/coordinates
+{"heading":"3.61250","x":801,"y":1038}
+Timestamp: 2024-03-09 13:19:49.315882
+Topic: pozyx/position
+{"x": 710.0, "y": 1151.0, "heading": 356.5625}
+Timestamp: 2024-03-09 13:19:49.342082
+Topic: robot/coordinates
+{"heading":"3.62250","x":824,"y":1039}
+Timestamp: 2024-03-09 13:19:49.424078
+Topic: pozyx/position
+{"x": 743.0, "y": 1157.0, "heading": 356.5625}
+Timestamp: 2024-03-09 13:19:49.426332
+Topic: robot/coordinates
+{"heading":"3.57250","x":839,"y":1040}
+Timestamp: 2024-03-09 13:19:49.532928
+Topic: pozyx/position
+{"x": 767.0, "y": 1173.0, "heading": 356.5625}
+Timestamp: 2024-03-09 13:19:49.534654
+Topic: robot/coordinates
+{"heading":"3.58250","x":862,"y":1042}
+Timestamp: 2024-03-09 13:19:49.642095
+Topic: pozyx/position
+{"x": 792.0, "y": 1185.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:49.643858
+Topic: robot/coordinates
+{"heading":"3.63250","x":881,"y":1043}
+Timestamp: 2024-03-09 13:19:49.751075
+Topic: pozyx/position
+{"x": 819.0, "y": 1189.0, "heading": 356.5625}
+Timestamp: 2024-03-09 13:19:49.752696
+Topic: robot/coordinates
+{"heading":"3.62250","x":903,"y":1044}
+Timestamp: 2024-03-09 13:19:49.858625
+Topic: pozyx/position
+{"x": 837.0, "y": 1200.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:49.862121
+Topic: robot/coordinates
+{"heading":"3.62250","x":922,"y":1045}
+Timestamp: 2024-03-09 13:19:49.967851
+Topic: pozyx/position
+{"x": 857.0, "y": 1210.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:49.970055
+Topic: robot/coordinates
+{"heading":"3.65250","x":945,"y":1047}
+Timestamp: 2024-03-09 13:19:50.075978
+Topic: pozyx/position
+{"x": 879.0, "y": 1223.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:50.122330
+Topic: robot/coordinates
+{"heading":"3.67250","x":972,"y":1049}
+Timestamp: 2024-03-09 13:19:50.183871
+Topic: pozyx/position
+{"x": 903.0, "y": 1233.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:50.185496
+Topic: robot/coordinates
+{"heading":"3.68250","x":983,"y":1049}
+Timestamp: 2024-03-09 13:19:50.291038
+Topic: pozyx/position
+{"x": 927.0, "y": 1240.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:50.292634
+Topic: robot/coordinates
+{"heading":"3.66250","x":1006,"y":1051}
+Timestamp: 2024-03-09 13:19:50.398594
+Topic: pozyx/position
+{"x": 951.0, "y": 1240.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:50.400859
+Topic: robot/coordinates
+{"heading":"3.68250","x":1025,"y":1052}
+Timestamp: 2024-03-09 13:19:50.506794
+Topic: pozyx/position
+{"x": 970.0, "y": 1242.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:50.509119
+Topic: robot/coordinates
+{"heading":"3.70250","x":1040,"y":1053}
+Timestamp: 2024-03-09 13:19:50.614209
+Topic: pozyx/position
+{"x": 991.0, "y": 1239.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:50.642345
+Topic: robot/coordinates
+{"heading":"3.65250","x":1052,"y":1054}
+Timestamp: 2024-03-09 13:19:50.722804
+Topic: pozyx/position
+{"x": 991.0, "y": 1239.0, "heading": 356.5625}
+Timestamp: 2024-03-09 13:19:50.724322
+Topic: robot/coordinates
+{"heading":"3.61250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:50.830541
+Topic: pozyx/position
+{"x": 1010.0, "y": 1243.0, "heading": 356.5625}
+Timestamp: 2024-03-09 13:19:50.832052
+Topic: robot/coordinates
+{"heading":"3.63250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:50.938147
+Topic: pozyx/position
+{"x": 1035.0, "y": 1240.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:50.939736
+Topic: robot/coordinates
+{"heading":"3.64250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.044868
+Topic: pozyx/position
+{"x": 1052.0, "y": 1247.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.046559
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.150614
+Topic: pozyx/position
+{"x": 1067.0, "y": 1247.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.162204
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.259078
+Topic: pozyx/position
+{"x": 1079.0, "y": 1248.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.260653
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.366889
+Topic: pozyx/position
+{"x": 1085.0, "y": 1248.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.368385
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.474659
+Topic: pozyx/position
+{"x": 1088.0, "y": 1252.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.476122
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.582390
+Topic: pozyx/position
+{"x": 1092.0, "y": 1259.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.583848
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.689299
+Topic: pozyx/position
+{"x": 1096.0, "y": 1263.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.692296
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.797848
+Topic: pozyx/position
+{"x": 1095.0, "y": 1266.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.799325
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:51.906248
+Topic: pozyx/position
+{"x": 1094.0, "y": 1271.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:51.952318
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.014476
+Topic: pozyx/position
+{"x": 1094.0, "y": 1271.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.015774
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.124274
+Topic: pozyx/position
+{"x": 1086.0, "y": 1288.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.125610
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.230373
+Topic: pozyx/position
+{"x": 1087.0, "y": 1290.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.232145
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.339653
+Topic: pozyx/position
+{"x": 1087.0, "y": 1294.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.341423
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.448245
+Topic: pozyx/position
+{"x": 1091.0, "y": 1285.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.472783
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.556063
+Topic: pozyx/position
+{"x": 1093.0, "y": 1286.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.558702
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.664142
+Topic: pozyx/position
+{"x": 1095.0, "y": 1283.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.666151
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.773435
+Topic: pozyx/position
+{"x": 1097.0, "y": 1284.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.776400
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.883671
+Topic: pozyx/position
+{"x": 1098.0, "y": 1284.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.886172
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:52.993836
+Topic: pozyx/position
+{"x": 1100.0, "y": 1286.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:52.995972
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.103830
+Topic: pozyx/position
+{"x": 1102.0, "y": 1285.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.106259
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.212903
+Topic: pozyx/position
+{"x": 1102.0, "y": 1285.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.252168
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.321689
+Topic: pozyx/position
+{"x": 1104.0, "y": 1283.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.324048
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.429835
+Topic: pozyx/position
+{"x": 1104.0, "y": 1282.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.431649
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.538535
+Topic: pozyx/position
+{"x": 1101.0, "y": 1290.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.540281
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.647792
+Topic: pozyx/position
+{"x": 1101.0, "y": 1290.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.649539
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.756418
+Topic: pozyx/position
+{"x": 1098.0, "y": 1290.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.772338
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.864855
+Topic: pozyx/position
+{"x": 1095.0, "y": 1292.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.866142
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:53.971870
+Topic: pozyx/position
+{"x": 1093.0, "y": 1293.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:53.973351
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.078557
+Topic: pozyx/position
+{"x": 1091.0, "y": 1276.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.080545
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.187488
+Topic: pozyx/position
+{"x": 1088.0, "y": 1274.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.189422
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.296255
+Topic: pozyx/position
+{"x": 1086.0, "y": 1271.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.302155
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.404709
+Topic: pozyx/position
+{"x": 1087.0, "y": 1270.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.406916
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.512467
+Topic: pozyx/position
+{"x": 1089.0, "y": 1267.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.515238
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.620859
+Topic: pozyx/position
+{"x": 1088.0, "y": 1267.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.622334
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.727727
+Topic: pozyx/position
+{"x": 1088.0, "y": 1267.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.729970
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.835462
+Topic: pozyx/position
+{"x": 1088.0, "y": 1264.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.837880
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:54.943056
+Topic: pozyx/position
+{"x": 1090.0, "y": 1263.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:54.945122
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.050894
+Topic: pozyx/position
+{"x": 1090.0, "y": 1263.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.081934
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.159664
+Topic: pozyx/position
+{"x": 1089.0, "y": 1261.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.160903
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.267451
+Topic: pozyx/position
+{"x": 1091.0, "y": 1275.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.268783
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.374950
+Topic: pozyx/position
+{"x": 1095.0, "y": 1275.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.376183
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.483041
+Topic: pozyx/position
+{"x": 1095.0, "y": 1276.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.484380
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.589163
+Topic: pozyx/position
+{"x": 1094.0, "y": 1276.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.601877
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.697210
+Topic: pozyx/position
+{"x": 1093.0, "y": 1275.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.698718
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.804905
+Topic: pozyx/position
+{"x": 1093.0, "y": 1273.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.806271
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:55.911048
+Topic: pozyx/position
+{"x": 1093.0, "y": 1273.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:55.912306
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:56.018067
+Topic: pozyx/position
+{"x": 1093.0, "y": 1272.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:56.019530
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:56.125478
+Topic: pozyx/position
+{"x": 1093.0, "y": 1272.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:56.133155
+Topic: robot/coordinates
+{"heading":"3.66250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:56.232234
+Topic: pozyx/position
+{"x": 1092.0, "y": 1270.0, "heading": 356.5}
+Timestamp: 2024-03-09 13:19:56.233822
+Topic: robot/coordinates
+{"heading":"3.65250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:56.347778
+Topic: pozyx/position
+{"x": 1094.0, "y": 1273.0, "heading": 357.125}
+Timestamp: 2024-03-09 13:19:56.392001
+Topic: robot/coordinates
+{"heading":"2.68250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:56.455472
+Topic: pozyx/position
+{"x": 1094.0, "y": 1271.0, "heading": 1.0}
+Timestamp: 2024-03-09 13:19:56.456995
+Topic: robot/coordinates
+{"heading":"1.06250","x":1054,"y":1054}
+Timestamp: 2024-03-09 13:19:56.564971
+Topic: pozyx/position
+{"x": 1092.0, "y": 1264.0, "heading": 4.75}
+Timestamp: 2024-03-09 13:19:56.566649
+Topic: robot/coordinates
+{"heading":"-3.3275","x":1053,"y":1054}
+Timestamp: 2024-03-09 13:19:56.672685
+Topic: pozyx/position
+{"x": 1089.0, "y": 1247.0, "heading": 8.625}
+Timestamp: 2024-03-09 13:19:56.674535
+Topic: robot/coordinates
+{"heading":"-6.9175","x":1053,"y":1054}
+Timestamp: 2024-03-09 13:19:56.780458
+Topic: pozyx/position
+{"x": 1096.0, "y": 1233.0, "heading": 12.1875}
+Timestamp: 2024-03-09 13:19:56.782260
+Topic: robot/coordinates
+{"heading":"-10.627","x":1053,"y":1054}
+Timestamp: 2024-03-09 13:19:56.887898
+Topic: pozyx/position
+{"x": 1102.0, "y": 1224.0, "heading": 16.125}
+Timestamp: 2024-03-09 13:19:56.912251
+Topic: robot/coordinates
+{"heading":"-15.637","x":1053,"y":1054}
+Timestamp: 2024-03-09 13:19:56.996109
+Topic: pozyx/position
+{"x": 1095.0, "y": 1202.0, "heading": 20.1875}
+Timestamp: 2024-03-09 13:19:56.997830
+Topic: robot/coordinates
+{"heading":"-18.317","x":1053,"y":1054}
+Timestamp: 2024-03-09 13:19:57.103948
+Topic: pozyx/position
+{"x": 1085.0, "y": 1196.0, "heading": 24.0625}
+Timestamp: 2024-03-09 13:19:57.105465
+Topic: robot/coordinates
+{"heading":"-22.687","x":1053,"y":1054}
+Timestamp: 2024-03-09 13:19:57.211471
+Topic: pozyx/position
+{"x": 1076.0, "y": 1174.0, "heading": 28.0625}
+Timestamp: 2024-03-09 13:19:57.213113
+Topic: robot/coordinates
+{"heading":"-26.317","x":1052,"y":1054}
+Timestamp: 2024-03-09 13:19:57.319178
+Topic: pozyx/position
+{"x": 1078.0, "y": 1165.0, "heading": 31.75}
+Timestamp: 2024-03-09 13:19:57.320792
+Topic: robot/coordinates
+{"heading":"-30.097","x":1052,"y":1054}
+Timestamp: 2024-03-09 13:19:57.426597
+Topic: pozyx/position
+{"x": 1079.0, "y": 1170.0, "heading": 35.875}
+Timestamp: 2024-03-09 13:19:57.442339
+Topic: robot/coordinates
+{"heading":"-34.297","x":1052,"y":1054}
+Timestamp: 2024-03-09 13:19:57.534107
+Topic: pozyx/position
+{"x": 1084.0, "y": 1172.0, "heading": 39.5625}
+Timestamp: 2024-03-09 13:19:57.535991
+Topic: robot/coordinates
+{"heading":"-38.167","x":1052,"y":1054}
+Timestamp: 2024-03-09 13:19:57.641282
+Topic: pozyx/position
+{"x": 1084.0, "y": 1172.0, "heading": 44.25}
+Timestamp: 2024-03-09 13:19:57.643077
+Topic: robot/coordinates
+{"heading":"-42.177","x":1052,"y":1055}
+Timestamp: 2024-03-09 13:19:57.748930
+Topic: pozyx/position
+{"x": 1078.0, "y": 1168.0, "heading": 48.0625}
+Timestamp: 2024-03-09 13:19:57.750593
+Topic: robot/coordinates
+{"heading":"-46.747","x":1051,"y":1055}
+Timestamp: 2024-03-09 13:19:57.856794
+Topic: pozyx/position
+{"x": 1082.0, "y": 1172.0, "heading": 52.3125}
+Timestamp: 2024-03-09 13:19:57.858443
+Topic: robot/coordinates
+{"heading":"-50.717","x":1051,"y":1055}
+Timestamp: 2024-03-09 13:19:57.964127
+Topic: pozyx/position
+{"x": 1069.0, "y": 1162.0, "heading": 56.625}
+Timestamp: 2024-03-09 13:19:57.972219
+Topic: robot/coordinates
+{"heading":"-55.077","x":1051,"y":1055}
+Timestamp: 2024-03-09 13:19:58.073069
+Topic: pozyx/position
+{"x": 1054.0, "y": 1152.0, "heading": 60.5}
+Timestamp: 2024-03-09 13:19:58.074932
+Topic: robot/coordinates
+{"heading":"-59.037","x":1051,"y":1055}
+Timestamp: 2024-03-09 13:19:58.181116
+Topic: pozyx/position
+{"x": 1074.0, "y": 1148.0, "heading": 64.875}
+Timestamp: 2024-03-09 13:19:58.183849
+Topic: robot/coordinates
+{"heading":"-63.097","x":1051,"y":1055}
+Timestamp: 2024-03-09 13:19:58.288633
+Topic: pozyx/position
+{"x": 1093.0, "y": 1135.0, "heading": 69.1875}
+Timestamp: 2024-03-09 13:19:58.290619
+Topic: robot/coordinates
+{"heading":"-67.887","x":1051,"y":1055}
+Timestamp: 2024-03-09 13:19:58.396464
+Topic: pozyx/position
+{"x": 1091.0, "y": 1145.0, "heading": 74.0625}
+Timestamp: 2024-03-09 13:19:58.398484
+Topic: robot/coordinates
+{"heading":"-71.657","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:58.506021
+Topic: pozyx/position
+{"x": 1081.0, "y": 1141.0, "heading": 78.0625}
+Timestamp: 2024-03-09 13:19:58.507899
+Topic: robot/coordinates
+{"heading":"-76.627","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:58.613361
+Topic: pozyx/position
+{"x": 1074.0, "y": 1117.0, "heading": 82.75}
+Timestamp: 2024-03-09 13:19:58.615512
+Topic: robot/coordinates
+{"heading":"-80.867","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:58.721073
+Topic: pozyx/position
+{"x": 1062.0, "y": 1103.0, "heading": 86.75}
+Timestamp: 2024-03-09 13:19:58.762726
+Topic: robot/coordinates
+{"heading":"-86.637","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:58.826982
+Topic: pozyx/position
+{"x": 1062.0, "y": 1103.0, "heading": 91.8125}
+Timestamp: 2024-03-09 13:19:58.828619
+Topic: robot/coordinates
+{"heading":"-90.097","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:58.934020
+Topic: pozyx/position
+{"x": 1064.0, "y": 1101.0, "heading": 96.3125}
+Timestamp: 2024-03-09 13:19:58.935623
+Topic: robot/coordinates
+{"heading":"-93.937","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.040257
+Topic: pozyx/position
+{"x": 1061.0, "y": 1103.0, "heading": 100.5625}
+Timestamp: 2024-03-09 13:19:59.041745
+Topic: robot/coordinates
+{"heading":"-98.317","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.147190
+Topic: pozyx/position
+{"x": 1068.0, "y": 1123.0, "heading": 105.1875}
+Timestamp: 2024-03-09 13:19:59.149134
+Topic: robot/coordinates
+{"heading":"-102.58","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.254619
+Topic: pozyx/position
+{"x": 1076.0, "y": 1136.0, "heading": 109.375}
+Timestamp: 2024-03-09 13:19:59.256615
+Topic: robot/coordinates
+{"heading":"-107.73","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.359208
+Topic: pozyx/position
+{"x": 1060.0, "y": 1148.0, "heading": 114.0625}
+Timestamp: 2024-03-09 13:19:59.360922
+Topic: robot/coordinates
+{"heading":"-111.66","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.466057
+Topic: pozyx/position
+{"x": 1044.0, "y": 1153.0, "heading": 118.3125}
+Timestamp: 2024-03-09 13:19:59.467898
+Topic: robot/coordinates
+{"heading":"-116.06","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.572871
+Topic: pozyx/position
+{"x": 1045.0, "y": 1150.0, "heading": 123.4375}
+Timestamp: 2024-03-09 13:19:59.574742
+Topic: robot/coordinates
+{"heading":"-121.21","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.677761
+Topic: pozyx/position
+{"x": 1043.0, "y": 1155.0, "heading": 127.6875}
+Timestamp: 2024-03-09 13:19:59.679212
+Topic: robot/coordinates
+{"heading":"-125.55","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.782719
+Topic: pozyx/position
+{"x": 1036.0, "y": 1160.0, "heading": 131.1875}
+Timestamp: 2024-03-09 13:19:59.784302
+Topic: robot/coordinates
+{"heading":"-129.25","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.890134
+Topic: pozyx/position
+{"x": 1031.0, "y": 1162.0, "heading": 132.5}
+Timestamp: 2024-03-09 13:19:59.891826
+Topic: robot/coordinates
+{"heading":"-132.07","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:19:59.995766
+Topic: pozyx/position
+{"x": 1024.0, "y": 1168.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.001431
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.100559
+Topic: pozyx/position
+{"x": 1017.0, "y": 1172.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.101953
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.207068
+Topic: pozyx/position
+{"x": 1017.0, "y": 1172.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.208609
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.313123
+Topic: pozyx/position
+{"x": 1005.0, "y": 1166.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.321479
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.418601
+Topic: pozyx/position
+{"x": 994.0, "y": 1165.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.419932
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.525240
+Topic: pozyx/position
+{"x": 988.0, "y": 1169.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.526593
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.631454
+Topic: pozyx/position
+{"x": 985.0, "y": 1178.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.651308
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.737923
+Topic: pozyx/position
+{"x": 988.0, "y": 1181.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.739439
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.847115
+Topic: pozyx/position
+{"x": 989.0, "y": 1183.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.849199
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:00.954065
+Topic: pozyx/position
+{"x": 990.0, "y": 1186.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:00.972617
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.059901
+Topic: pozyx/position
+{"x": 991.0, "y": 1189.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:01.061719
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.168196
+Topic: pozyx/position
+{"x": 991.0, "y": 1189.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:01.169892
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.276489
+Topic: pozyx/position
+{"x": 997.0, "y": 1187.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:01.291926
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.381450
+Topic: pozyx/position
+{"x": 996.0, "y": 1181.0, "heading": 132.4375}
+Timestamp: 2024-03-09 13:20:01.384113
+Topic: robot/coordinates
+{"heading":"-132.18","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.488945
+Topic: pozyx/position
+{"x": 999.0, "y": 1180.0, "heading": 134.1875}
+Timestamp: 2024-03-09 13:20:01.491210
+Topic: robot/coordinates
+{"heading":"-132.82","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.595221
+Topic: pozyx/position
+{"x": 1002.0, "y": 1178.0, "heading": 138.125}
+Timestamp: 2024-03-09 13:20:01.621760
+Topic: robot/coordinates
+{"heading":"-137.59","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.700611
+Topic: pozyx/position
+{"x": 1001.0, "y": 1177.0, "heading": 141.25}
+Timestamp: 2024-03-09 13:20:01.701788
+Topic: robot/coordinates
+{"heading":"-139.96","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.808263
+Topic: pozyx/position
+{"x": 1002.0, "y": 1174.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:01.809744
+Topic: robot/coordinates
+{"heading":"-141.59","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:01.912404
+Topic: pozyx/position
+{"x": 1001.0, "y": 1170.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:01.941337
+Topic: robot/coordinates
+{"heading":"-141.53","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.017381
+Topic: pozyx/position
+{"x": 1005.0, "y": 1167.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.018584
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.123313
+Topic: pozyx/position
+{"x": 1011.0, "y": 1164.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.124480
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.228006
+Topic: pozyx/position
+{"x": 1011.0, "y": 1164.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.261591
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.333468
+Topic: pozyx/position
+{"x": 1011.0, "y": 1162.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.334569
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.438440
+Topic: pozyx/position
+{"x": 1009.0, "y": 1159.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.440069
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.543857
+Topic: pozyx/position
+{"x": 1010.0, "y": 1160.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.591706
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.651457
+Topic: pozyx/position
+{"x": 1009.0, "y": 1158.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.653500
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.759425
+Topic: pozyx/position
+{"x": 1006.0, "y": 1159.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.761262
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.867273
+Topic: pozyx/position
+{"x": 1006.0, "y": 1159.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.911916
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:02.972307
+Topic: pozyx/position
+{"x": 1008.0, "y": 1157.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:02.973774
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.077555
+Topic: pozyx/position
+{"x": 1007.0, "y": 1156.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.078929
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.182756
+Topic: pozyx/position
+{"x": 1005.0, "y": 1160.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.184155
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.288534
+Topic: pozyx/position
+{"x": 1004.0, "y": 1157.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.289513
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.392944
+Topic: pozyx/position
+{"x": 1002.0, "y": 1159.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.395150
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.498564
+Topic: pozyx/position
+{"x": 1004.0, "y": 1158.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.500597
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.604206
+Topic: pozyx/position
+{"x": 1005.0, "y": 1156.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.604999
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.712542
+Topic: pozyx/position
+{"x": 1005.0, "y": 1156.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.714010
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.820486
+Topic: pozyx/position
+{"x": 1007.0, "y": 1155.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.822305
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:03.924251
+Topic: pozyx/position
+{"x": 1007.0, "y": 1157.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:03.926224
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.029477
+Topic: pozyx/position
+{"x": 1011.0, "y": 1154.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.031294
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.134832
+Topic: pozyx/position
+{"x": 1010.0, "y": 1156.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.136539
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.240083
+Topic: pozyx/position
+{"x": 1010.0, "y": 1160.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.241410
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.345304
+Topic: pozyx/position
+{"x": 1012.0, "y": 1173.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.346706
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.450607
+Topic: pozyx/position
+{"x": 1015.0, "y": 1174.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.451981
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.556736
+Topic: pozyx/position
+{"x": 1016.0, "y": 1171.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.600463
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.663687
+Topic: pozyx/position
+{"x": 1014.0, "y": 1170.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.665538
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.770482
+Topic: pozyx/position
+{"x": 1014.0, "y": 1170.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.774377
+Topic: robot/coordinates
+{"heading":"-141.52","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.874159
+Topic: pozyx/position
+{"x": 1013.0, "y": 1173.0, "heading": 141.75}
+Timestamp: 2024-03-09 13:20:04.875488
+Topic: robot/coordinates
+{"heading":"-141.51","x":1051,"y":1056}
+Timestamp: 2024-03-09 13:20:04.979440
+Topic: pozyx/position
+{"x": 1013.0, "y": 1170.0, "heading": 141.8125}
+Timestamp: 2024-03-09 13:20:04.980937
+Topic: robot/coordinates
+{"heading":"-141.51","x":1050,"y":1055}
+Timestamp: 2024-03-09 13:20:05.084720
+Topic: pozyx/position
+{"x": 1011.0, "y": 1169.0, "heading": 141.875}
+Timestamp: 2024-03-09 13:20:05.086257
+Topic: robot/coordinates
+{"heading":"-141.66","x":1043,"y":1050}
+Timestamp: 2024-03-09 13:20:05.190117
+Topic: pozyx/position
+{"x": 1009.0, "y": 1168.0, "heading": 141.6875}
+Timestamp: 2024-03-09 13:20:05.191552
+Topic: robot/coordinates
+{"heading":"-141.50","x":1034,"y":1042}
+Timestamp: 2024-03-09 13:20:05.295050
+Topic: pozyx/position
+{"x": 1018.0, "y": 1142.0, "heading": 141.5625}
+Timestamp: 2024-03-09 13:20:05.296584
+Topic: robot/coordinates
+{"heading":"-141.37","x":1022,"y":1033}
+Timestamp: 2024-03-09 13:20:05.400726
+Topic: pozyx/position
+{"x": 1013.0, "y": 1134.0, "heading": 141.5625}
+Timestamp: 2024-03-09 13:20:05.402222
+Topic: robot/coordinates
+{"heading":"-141.37","x":1008,"y":1022}
+Timestamp: 2024-03-09 13:20:05.505581
+Topic: pozyx/position
+{"x": 1005.0, "y": 1115.0, "heading": 141.5}
+Timestamp: 2024-03-09 13:20:05.507074
+Topic: robot/coordinates
+{"heading":"-141.26","x":996,"y":1012}
+Timestamp: 2024-03-09 13:20:05.613451
+Topic: pozyx/position
+{"x": 993.0, "y": 1113.0, "heading": 141.375}
+Timestamp: 2024-03-09 13:20:05.615440
+Topic: robot/coordinates
+{"heading":"-141.18","x":984,"y":1003}
+Timestamp: 2024-03-09 13:20:05.720057
+Topic: pozyx/position
+{"x": 983.0, "y": 1106.0, "heading": 141.4375}
+Timestamp: 2024-03-09 13:20:05.722078
+Topic: robot/coordinates
+{"heading":"-141.18","x":973,"y":993}
+Timestamp: 2024-03-09 13:20:05.824426
+Topic: pozyx/position
+{"x": 983.0, "y": 1106.0, "heading": 141.375}
+Timestamp: 2024-03-09 13:20:05.827034
+Topic: robot/coordinates
+{"heading":"-141.15","x":958,"y":982}
+Timestamp: 2024-03-09 13:20:05.929697
+Topic: pozyx/position
+{"x": 970.0, "y": 1103.0, "heading": 141.25}
+Timestamp: 2024-03-09 13:20:05.931888
+Topic: robot/coordinates
+{"heading":"-141.07","x":946,"y":972}
+Timestamp: 2024-03-09 13:20:06.036885
+Topic: pozyx/position
+{"x": 959.0, "y": 1092.0, "heading": 141.25}
+Timestamp: 2024-03-09 13:20:06.038745
+Topic: robot/coordinates
+{"heading":"-141.02","x":934,"y":963}
+Timestamp: 2024-03-09 13:20:06.142772
+Topic: pozyx/position
+{"x": 948.0, "y": 1084.0, "heading": 141.25}
+Timestamp: 2024-03-09 13:20:06.144318
+Topic: robot/coordinates
+{"heading":"-140.96","x":922,"y":953}
+Timestamp: 2024-03-09 13:20:06.247345
+Topic: pozyx/position
+{"x": 936.0, "y": 1073.0, "heading": 141.1875}
+Timestamp: 2024-03-09 13:20:06.248747
+Topic: robot/coordinates
+{"heading":"-140.94","x":908,"y":941}
+Timestamp: 2024-03-09 13:20:06.352593
+Topic: pozyx/position
+{"x": 923.0, "y": 1059.0, "heading": 141.1875}
+Timestamp: 2024-03-09 13:20:06.354069
+Topic: robot/coordinates
+{"heading":"-140.86","x":896,"y":931}
+Timestamp: 2024-03-09 13:20:06.457657
+Topic: pozyx/position
+{"x": 901.0, "y": 1068.0, "heading": 141.0625}
+Timestamp: 2024-03-09 13:20:06.471660
+Topic: robot/coordinates
+{"heading":"-140.81","x":881,"y":919}
+Timestamp: 2024-03-09 13:20:06.563154
+Topic: pozyx/position
+{"x": 892.0, "y": 1052.0, "heading": 141.0}
+Timestamp: 2024-03-09 13:20:06.564609
+Topic: robot/coordinates
+{"heading":"-140.81","x":871,"y":911}
+Timestamp: 2024-03-09 13:20:06.668323
+Topic: pozyx/position
+{"x": 881.0, "y": 1034.0, "heading": 140.875}
+Timestamp: 2024-03-09 13:20:06.669817
+Topic: robot/coordinates
+{"heading":"-140.68","x":856,"y":899}
+Timestamp: 2024-03-09 13:20:06.773349
+Topic: pozyx/position
+{"x": 875.0, "y": 1015.0, "heading": 140.875}
+Timestamp: 2024-03-09 13:20:06.791658
+Topic: robot/coordinates
+{"heading":"-140.66","x":842,"y":887}
+Timestamp: 2024-03-09 13:20:06.879876
+Topic: pozyx/position
+{"x": 875.0, "y": 1015.0, "heading": 140.8125}
+Timestamp: 2024-03-09 13:20:06.881877
+Topic: robot/coordinates
+{"heading":"-140.64","x":832,"y":879}
+Timestamp: 2024-03-09 13:20:06.986661
+Topic: pozyx/position
+{"x": 867.0, "y": 999.0, "heading": 140.75}
+Timestamp: 2024-03-09 13:20:06.988798
+Topic: robot/coordinates
+{"heading":"-140.56","x":817,"y":867}
+Timestamp: 2024-03-09 13:20:07.090407
+Topic: pozyx/position
+{"x": 856.0, "y": 978.0, "heading": 140.75}
+Timestamp: 2024-03-09 13:20:07.121350
+Topic: robot/coordinates
+{"heading":"-140.53","x":802,"y":855}
+Timestamp: 2024-03-09 13:20:07.196558
+Topic: pozyx/position
+{"x": 837.0, "y": 967.0, "heading": 140.625}
+Timestamp: 2024-03-09 13:20:07.197625
+Topic: robot/coordinates
+{"heading":"-140.49","x":792,"y":846}
+Timestamp: 2024-03-09 13:20:07.301272
+Topic: pozyx/position
+{"x": 822.0, "y": 949.0, "heading": 140.5625}
+Timestamp: 2024-03-09 13:20:07.302853
+Topic: robot/coordinates
+{"heading":"-140.38","x":780,"y":836}
+Timestamp: 2024-03-09 13:20:07.406257
+Topic: pozyx/position
+{"x": 804.0, "y": 932.0, "heading": 140.5}
+Timestamp: 2024-03-09 13:20:07.441557
+Topic: robot/coordinates
+{"heading":"-140.27","x":762,"y":821}
+Timestamp: 2024-03-09 13:20:07.511854
+Topic: pozyx/position
+{"x": 786.0, "y": 916.0, "heading": 140.5}
+Timestamp: 2024-03-09 13:20:07.512850
+Topic: robot/coordinates
+{"heading":"-140.24","x":752,"y":813}
+Timestamp: 2024-03-09 13:20:07.616959
+Topic: pozyx/position
+{"x": 769.0, "y": 900.0, "heading": 140.4375}
+Timestamp: 2024-03-09 13:20:07.618216
+Topic: robot/coordinates
+{"heading":"-140.29","x":739,"y":803}
+Timestamp: 2024-03-09 13:20:07.722020
+Topic: pozyx/position
+{"x": 750.0, "y": 884.0, "heading": 140.375}
+Timestamp: 2024-03-09 13:20:07.761596
+Topic: robot/coordinates
+{"heading":"-140.17","x":722,"y":788}
+Timestamp: 2024-03-09 13:20:07.829957
+Topic: pozyx/position
+{"x": 735.0, "y": 870.0, "heading": 140.25}
+Timestamp: 2024-03-09 13:20:07.831427
+Topic: robot/coordinates
+{"heading":"-140.09","x":711,"y":779}
+Timestamp: 2024-03-09 13:20:07.937664
+Topic: pozyx/position
+{"x": 735.0, "y": 870.0, "heading": 140.1875}
+Timestamp: 2024-03-09 13:20:07.939417
+Topic: robot/coordinates
+{"heading":"-140.02","x":699,"y":769}
+Timestamp: 2024-03-09 13:20:08.045336
+Topic: pozyx/position
+{"x": 720.0, "y": 853.0, "heading": 140.125}
+Timestamp: 2024-03-09 13:20:08.091551
+Topic: robot/coordinates
+{"heading":"-139.96","x":678,"y":752}
+Timestamp: 2024-03-09 13:20:08.152078
+Topic: pozyx/position
+{"x": 701.0, "y": 834.0, "heading": 140.125}
+Timestamp: 2024-03-09 13:20:08.153588
+Topic: robot/coordinates
+{"heading":"-139.95","x":671,"y":745}
+Timestamp: 2024-03-09 13:20:08.257364
+Topic: pozyx/position
+{"x": 687.0, "y": 817.0, "heading": 140.125}
+Timestamp: 2024-03-09 13:20:08.258769
+Topic: robot/coordinates
+{"heading":"-139.88","x":658,"y":734}
+Timestamp: 2024-03-09 13:20:08.362754
+Topic: pozyx/position
+{"x": 679.0, "y": 796.0, "heading": 140.125}
+Timestamp: 2024-03-09 13:20:08.364128
+Topic: robot/coordinates
+{"heading":"-139.94","x":645,"y":724}
+Timestamp: 2024-03-09 13:20:08.467901
+Topic: pozyx/position
+{"x": 667.0, "y": 779.0, "heading": 140.25}
+Timestamp: 2024-03-09 13:20:08.469185
+Topic: robot/coordinates
+{"heading":"-140.02","x":630,"y":711}
+Timestamp: 2024-03-09 13:20:08.573111
+Topic: pozyx/position
+{"x": 656.0, "y": 759.0, "heading": 140.1875}
+Timestamp: 2024-03-09 13:20:08.574259
+Topic: robot/coordinates
+{"heading":"-140.01","x":617,"y":700}
+Timestamp: 2024-03-09 13:20:08.678350
+Topic: pozyx/position
+{"x": 646.0, "y": 739.0, "heading": 140.125}
+Timestamp: 2024-03-09 13:20:08.679446
+Topic: robot/coordinates
+{"heading":"-139.93","x":604,"y":689}
+Timestamp: 2024-03-09 13:20:08.785949
+Topic: pozyx/position
+{"x": 632.0, "y": 718.0, "heading": 140.0625}
+Timestamp: 2024-03-09 13:20:08.788105
+Topic: robot/coordinates
+{"heading":"-139.95","x":591,"y":678}
+Timestamp: 2024-03-09 13:20:08.893636
+Topic: pozyx/position
+{"x": 632.0, "y": 718.0, "heading": 140.0625}
+Timestamp: 2024-03-09 13:20:08.895672
+Topic: robot/coordinates
+{"heading":"-139.92","x":575,"y":665}
+Timestamp: 2024-03-09 13:20:08.999291
+Topic: pozyx/position
+{"x": 621.0, "y": 700.0, "heading": 140.125}
+Timestamp: 2024-03-09 13:20:09.001283
+Topic: robot/coordinates
+{"heading":"-139.95","x":562,"y":654}
+Timestamp: 2024-03-09 13:20:09.106218
+Topic: pozyx/position
+{"x": 605.0, "y": 687.0, "heading": 140.0625}
+Timestamp: 2024-03-09 13:20:09.107910
+Topic: robot/coordinates
+{"heading":"-139.93","x":549,"y":643}
+Timestamp: 2024-03-09 13:20:09.213437
+Topic: pozyx/position
+{"x": 586.0, "y": 672.0, "heading": 140.0625}
+Timestamp: 2024-03-09 13:20:09.215117
+Topic: robot/coordinates
+{"heading":"-139.93","x":533,"y":630}
+Timestamp: 2024-03-09 13:20:09.319279
+Topic: pozyx/position
+{"x": 569.0, "y": 657.0, "heading": 140.0}
+Timestamp: 2024-03-09 13:20:09.320955
+Topic: robot/coordinates
+{"heading":"-139.86","x":520,"y":618}
+Timestamp: 2024-03-09 13:20:09.423532
+Topic: pozyx/position
+{"x": 553.0, "y": 642.0, "heading": 139.9375}
+Timestamp: 2024-03-09 13:20:09.424887
+Topic: robot/coordinates
+{"heading":"-139.83","x":507,"y":607}
+Timestamp: 2024-03-09 13:20:09.528792
+Topic: pozyx/position
+{"x": 538.0, "y": 624.0, "heading": 139.875}
+Timestamp: 2024-03-09 13:20:09.530090
+Topic: robot/coordinates
+{"heading":"-139.76","x":493,"y":596}
+Timestamp: 2024-03-09 13:20:09.634071
+Topic: pozyx/position
+{"x": 521.0, "y": 609.0, "heading": 139.875}
+Timestamp: 2024-03-09 13:20:09.635286
+Topic: robot/coordinates
+{"heading":"-139.77","x":477,"y":583}
+Timestamp: 2024-03-09 13:20:09.739251
+Topic: pozyx/position
+{"x": 505.0, "y": 598.0, "heading": 139.9375}
+Timestamp: 2024-03-09 13:20:09.740531
+Topic: robot/coordinates
+{"heading":"-139.80","x":464,"y":571}
+Timestamp: 2024-03-09 13:20:09.844514
+Topic: pozyx/position
+{"x": 489.0, "y": 585.0, "heading": 140.0}
+Timestamp: 2024-03-09 13:20:09.845759
+Topic: robot/coordin
