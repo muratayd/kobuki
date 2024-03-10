@@ -23,10 +23,10 @@ def publish_position_data(client, pozyx):
             position_data = {'x': position.x, 'y': position.y, 'heading': euler_angles.heading}
             position_message = json.dumps(position_data)
             client.publish(MQTT_TOPIC, position_message)
-            logging.info(f"Published: {position_message}")
+            #logging.info(f"Published: {position_message}")
         except Exception as e:
             logging.error(f"Error obtaining or publishing position data: {e}")
-        time.sleep(0.2)  # Adjust sleep time as needed
+        time.sleep(0.1)  # Adjust sleep time as needed
 
 def on_connect(client, userdata, flags, rc):
     logging.info(f"Connected with result code {rc}")

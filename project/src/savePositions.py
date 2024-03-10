@@ -1,13 +1,22 @@
 import paho.mqtt.client as mqtt
 import json
+from datetime import datetime
+import os
 
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
     # Open the file in append mode
     with open('mqtt_data.txt', 'a') as f:
         # Write the topic and message to the file
+        f.write('Timestamp: ' + str(datetime.now()) + '\n')
         f.write('Topic: ' + msg.topic + '\n')
-        f.write('Message: ' + str(msg.payload) + '\n')
+        f.write(str(msg.payload) + '\n')
+
+# Check if the file exists and remove it
+if os.path.exists("mqtt_data.txt"):
+    os.remove("mqtt_data.txt")
+else:
+    print("The file does not exist")
 
 client = mqtt.Client()
 client.on_message = on_message

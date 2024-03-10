@@ -332,11 +332,14 @@ void MotionController::Bug2Algorithm() {
                     rotational_velocity = -ROTATION_SPEED;
                 }
             } else {
+                kobuki_manager.stop();
                 moving_state = GO_STRAIGHT;
                 sendStateToMQTT();
                 map_manager.printMap(current_x, current_y);
                 cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode 
                         << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
+                ecl::MilliSleep sleep(1000);
+                sleep(200);
             }
         } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
             //double position_error = sqrt(
@@ -362,7 +365,7 @@ void MotionController::Bug2Algorithm() {
                 map_manager.printMap(current_x, current_y);
                 cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode 
                         << ", moving_mode: " << moving_state << endl;
-                kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
+                //kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
                 kobuki_manager.stop();
                 kobuki_manager.playSoundSequence(0x6);
                 cout << "DONE!" << endl;
@@ -390,7 +393,7 @@ void MotionController::Bug2Algorithm() {
             map_manager.printMap(current_x, current_y);
             cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode 
                     << ", moving_mode: " << moving_state << endl;
-            kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
+            //kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
             kobuki_manager.stop();
             kobuki_manager.playSoundSequence(0x6);
             cout << "DONE!" << endl;
