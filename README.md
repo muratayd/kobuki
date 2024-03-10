@@ -116,3 +116,6 @@ mosquitto -v
 python pozyx_serial.pypi
 python ultrasonic.py
     Note: Add .service files to /etc/systemd/system/ to run a Python Script as a Service in Raspberry Pi
+
+Test videos: 
+https://www.youtube.com/playlist?list=PLo3hskLiOi-ySihSSIKlIXB03YHEgEma9
