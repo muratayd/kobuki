@@ -81,8 +81,8 @@ sudo apt-get update
 sudo apt-get install nodejs -y
 
 npm install express
-sudo npm install socket.io
-npm install papaparse
+npm install mqtt
+npm install socket.io
 
 7. start webServer
 

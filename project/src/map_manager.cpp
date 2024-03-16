@@ -7,7 +7,7 @@
 
 using namespace std;
 
-const string SERVER_ADDRESS("tcp://localhost:1883");
+const string SERVER_ADDRESS("tcp://192.168.0.12:1883");
 const string CLIENT_ID("map_publisher");
 const string TOPIC("robot/map");
 

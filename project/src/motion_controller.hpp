@@ -101,12 +101,16 @@ private:
     ecl::TimeStamp start_time;
 
     mqtt::async_client mqtt_client;
+    mqtt::async_client remote_client;
     void mqtt_message_arrived(mqtt::const_message_ptr msg);
+    void remote_mqtt_message_arrived(mqtt::const_message_ptr msg);
     void initialize_mqtt_client();
+    void initialize_remote_mqtt_client();
     std::mutex mtx;
     std::condition_variable cv;
     bool pozyx_position_received = false; // This flag will be set to true once the first pozyx/position message arrives
-
+    int pozyx_counter = 0;
+    
     /*  ############# MAIN ROBOT MODES ###################
         "go to goal mode": Robot will head to an x,y coordinate
         "wall following mode": Robot will follow a wall */
@@ -150,6 +154,11 @@ private:
     * MQTT connection success handler
     */
     void on_connected(const std::string& cause);
+
+    /* Add this line for the MQTT connection success handler
+    * MQTT connection success handler
+    */
+    void on_remote_connected(const std::string& cause);
 
     /* MQTT send Robot mode
     */

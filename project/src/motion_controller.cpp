@@ -19,7 +19,9 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
 }
 
 MotionController::MotionController(KobukiManager& kobuki_manager)
-    : mqtt_client("tcp://localhost:1883", "MotionControllerClient"), kobuki_manager(kobuki_manager) {
+    : mqtt_client("tcp://localhost:1883", "MotionControllerClient"),
+      remote_client("tcp://192.168.0.12:1883", "MotionControllerClient"),
+      kobuki_manager(kobuki_manager) {
     this->temp_target_x = this->target_x = 0.0;
     this->temp_target_y = this->target_y = 0.0;
     UWB_x = 0.0;
@@ -30,6 +32,7 @@ MotionController::MotionController(KobukiManager& kobuki_manager)
     moving_state = GOAL_ACHIEVED;
     button0_flag = false;
     kobuki_manager.setUserButtonEventCallBack(buttonHandler);
+    initialize_remote_mqtt_client();
     initialize_mqtt_client();
     // Wait for the first pozyx/position message
     std::unique_lock<std::mutex> lock(mtx);
@@ -69,15 +72,40 @@ void MotionController::initialize_mqtt_client() {
     }
 }
 
+// MQTT Remote Client Initialization
+void MotionController::initialize_remote_mqtt_client() {
+    using namespace std::placeholders;
+    remote_client.set_connected_handler(std::bind(&MotionController::on_remote_connected, this, _1));
+    remote_client.set_message_callback(std::bind(&MotionController::remote_mqtt_message_arrived, this, _1));
+
+    mqtt::connect_options connOpts;
+    connOpts.set_keep_alive_interval(20);
+    connOpts.set_clean_session(true);
+
+    try {
+        std::cout << "Connecting to the remote MQTT broker..." << std::endl;
+        remote_client.connect(connOpts)->wait();
+    } catch (const mqtt::exception& exc) {
+        std::cerr << exc.what() << std::endl;
+        // Handle connection failure
+    }
+}
+
 // MQTT Connection Success Handler
 void MotionController::on_connected(const std::string& cause) {
     std::cout << "MQTT connection success" << std::endl;
     // Subscribe to topics
     mqtt_client.subscribe("sensor/distance", 1);
     mqtt_client.subscribe("pozyx/position", 1);
-    mqtt_client.subscribe("webUI/target", 1);
-    mqtt_client.subscribe("webUI/stop", 1);
-    mqtt_client.subscribe("webUI/move", 1);
+}
+
+// MQTT Connection Success Handler
+void MotionController::on_remote_connected(const std::string& cause) {
+    std::cout << "MQTT connection success" << std::endl;
+    // Subscribe to topics
+    remote_client.subscribe("webUI/target", 1);
+    remote_client.subscribe("webUI/stop", 1);
+    remote_client.subscribe("webUI/move", 1);
 }
 
 // MQTT Message Arrival Handler
@@ -129,8 +157,19 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         // Set the flag and notify
         pozyx_position_received = true;
         cv.notify_one();
-        sendCoordinatesToMQTT();
-    } else if (msg->get_topic() == "webUI/target") {
+
+        pozyx_counter++;
+        if (pozyx_counter == 10) {
+            sendCoordinatesToMQTT();
+            pozyx_counter = 0;
+        }
+    }
+}
+
+
+// MQTT Message Arrival Handler
+void MotionController::remote_mqtt_message_arrived(mqtt::const_message_ptr msg) {
+    if (msg->get_topic() == "webUI/target") {
         // Update based on target message
         std::string payload = msg->to_string();
         try {
@@ -212,7 +251,7 @@ void MotionController::sendModeToMQTT() {
 
     // Publish the robot mode to the MQTT broker
     mqtt::message_ptr msg = mqtt::make_message(modeTopic, mode);
-    mqtt_client.publish(msg);
+    remote_client.publish(msg);
     std::cout << "Robot mode sent to MQTT: " << mode << std::endl;
 }
 
@@ -226,12 +265,18 @@ void MotionController::sendCoordinatesToMQTT() {
     // Limit the number of characters in heading field to 6
     j["heading"] = headingStr.substr(0, 7);
 
+    // Add Pozyx coordinates
+    j["pozyx_x"] = (int)(UWB_x * M_TO_MM);
+    j["pozyx_y"] = (int)(UWB_y * M_TO_MM);
+    std::string pozyxHeadingStr = std::to_string(UWB_yaw * (180.0 / ecl::pi));
+    j["pozyx_heading"] = pozyxHeadingStr.substr(0, 7);
+
     // Convert the JSON object to a string
     std::string payload = j.dump();
 
     // Publish the coordinates to the MQTT broker
     mqtt::message_ptr msg = mqtt::make_message(coordinatesTopic, payload);
-    mqtt_client.publish(msg);
+    remote_client.publish(msg);
     //std::cout << "Robot coordinates sent to MQTT: " << payload << std::endl;
 }
 
@@ -254,7 +299,7 @@ void MotionController::sendStateToMQTT() {
 
     // Publish the moving state to the MQTT broker
     mqtt::message_ptr msg = mqtt::make_message(stateTopic, state);
-    mqtt_client.publish(msg);
+    remote_client.publish(msg);
     std::cout << "Robot state sent to MQTT: " << state << std::endl;
 }
 

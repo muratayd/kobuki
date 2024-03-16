@@ -119,7 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('robot coordinates', (position) => {
         updateRobotInfoPos(position.x, position.y, position.heading);
-        //drawRobot(position.x, position.y, position.heading); // Draw the robot at the new position
+        updatePozyxInfoPos(position.pozyx_x, position.pozyx_y, position.pozyx_heading);
+        drawRobot(position.pozyx_x, position.pozyx_y, position.pozyx_heading); // Draw the robot at the new position
         //console.log('Received robot position:', position);
     });
 
