@@ -19,13 +19,8 @@ MapManager::MapManager() : client_(SERVER_ADDRESS, CLIENT_ID), callback_() {
             column = -1;
         }
     }
-    mqtt::connect_options connOpts;
-    connOpts.set_keep_alive_interval(20);
-    connOpts.set_clean_session(true);
-    client_.set_callback(callback_);
-    cout << "Connecting to server..." << endl;
-    client_.connect(connOpts)->wait();
-    cout << "Connected" << endl;
+    // Initialize the MQTT client
+    initialize_mqtt_client();
     sendGridToMQTT();
 }
 
@@ -97,6 +92,33 @@ bool MapManager::checkMapPolar(double distance, double angle, double initial_x, 
     return checkMap(x, y); // Delegate to checkMap with Cartesian coordinates
 }
 
+void MapManager::handleMapMessage(const std::vector<uint8_t>& received_map_data) {
+    cout << "Received shared map data" << endl;
+    // Deserialize the received map data into the occupancy grid format
+    std::vector<int> received_grid(MAP_SIZE * MAP_SIZE, -1); // Assuming a default value of -1 for unknown cells
+    for (size_t i = 0; i < received_map_data.size(); ++i) {
+        received_grid[i] = static_cast<int>(received_map_data[i]);
+    }
+
+    // Merge the received grid with the local occupancy grid
+    mergeMap(received_grid);
+}
+
+void MapManager::mergeMap(const std::vector<int>& received_grid) {
+    cout << "Merging received map with local map" << endl;
+    return;
+    // Assuming received_grid is a 1D vector representing the received occupancy grid
+    for (int i = 0; i < MAP_SIZE; ++i) {
+        for (int j = 0; j < MAP_SIZE; ++j) {
+            int index = i * MAP_SIZE + j;
+            // Simple conflict resolution: if either grid has an obstacle, mark it as an obstacle
+            if (occupancy_grid[i][j] == 1 || received_grid[index] == 1) {
+                occupancy_grid[i][j] = 1;
+            }
+        }
+    }
+}
+
 void MapManager::printMap(double robot_x, double robot_y) {
     int robot_column = (int)round(robot_x / GRID_SIZE) + MAP_ORIGIN;
     int robot_row = MAP_SIZE - ((int)round(robot_y / GRID_SIZE) + MAP_ORIGIN);
@@ -129,4 +151,32 @@ void MapManager::printMap(double robot_x, double robot_y) {
         row_cnt++;
     }
     sendGridToMQTT();
+}
+
+void MapManager::initialize_mqtt_client() {
+    mqtt::connect_options connOpts;
+    connOpts.set_keep_alive_interval(20);
+    connOpts.set_clean_session(true);
+
+    // Set the message callback
+    client_.set_message_callback([this](mqtt::const_message_ptr msg) {
+        if (msg->get_topic() == TOPIC) {
+            // Convert the payload to a vector of bytes
+            std::vector<uint8_t> payload(msg->get_payload().begin(), msg->get_payload().end());
+            // Handle the map message
+            handleMapMessage(payload);
+        }
+    });
+
+    // Connect to the MQTT broker
+    try {
+        cout << "MapManager: Connecting to the MQTT server..." << endl;
+        client_.connect(connOpts)->wait();
+        cout << "MapManager: Connected to the MQTT server" << endl;
+
+        // Subscribe to the shared map topic
+        //client_.subscribe(TOPIC, 1);
+    } catch (const mqtt::exception& e) {
+        cerr << "MapManager: Error connecting to the MQTT server: " << e.what() << endl;
+    }
 }

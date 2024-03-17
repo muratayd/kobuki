@@ -180,6 +180,14 @@ private:
     void dilateCell(int x, int y, int value, double radius = ROBOT_RADIUS);
 
     void sendGridToMQTT();
+
+    void mergeMap(const std::vector<int>& received_grid);
+
+    // Function to initialize the MQTT client
+    void initialize_mqtt_client();
+
+    // Callback function for handling received map messages
+    void handleMapMessage(const std::vector<uint8_t>& received_map_data);
 };
 
 #endif /* MAP_MANAGER_HPP_ */

@@ -46,8 +46,9 @@ MotionController::~MotionController() {
     map_manager.printMap(current_x, current_y);
     // Ensure to disconnect MQTT Client
     try {
-        std::cout << "Disconnecting MQTT client..." << std::endl;
+        std::cout << "Disconnecting MQTT clients..." << std::endl;
         mqtt_client.disconnect();
+        remote_client.disconnect();
     } catch (const mqtt::exception& exc) {
         std::cerr << "MQTT disconnection failed: " << exc.what() << std::endl;
     }
@@ -499,7 +500,8 @@ void MotionController::Bug2Algorithm() {
 void MotionController::checkDistance(double sensor_distance) {
     double distance = sensor_distance * CM_TO_M;
     cout << "Sensor Distance: " << distance << "m." << endl;
-    if (distance > 0.02 && distance < 0.5) {
+    if (distance > 0.02 && distance < 0.5 &&
+            map_manager.checkMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y) == 0) {
         map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1, ROBOT_RADIUS * 0.8);
         map_manager.printMap(current_x, current_y);
     }
