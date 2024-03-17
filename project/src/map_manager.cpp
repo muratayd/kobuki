@@ -4,7 +4,10 @@
 #include <vector>
 #include <string>
 #include <cstring>
+#include <nlohmann/json.hpp>
+#include <fstream>
 
+using json = nlohmann::json;
 using namespace std;
 
 const string SERVER_ADDRESS("tcp://192.168.0.12:1883");
@@ -19,6 +22,12 @@ MapManager::MapManager() : client_(SERVER_ADDRESS, CLIENT_ID), callback_() {
             column = -1;
         }
     }
+    // Read robot_id from config.json
+    ifstream configFile("config.json");
+    json config;
+    configFile >> config;
+    robot_id = config["robot_id"];
+    configFile.close();
     // Initialize the MQTT client
     initialize_mqtt_client();
     sendGridToMQTT();
@@ -54,9 +63,17 @@ void MapManager::sendGridToMQTT() {
             flattened_data.push_back(column);
         }
     }
-    // Publish the flattened array
-    client_.publish(TOPIC, flattened_data.data(), flattened_data.size() * sizeof(int), 0, false);
-    cout << "Grid map sent to MQTT" << endl;
+    // Create a JSON object and add robot_id and grid data
+    nlohmann::json j;
+    j["robot_id"] = robot_id;
+    j["grid"] = flattened_data;
+
+    // Convert the JSON object to a string
+    std::string payload = j.dump();
+
+    // Publish the message with robot_id and grid data to the MQTT broker
+    client_.publish(TOPIC, payload);
+    std::cout << "Grid map sent to MQTT" << std::endl;
 }
 
 void MapManager::updateMap(double x, double y, int value, double radius) {

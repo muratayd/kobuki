@@ -143,11 +143,12 @@ public:
 
 private:
 
-    static const int MAP_SIZE = 200; // n of cells
-    static const int MAP_ORIGIN = 100; // origin point is at [100][100]
+    static const int MAP_SIZE = 300; // n of cells
+    static const int MAP_ORIGIN = 150; // origin point
     //static const double GRID_SIZE = 0.05; // m
     mqtt::async_client client_;
     MapManagerCallback callback_;
+    int robot_id;
 
     /**
     * @brief 2D array representing the occupancy grid map.

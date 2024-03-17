@@ -1,5 +1,6 @@
 #include "motion_controller.hpp"
 #include <nlohmann/json.hpp>
+#include <fstream>
 
 // Use nlohmann::json namespace for convenience
 using json = nlohmann::json;
@@ -22,6 +23,13 @@ MotionController::MotionController(KobukiManager& kobuki_manager)
     : mqtt_client("tcp://localhost:1883", "MotionControllerClient"),
       remote_client("tcp://192.168.0.12:1883", "MotionControllerClient"),
       kobuki_manager(kobuki_manager) {
+    // Read robot_id from config.json
+    ifstream configFile("config.json");
+    json config;
+    configFile >> config;
+    robot_id = config["robot_id"];
+    configFile.close();
+    cout << "Robot ID: " << robot_id << endl;
     this->temp_target_x = this->target_x = 0.0;
     this->temp_target_y = this->target_y = 0.0;
     UWB_x = 0.0;
@@ -250,8 +258,16 @@ void MotionController::sendModeToMQTT() {
             break;
     }
 
-    // Publish the robot mode to the MQTT broker
-    mqtt::message_ptr msg = mqtt::make_message(modeTopic, mode);
+    // Create a JSON object and add robot_id and mode
+    nlohmann::json j;
+    j["robot_id"] = robot_id;
+    j["mode"] = mode;
+
+    // Convert the JSON object to a string
+    std::string payload = j.dump();
+
+    // Publish the message with robot_id and mode to the MQTT broker
+    mqtt::message_ptr msg = mqtt::make_message(modeTopic, payload);
     remote_client.publish(msg);
     std::cout << "Robot mode sent to MQTT: " << mode << std::endl;
 }
@@ -265,12 +281,12 @@ void MotionController::sendCoordinatesToMQTT() {
     std::string headingStr = std::to_string(kobuki_manager.getAngle() * (180.0 / ecl::pi));
     // Limit the number of characters in heading field to 6
     j["heading"] = headingStr.substr(0, 7);
-
     // Add Pozyx coordinates
     j["pozyx_x"] = (int)(UWB_x * M_TO_MM);
     j["pozyx_y"] = (int)(UWB_y * M_TO_MM);
     std::string pozyxHeadingStr = std::to_string(UWB_yaw * (180.0 / ecl::pi));
     j["pozyx_heading"] = pozyxHeadingStr.substr(0, 7);
+    j["robot_id"] = robot_id;
 
     // Convert the JSON object to a string
     std::string payload = j.dump();
@@ -298,9 +314,16 @@ void MotionController::sendStateToMQTT() {
             break;
     }
 
-    // Publish the moving state to the MQTT broker
-    mqtt::message_ptr msg = mqtt::make_message(stateTopic, state);
-    remote_client.publish(msg);
+    // Create a JSON object and add robot_id and state
+    json j;
+    j["robot_id"] = robot_id;
+    j["state"] = state;
+
+    // Convert the JSON object to a string
+    std::string payload = j.dump();
+
+    // Publish the message with robot_id and state to the MQTT broker
+    mqtt::message_ptr msg = mqtt::make_message(stateTopic, payload);
     std::cout << "Robot state sent to MQTT: " << state << std::endl;
 }
 

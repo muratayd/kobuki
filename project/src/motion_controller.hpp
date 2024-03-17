@@ -74,7 +74,7 @@ private:
     // Predefined GPIO pin numbers for the ultrasonic sensor
     static const int DEFAULT_TRIGGER_PIN = 18;
     static const int DEFAULT_ECHO_PIN = 24;
-
+    int robot_id;
     KobukiManager& kobuki_manager;
     MapManager map_manager;
     double current_x;
@@ -110,7 +110,7 @@ private:
     std::condition_variable cv;
     bool pozyx_position_received = false; // This flag will be set to true once the first pozyx/position message arrives
     int pozyx_counter = 0;
-    
+
     /*  ############# MAIN ROBOT MODES ###################
         "go to goal mode": Robot will head to an x,y coordinate
         "wall following mode": Robot will follow a wall */

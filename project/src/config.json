@@ -1,3 +1,4 @@
 {
-    "broker_address": "192.168.0.12"
+    "broker_address": "192.168.0.12",
+    "robot_id": 1
 }

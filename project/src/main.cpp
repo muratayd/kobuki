@@ -10,8 +10,10 @@
 #include <nlohmann/json.hpp>
 
 using namespace std;
+using json = nlohmann::json;
 
 bool shutdown_req = false;
+int robot_id;
 
 void signalHandler(int /* signum */)
 {
@@ -44,6 +46,7 @@ void bumperHandler(const kobuki::BumperEvent &event) {
     nlohmann::json j;
     j["bumper"] = bumper;
     j["state"] = state;
+    j["robot_id"] = robot_id;
     // Convert the JSON object to a string
     std::string message = j.dump();
     // Publish the message to the MQTT topic
@@ -73,6 +76,7 @@ void cliffHandler(const kobuki::CliffEvent &event) {
     nlohmann::json j;
     j["state"] = state;
     j["sensor"] = sensor;
+    j["robot_id"] = robot_id;
     // Convert the JSON object to a string
     std::string message = j.dump();
     // Publish the message to the MQTT topic
@@ -116,9 +120,13 @@ int main(int argc, char **argv)
     linestream >> targetX;
     linestream >> targetY;
     std::cout << "target x: " << targetX << " y: " << targetY << std::endl;
-
+    // Read robot_id from config.json
+    ifstream configFile("config.json");
+    json config;
+    configFile >> config;
+    robot_id = config["robot_id"];
+    configFile.close();
     signal(SIGINT, signalHandler);
-
     ecl::MilliSleep sleep(1000);
     int ultrasonic_sensor_trigger_pin = 18;
     int ultrasonic_sensor_echo_pin = 24;
