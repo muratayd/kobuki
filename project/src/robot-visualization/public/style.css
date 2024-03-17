@@ -1,28 +1,56 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #333; /* Dark grey background */
+  background-color: #f5f5f5; /* grey background */
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: column;
-  background-image: url('futuristic-background.png'); /* Add a futuristic background image */
-  background-size: cover;
-  background-position: center;
 }
 
 #content {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: flex-start;
   gap: 20px; /* Adds space between map and info div */
-  margin-top: 20px;
+  margin-top: 10px;
   flex-flow: row wrap;
+  margin-left: 300px; /* Adjust based on sidebar width */
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 235px;
+  height: 100%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  font-family: Helvetica;
+}
+
+#robotSelection {
+  margin-top: 20px;
+}
+
+#robotSelection h2 {
+  margin-bottom: 10px;
+}
+
+#robotSelector {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
 }
 
 #mapContainer {
-  position: relative; /* Position the container relative to the body */
+  position: relative;
+  width: 900px;
+  height: 900px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
 }
 
 #robotMap {
@@ -41,6 +69,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
   width: 370px; /* Set a fixed width for the box */
   margin-right: 20px; /* Add some space to the right of the map */
+  font-family: Helvetica;
 }
 
 .infoContainer {
@@ -163,7 +192,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Adds space between each control item */
+  gap: 5px; /* Adds space between each control item */
   margin-top: 20px;
 }
 
@@ -171,17 +200,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Adds space between each control item */
+  gap: 5px; /* Adds space between each control item */
   margin-top: 20px;
 }
 
 input[type="number"] {
-  width: 110px; /* Adjust width as needed */
+  width: 80px; /* Adjust width as needed */
   height: 40px; /* Adjust height to match the buttons, ensuring alignment */
   padding: 0 12px;
   border: 2px solid #ccc; /* Add a border to the input for better visual */
   border-radius: 20px; /* Rounded corners for the input fields */
-  font-size: 16px; /* Increase font size for better readability */
+  font-size: 15px; /* Increase font size for better readability */
   line-height: 40px; /* Aligns text vertically */
   text-align: center;
 }
@@ -239,3 +268,22 @@ button:active {
   transform: translate(-50%, -50%); /* Center the icon */
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adjust the space between the logo and the text */
+}
+
+.logo-text {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #333; /* Adjust the text color as needed */
+}
+
+.logo img {
+  width: 100%;
+  max-width: 30px; /* Adjust size as needed */
+  display: block;
+  margin: 10 auto 20px; /* Center the logo and add some margin below */
+}
