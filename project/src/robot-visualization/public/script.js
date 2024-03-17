@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const longitudinalInput = document.getElementById('longitudinal_velocity');
     const rotationalInput = document.getElementById('rotational_velocity');
     let grid = []; // Define grid at the top level of your script
-    let targetPosition = { x: 0, y: 0 }; // Initial target position
-    const MAP_ORIGIN = 100; // origin point is at [100][100]
+    const MAP_ORIGIN = 150; // origin point for the map
     const GRID_SIZE  = 50 // mm
+    let selectedRobotId = 1; // Default selected robot
 
     function drawGrid() {
         if (!grid || !grid.length) {
@@ -36,9 +36,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
             }
         }
-        // Draw target icon
-        ctx.fillStyle = '#00FF00'; // Green color for the target icon
-        ctx.fillRect(targetPosition.x * cellSize, targetPosition.y * cellSize, cellSize, cellSize);
+
+        // Draw grid lines every 20 cells
+        ctx.strokeStyle = '#B0B0B0'; // Color of the grid lines
+        ctx.lineWidth = 1; // Width of the grid lines
+        for (let i = 0; i <= numCols; i += 20) {
+            ctx.beginPath();
+            ctx.moveTo(i * cellSize, 0);
+            ctx.lineTo(i * cellSize, canvas.height);
+            ctx.stroke();
+        }
+        for (let i = 0; i <= numRows; i += 20) {
+            ctx.beginPath();
+            ctx.moveTo(0, i * cellSize);
+            ctx.lineTo(canvas.width, i * cellSize);
+            ctx.stroke();
+        }
+
+        // Draw origin icon
+        ctx.fillStyle = '#00FF00'; // Green color for the origin icon
+        ctx.fillRect(MAP_ORIGIN * cellSize, MAP_ORIGIN * cellSize, cellSize, cellSize);
     }
 
     function drawRobot(x, y, heading) {
@@ -48,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const centerX = (x + 0.5) * cellSize;
         const centerY = (y + 0.5) * cellSize;
 
-        const imageSize = cellSize * 4; // Adjust size of the image as needed
+        const imageSize = cellSize * 9; // Adjust size of the image as needed
 
         // Update the position of the robot image
         robotImg.style.left = (centerX - imageSize / 2) + 'px';
@@ -118,40 +135,59 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     socket.on('robot coordinates', (position) => {
-        updateRobotInfoPos(position.x, position.y, position.heading);
-        updatePozyxInfoPos(position.pozyx_x, position.pozyx_y, position.pozyx_heading);
-        drawRobot(position.pozyx_x, position.pozyx_y, position.pozyx_heading); // Draw the robot at the new position
-        //console.log('Received robot position:', position);
+        if (Number(position.robot_id) === selectedRobotId) {
+            updateRobotInfoPos(position.x, position.y, position.heading);
+            updatePozyxInfoPos(position.pozyx_x, position.pozyx_y, position.pozyx_heading);
+            drawRobot(position.pozyx_x, position.pozyx_y, position.pozyx_heading); // Draw the robot at the new position
+        }
     });
 
     socket.on('pozyx position', (position) => {
         updatePozyxInfoPos(position.x, position.y, position.heading);
         drawRobot(position.x, position.y, position.heading); // Draw the robot at the new position
-        //console.log('Received robot position:', position);
     });
 
-    socket.on('map update', (newGrid) => {
+    socket.on('map update', (data) => {
         console.log('Received map');
-        grid = newGrid; // Assign the received grid data to your grid variable
-        drawGrid(); // Now safe to call drawGrid
+        if (Number(data.robot_id) === selectedRobotId) {
+            // Assuming the message contains a flattened array of integers
+            const data2 = new Int32Array(data.grid);
+            // Assuming the 2D array was originally a 300x300 map
+            const map = [];
+            for (let i = 0; i < 300; i++) {
+                map.push(Array.from(data2.slice(i * 300, (i + 1) * 300)));
+            }
+            grid = map; // Assuming the map data is in a field called 'map'
+            drawGrid(); // Now safe to call drawGrid
+        }
+
     });
 
-    socket.on('robot mode', (mode) => {
-        updateRobotInfoMode(mode); // Update the robot mode display
+    socket.on('robot mode', (data) => {
+        console.log('Received robot mode:', data);
+        if (data.robot_id === selectedRobotId) {
+            updateRobotInfoMode(data.mode); // Update the robot mode display
+        }
     });
 
-    socket.on('moving state', (state) => {
-        updateRobotInfoState(state); // Update the moving state display
+    socket.on('moving state', (data) => {
+        if (data.robot_id === selectedRobotId) {
+            updateRobotInfoState(data.state); // Update the moving state display
+        }
     });
 
     socket.on('bumper state', (data) => {
-        updateSensorState('bumper', data.bumper, data.state);
-        console.log('Received bumper state:', data);
+        if (data.robot_id === selectedRobotId) {
+            updateSensorState('bumper', data.bumper, data.state);
+            console.log('Received bumper state:', data);
+        }
     });
 
     socket.on('cliff state', (data) => {
-        updateSensorState('cliff', data.sensor, data.state);
-        console.log('Received cliff state:', data);
+        if (data.robot_id === selectedRobotId) {
+            updateSensorState('cliff', data.sensor, data.state);
+            console.log('Received cliff state:', data);
+        }
     });
 
     startButton.addEventListener('click', () => {
@@ -175,5 +211,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const rotational_velocity = parseFloat(rotationalInput.value);
         const message = { longitudinal_velocity, rotational_velocity }; // Create the message object
         socket.emit('move command', message); // Emit the message object to the server
+    });
+
+    document.getElementById('robotSelector').addEventListener('change', (event) => {
+        selectedRobotId = Number(event.target.value); // Convert to number
+        // Clear current robot info
+        clearRobotInfo();
+        // Request updated info for the selected robot
+        socket.emit('request robot info', { robotId: selectedRobotId });
     });
 });

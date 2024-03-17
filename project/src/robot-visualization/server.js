@@ -71,24 +71,17 @@ mqttClient.on('message', (topic, message) => {
         const positionData = JSON.parse(message.toString()); // Assuming the message is a JSON string
         io.emit('robot coordinates', positionData); // Emit to all connected clients
     } else if (topic === mapTopic) {
-        console.log('Received "robot/map"');
-        // Assuming the message contains a flattened array of integers
-        const data = new Int32Array(message.buffer);
-
-        // Assuming the 2D array was originally a 200x200 map
-        const map = [];
-        for (let i = 0; i < 200; i++) {
-            map.push(Array.from(data.slice(i * 200, (i + 1) * 200)));
-        }
-        // console.log('Received map update:', map);
-
-        io.emit('map update', map); // Emit to all connected clients
+        const data = JSON.parse(message.toString());
+        console.log('Received "robot/map"', message.toString());
+        io.emit('map update', data); // Emit to all connected clients
     } else if (topic === modeTopic) {
         console.log('Received "robot/mode"', message.toString());
-        io.emit('robot mode', message.toString()); // Emit to all connected clients
+        const data = JSON.parse(message.toString());
+        io.emit('robot mode', data); // Emit to all connected clients
     } else if (topic === stateTopic) {
         console.log('Received "robot/state"', message.toString());
-        io.emit('moving state', message.toString()); // Emit to all connected clients
+        const data = JSON.parse(message.toString());
+        io.emit('moving state', data); // Emit to all connected clients
     } else if (topic === bumperTopic) {
         console.log('Received "bumperTopic"');
         // Parse bumper message
