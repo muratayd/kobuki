@@ -143,8 +143,8 @@ public:
 
 private:
 
-    static const int MAP_SIZE = 300; // n of cells
-    static const int MAP_ORIGIN = 150; // origin point
+    static const int MAP_SIZE = 320; // n of cells
+    static const int MAP_ORIGIN = 160; // origin point
     //static const double GRID_SIZE = 0.05; // m
     mqtt::async_client client_;
     MapManagerCallback callback_;

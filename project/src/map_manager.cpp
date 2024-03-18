@@ -11,7 +11,7 @@ using json = nlohmann::json;
 using namespace std;
 
 const string SERVER_ADDRESS("tcp://192.168.0.12:1883");
-const string CLIENT_ID("map_publisher");
+const string CLIENT_ID("map_publisher1");
 const string TOPIC("robot/map");
 
 MapManager::MapManager() : client_(SERVER_ADDRESS, CLIENT_ID), callback_() {

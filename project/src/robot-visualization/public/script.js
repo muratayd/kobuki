@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const longitudinalInput = document.getElementById('longitudinal_velocity');
     const rotationalInput = document.getElementById('rotational_velocity');
     let grid = []; // Define grid at the top level of your script
-    const MAP_ORIGIN = 150; // origin point for the map
+    const MAP_ORIGIN = 160; // origin point for the map
     const GRID_SIZE  = 50 // mm
     let selectedRobotId = 1; // Default selected robot
 
@@ -152,10 +152,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (Number(data.robot_id) === selectedRobotId) {
             // Assuming the message contains a flattened array of integers
             const data2 = new Int32Array(data.grid);
-            // Assuming the 2D array was originally a 300x300 map
+            // Assuming the 2D array was originally a 320x320 map
             const map = [];
-            for (let i = 0; i < 300; i++) {
-                map.push(Array.from(data2.slice(i * 300, (i + 1) * 300)));
+            for (let i = 0; i < 320; i++) {
+                map.push(Array.from(data2.slice(i * 320, (i + 1) * 320)));
             }
             grid = map; // Assuming the map data is in a field called 'map'
             drawGrid(); // Now safe to call drawGrid
@@ -193,24 +193,26 @@ document.addEventListener('DOMContentLoaded', () => {
     startButton.addEventListener('click', () => {
         const x = parseFloat(targetXInput.value); // Convert input value to float
         const y = parseFloat(targetYInput.value);
-        const message = { x, y }; // Create the message object
+        const message = { x, y, robot_id: selectedRobotId }; // Create the message object
         updateTargetIcon(x, y);
         socket.emit('start command', message); // Emit the message object to the server
     });
 
     stopButton.addEventListener('click', () => {
-        socket.emit('stop command'); // Emit a stop command event without additional data
+        const message = { robot_id: selectedRobotId }; // Include selectedRobotId
+        socket.emit('stop command', message); // Emit a stop command event without additional data
     });
 
     stop2Button.addEventListener('click', () => {
-        socket.emit('stop command'); // Emit a stop command event without additional data
+        const message = { robot_id: selectedRobotId }; // Include selectedRobotId
+        socket.emit('stop command', message);
     });
 
     moveButton.addEventListener('click', () => {
-        const longitudinal_velocity = parseFloat(longitudinalInput.value); // Convert input value to float
+        const longitudinal_velocity = parseFloat(longitudinalInput.value);
         const rotational_velocity = parseFloat(rotationalInput.value);
-        const message = { longitudinal_velocity, rotational_velocity }; // Create the message object
-        socket.emit('move command', message); // Emit the message object to the server
+        const message = { longitudinal_velocity, rotational_velocity, robot_id: selectedRobotId }; // Include selectedRobotId
+        socket.emit('move command', message);
     });
 
     document.getElementById('robotSelector').addEventListener('change', (event) => {

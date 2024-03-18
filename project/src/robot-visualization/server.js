@@ -72,7 +72,7 @@ mqttClient.on('message', (topic, message) => {
         io.emit('robot coordinates', positionData); // Emit to all connected clients
     } else if (topic === mapTopic) {
         const data = JSON.parse(message.toString());
-        console.log('Received "robot/map"', message.toString());
+        console.log('Received "robot/map"');
         io.emit('map update', data); // Emit to all connected clients
     } else if (topic === modeTopic) {
         console.log('Received "robot/mode"', message.toString());

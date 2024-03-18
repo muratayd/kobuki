@@ -21,7 +21,7 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
 
 MotionController::MotionController(KobukiManager& kobuki_manager)
     : mqtt_client("tcp://localhost:1883", "MotionControllerClient"),
-      remote_client("tcp://192.168.0.12:1883", "MotionControllerClient"),
+      remote_client("tcp://192.168.0.12:1883", "MotionControllerClient1"),
       kobuki_manager(kobuki_manager) {
     // Read robot_id from config.json
     ifstream configFile("config.json");
@@ -184,16 +184,19 @@ void MotionController::remote_mqtt_message_arrived(mqtt::const_message_ptr msg) 
         try {
             // Attempt to convert the string payload to a double
             auto j = json::parse(payload);
-            double x = j["x"];
-            double y = j["y"];
-            temp_target_x = target_x = x;
-            temp_target_y = target_y = y;
-            robot_mode = GO_TO_GOAL_MODE;
-            sendModeToMQTT();
-            moving_state = ADJUST_HEADING;
-            sendStateToMQTT();
-            kobuki_manager.playSoundSequence(0x5);
-            std::cout << "New robot target received: X: " << temp_target_x << ", Y: " << temp_target_y << std::endl;
+            int id = j["robot_id"];
+            if (id == robot_id) {
+                double x = j["x"];
+                double y = j["y"];
+                temp_target_x = target_x = x;
+                temp_target_y = target_y = y;
+                robot_mode = GO_TO_GOAL_MODE;
+                sendModeToMQTT();
+                moving_state = ADJUST_HEADING;
+                sendStateToMQTT();
+                kobuki_manager.playSoundSequence(0x5);
+                std::cout << "New robot target received: X: " << temp_target_x << ", Y: " << temp_target_y << std::endl;
+            }
         } catch (json::parse_error& e) {
             std::cerr << "Parsing error: " << e.what() << '\n';
         } catch (json::type_error& e) {
@@ -221,16 +224,19 @@ void MotionController::remote_mqtt_message_arrived(mqtt::const_message_ptr msg) 
         try {
             // Attempt to convert the string payload to a double
             auto j = json::parse(payload);
-            double longitudinal_velocity = j["longitudinal_velocity"];
-            double rotational_velocity = j["rotational_velocity"];
-            robot_mode = CUSTOM_MODE;
-            sendModeToMQTT();
-            moving_state = GOAL_ACHIEVED;
-            sendStateToMQTT();
-            kobuki_manager.move(longitudinal_velocity * CM_TO_M, rotational_velocity);
-            kobuki_manager.playSoundSequence(0x5);
-            std::cout << "New robot movement received: longitudinal_velocity: " << longitudinal_velocity << 
-                    ", rotational_velocity: " << rotational_velocity << std::endl;
+            int id = j["robot_id"];
+            if (id == robot_id) {
+                double longitudinal_velocity = j["longitudinal_velocity"];
+                double rotational_velocity = j["rotational_velocity"];
+                robot_mode = CUSTOM_MODE;
+                sendModeToMQTT();
+                moving_state = GOAL_ACHIEVED;
+                sendStateToMQTT();
+                kobuki_manager.move(longitudinal_velocity * CM_TO_M, rotational_velocity);
+                kobuki_manager.playSoundSequence(0x5);
+                std::cout << "New robot movement received: longitudinal_velocity: " << longitudinal_velocity << 
+                        ", rotational_velocity: " << rotational_velocity << std::endl;
+            }
         } catch (json::parse_error& e) {
             std::cerr << "Parsing error: " << e.what() << '\n';
         } catch (json::type_error& e) {
