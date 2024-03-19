@@ -57,7 +57,7 @@ body {
   border: 1px solid black;
 }
 
-#robot {
+.robot {
   position: absolute; /* Position the robot image absolutely within the container */
   transform: translate(-50%, -50%); /* Center the image */
 }

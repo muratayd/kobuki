@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const socket = io();
     const canvas = document.getElementById('robotMap');
     const ctx = canvas.getContext('2d');
-    const robotImg = document.getElementById('robot');
+    const robotImg1 = document.getElementById('robot1');
     const startButton = document.getElementById('start');
     const stopButton = document.getElementById('stop');
     const stop2Button = document.getElementById('stop2');
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.fillRect(MAP_ORIGIN * cellSize, MAP_ORIGIN * cellSize, cellSize, cellSize);
     }
 
-    function drawRobot(x, y, heading) {
+    function drawRobot(x, y, heading, id) {
         const cellSize = canvas.width / grid[0].length; // Assuming grid is already defined
         x = (x / GRID_SIZE) + MAP_ORIGIN;
         y = MAP_ORIGIN - (y / GRID_SIZE);
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const centerY = (y + 0.5) * cellSize;
 
         const imageSize = cellSize * 9; // Adjust size of the image as needed
-
+        const robotImg = document.getElementById(`robot${id}`);
         // Update the position of the robot image
         robotImg.style.left = (centerX - imageSize / 2) + 'px';
         robotImg.style.top = (centerY - imageSize / 2) + 'px';
@@ -138,13 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (Number(position.robot_id) === selectedRobotId) {
             updateRobotInfoPos(position.x, position.y, position.heading);
             updatePozyxInfoPos(position.pozyx_x, position.pozyx_y, position.pozyx_heading);
-            drawRobot(position.pozyx_x, position.pozyx_y, position.pozyx_heading); // Draw the robot at the new position
         }
-    });
+        drawRobot(position.pozyx_x, position.pozyx_y, position.pozyx_heading, position.robot_id); // Draw the robot at the new position
 
-    socket.on('pozyx position', (position) => {
-        updatePozyxInfoPos(position.x, position.y, position.heading);
-        drawRobot(position.x, position.y, position.heading); // Draw the robot at the new position
     });
 
     socket.on('map update', (data) => {
