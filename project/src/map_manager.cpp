@@ -81,6 +81,8 @@ void MapManager::updateMap(double x, double y, int value, double radius) {
     int column = (int)round(y / GRID_SIZE) + MAP_ORIGIN;
     //std::cout << "updateMap x:" << row << " y:" << column << " val:" << value << std::endl;
     if (row < 0 || row >= MAP_SIZE || column < 0 || column >= MAP_SIZE) {
+        cout << "updateMap Coordinates out of map boundaries row" << row << " column" <<
+             column << " value" << value << " radius" << radius << " x" << x << " y" << y << endl;
         throw std::out_of_range("updateMap Coordinates out of map boundaries");
     }
     dilateCell(row, column, value, radius);
@@ -91,6 +93,7 @@ bool MapManager::checkMap(double x, double y) {
     int row = (int)round(x / GRID_SIZE) + MAP_ORIGIN;
     int column = (int)round(y / GRID_SIZE) + MAP_ORIGIN;
     if (row < 0 || row >= MAP_SIZE || column < 0 || column >= MAP_SIZE) {
+        cout << "checkMap Coordinates out of map boundaries row" << row << " column" << column << endl;
         throw std::out_of_range("checkMap Coordinates out of map boundaries");
     }
     return (occupancy_grid[MAP_SIZE-column][row] == 1);

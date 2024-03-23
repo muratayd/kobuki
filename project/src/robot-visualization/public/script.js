@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         robotImg.style.top = (centerY - imageSize / 2) + 'px';
 
         // Optionally, update the rotation of the image based on the heading
-        robotImg.style.transform = 'rotate(' + heading + 'deg)';
+        robotImg.style.transform = 'rotate(' + -heading + 'deg)';
     }
 
     function updateRobotInfoMode(mode) {
@@ -214,8 +214,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('robotSelector').addEventListener('change', (event) => {
         selectedRobotId = Number(event.target.value); // Convert to number
         // Clear current robot info
-        clearRobotInfo();
+        //clearRobotInfo();
         // Request updated info for the selected robot
-        socket.emit('request robot info', { robotId: selectedRobotId });
+        //socket.emit('request robot info', { robotId: selectedRobotId });
     });
 });

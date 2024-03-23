@@ -94,9 +94,9 @@ private:
     double hit_y;
     double distance_to_goal_from_hit_point;
     // +/- 7.0 degrees of precision for the rotation angle
-    double yaw_precision = 7.0 * (ecl::pi / 180);
+    double yaw_precision = 5.0 * (ecl::pi / 180);
     // variables for occupancy grid obstacles closer than 10cm
-    bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle, center_obstacle;
+    bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle, center_obstacle, isObstacleInFront;
     bool button0_flag;
     ecl::TimeStamp start_time;
 
@@ -171,6 +171,10 @@ private:
     /* MQTT send Robot coordinates
     */
     void sendCoordinatesToMQTT();
+    
+    /* MQTT send obstacle event
+    */
+    void sendObstacleEventToMQTT(double target_x, double target_y);
 };
 
 #endif /* MOTION_CONTROLLER_HPP_ */

@@ -104,8 +104,9 @@ io.on('connection', (socket) => {
     });
 
     // Handle 'stop command' from clients
-    socket.on('stop command', () => {
-        mqttClient.publish(stopTopic, 'STOP');
+    socket.on('stop command', (data) => {
+        const message = JSON.stringify(data);
+        mqttClient.publish(stopTopic, message);
         console.log(`Publishing stop command to ${stopTopic}`);
     });
 });

@@ -9,6 +9,7 @@ using namespace std;
 const string modeTopic("robot/mode");
 const string stateTopic("robot/state");
 const string coordinatesTopic("robot/coordinates");
+const string obstacleTopic("robot/obstacle");
 
 void buttonHandler(const kobuki::ButtonEvent &event) {
     cout << "motion controller: ButtonEvent" << endl;
@@ -21,7 +22,7 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
 
 MotionController::MotionController(KobukiManager& kobuki_manager)
     : mqtt_client("tcp://localhost:1883", "MotionControllerClient"),
-      remote_client("tcp://192.168.0.12:1883", "MotionControllerClient1"),
+      remote_client("tcp://192.168.0.30:1883", "MotionControllerClient1"),
       kobuki_manager(kobuki_manager) {
     // Read robot_id from config.json
     ifstream configFile("config.json");
@@ -36,7 +37,7 @@ MotionController::MotionController(KobukiManager& kobuki_manager)
     UWB_y = 0.0;
     UWB_yaw = 0.0;
     start_time.stamp();
-    robot_mode = GO_TO_GOAL_MODE;
+    robot_mode = CUSTOM_MODE;
     moving_state = GOAL_ACHIEVED;
     button0_flag = false;
     kobuki_manager.setUserButtonEventCallBack(buttonHandler);
@@ -115,6 +116,7 @@ void MotionController::on_remote_connected(const std::string& cause) {
     remote_client.subscribe("webUI/target", 1);
     remote_client.subscribe("webUI/stop", 1);
     remote_client.subscribe("webUI/move", 1);
+    remote_client.subscribe("robot/obstacle", 1);
 }
 
 // MQTT Message Arrival Handler
@@ -206,17 +208,26 @@ void MotionController::remote_mqtt_message_arrived(mqtt::const_message_ptr msg) 
         }
     } else if (msg->get_topic() == "webUI/stop") {
         std::string payload = msg->to_string();
-        if (payload == "STOP") {
-            // Handle the stop command, e.g., stop the robot
-            kobuki_manager.stop();
-            std::cout << "Stop command received." << std::endl;
-            robot_mode = GO_TO_GOAL_MODE;
-            sendModeToMQTT();
-            moving_state = GOAL_ACHIEVED;
-            sendStateToMQTT();
-            kobuki_manager.playSoundSequence(0x6);
-        } else {
-            std::cout << "Received message: " << payload << std::endl;
+        try {
+            // Attempt to convert the string payload to a double
+            auto j = json::parse(payload);
+            int id = j["robot_id"];
+            if (id == robot_id) {
+                // Handle the stop command, e.g., stop the robot
+                kobuki_manager.stop();
+                std::cout << "Stop command received." << std::endl;
+                robot_mode = CUSTOM_MODE;
+                sendModeToMQTT();
+                moving_state = GOAL_ACHIEVED;
+                sendStateToMQTT();
+                kobuki_manager.playSoundSequence(0x6);
+            }
+        } catch (json::parse_error& e) {
+            std::cerr << "Parsing error: " << e.what() << '\n';
+        } catch (json::type_error& e) {
+            std::cerr << "Type error: " << e.what() << '\n';
+        } catch (std::exception& e) {
+            std::cerr << "Some other error: " << e.what() << '\n';
         }
     } else if (msg->get_topic() == "webUI/move") {
         // Update based on target message
@@ -236,6 +247,33 @@ void MotionController::remote_mqtt_message_arrived(mqtt::const_message_ptr msg) 
                 kobuki_manager.playSoundSequence(0x5);
                 std::cout << "New robot movement received: longitudinal_velocity: " << longitudinal_velocity << 
                         ", rotational_velocity: " << rotational_velocity << std::endl;
+            }
+        } catch (json::parse_error& e) {
+            std::cerr << "Parsing error: " << e.what() << '\n';
+        } catch (json::type_error& e) {
+            std::cerr << "Type error: " << e.what() << '\n';
+        } catch (std::exception& e) {
+            std::cerr << "Some other error: " << e.what() << '\n';
+        }
+    } else if (msg->get_topic() == "robot/obstacle") {
+        // Update based on target message
+        std::string payload = msg->to_string();
+        try {
+            // Attempt to convert the string payload to a double
+            auto j = json::parse(payload);
+            int id = j["robot_id"];
+            if (id + 1 == robot_id && robot_mode == CUSTOM_MODE) { // Only process the message if from the previous robot_id
+                double x = j["target_x"];
+                double y = j["target_y"];
+                temp_target_x = target_x = x;
+                temp_target_y = target_y = y;
+                robot_mode = GO_TO_GOAL_MODE;
+                sendModeToMQTT();
+                moving_state = ADJUST_HEADING;
+                sendStateToMQTT();
+                kobuki_manager.playSoundSequence(0x5);
+                std::cout << "New robot target received from the previous robot: X: " << 
+                        temp_target_x << ", Y: " << temp_target_y << std::endl;
             }
         } catch (json::parse_error& e) {
             std::cerr << "Parsing error: " << e.what() << '\n';
@@ -384,6 +422,7 @@ void MotionController::Bug2Algorithm() {
                     cout << "GO_TO_GOAL_MODE, GO_STRAIGHT -> WALL_FOLLOWING_MODE robot_mode: " 
                     << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
             // stop and switch to wall mode
+            sendObstacleEventToMQTT(target_x, target_y);
             return;
         }
 
@@ -417,17 +456,23 @@ void MotionController::Bug2Algorithm() {
                 sleep(200);
             }
         } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
-            //double position_error = sqrt(
-            //    pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
-
             if (position_error > 0.25) {
+                if (isObstacleInFront) {
+                    if (robot_id % 2 == 0) { // Even robot_id is right wall follower
+                        // turn right and move forward slowly
+                        rotational_velocity = -ROTATION_SPEED * 0.2;
+                    } else { // Odd robot_id is left wall follower
+                        // turn left and move forward slowly
+                        rotational_velocity = ROTATION_SPEED * 0.2;
+                    }
+                }
                 longitudinal_velocity = FORWARD_SPEED;
                 // How far off is the current heading in radians?
                 double yaw_error = getYawError(current_x, current_y, current_yaw, target_x, target_y);
                 cout << "yaw_error: " << yaw_error << " position_error: " << position_error << endl;
 
                 // Adjust heading if heading is not good enough
-                if (fabs(yaw_error) > yaw_precision + 0.2) {
+                if (fabs(yaw_error) > yaw_precision + ecl::pi * 0.25) {
                     moving_state = ADJUST_HEADING; // ADJUST HEADING
                     sendStateToMQTT();
                     map_manager.printMap(current_x, current_y);
@@ -498,29 +543,53 @@ void MotionController::Bug2Algorithm() {
                 return;
             }
         }
-
-        // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
-        if (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0 || center_obstacle) {
-            // move backwards
-            cout << "Moving backwards" << endl;
-            rotational_velocity = 0.0;
-            longitudinal_velocity = -FORWARD_SPEED;
-            //rotational_velocity = ROTATION_SPEED * 0.5;
-        } else if (front_obstacle || left_front_obstacle) {
-            // turn left and move forward slowly
-            rotational_velocity = FAST_ROTATION_SPEED;
-        } else if (right_front_obstacle) {
-            // turn left and move forward slowly
-            longitudinal_velocity = FORWARD_SPEED * 0.5;
-            rotational_velocity = FAST_ROTATION_SPEED;
-        } else if (right_obstacle) {
-            // move straight to follow the wall
-            longitudinal_velocity = FORWARD_SPEED;
-        } else if (kobuki_manager.getBumperState() == 0 || kobuki_manager.getCliffState() != 0) {
-            // turn right and move forward slowly
-            longitudinal_velocity = FORWARD_SPEED;
-            rotational_velocity = -FAST_ROTATION_SPEED;
+        if (robot_id % 2 == 0) { // Even robot_id is right wall follower
+            // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
+            if (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0 || center_obstacle) {
+                // move backwards
+                cout << "Moving backwards" << endl;
+                rotational_velocity = 0.0;
+                longitudinal_velocity = -FORWARD_SPEED;
+            } else if (front_obstacle || right_front_obstacle) {
+                // turn right and move forward slowly
+                rotational_velocity = -FAST_ROTATION_SPEED;
+            } else if (left_front_obstacle) {
+                // turn right and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED * 0.5;
+                rotational_velocity = -FAST_ROTATION_SPEED;
+            } else if (left_obstacle) {
+                // move straight to follow the wall
+                longitudinal_velocity = FORWARD_SPEED;
+            } else if (kobuki_manager.getBumperState() == 0 || kobuki_manager.getCliffState() != 0) {
+                // turn left and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED;
+                rotational_velocity = FAST_ROTATION_SPEED;
+            }
+        } else { // Odd robot_id is left wall follower
+            // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
+            if (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0 || center_obstacle) {
+                // move backwards
+                cout << "Moving backwards" << endl;
+                rotational_velocity = 0.0;
+                longitudinal_velocity = -FORWARD_SPEED;
+                //rotational_velocity = ROTATION_SPEED * 0.5;
+            } else if (front_obstacle || left_front_obstacle) {
+                // turn left and move forward slowly
+                rotational_velocity = FAST_ROTATION_SPEED;
+            } else if (right_front_obstacle) {
+                // turn left and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED * 0.5;
+                rotational_velocity = FAST_ROTATION_SPEED;
+            } else if (right_obstacle) {
+                // move straight to follow the wall
+                longitudinal_velocity = FORWARD_SPEED;
+            } else if (kobuki_manager.getBumperState() == 0 || kobuki_manager.getCliffState() != 0) {
+                // turn right and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED;
+                rotational_velocity = -FAST_ROTATION_SPEED;
+            }
         }
+        
     }
     kobuki_manager.move(longitudinal_velocity, rotational_velocity);
     return;
@@ -570,6 +639,16 @@ void MotionController::setObstacleFlags() {
     y = current_y + ROBOT_RADIUS * 0.90 * sin(current_yaw+ecl::pi*0.5);
     //cout << x << " " << y << endl;
     left_obstacle = map_manager.checkMap(x, y);
+    // check the path in front of the robot
+    for (int i = 1; i < 7; i++) {
+        x = current_x + i * 2 * ROBOT_RADIUS * cos(current_yaw);
+        y = current_y + i * 2 * ROBOT_RADIUS * sin(current_yaw);
+        if (map_manager.checkMap(x, y)) {
+            isObstacleInFront = true;
+            break;
+        }
+    }
+    cout << "OBSTACLES:    " <<  isObstacleInFront << endl;
     cout << "OBSTACLES:    " <<  front_obstacle << endl;
     cout << "OBSTACLES:  " << left_front_obstacle << "   " << right_front_obstacle << endl;
     cout << "OBSTACLES:" << left_obstacle << "   " << center_obstacle << "   " << right_obstacle << endl;
@@ -583,4 +662,19 @@ double MotionController::getYawError(double current_x, double current_y,
     // How far off is the current heading in radians?
     double yaw_error = desired_yaw - current_yaw;
     return ecl::wrap_angle(yaw_error);
+}
+
+void MotionController::sendObstacleEventToMQTT(double target_x, double target_y) {
+    json obstacle_event;
+    obstacle_event["event"] = "obstacle";
+    obstacle_event["target_x"] = target_x;
+    obstacle_event["target_y"] = target_y;
+    obstacle_event["robot_id"] = robot_id;
+    std::string obstacle_event_str = obstacle_event.dump();
+    try {
+        mqtt::message_ptr msg = mqtt::make_message(obstacleTopic, obstacle_event_str);
+        remote_client.publish(msg);
+    } catch (const mqtt::exception& exc) {
+        std::cerr << "Failed to send obstacle event to MQTT: " << exc.what() << std::endl;
+    }
 }
