@@ -22,13 +22,13 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
 
 MotionController::MotionController(KobukiManager& kobuki_manager)
     : mqtt_client("tcp://localhost:1883", "MotionControllerClient"),
-      remote_client("tcp://192.168.2.101:1883", "MotionControllerClient1"),
       kobuki_manager(kobuki_manager) {
     // Read robot_id from config.json
     ifstream configFile("config.json");
     json config;
     configFile >> config;
     robot_id = config["robot_id"];
+    string mqtt_broker_ip = config["mqtt_broker_ip"]; // Read the MQTT broker's IP address
     configFile.close();
     cout << "Robot ID: " << robot_id << endl;
     this->temp_target_x = this->target_x = 0.0;
@@ -41,6 +41,8 @@ MotionController::MotionController(KobukiManager& kobuki_manager)
     moving_state = GOAL_ACHIEVED;
     button0_flag = false;
     kobuki_manager.setUserButtonEventCallBack(buttonHandler);
+    remote_client = new mqtt::async_client("tcp://" + mqtt_broker_ip + ":1883", "MotionControllerClient_" + std::to_string(robot_id));
+
     initialize_remote_mqtt_client();
     initialize_mqtt_client();
     // Wait for the first pozyx/position message
@@ -57,7 +59,8 @@ MotionController::~MotionController() {
     try {
         std::cout << "Disconnecting MQTT clients..." << std::endl;
         mqtt_client.disconnect();
-        remote_client.disconnect();
+        remote_client->disconnect();
+        delete remote_client; // Free the dynamically allocated memory
     } catch (const mqtt::exception& exc) {
         std::cerr << "MQTT disconnection failed: " << exc.what() << std::endl;
     }
@@ -85,8 +88,8 @@ void MotionController::initialize_mqtt_client() {
 // MQTT Remote Client Initialization
 void MotionController::initialize_remote_mqtt_client() {
     using namespace std::placeholders;
-    remote_client.set_connected_handler(std::bind(&MotionController::on_remote_connected, this, _1));
-    remote_client.set_message_callback(std::bind(&MotionController::remote_mqtt_message_arrived, this, _1));
+    remote_client->set_connected_handler(std::bind(&MotionController::on_remote_connected, this, _1));
+    remote_client->set_message_callback(std::bind(&MotionController::remote_mqtt_message_arrived, this, _1));
 
     mqtt::connect_options connOpts;
     connOpts.set_keep_alive_interval(20);
@@ -94,7 +97,7 @@ void MotionController::initialize_remote_mqtt_client() {
 
     try {
         std::cout << "Connecting to the remote MQTT broker..." << std::endl;
-        remote_client.connect(connOpts)->wait();
+        remote_client->connect(connOpts)->wait();
     } catch (const mqtt::exception& exc) {
         std::cerr << exc.what() << std::endl;
         // Handle connection failure
@@ -113,10 +116,10 @@ void MotionController::on_connected(const std::string& cause) {
 void MotionController::on_remote_connected(const std::string& cause) {
     std::cout << "MQTT connection success" << std::endl;
     // Subscribe to topics
-    remote_client.subscribe("webUI/target", 1);
-    remote_client.subscribe("webUI/stop", 1);
-    remote_client.subscribe("webUI/move", 1);
-    remote_client.subscribe("robot/obstacle", 1);
+    remote_client->subscribe("webUI/target", 1);
+    remote_client->subscribe("webUI/stop", 1);
+    remote_client->subscribe("webUI/move", 1);
+    remote_client->subscribe("robot/obstacle", 1);
 }
 
 // MQTT Message Arrival Handler
@@ -312,7 +315,7 @@ void MotionController::sendModeToMQTT() {
 
     // Publish the message with robot_id and mode to the MQTT broker
     mqtt::message_ptr msg = mqtt::make_message(modeTopic, payload);
-    remote_client.publish(msg);
+    remote_client->publish(msg);
     std::cout << "Robot mode sent to MQTT: " << mode << std::endl;
 }
 
@@ -337,7 +340,7 @@ void MotionController::sendCoordinatesToMQTT() {
 
     // Publish the coordinates to the MQTT broker
     mqtt::message_ptr msg = mqtt::make_message(coordinatesTopic, payload);
-    remote_client.publish(msg);
+    remote_client->publish(msg);
     //std::cout << "Robot coordinates sent to MQTT: " << payload << std::endl;
 }
 
@@ -373,11 +376,6 @@ void MotionController::sendStateToMQTT() {
 
 
 void MotionController::Bug2Algorithm() {
-
-    if (robot_mode == CUSTOM_MODE) {
-        return;
-    }
-
     double longitudinal_velocity = 0.0;
     double rotational_velocity = 0.0;
 
@@ -389,6 +387,9 @@ void MotionController::Bug2Algorithm() {
     current_y = (0.2 * UWB_y + 0.8 * kobuki_coordinates[1]);
     //current_yaw = kobuki_manager.getAngle();
     current_yaw = UWB_yaw;
+    if (robot_mode == CUSTOM_MODE) {
+        return;
+    }
     cout << ecl::green << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << 
             ". [x: " << current_x << ", y: " << current_y;
     cout << ", heading: " << current_yaw << "]. Bumper State: " << kobuki_manager.getBumperState() << ". Cliff State: " <<
@@ -472,7 +473,7 @@ void MotionController::Bug2Algorithm() {
                 cout << "yaw_error: " << yaw_error << " position_error: " << position_error << endl;
 
                 // Adjust heading if heading is not good enough
-                if (fabs(yaw_error) > yaw_precision + ecl::pi * 0.25) {
+                if (fabs(yaw_error) > yaw_precision + ecl::pi * 0.33) {
                     moving_state = ADJUST_HEADING; // ADJUST HEADING
                     sendStateToMQTT();
                     map_manager.printMap(current_x, current_y);
@@ -599,7 +600,7 @@ void MotionController::checkDistance(double sensor_distance) {
     cout << "Sensor Distance: " << distance << "m." << endl;
     if (distance > 0.02 && distance < 0.5 &&
             map_manager.checkMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y) == 0) {
-        map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1, ROBOT_RADIUS * 0.8);
+        map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
         map_manager.printMap(current_x, current_y);
     }
     map_manager.updateMap(current_x, current_y, 0);
@@ -690,7 +691,7 @@ void MotionController::sendObstacleEventToMQTT(double target_x, double target_y)
     std::string obstacle_event_str = obstacle_event.dump();
     try {
         mqtt::message_ptr msg = mqtt::make_message(obstacleTopic, obstacle_event_str);
-        remote_client.publish(msg);
+        remote_client->publish(msg);
     } catch (const mqtt::exception& exc) {
         std::cerr << "Failed to send obstacle event to MQTT: " << exc.what() << std::endl;
     }

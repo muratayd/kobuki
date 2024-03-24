@@ -21,7 +21,7 @@ void signalHandler(int /* signum */)
 }
 
 // Create an MQTT client instance
-mqtt::async_client mqtt_client("tcp://192.168.2.101:1883", "MainClient1");
+mqtt::async_client* mqtt_client;
 
 void bumperHandler(const kobuki::BumperEvent &event) {
     cout << "sending BumperEvent" << endl;
@@ -50,7 +50,7 @@ void bumperHandler(const kobuki::BumperEvent &event) {
     // Convert the JSON object to a string
     std::string message = j.dump();
     // Publish the message to the MQTT topic
-    mqtt_client.publish("robot/bumper", message);
+    mqtt_client->publish("robot/bumper", message);
 }
 
 void cliffHandler(const kobuki::CliffEvent &event) {
@@ -80,7 +80,7 @@ void cliffHandler(const kobuki::CliffEvent &event) {
     // Convert the JSON object to a string
     std::string message = j.dump();
     // Publish the message to the MQTT topic
-    mqtt_client.publish("robot/cliff", message);
+    mqtt_client->publish("robot/cliff", message);
 }
 
 // MQTT Client Initialization
@@ -91,7 +91,7 @@ void initialize_mqtt_client() {
     connOpts.set_clean_session(true);
     try {
         std::cout << "Connecting to the MQTT broker..." << std::endl;
-        mqtt_client.connect(connOpts)->wait();
+        mqtt_client->connect(connOpts)->wait();
     } catch (const mqtt::exception& exc) {
         std::cerr << exc.what() << std::endl;
         // Handle connection failure
@@ -104,28 +104,15 @@ void initialize_mqtt_client() {
 
 int main(int argc, char **argv)
 {
-    initialize_mqtt_client();
-    cout << setprecision(3);
-    fstream fs;
-    fs.open("target.txt", ios::in);
-    vector<vector<float>> floatVec;
-    string strFloat;
-    float targetX;
-    float targetY;
-    int counter = 0;
-    getline(fs, strFloat);
-    cout << fixed;
-    cout.precision(3);
-    std::stringstream linestream(strFloat);
-    linestream >> targetX;
-    linestream >> targetY;
-    std::cout << "target x: " << targetX << " y: " << targetY << std::endl;
     // Read robot_id from config.json
     ifstream configFile("config.json");
     json config;
     configFile >> config;
     robot_id = config["robot_id"];
+    string mqtt_broker_ip = config["mqtt_broker_ip"];
     configFile.close();
+    mqtt_client = new mqtt::async_client("tcp://" + mqtt_broker_ip + ":1883", "MainClient_" + std::to_string(robot_id));
+    initialize_mqtt_client();
     signal(SIGINT, signalHandler);
     ecl::MilliSleep sleep(1000);
     int ultrasonic_sensor_trigger_pin = 18;

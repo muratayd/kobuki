@@ -10,32 +10,39 @@
 using json = nlohmann::json;
 using namespace std;
 
-const string SERVER_ADDRESS("tcp://192.168.2.101:1883");
-const string CLIENT_ID("map_publisher1");
+string mqtt_broker_ip; // Global variable to store the MQTT broker's IP address
+
 const string TOPIC("robot/map");
 
-MapManager::MapManager() : client_(SERVER_ADDRESS, CLIENT_ID), callback_() {
-    for (auto &row : occupancy_grid)
-    {
-        for (auto &column : row)
-        {
-            column = -1;
-        }
-    }
-    // Read robot_id from config.json
+MapManager::MapManager() {
+    // Read configuration from config.json
     ifstream configFile("config.json");
     json config;
     configFile >> config;
     robot_id = config["robot_id"];
+    mqtt_broker_ip = config["mqtt_broker_ip"]; // Read the MQTT broker's IP address
     configFile.close();
+    cout << "MapManager: Robot ID: " << robot_id << endl;
+
+    // Initialize the MQTT client with the correct broker IP and client ID
+    client_ = new mqtt::async_client("tcp://" + mqtt_broker_ip + ":1883", "MapManagerClient_" + std::to_string(robot_id));
+
+    for (auto &row : occupancy_grid) {
+        for (auto &column : row) {
+            column = -1;
+        }
+    }
+
     // Initialize the MQTT client
     initialize_mqtt_client();
     sendGridToMQTT();
 }
 
+
 MapManager::~MapManager() {
-    client_.disconnect()->wait();
+    client_->disconnect()->wait();
     cout << "Disconnected" << endl;
+    delete client_; // Free the dynamically allocated memory
 }
 
 void MapManager::dilateCell(int x, int y, int value, double radius) {
@@ -72,7 +79,7 @@ void MapManager::sendGridToMQTT() {
     std::string payload = j.dump();
 
     // Publish the message with robot_id and grid data to the MQTT broker
-    client_.publish(TOPIC, payload);
+    client_->publish(TOPIC, payload);
     std::cout << "Grid map sent to MQTT" << std::endl;
 }
 
@@ -181,7 +188,7 @@ void MapManager::initialize_mqtt_client() {
     connOpts.set_clean_session(true);
 
     // Set the message callback
-    client_.set_message_callback([this](mqtt::const_message_ptr msg) {
+    client_->set_message_callback([this](mqtt::const_message_ptr msg) {
         if (msg->get_topic() == TOPIC) {
             std::string payload = msg->to_string();
             try {
@@ -206,11 +213,11 @@ void MapManager::initialize_mqtt_client() {
     // Connect to the MQTT broker
     try {
         cout << "MapManager: Connecting to the MQTT server..." << endl;
-        client_.connect(connOpts)->wait();
+        client_->connect(connOpts)->wait();
         cout << "MapManager: Connected to the MQTT server" << endl;
 
         // Subscribe to the shared map topic
-        client_.subscribe(TOPIC, 1);
+        client_->subscribe(TOPIC, 1);
     } catch (const mqtt::exception& e) {
         cerr << "MapManager: Error connecting to the MQTT server: " << e.what() << endl;
     }

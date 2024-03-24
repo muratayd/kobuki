@@ -29,17 +29,6 @@
 ** Classes
 *****************************************************************************/
 
-class MapManagerCallback : public virtual mqtt::callback {
-public:
-    void connection_lost(const std::string& cause) override {
-        std::cout << "Connection lost: " << cause << std::endl;
-    }
-
-    void delivery_complete(mqtt::delivery_token_ptr token) override {
-        std::cout << "Message delivered" << std::endl;
-    }
-};
-
 class MapManager
 {
 public:
@@ -146,8 +135,7 @@ private:
     static const int MAP_SIZE = 320; // n of cells
     static const int MAP_ORIGIN = 160; // origin point
     //static const double GRID_SIZE = 0.05; // m
-    mqtt::async_client client_;
-    MapManagerCallback callback_;
+    mqtt::async_client* client_;
     int robot_id;
 
     /**

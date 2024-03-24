@@ -101,7 +101,7 @@ private:
     ecl::TimeStamp start_time;
 
     mqtt::async_client mqtt_client;
-    mqtt::async_client remote_client;
+    mqtt::async_client* remote_client;
     void mqtt_message_arrived(mqtt::const_message_ptr msg);
     void remote_mqtt_message_arrived(mqtt::const_message_ptr msg);
     void initialize_mqtt_client();
