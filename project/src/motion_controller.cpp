@@ -612,35 +612,52 @@ void MotionController::stop() {
 
 void MotionController::setObstacleFlags() {
     double x, y; // row, column
-    // check center
-    center_obstacle = map_manager.checkMap(current_x, current_y);
-    // check front
-    x = current_x + ROBOT_RADIUS * cos(current_yaw);
-    y = current_y + ROBOT_RADIUS * sin(current_yaw);
-    //cout << x << " " << y << endl;
-    front_obstacle = map_manager.checkMap(x, y);
-    // check right_front
-    x = current_x + ROBOT_RADIUS * cos(current_yaw-ecl::pi/6);
-    y = current_y + ROBOT_RADIUS * sin(current_yaw-ecl::pi/6);
-    //cout << x << " " << y << endl;
-    right_front_obstacle = map_manager.checkMap(x, y);
-    // check right
-    x = current_x + ROBOT_RADIUS * cos(current_yaw-ecl::pi*0.5);
-    y = current_y + ROBOT_RADIUS * sin(current_yaw-ecl::pi*0.5);
-    //cout << x << " " << y << endl;
-    right_obstacle = map_manager.checkMap(x, y);
-    // check left_front
-    x = current_x + ROBOT_RADIUS * 0.90 * cos(current_yaw+ecl::pi/6);
-    y = current_y + ROBOT_RADIUS * 0.90 * sin(current_yaw+ecl::pi/6);
-    //cout << x << " " << y << endl;
-    left_front_obstacle = map_manager.checkMap(x, y);
-    // check left
-    x = current_x + ROBOT_RADIUS * 0.90 * cos(current_yaw+ecl::pi*0.5);
-    y = current_y + ROBOT_RADIUS * 0.90 * sin(current_yaw+ecl::pi*0.5);
-    //cout << x << " " << y << endl;
-    left_obstacle = map_manager.checkMap(x, y);
+    center_obstacle = front_obstacle = right_front_obstacle = right_obstacle = left_front_obstacle = left_obstacle = false;
+    // Check the obstacles around the robot. Check 3x3 grid for each position
+    for (int i = -1; i < 2; i++) {
+        for (int j = -1; j < 2; j++) {
+            // check center
+            x = current_x + (i * GRID_SIZE) * cos(current_yaw);
+            y = current_y + (j * GRID_SIZE) * sin(current_yaw);
+            if (map_manager.checkMap(x, y)) {
+                center_obstacle = true;
+            }
+            // check front
+            x = current_x + (ROBOT_RADIUS + i * GRID_SIZE) * cos(current_yaw);
+            y = current_y + (ROBOT_RADIUS + j * GRID_SIZE) * sin(current_yaw);
+            if (map_manager.checkMap(x, y)) {
+                front_obstacle = true;
+            }
+            // check right_front
+            x = current_x + (ROBOT_RADIUS + i * GRID_SIZE) * cos(current_yaw - ecl::pi/5);
+            y = current_y + (ROBOT_RADIUS + j * GRID_SIZE) * sin(current_yaw - ecl::pi/5);
+            if (map_manager.checkMap(x, y)) {
+                right_front_obstacle = true;
+            }
+            // check right
+            x = current_x + (ROBOT_RADIUS + i * GRID_SIZE) * cos(current_yaw - ecl::pi*0.5);
+            y = current_y + (ROBOT_RADIUS + j * GRID_SIZE) * sin(current_yaw - ecl::pi*0.5);
+            if (map_manager.checkMap(x, y)) {
+                right_obstacle = true;
+            }
+            // check left_front
+            x = current_x + (ROBOT_RADIUS + i * GRID_SIZE) * cos(current_yaw + ecl::pi/5);
+            y = current_y + (ROBOT_RADIUS + j * GRID_SIZE) * sin(current_yaw + ecl::pi/5);
+            if (map_manager.checkMap(x, y)) {
+                left_front_obstacle = true;
+            }
+            // check left
+            x = current_x + (ROBOT_RADIUS + i * GRID_SIZE) * cos(current_yaw + ecl::pi*0.5);
+            y = current_y + (ROBOT_RADIUS + j * GRID_SIZE) * sin(current_yaw + ecl::pi*0.5);
+            if (map_manager.checkMap(x, y)) {
+                left_obstacle = true;
+            }
+        }
+    }
+
+    isObstacleInFront = false;
     // check the path in front of the robot
-    for (int i = 1; i < 7; i++) {
+    for (int i = 1; i < 8; i++) {
         x = current_x + i * 2 * ROBOT_RADIUS * cos(current_yaw);
         y = current_y + i * 2 * ROBOT_RADIUS * sin(current_yaw);
         if (map_manager.checkMap(x, y)) {
