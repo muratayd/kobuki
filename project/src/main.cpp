@@ -21,7 +21,7 @@ void signalHandler(int /* signum */)
 }
 
 // Create an MQTT client instance
-mqtt::async_client mqtt_client("tcp://192.168.0.12:1883", "MainClient1");
+mqtt::async_client mqtt_client("tcp://192.168.2.101:1883", "MainClient1");
 
 void bumperHandler(const kobuki::BumperEvent &event) {
     cout << "sending BumperEvent" << endl;

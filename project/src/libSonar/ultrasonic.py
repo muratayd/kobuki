@@ -53,11 +53,22 @@ client = mqtt.Client("P1")  # create new instance
 client.on_publish = on_publish  # assign function to callback
 client.connect(broker_address, port)  # connect to broker
 
+# Initialize a list to store the readings
+num_readings = 3  # Number of readings to average
+readings = []
+
 try:
     while True:
         dist = distance()
-        print("Measured Distance = %.1f cm" % dist)
-        client.publish(topic, str(dist))
+        # Add the new reading to the list and keep only the latest num_readings
+        readings.append(dist)
+        readings = readings[-num_readings:]
+        
+        # Calculate the average
+        avg_dist = sum(readings) / len(readings)
+
+        print("Measured Distance = %.1f cm, Average Distance = %.1f cm" % (dist, avg_dist))
+        client.publish(topic, str(avg_dist))
         time.sleep(0.25)  # Publish at 4Hz
 
 except KeyboardInterrupt:

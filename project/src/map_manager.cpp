@@ -10,7 +10,7 @@
 using json = nlohmann::json;
 using namespace std;
 
-const string SERVER_ADDRESS("tcp://192.168.0.12:1883");
+const string SERVER_ADDRESS("tcp://192.168.2.101:1883");
 const string CLIENT_ID("map_publisher1");
 const string TOPIC("robot/map");
 
@@ -112,13 +112,14 @@ bool MapManager::checkMapPolar(double distance, double angle, double initial_x, 
     return checkMap(x, y); // Delegate to checkMap with Cartesian coordinates
 }
 
-void MapManager::handleMapMessage(const std::vector<uint8_t>& received_map_data) {
+void MapManager::handleMapMessage(const std::vector<int>& received_map_data) {
     cout << "Received shared map data" << endl;
     // Deserialize the received map data into the occupancy grid format
     std::vector<int> received_grid(MAP_SIZE * MAP_SIZE, -1); // Assuming a default value of -1 for unknown cells
     for (size_t i = 0; i < received_map_data.size(); ++i) {
-        received_grid[i] = static_cast<int>(received_map_data[i]);
+        received_grid[i] = received_map_data[i];
     }
+    cout << "handleMapMessage map data" << endl;
 
     // Merge the received grid with the local occupancy grid
     mergeMap(received_grid);
@@ -126,14 +127,15 @@ void MapManager::handleMapMessage(const std::vector<uint8_t>& received_map_data)
 
 void MapManager::mergeMap(const std::vector<int>& received_grid) {
     cout << "Merging received map with local map" << endl;
-    return;
     // Assuming received_grid is a 1D vector representing the received occupancy grid
     for (int i = 0; i < MAP_SIZE; ++i) {
         for (int j = 0; j < MAP_SIZE; ++j) {
             int index = i * MAP_SIZE + j;
             // Simple conflict resolution: if either grid has an obstacle, mark it as an obstacle
-            if (occupancy_grid[i][j] == 1 || received_grid[index] == 1) {
+            if (received_grid[index] == 1) {
                 occupancy_grid[i][j] = 1;
+            } else if (received_grid[index] == 0 && occupancy_grid[i][j] == -1) {
+                occupancy_grid[i][j] = 0;
             }
         }
     }
@@ -181,10 +183,23 @@ void MapManager::initialize_mqtt_client() {
     // Set the message callback
     client_.set_message_callback([this](mqtt::const_message_ptr msg) {
         if (msg->get_topic() == TOPIC) {
-            // Convert the payload to a vector of bytes
-            std::vector<uint8_t> payload(msg->get_payload().begin(), msg->get_payload().end());
-            // Handle the map message
-            handleMapMessage(payload);
+            std::string payload = msg->to_string();
+            try {
+                // Attempt to convert the string payload to a double
+                auto j = json::parse(payload);
+                int id = j["robot_id"];
+                if (id != robot_id) {
+                    vector<int> flattened_data = j["grid"];
+                    // Handle the map message
+                    handleMapMessage(flattened_data);
+                }
+            } catch (json::parse_error& e) {
+                std::cerr << "Parsing error: " << e.what() << '\n';
+            } catch (json::type_error& e) {
+                std::cerr << "Type error: " << e.what() << '\n';
+            } catch (std::exception& e) {
+                std::cerr << "Some other error: " << e.what() << '\n';
+            }
         }
     });
 
@@ -195,7 +210,7 @@ void MapManager::initialize_mqtt_client() {
         cout << "MapManager: Connected to the MQTT server" << endl;
 
         // Subscribe to the shared map topic
-        //client_.subscribe(TOPIC, 1);
+        client_.subscribe(TOPIC, 1);
     } catch (const mqtt::exception& e) {
         cerr << "MapManager: Error connecting to the MQTT server: " << e.what() << endl;
     }

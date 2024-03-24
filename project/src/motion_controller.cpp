@@ -22,7 +22,7 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
 
 MotionController::MotionController(KobukiManager& kobuki_manager)
     : mqtt_client("tcp://localhost:1883", "MotionControllerClient"),
-      remote_client("tcp://192.168.0.30:1883", "MotionControllerClient1"),
+      remote_client("tcp://192.168.2.101:1883", "MotionControllerClient1"),
       kobuki_manager(kobuki_manager) {
     // Read robot_id from config.json
     ifstream configFile("config.json");
@@ -166,7 +166,6 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             std::cerr << "Some other error: " << e.what() << '\n';
         }
         // Set the flag and notify
-        pozyx_position_received = true;
         cv.notify_one();
 
         pozyx_counter++;
@@ -174,6 +173,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
             sendCoordinatesToMQTT();
             pozyx_counter = 0;
         }
+        pozyx_position_received = true;
     }
 }
 
@@ -534,7 +534,6 @@ void MotionController::Bug2Algorithm() {
                 map_manager.printMap(current_x, current_y);
                 robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
                 sendModeToMQTT();
-                map_manager.printMap(current_x, current_y);
                 moving_state = ADJUST_HEADING;
                 sendStateToMQTT();
                 cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " 
@@ -682,6 +681,7 @@ double MotionController::getYawError(double current_x, double current_y,
 }
 
 void MotionController::sendObstacleEventToMQTT(double target_x, double target_y) {
+    map_manager.printMap(current_x, current_y);
     json obstacle_event;
     obstacle_event["event"] = "obstacle";
     obstacle_event["target_x"] = target_x;

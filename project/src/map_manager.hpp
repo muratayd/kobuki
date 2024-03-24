@@ -188,7 +188,7 @@ private:
     void initialize_mqtt_client();
 
     // Callback function for handling received map messages
-    void handleMapMessage(const std::vector<uint8_t>& received_map_data);
+    void handleMapMessage(const std::vector<int>& received_map_data);
 };
 
 #endif /* MAP_MANAGER_HPP_ */
