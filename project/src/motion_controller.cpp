@@ -168,15 +168,17 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         } catch (std::exception& e) {
             std::cerr << "Some other error: " << e.what() << '\n';
         }
-        // Set the flag and notify
-        cv.notify_one();
+        if (!pozyx_position_received) {
+            // Set the flag and notify
+            cv.notify_one();
+            pozyx_position_received = true;
+        }
 
         pozyx_counter++;
         if (pozyx_counter == 10) {
             sendCoordinatesToMQTT();
             pozyx_counter = 0;
         }
-        pozyx_position_received = true;
     }
 }
 
@@ -598,10 +600,8 @@ void MotionController::Bug2Algorithm() {
 void MotionController::checkDistance(double sensor_distance) {
     double distance = sensor_distance * CM_TO_M;
     cout << "Sensor Distance: " << distance << "m." << endl;
-    if (distance > 0.02 && distance < 0.5 &&
-            map_manager.checkMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y) == 0) {
+    if (distance > 0.02 && distance < 0.5) {
         map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
-        map_manager.printMap(current_x, current_y);
     }
     map_manager.updateMap(current_x, current_y, 0);
 }

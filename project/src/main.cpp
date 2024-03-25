@@ -126,7 +126,7 @@ int main(int argc, char **argv)
         while (!shutdown_req)
         {
             motion_controller.Bug2Algorithm();
-            sleep(150);
+            sleep(200);
         }
         motion_controller.stop();
     }

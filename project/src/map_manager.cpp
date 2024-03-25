@@ -6,6 +6,7 @@
 #include <cstring>
 #include <nlohmann/json.hpp>
 #include <fstream>
+#include <chrono>
 
 using json = nlohmann::json;
 using namespace std;
@@ -47,6 +48,7 @@ MapManager::~MapManager() {
 
 void MapManager::dilateCell(int x, int y, int value, double radius) {
     int grid_numbers_in_radius = (int)(radius/GRID_SIZE) + 1;
+    bool updated = false;
     for (int row = y - grid_numbers_in_radius; row <= y + grid_numbers_in_radius; row++) {
         if (row < 0 || row >= MAP_SIZE) continue;
         for (int column = x - grid_numbers_in_radius; column <= x + grid_numbers_in_radius; column++) {
@@ -54,33 +56,43 @@ void MapManager::dilateCell(int x, int y, int value, double radius) {
             if ((abs(row-y) + abs(column-x)) <= grid_numbers_in_radius+1) {
                 if (occupancy_grid[MAP_SIZE-row][column] != 1) {
                     occupancy_grid[MAP_SIZE-row][column] = value;
+                    updated = true;
                 }
             }
         }
     }
+    if (updated && value == 1) {
+        sendGridToMQTT();
+    }
 }
 
 void MapManager::sendGridToMQTT() {
-    // Flatten the 2D array into a 1D array
-    vector<int> flattened_data;
-    for (auto &row : occupancy_grid)
-    {
-        for (auto &column : row)
+    auto current_time = std::chrono::steady_clock::now();
+    auto time_since_last_sent = std::chrono::duration_cast<std::chrono::seconds>(current_time - last_sent_time).count();
+
+    if (time_since_last_sent >= 2) {  // Check if at least 1 second has passed
+        // Flatten the 2D array into a 1D array
+        vector<int> flattened_data;
+        for (auto &row : occupancy_grid)
         {
-            flattened_data.push_back(column);
+            for (auto &column : row)
+            {
+                flattened_data.push_back(column);
+            }
         }
+        // Create a JSON object and add robot_id and grid data
+        nlohmann::json j;
+        j["robot_id"] = robot_id;
+        j["grid"] = flattened_data;
+
+        // Convert the JSON object to a string
+        std::string payload = j.dump();
+
+        // Publish the message with robot_id and grid data to the MQTT broker
+        client_->publish(TOPIC, payload);
+        std::cout << "Grid map sent to MQTT" << std::endl;        
+        last_sent_time = current_time;  // Update the timestamp of the last sent time
     }
-    // Create a JSON object and add robot_id and grid data
-    nlohmann::json j;
-    j["robot_id"] = robot_id;
-    j["grid"] = flattened_data;
-
-    // Convert the JSON object to a string
-    std::string payload = j.dump();
-
-    // Publish the message with robot_id and grid data to the MQTT broker
-    client_->publish(TOPIC, payload);
-    std::cout << "Grid map sent to MQTT" << std::endl;
 }
 
 void MapManager::updateMap(double x, double y, int value, double radius) {

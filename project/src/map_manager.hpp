@@ -137,6 +137,7 @@ private:
     //static const double GRID_SIZE = 0.05; // m
     mqtt::async_client* client_;
     int robot_id;
+    std::chrono::steady_clock::time_point last_sent_time;  // Timestamp of the last grid sent
 
     /**
     * @brief 2D array representing the occupancy grid map.
