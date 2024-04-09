@@ -22,7 +22,7 @@ client = mqtt.Client()
 client.on_message = on_message
 
 # Connect to the MQTT broker
-client.connect("192.168.0.12", 1883, 60)
+client.connect("192.168.2.103", 1883, 60)
 
 # Subscribe to the topics
 client.subscribe("robot/coordinates")
