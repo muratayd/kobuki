@@ -58,10 +58,22 @@ public:
     ~MotionController();
 
     /**
+     * @brief Reads sensor data for the navigation algorithm.
+     *
+     */
+    void readSensors();
+
+    /**
      * @brief Implements the Bug2 algorithm for navigation.
      *
      */
     void Bug2Algorithm();
+
+    /**
+     * @brief Implements the Bug2 algorithm for navigation.
+     *
+     */
+    void ShortcutBug2Algorithm();
 
     /**
      * @brief Stops the robot's movement.
@@ -171,10 +183,14 @@ private:
     /* MQTT send Robot coordinates
     */
     void sendCoordinatesToMQTT();
-    
+
     /* MQTT send obstacle event
     */
     void sendObstacleEventToMQTT(double target_x, double target_y);
+
+    /* Check for obstacles along the line between the robot's current position and the target line.
+    */
+    bool noObstaclesInPath(double target_x, double target_y);
 };
 
 #endif /* MOTION_CONTROLLER_HPP_ */

@@ -54,7 +54,7 @@ client.on_publish = on_publish  # assign function to callback
 client.connect(broker_address, port)  # connect to broker
 
 # Initialize a list to store the readings
-num_readings = 3  # Number of readings to average
+num_readings = 2  # Number of readings to average
 readings = []
 
 try:

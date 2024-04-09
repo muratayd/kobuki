@@ -125,6 +125,8 @@ int main(int argc, char **argv)
     {
         while (!shutdown_req)
         {
+            motion_controller.readSensors();
+            //motion_controller.ShortcutBug2Algorithm();
             motion_controller.Bug2Algorithm();
             sleep(200);
         }

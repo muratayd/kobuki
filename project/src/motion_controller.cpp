@@ -20,6 +20,19 @@ void buttonHandler(const kobuki::ButtonEvent &event) {
     }
 }
 
+// Function to calculate the closest point on the line segment from point P to the line segment AB
+std::pair<double, double> closestPointOnLine(double ax, double ay, double bx, double by, double px, double py) {
+    double apx = px - ax;
+    double apy = py - ay;
+    double abx = bx - ax;
+    double aby = by - ay;
+    double ab2 = abx * abx + aby * aby;
+    double ap_ab = apx * abx + apy * aby;
+    double t = ap_ab / ab2;
+    t = std::max(0.0, std::min(1.0, t)); // Clamp t to [0, 1]
+    return {ax + abx * t, ay + aby * t};
+}
+
 MotionController::MotionController(KobukiManager& kobuki_manager)
     : mqtt_client("tcp://localhost:1883", "MotionControllerClient"),
       kobuki_manager(kobuki_manager) {
@@ -175,7 +188,7 @@ void MotionController::mqtt_message_arrived(mqtt::const_message_ptr msg) {
         }
 
         pozyx_counter++;
-        if (pozyx_counter == 10) {
+        if (pozyx_counter == 3) {
             sendCoordinatesToMQTT();
             pozyx_counter = 0;
         }
@@ -278,7 +291,7 @@ void MotionController::remote_mqtt_message_arrived(mqtt::const_message_ptr msg) 
                 sendStateToMQTT();
                 kobuki_manager.playSoundSequence(0x5);
                 std::cout << "New robot target received from the previous robot: X: " << 
-                        temp_target_x << ", Y: " << temp_target_y << std::endl;
+                        x << ", Y: " << y << std::endl;
             }
         } catch (json::parse_error& e) {
             std::cerr << "Parsing error: " << e.what() << '\n';
@@ -376,11 +389,7 @@ void MotionController::sendStateToMQTT() {
     std::cout << "Robot state sent to MQTT: " << state << std::endl;
 }
 
-
-void MotionController::Bug2Algorithm() {
-    double longitudinal_velocity = 0.0;
-    double rotational_velocity = 0.0;
-
+void MotionController::readSensors() {
     // Get the most recent coordinates from UWB and Kobuki, and calculate the average
     vector<double> kobuki_coordinates = kobuki_manager.getCoordinates();
     cout << ecl::green << "kobuki_coordinates: [x: " << kobuki_coordinates[0] 
@@ -402,6 +411,11 @@ void MotionController::Bug2Algorithm() {
         map_manager.printMap(current_x, current_y);
     }
     setObstacleFlags();
+}
+
+void MotionController::Bug2Algorithm() {
+    double longitudinal_velocity = 0.0;
+    double rotational_velocity = 0.0;
 
     double position_error = sqrt(
                 pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
@@ -591,7 +605,239 @@ void MotionController::Bug2Algorithm() {
                 rotational_velocity = -FAST_ROTATION_SPEED;
             }
         }
-        
+    }
+    kobuki_manager.move(longitudinal_velocity, rotational_velocity);
+    return;
+}
+
+void MotionController::ShortcutBug2Algorithm() {
+    double longitudinal_velocity = 0.0;
+    double rotational_velocity = 0.0;
+
+    double position_error = sqrt(
+                pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
+
+    // Start of BUG 2 Algorithm
+    if (robot_mode == GO_TO_GOAL_MODE) { // "go to target mode"
+        if ((moving_state == GO_STRAIGHT) && (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0
+                 || right_front_obstacle || front_obstacle || left_front_obstacle)) { // HIT!
+            kobuki_manager.move(longitudinal_velocity, rotational_velocity);
+            robot_mode = WALL_FOLLOWING_MODE; // wall following mode
+            sendModeToMQTT();
+            // save hit point coordinates:
+            hit_x = current_x;
+            hit_y = current_y;
+            distance_to_goal_from_hit_point = sqrt((
+                    pow(target_x - hit_x, 2)) +
+                    (pow(target_y - hit_y, 2)));
+            map_manager.printMap(current_x, current_y);
+            cout << "hit_x: " << hit_x << " hit_y: " << hit_y << " distance_to_goal_from_hit_point: " 
+                    << distance_to_goal_from_hit_point << endl;
+                    cout << "GO_TO_GOAL_MODE, GO_STRAIGHT -> WALL_FOLLOWING_MODE robot_mode: " 
+                    << robot_mode << " WALL_FOLLOWING_MODE, moving_mode: " << moving_state << endl;
+            // stop and switch to wall mode
+            sendObstacleEventToMQTT(target_x, target_y);
+            return;
+        }
+
+        if (moving_state == ADJUST_HEADING) { // ADJUST HEADING
+            double yaw_error = getYawError(current_x, current_y, current_yaw, target_x, target_y);
+            // Adjust heading if heading is not good enough
+            if (fabs(yaw_error) > yaw_precision) {
+                if (yaw_error > 0.5) {
+                    // Turn left (counterclockwise)
+                    rotational_velocity = FAST_ROTATION_SPEED;
+                } else if (yaw_error > 0) { // very close, rotate slowly
+                    // Turn left (counterclockwise)
+                    longitudinal_velocity = FORWARD_SPEED * 0.2;
+                    rotational_velocity = ROTATION_SPEED;
+                } else if (yaw_error < -0.5) {
+                    // Turn right (clockwise)
+                    rotational_velocity = -FAST_ROTATION_SPEED;
+                } else { // very close, rotate slowly
+                    // Turn right (clockwise)
+                    longitudinal_velocity = FORWARD_SPEED * 0.2;
+                    rotational_velocity = -ROTATION_SPEED;
+                }
+            } else {
+                kobuki_manager.stop();
+                moving_state = GO_STRAIGHT;
+                sendStateToMQTT();
+                map_manager.printMap(current_x, current_y);
+                cout << "ADJUST_HEADING -> GO_STRAIGHT robot_mode: " << robot_mode 
+                        << ", moving_mode: GO_STRAIGHT " << moving_state << endl;
+                ecl::MilliSleep sleep(1000);
+                sleep(200);
+            }
+        } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
+            if (position_error > 0.25) {
+                if (isObstacleInFront) {
+                    if (robot_id % 2 == 0) { // Even robot_id is right wall follower
+                        // turn right and move forward slowly
+                        rotational_velocity = -ROTATION_SPEED * 0.2;
+                    } else { // Odd robot_id is left wall follower
+                        // turn left and move forward slowly
+                        rotational_velocity = ROTATION_SPEED * 0.2;
+                    }
+                }
+                longitudinal_velocity = FORWARD_SPEED;
+                // How far off is the current heading in radians?
+                double yaw_error = getYawError(current_x, current_y, current_yaw, target_x, target_y);
+                cout << "yaw_error: " << yaw_error << " position_error: " << position_error << endl;
+
+                // Adjust heading if heading is not good enough
+                if (fabs(yaw_error) > yaw_precision + ecl::pi * 0.33) {
+                    moving_state = ADJUST_HEADING; // ADJUST HEADING
+                    sendStateToMQTT();
+                    map_manager.printMap(current_x, current_y);
+                    cout << "GO_STRAIGHT -> ADJUST_HEADING robot_mode: " << robot_mode 
+                            << ", moving_mode: " << moving_state << endl;
+                }
+            } else {   // If distance to target is smaller than 20cm
+                moving_state = GOAL_ACHIEVED; // finish successfully
+                sendStateToMQTT();
+                map_manager.printMap(current_x, current_y);
+                cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode 
+                        << ", moving_mode: " << moving_state << endl;
+                //kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
+                kobuki_manager.stop();
+                kobuki_manager.playSoundSequence(0x6);
+                cout << "DONE!" << endl;
+            }
+        } else if (moving_state == GOAL_ACHIEVED) { // GOAL_ACHIEVED
+            /*TODO: use target list or buttons for new targets in the future*/
+            if (button0_flag) {
+                cout << "B0 pressed!!!" << endl;
+                target_x = 0.0;
+                target_y = 0.0;
+                moving_state = ADJUST_HEADING;
+                sendStateToMQTT();
+                map_manager.printMap(current_x, current_y);
+                kobuki_manager.playSoundSequence(0x5);
+                cout << "GOAL_ACHIEVED -> ADJUST_HEADING Robot mode: " 
+                        << robot_mode << ", moving mode: " << moving_state << endl;
+                button0_flag = false;
+            }
+        }
+    } else if (robot_mode == WALL_FOLLOWING_MODE) { // "wall following mode"
+        if (position_error < 0.25) {
+            robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
+            moving_state = GOAL_ACHIEVED; // finish successfully
+            sendStateToMQTT();
+            map_manager.printMap(current_x, current_y);
+            cout << "GO_STRAIGHT -> GOAL_ACHIEVED robot_mode: " << robot_mode 
+                    << ", moving_mode: " << moving_state << endl;
+            //kobuki_manager.setInitialPose(UWB_x, UWB_y, UWB_yaw);
+            kobuki_manager.stop();
+            kobuki_manager.playSoundSequence(0x6);
+            cout << "DONE!" << endl;
+            return;
+        }
+        // Distance to the line:
+        double a = hit_y - target_y;
+        double b = target_x - hit_x;
+        double c = hit_x * target_y - target_x * hit_y;
+        double distance_to_target_line = abs(a * current_x + b * current_y + c) / sqrt(a * a + b * b);
+        // Check if the robot is closer to the target than the hit point
+        double distance_to_goal_from_current_position = sqrt(
+            pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
+
+        if (distance_to_target_line < 0.10) { // If we hit the start-goal line again?
+            // Is the leave point closer to the goal than the hit point?
+            // If yes, go to goal. (Should be at least 20cm closer in order to avoid looping)
+            double distance_to_goal_from_crossing_point = sqrt(
+                pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
+            if ((distance_to_goal_from_hit_point - distance_to_goal_from_crossing_point) > 0.2) {
+                cout << "HIT the GOAL LINE! ";
+                map_manager.printMap(current_x, current_y);
+                robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
+                sendModeToMQTT();
+                moving_state = ADJUST_HEADING;
+                sendStateToMQTT();
+                cout << "WALL_FOLLOWING_MODE -> GO_TO_GOAL_MODE, ADJUST_HEADING Robot mode: " 
+                        << robot_mode << ", moving mode: " << moving_state << endl;
+                kobuki_manager.move(longitudinal_velocity, rotational_velocity);
+                return;
+            }
+        }
+        cout << "distance_to_goal_from_hit_point: " << distance_to_goal_from_hit_point << endl;
+        cout << "distance_to_goal_from_current_position: " << distance_to_goal_from_current_position << endl;
+        cout << "diff: " << (distance_to_goal_from_hit_point - distance_to_goal_from_current_position) << endl;
+        if (distance_to_goal_from_hit_point - distance_to_goal_from_current_position > 0.25) {
+            // Calculate the closest point on the target line to the current position
+            std::pair<double, double> closest_point = closestPointOnLine(
+                hit_x, hit_y, target_x, target_y, current_x, current_y);
+            // Move towards the closest point on the target line
+            double temp_target_x = closest_point.first;
+            double temp_target_y = closest_point.second;
+            cout << "temp_target_x " << temp_target_x << " temp_target_y " << temp_target_y << endl;
+
+            if (noObstaclesInPath(temp_target_x, temp_target_y)) {
+                // Adjust heading and move towards the closest point on the target line
+                double yaw_error = getYawError(current_x, current_y, current_yaw, temp_target_x, temp_target_y);
+                if (fabs(yaw_error) > yaw_precision) {
+                    // Adjust heading
+                    if (yaw_error > 0) {
+                        rotational_velocity = ROTATION_SPEED;
+                    } else {
+                        rotational_velocity = -ROTATION_SPEED;
+                    }
+                } else {
+                    // Move straight towards the closest point on the target line
+                    longitudinal_velocity = FORWARD_SPEED;
+                }
+                cout << "Moving towards the line!" << endl;
+                kobuki_manager.move(longitudinal_velocity, rotational_velocity);
+                return;
+            }
+        }
+
+        if (robot_id % 2 == 0) { // Even robot_id is right wall follower
+            // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
+            if (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0 || center_obstacle) {
+                // move backwards
+                cout << "Moving backwards" << endl;
+                rotational_velocity = 0.0;
+                longitudinal_velocity = -FORWARD_SPEED;
+            } else if (front_obstacle || right_front_obstacle) {
+                // turn right and move forward slowly
+                rotational_velocity = -FAST_ROTATION_SPEED;
+            } else if (left_front_obstacle) {
+                // turn right and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED * 0.5;
+                rotational_velocity = -FAST_ROTATION_SPEED;
+            } else if (left_obstacle) {
+                // move straight to follow the wall
+                longitudinal_velocity = FORWARD_SPEED;
+            } else if (kobuki_manager.getBumperState() == 0 || kobuki_manager.getCliffState() != 0) {
+                // turn left and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED;
+                rotational_velocity = FAST_ROTATION_SPEED;
+            }
+        } else { // Odd robot_id is left wall follower
+            // BUMPERS: 0, 1=R, 2=C, 4=L, 3=RC, 5=RL, 6=CL, 7=RCL
+            if (kobuki_manager.getBumperState() != 0 || kobuki_manager.getCliffState() != 0 || center_obstacle) {
+                // move backwards
+                cout << "Moving backwards" << endl;
+                rotational_velocity = 0.0;
+                longitudinal_velocity = -FORWARD_SPEED;
+                //rotational_velocity = ROTATION_SPEED * 0.5;
+            } else if (front_obstacle || left_front_obstacle) {
+                // turn left and move forward slowly
+                rotational_velocity = FAST_ROTATION_SPEED;
+            } else if (right_front_obstacle) {
+                // turn left and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED * 0.5;
+                rotational_velocity = FAST_ROTATION_SPEED;
+            } else if (right_obstacle) {
+                // move straight to follow the wall
+                longitudinal_velocity = FORWARD_SPEED;
+            } else if (kobuki_manager.getBumperState() == 0 || kobuki_manager.getCliffState() != 0) {
+                // turn right and move forward slowly
+                longitudinal_velocity = FORWARD_SPEED;
+                rotational_velocity = -FAST_ROTATION_SPEED;
+            }
+        }
     }
     kobuki_manager.move(longitudinal_velocity, rotational_velocity);
     return;
@@ -600,7 +846,7 @@ void MotionController::Bug2Algorithm() {
 void MotionController::checkDistance(double sensor_distance) {
     double distance = sensor_distance * CM_TO_M;
     cout << "Sensor Distance: " << distance << "m." << endl;
-    if (distance > 0.02 && distance < 0.5) {
+    if (distance > 0.02 && distance < 0.6) {
         map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
     }
     map_manager.updateMap(current_x, current_y, 0);
@@ -695,4 +941,25 @@ void MotionController::sendObstacleEventToMQTT(double target_x, double target_y)
     } catch (const mqtt::exception& exc) {
         std::cerr << "Failed to send obstacle event to MQTT: " << exc.what() << std::endl;
     }
+}
+
+bool MotionController::noObstaclesInPath(double target_x, double target_y) {
+    // Calculate the number of segments to discretize the line
+    int num_segments = std::max(std::abs(target_x - current_x), std::abs(target_y - current_y)) / GRID_SIZE / 2;
+    // Iterate over each segment
+    for (int i = 0; i <= num_segments; ++i) {
+        // Calculate the coordinates of the current segment
+        double x = current_x + i * (target_x - current_x) / num_segments;
+        double y = current_y + i * (target_y - current_y) / num_segments;
+        for (int r = -2; r < 3; ++r) {
+            for (int c = -2; c < 3; ++c) {
+                // Check if there is an obstacle at the current segment
+                if (map_manager.checkMap(x+r*GRID_SIZE, y+c*GRID_SIZE)) {
+                    cout << "num_segments: " << num_segments << " x " << x << " r " << r << " y " << y << " c " << c << endl;
+                    return false; // Obstacle detected
+                }
+            }
+        }
+    }
+    return true; // No obstacles detected
 }
