@@ -1,0 +1,2229 @@
+Timestamp: 2024-03-27 16:39:49.630875
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4146,"pozyx_y":-33,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:50.076791
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4089,"pozyx_y":457,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:50.339719
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4154,"pozyx_y":-22,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:51.969359
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4082,"pozyx_y":451,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:52.033270
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4056,"pozyx_y":445,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:52.125239
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4154,"pozyx_y":-8,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:52.318473
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4619,"pozyx_y":-605,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:52.445895
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4178,"pozyx_y":-5,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:52.520925
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4580,"pozyx_y":-600,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:52.903665
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4175,"pozyx_y":446,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:53.506001
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4135,"pozyx_y":0,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:53.601405
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4694,"pozyx_y":-641,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:53.974282
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4180,"pozyx_y":435,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:54.548805
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4191,"pozyx_y":31,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:54.681398
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4649,"pozyx_y":-640,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:55.051925
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4094,"pozyx_y":452,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:55.618006
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4188,"pozyx_y":13,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:55.749958
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4680,"pozyx_y":-635,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:56.124616
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4111,"pozyx_y":443,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:56.664639
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4188,"pozyx_y":13,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:56.831990
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4680,"pozyx_y":-635,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:57.205918
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4117,"pozyx_y":443,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:57.729229
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4209,"pozyx_y":13,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:57.897750
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4661,"pozyx_y":-622,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:58.278241
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4038,"pozyx_y":445,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:39:58.928195
+Topic: robot/coordinates
+{"heading":"-3.3125","pozyx_heading":"356.687","pozyx_x":-4143,"pozyx_y":-18,"robot_id":1,"x":-4111,"y":-8}
+Timestamp: 2024-03-27 16:39:59.019583
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4718,"pozyx_y":-646,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:39:59.826656
+Topic: robot/coordinates
+{"heading":"-3.3725","pozyx_heading":"356.625","pozyx_x":-4143,"pozyx_y":-18,"robot_id":1,"x":-4066,"y":-10}
+Timestamp: 2024-03-27 16:39:59.876411
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4029,"pozyx_y":443,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:00.035901
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4677,"pozyx_y":-635,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:00.400106
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4054,"pozyx_y":436,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:00.891782
+Topic: robot/coordinates
+{"heading":"-3.2625","pozyx_heading":"356.812","pozyx_x":-4093,"pozyx_y":-22,"robot_id":1,"x":-3903,"y":-20}
+Timestamp: 2024-03-27 16:40:01.098234
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4596,"pozyx_y":-648,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:01.479969
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4046,"pozyx_y":431,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:01.957495
+Topic: robot/coordinates
+{"heading":"-3.2025","pozyx_heading":"356.812","pozyx_x":-3959,"pozyx_y":-38,"robot_id":1,"x":-3728,"y":-29}
+Timestamp: 2024-03-27 16:40:02.178010
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4698,"pozyx_y":-660,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:02.547144
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4062,"pozyx_y":425,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:03.017984
+Topic: robot/coordinates
+{"heading":"-3.0525","pozyx_heading":"356.937","pozyx_x":-3747,"pozyx_y":-31,"robot_id":1,"x":-3549,"y":-39}
+Timestamp: 2024-03-27 16:40:03.232960
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4876,"pozyx_y":-652,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:03.619260
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4014,"pozyx_y":426,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:04.080257
+Topic: robot/coordinates
+{"heading":"-2.6325","pozyx_heading":"357.437","pozyx_x":-3480,"pozyx_y":-39,"robot_id":1,"x":-3369,"y":-48}
+Timestamp: 2024-03-27 16:40:04.314597
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4945,"pozyx_y":-661,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:04.688486
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4006,"pozyx_y":414,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:05.141723
+Topic: robot/coordinates
+{"heading":"-2.2325","pozyx_heading":"357.875","pozyx_x":-3386,"pozyx_y":-58,"robot_id":1,"x":-3181,"y":-56}
+Timestamp: 2024-03-27 16:40:05.373777
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4833,"pozyx_y":-642,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:05.778321
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4084,"pozyx_y":422,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:06.196147
+Topic: robot/coordinates
+{"heading":"-1.7825","pozyx_heading":"358.250","pozyx_x":-3212,"pozyx_y":-58,"robot_id":1,"x":-2989,"y":-63}
+Timestamp: 2024-03-27 16:40:06.603488
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4686,"pozyx_y":-607,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:07.350646
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4091,"pozyx_y":420,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:07.518453
+Topic: robot/coordinates
+{"heading":"-1.2825","pozyx_heading":"358.625","pozyx_x":-3042,"pozyx_y":-44,"robot_id":1,"x":-2745,"y":-70}
+Timestamp: 2024-03-27 16:40:07.543296
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4707,"pozyx_y":-607,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:07.882798
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4067,"pozyx_y":412,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:08.300243
+Topic: robot/coordinates
+{"heading":"-0.9925","pozyx_heading":"359.125","pozyx_x":-2742,"pozyx_y":-28,"robot_id":1,"x":-2599,"y":-72}
+Timestamp: 2024-03-27 16:40:08.574890
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4640,"pozyx_y":-561,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:08.946082
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4012,"pozyx_y":405,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:09.357061
+Topic: robot/coordinates
+{"heading":"-0.6925","pozyx_heading":"359.500","pozyx_x":-2545,"pozyx_y":-47,"robot_id":1,"x":-2399,"y":-75}
+Timestamp: 2024-03-27 16:40:09.645424
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4446,"pozyx_y":-507,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:10.060373
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3990,"pozyx_y":408,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:10.418492
+Topic: robot/coordinates
+{"heading":"-0.4825","pozyx_heading":"359.750","pozyx_x":-2350,"pozyx_y":-69,"robot_id":1,"x":-2201,"y":-77}
+Timestamp: 2024-03-27 16:40:10.740474
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4236,"pozyx_y":-467,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:11.111504
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3968,"pozyx_y":403,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:11.482978
+Topic: robot/coordinates
+{"heading":"-0.3025","pozyx_heading":"360.000","pozyx_x":-2187,"pozyx_y":-99,"robot_id":1,"x":-1998,"y":-79}
+Timestamp: 2024-03-27 16:40:11.797297
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4245,"pozyx_y":-491,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:12.176383
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4038,"pozyx_y":407,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:12.534194
+Topic: robot/coordinates
+{"heading":"-0.1325","pozyx_heading":"0.18750","pozyx_x":-1944,"pozyx_y":-140,"robot_id":1,"x":-1793,"y":-80}
+Timestamp: 2024-03-27 16:40:12.876936
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4136,"pozyx_y":-472,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:13.254779
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4054,"pozyx_y":412,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:13.622175
+Topic: robot/coordinates
+{"heading":"0.00750","pozyx_heading":"0.25000","pozyx_x":-1705,"pozyx_y":-173,"robot_id":1,"x":-1583,"y":-80}
+Timestamp: 2024-03-27 16:40:13.955646
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4202,"pozyx_y":-473,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:14.340502
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4068,"pozyx_y":427,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:14.687578
+Topic: robot/coordinates
+{"heading":"0.20750","pozyx_heading":"0.43750","pozyx_x":-1586,"pozyx_y":-217,"robot_id":1,"x":-1371,"y":-79}
+Timestamp: 2024-03-27 16:40:15.046045
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4286,"pozyx_y":-480,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:15.417867
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3995,"pozyx_y":412,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:15.763714
+Topic: robot/coordinates
+{"heading":"0.33750","pozyx_heading":"0.56250","pozyx_x":-1409,"pozyx_y":-222,"robot_id":1,"x":-1163,"y":-78}
+Timestamp: 2024-03-27 16:40:16.111810
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4257,"pozyx_y":-480,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:16.491754
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3998,"pozyx_y":410,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:16.839602
+Topic: robot/coordinates
+{"heading":"0.39750","pozyx_heading":"0.62500","pozyx_x":-1272,"pozyx_y":-266,"robot_id":1,"x":-951,"y":-77}
+Timestamp: 2024-03-27 16:40:17.190352
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4331,"pozyx_y":-502,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:17.562699
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3994,"pozyx_y":398,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:17.917025
+Topic: robot/coordinates
+{"heading":"0.45750","pozyx_heading":"0.68750","pozyx_x":-1204,"pozyx_y":-253,"robot_id":1,"x":-742,"y":-75}
+Timestamp: 2024-03-27 16:40:18.254091
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4331,"pozyx_y":-502,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:18.646375
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3971,"pozyx_y":400,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:18.986988
+Topic: robot/coordinates
+{"heading":"0.76750","pozyx_heading":"1.06250","pozyx_x":-1035,"pozyx_y":-71,"robot_id":1,"x":-529,"y":-73}
+Timestamp: 2024-03-27 16:40:19.331244
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4440,"pozyx_y":-522,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:19.722101
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3963,"pozyx_y":412,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:20.061680
+Topic: robot/coordinates
+{"heading":"1.00750","pozyx_heading":"1.37500","pozyx_x":-723,"pozyx_y":44,"robot_id":1,"x":-319,"y":-70}
+Timestamp: 2024-03-27 16:40:20.401969
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4475,"pozyx_y":-550,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:20.814736
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-3973,"pozyx_y":415,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:21.136553
+Topic: robot/coordinates
+{"heading":"1.33750","pozyx_heading":"1.68750","pozyx_x":-396,"pozyx_y":157,"robot_id":1,"x":-106,"y":-66}
+Timestamp: 2024-03-27 16:40:21.468244
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4499,"pozyx_y":-561,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:21.994970
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4021,"pozyx_y":426,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:22.722095
+Topic: robot/coordinates
+{"heading":"17.7775","pozyx_heading":"5.68750","pozyx_x":-154,"pozyx_y":96,"robot_id":1,"x":105,"y":-53}
+Timestamp: 2024-03-27 16:40:22.853598
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4545,"pozyx_y":-586,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:22.967069
+Topic: robot/coordinates
+{"heading":"161.812","pozyx_heading":"161.812","pozyx_x":-4037,"pozyx_y":422,"robot_id":2,"x":-4086,"y":454}
+Timestamp: 2024-03-27 16:40:23.571213
+Topic: robot/coordinates
+{"heading":"62.2875","pozyx_heading":"47.7500","pozyx_x":95,"pozyx_y":32,"robot_id":1,"x":120,"y":-40}
+Timestamp: 2024-03-27 16:40:23.608100
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4536,"pozyx_y":-580,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:24.598877
+Topic: robot/coordinates
+{"heading":"112.057","pozyx_heading":"98.9375","pozyx_x":216,"pozyx_y":29,"robot_id":1,"x":122,"y":-22}
+Timestamp: 2024-03-27 16:40:24.780513
+Topic: robot/coordinates
+{"heading":"106.652","pozyx_heading":"134.375","pozyx_x":-4073,"pozyx_y":422,"robot_id":2,"x":-4084,"y":453}
+Timestamp: 2024-03-27 16:40:24.798621
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4481,"pozyx_y":-552,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:25.093369
+Topic: robot/coordinates
+{"heading":"95.8125","pozyx_heading":"94.0625","pozyx_x":-4067,"pozyx_y":456,"robot_id":2,"x":-4084,"y":452}
+Timestamp: 2024-03-27 16:40:25.355900
+Topic: robot/coordinates
+{"heading":"132.447","pozyx_heading":"132.375","pozyx_x":315,"pozyx_y":-10,"robot_id":1,"x":131,"y":-31}
+Timestamp: 2024-03-27 16:40:25.719409
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4443,"pozyx_y":-545,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:26.144962
+Topic: robot/coordinates
+{"heading":"51.3025","pozyx_heading":"49.6875","pozyx_x":-4078,"pozyx_y":499,"robot_id":2,"x":-4085,"y":451}
+Timestamp: 2024-03-27 16:40:26.417080
+Topic: robot/coordinates
+{"heading":"132.767","pozyx_heading":"132.625","pozyx_x":241,"pozyx_y":25,"robot_id":1,"x":106,"y":-4}
+Timestamp: 2024-03-27 16:40:26.816458
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4368,"pozyx_y":-567,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:27.188625
+Topic: robot/coordinates
+{"heading":"7.82250","pozyx_heading":"6.75000","pozyx_x":-4054,"pozyx_y":532,"robot_id":2,"x":-4077,"y":453}
+Timestamp: 2024-03-27 16:40:27.494959
+Topic: robot/coordinates
+{"heading":"133.027","pozyx_heading":"132.937","pozyx_x":163,"pozyx_y":0,"robot_id":1,"x":34,"y":72}
+Timestamp: 2024-03-27 16:40:27.959928
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4359,"pozyx_y":-593,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:28.752952
+Topic: robot/coordinates
+{"heading":"-5.3475","pozyx_heading":"354.437","pozyx_x":-4027,"pozyx_y":521,"robot_id":2,"x":-4036,"y":450}
+Timestamp: 2024-03-27 16:40:28.768892
+Topic: robot/coordinates
+{"heading":"117.797","pozyx_heading":"123.812","pozyx_x":163,"pozyx_y":0,"robot_id":1,"x":-95,"y":221}
+Timestamp: 2024-03-27 16:40:28.921683
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4381,"pozyx_y":-600,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:29.311921
+Topic: robot/coordinates
+{"heading":"-5.3375","pozyx_heading":"354.500","pozyx_x":-3949,"pozyx_y":524,"robot_id":2,"x":-3952,"y":443}
+Timestamp: 2024-03-27 16:40:29.613688
+Topic: robot/coordinates
+{"heading":"76.5275","pozyx_heading":"75.1875","pozyx_x":135,"pozyx_y":84,"robot_id":1,"x":-114,"y":359}
+Timestamp: 2024-03-27 16:40:29.983669
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4443,"pozyx_y":-576,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:30.385134
+Topic: robot/coordinates
+{"heading":"-4.8875","pozyx_heading":"354.812","pozyx_x":-3925,"pozyx_y":560,"robot_id":2,"x":-3788,"y":428}
+Timestamp: 2024-03-27 16:40:30.728942
+Topic: robot/coordinates
+{"heading":"25.3275","pozyx_heading":"24.0000","pozyx_x":184,"pozyx_y":185,"robot_id":1,"x":-7,"y":493}
+Timestamp: 2024-03-27 16:40:31.065215
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4567,"pozyx_y":-555,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:31.604874
+Topic: robot/coordinates
+{"heading":"-4.8175","pozyx_heading":"354.937","pozyx_x":-3801,"pozyx_y":558,"robot_id":2,"x":-3613,"y":413}
+Timestamp: 2024-03-27 16:40:32.285999
+Topic: robot/coordinates
+{"heading":"11.1275","pozyx_heading":"9.00000","pozyx_x":208,"pozyx_y":312,"robot_id":1,"x":-74,"y":491}
+Timestamp: 2024-03-27 16:40:32.455148
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4594,"pozyx_y":-544,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:32.521339
+Topic: robot/coordinates
+{"heading":"-4.6575","pozyx_heading":"355.062","pozyx_x":-3763,"pozyx_y":562,"robot_id":2,"x":-3435,"y":398}
+Timestamp: 2024-03-27 16:40:32.796569
+Topic: robot/coordinates
+{"heading":"23.8575","pozyx_heading":"24.0625","pozyx_x":200,"pozyx_y":336,"robot_id":1,"x":-106,"y":478}
+Timestamp: 2024-03-27 16:40:33.192472
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4560,"pozyx_y":-524,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:34.136538
+Topic: robot/coordinates
+{"heading":"53.5575","pozyx_heading":"43.8750","pozyx_x":134,"pozyx_y":366,"robot_id":1,"x":-199,"y":435}
+Timestamp: 2024-03-27 16:40:34.346346
+Topic: robot/coordinates
+{"heading":"-4.1375","pozyx_heading":"355.312","pozyx_x":-3555,"pozyx_y":496,"robot_id":2,"x":-3113,"y":374}
+Timestamp: 2024-03-27 16:40:34.415515
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4433,"pozyx_y":-496,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:34.618731
+Topic: robot/coordinates
+{"heading":"-4.1475","pozyx_heading":"355.562","pozyx_x":-3328,"pozyx_y":446,"robot_id":2,"x":-3067,"y":370}
+Timestamp: 2024-03-27 16:40:34.904095
+Topic: robot/coordinates
+{"heading":"86.6075","pozyx_heading":"88.3750","pozyx_x":87,"pozyx_y":395,"robot_id":1,"x":-194,"y":460}
+Timestamp: 2024-03-27 16:40:35.317821
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4425,"pozyx_y":-484,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:35.685040
+Topic: robot/coordinates
+{"heading":"-3.9575","pozyx_heading":"355.687","pozyx_x":-3070,"pozyx_y":415,"robot_id":2,"x":-2871,"y":356}
+Timestamp: 2024-03-27 16:40:35.958830
+Topic: robot/coordinates
+{"heading":"107.957","pozyx_heading":"108.937","pozyx_x":52,"pozyx_y":595,"robot_id":1,"x":-217,"y":587}
+Timestamp: 2024-03-27 16:40:36.386117
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4684,"pozyx_y":-536,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:36.756293
+Topic: robot/coordinates
+{"heading":"-7.2775","pozyx_heading":"352.187","pozyx_x":-2828,"pozyx_y":394,"robot_id":2,"x":-2678,"y":339}
+Timestamp: 2024-03-27 16:40:37.035753
+Topic: robot/coordinates
+{"heading":"121.557","pozyx_heading":"121.125","pozyx_x":68,"pozyx_y":829,"robot_id":1,"x":-294,"y":723}
+Timestamp: 2024-03-27 16:40:37.465774
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4740,"pozyx_y":-520,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:37.822163
+Topic: robot/coordinates
+{"heading":"-12.637","pozyx_heading":"346.875","pozyx_x":-2653,"pozyx_y":380,"robot_id":2,"x":-2484,"y":305}
+Timestamp: 2024-03-27 16:40:38.093062
+Topic: robot/coordinates
+{"heading":"111.567","pozyx_heading":"109.687","pozyx_x":-30,"pozyx_y":1126,"robot_id":1,"x":-387,"y":876}
+Timestamp: 2024-03-27 16:40:38.533824
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4662,"pozyx_y":-499,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:38.903628
+Topic: robot/coordinates
+{"heading":"-18.217","pozyx_heading":"341.500","pozyx_x":-2558,"pozyx_y":374,"robot_id":2,"x":-2288,"y":251}
+Timestamp: 2024-03-27 16:40:39.150047
+Topic: robot/coordinates
+{"heading":"65.2875","pozyx_heading":"63.1250","pozyx_x":-53,"pozyx_y":1076,"robot_id":1,"x":-384,"y":1047}
+Timestamp: 2024-03-27 16:40:39.598809
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4611,"pozyx_y":-493,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:39.978556
+Topic: robot/coordinates
+{"heading":"-18.697","pozyx_heading":"341.062","pozyx_x":-2356,"pozyx_y":337,"robot_id":2,"x":-2097,"y":187}
+Timestamp: 2024-03-27 16:40:40.211485
+Topic: robot/coordinates
+{"heading":"16.3075","pozyx_heading":"14.0000","pozyx_x":-89,"pozyx_y":1109,"robot_id":1,"x":-252,"y":1164}
+Timestamp: 2024-03-27 16:40:40.668699
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4643,"pozyx_y":-493,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:41.040207
+Topic: robot/coordinates
+{"heading":"-19.177","pozyx_heading":"340.625","pozyx_x":-2289,"pozyx_y":320,"robot_id":2,"x":-1901,"y":120}
+Timestamp: 2024-03-27 16:40:41.269311
+Topic: robot/coordinates
+{"heading":"-34.512","pozyx_heading":"323.625","pozyx_x":-89,"pozyx_y":1109,"robot_id":1,"x":-74,"y":1137}
+Timestamp: 2024-03-27 16:40:41.752583
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4551,"pozyx_y":-471,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:42.096891
+Topic: robot/coordinates
+{"heading":"-19.687","pozyx_heading":"340.187","pozyx_x":-2036,"pozyx_y":251,"robot_id":2,"x":-1708,"y":52}
+Timestamp: 2024-03-27 16:40:42.348851
+Topic: robot/coordinates
+{"heading":"-18.012","pozyx_heading":"343.875","pozyx_x":-41,"pozyx_y":1130,"robot_id":1,"x":-45,"y":1115}
+Timestamp: 2024-03-27 16:40:42.823206
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4446,"pozyx_y":-449,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:43.161211
+Topic: robot/coordinates
+{"heading":"-20.087","pozyx_heading":"339.812","pozyx_x":-1949,"pozyx_y":218,"robot_id":2,"x":-1513,"y":-18}
+Timestamp: 2024-03-27 16:40:43.400031
+Topic: robot/coordinates
+{"heading":"24.8175","pozyx_heading":"25.0000","pozyx_x":-41,"pozyx_y":1130,"robot_id":1,"x":47,"y":1134}
+Timestamp: 2024-03-27 16:40:43.891368
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4508,"pozyx_y":-492,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:44.245580
+Topic: robot/coordinates
+{"heading":"-20.527","pozyx_heading":"339.375","pozyx_x":-1671,"pozyx_y":124,"robot_id":2,"x":-1319,"y":-89}
+Timestamp: 2024-03-27 16:40:44.461838
+Topic: robot/coordinates
+{"heading":"29.4175","pozyx_heading":"29.6250","pozyx_x":145,"pozyx_y":1051,"robot_id":1,"x":207,"y":1216}
+Timestamp: 2024-03-27 16:40:44.959219
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4539,"pozyx_y":-518,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:45.289177
+Topic: robot/coordinates
+{"heading":"-20.937","pozyx_heading":"339.062","pozyx_x":-1351,"pozyx_y":18,"robot_id":2,"x":-1124,"y":-163}
+Timestamp: 2024-03-27 16:40:45.526273
+Topic: robot/coordinates
+{"heading":"-6.1625","pozyx_heading":"352.750","pozyx_x":325,"pozyx_y":1231,"robot_id":1,"x":377,"y":1263}
+Timestamp: 2024-03-27 16:40:46.043659
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4784,"pozyx_y":-585,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:46.353675
+Topic: robot/coordinates
+{"heading":"-21.387","pozyx_heading":"338.687","pozyx_x":-1051,"pozyx_y":-139,"robot_id":2,"x":-930,"y":-238}
+Timestamp: 2024-03-27 16:40:46.592222
+Topic: robot/coordinates
+{"heading":"-52.332","pozyx_heading":"306.812","pozyx_x":522,"pozyx_y":1398,"robot_id":1,"x":533,"y":1179}
+Timestamp: 2024-03-27 16:40:47.109684
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4703,"pozyx_y":-566,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:47.469288
+Topic: robot/coordinates
+{"heading":"-21.717","pozyx_heading":"338.375","pozyx_x":-807,"pozyx_y":-279,"robot_id":2,"x":-735,"y":-315}
+Timestamp: 2024-03-27 16:40:47.638777
+Topic: robot/coordinates
+{"heading":"-99.532","pozyx_heading":"258.062","pozyx_x":631,"pozyx_y":1470,"robot_id":1,"x":578,"y":1006}
+Timestamp: 2024-03-27 16:40:48.191832
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4615,"pozyx_y":-545,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:48.588871
+Topic: robot/coordinates
+{"heading":"-21.937","pozyx_heading":"338.062","pozyx_x":-662,"pozyx_y":-357,"robot_id":2,"x":-537,"y":-394}
+Timestamp: 2024-03-27 16:40:49.353730
+Topic: robot/coordinates
+{"heading":"-125.51","pozyx_heading":"235.312","pozyx_x":723,"pozyx_y":1276,"robot_id":1,"x":605,"y":1007}
+Timestamp: 2024-03-27 16:40:49.445046
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4503,"pozyx_y":-517,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:49.566121
+Topic: robot/coordinates
+{"heading":"-22.297","pozyx_heading":"337.750","pozyx_x":-465,"pozyx_y":-420,"robot_id":2,"x":-343,"y":-473}
+Timestamp: 2024-03-27 16:40:49.753921
+Topic: robot/coordinates
+{"heading":"-125.72","pozyx_heading":"234.875","pozyx_x":693,"pozyx_y":1063,"robot_id":1,"x":641,"y":1058}
+Timestamp: 2024-03-27 16:40:50.305956
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4492,"pozyx_y":-509,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:50.630251
+Topic: robot/coordinates
+{"heading":"-22.677","pozyx_heading":"337.500","pozyx_x":-257,"pozyx_y":-519,"robot_id":2,"x":-149,"y":-553}
+Timestamp: 2024-03-27 16:40:50.810083
+Topic: robot/coordinates
+{"heading":"-97.302","pozyx_heading":"264.562","pozyx_x":722,"pozyx_y":1045,"robot_id":1,"x":675,"y":1106}
+Timestamp: 2024-03-27 16:40:51.376614
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4425,"pozyx_y":-469,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:51.691095
+Topic: robot/coordinates
+{"heading":"-22.947","pozyx_heading":"337.250","pozyx_x":-99,"pozyx_y":-559,"robot_id":2,"x":44,"y":-635}
+Timestamp: 2024-03-27 16:40:51.873256
+Topic: robot/coordinates
+{"heading":"-52.502","pozyx_heading":"309.812","pozyx_x":732,"pozyx_y":1059,"robot_id":1,"x":684,"y":1093}
+Timestamp: 2024-03-27 16:40:52.453961
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4425,"pozyx_y":-469,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:52.770172
+Topic: robot/coordinates
+{"heading":"-23.157","pozyx_heading":"337.062","pozyx_x":-22,"pozyx_y":-583,"robot_id":2,"x":238,"y":-717}
+Timestamp: 2024-03-27 16:40:52.933393
+Topic: robot/coordinates
+{"heading":"-31.082","pozyx_heading":"329.312","pozyx_x":732,"pozyx_y":1059,"robot_id":1,"x":798,"y":1014}
+Timestamp: 2024-03-27 16:40:53.528126
+Topic: robot/coordinates
+{"heading":"-178.06","pozyx_heading":"181.937","pozyx_x":-4394,"pozyx_y":-453,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:53.816958
+Topic: robot/coordinates
+{"heading":"-23.467","pozyx_heading":"336.812","pozyx_x":-22,"pozyx_y":-583,"robot_id":2,"x":432,"y":-801}
+Timestamp: 2024-03-27 16:40:54.002245
+Topic: robot/coordinates
+{"heading":"-41.702","pozyx_heading":"316.875","pozyx_x":732,"pozyx_y":1059,"robot_id":1,"x":945,"y":923}
+Timestamp: 2024-03-27 16:40:54.607900
+Topic: robot/coordinates
+{"heading":"-178.05","pozyx_heading":"181.375","pozyx_x":-4268,"pozyx_y":-412,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:54.869828
+Topic: robot/coordinates
+{"heading":"-23.777","pozyx_heading":"336.500","pozyx_x":328,"pozyx_y":-736,"robot_id":2,"x":625,"y":-886}
+Timestamp: 2024-03-27 16:40:55.045961
+Topic: robot/coordinates
+{"heading":"-89.512","pozyx_heading":"269.375","pozyx_x":1011,"pozyx_y":915,"robot_id":1,"x":1016,"y":769}
+Timestamp: 2024-03-27 16:40:55.677970
+Topic: robot/coordinates
+{"heading":"140.977","pozyx_heading":"139.500","pozyx_x":-4173,"pozyx_y":-389,"robot_id":3,"x":-4679,"y":-624}
+Timestamp: 2024-03-27 16:40:55.945139
+Topic: robot/coordinates
+{"heading":"-24.077","pozyx_heading":"336.187","pozyx_x":619,"pozyx_y":-863,"robot_id":2,"x":819,"y":-971}
+Timestamp: 2024-03-27 16:40:56.109085
+Topic: robot/coordinates
+{"heading":"-139.43","pozyx_heading":"219.875","pozyx_x":1158,"pozyx_y":746,"robot_id":1,"x":945,"y":610}
+Timestamp: 2024-03-27 16:40:56.750090
+Topic: robot/coordinates
+{"heading":"97.2475","pozyx_heading":"95.2500","pozyx_x":-4246,"pozyx_y":-412,"robot_id":3,"x":-4679,"y":-624}
+Timestamp: 2024-03-27 16:40:57.013762
+Topic: robot/coordinates
+{"heading":"-24.377","pozyx_heading":"336.000","pozyx_x":938,"pozyx_y":-939,"robot_id":2,"x":1011,"y":-1058}
+Timestamp: 2024-03-27 16:40:57.180573
+Topic: robot/coordinates
+{"heading":"-179.96","pozyx_heading":"181.062","pozyx_x":1297,"pozyx_y":580,"robot_id":1,"x":821,"y":561}
+Timestamp: 2024-03-27 16:40:58.241264
+Topic: robot/coordinates
+{"heading":"-176.63","pozyx_heading":"185.687","pozyx_x":1131,"pozyx_y":564,"robot_id":1,"x":956,"y":561}
+Timestamp: 2024-03-27 16:40:58.310281
+Topic: robot/coordinates
+{"heading":"-24.717","pozyx_heading":"335.875","pozyx_x":1098,"pozyx_y":-959,"robot_id":2,"x":1247,"y":-1166}
+Timestamp: 2024-03-27 16:40:58.320109
+Topic: robot/coordinates
+{"heading":"29.2675","pozyx_heading":"48.9375","pozyx_x":-4121,"pozyx_y":-402,"robot_id":3,"x":-4679,"y":-625}
+Timestamp: 2024-03-27 16:40:58.867999
+Topic: robot/coordinates
+{"heading":"7.00750","pozyx_heading":"6.31250","pozyx_x":-4119,"pozyx_y":-350,"robot_id":3,"x":-4667,"y":-622}
+Timestamp: 2024-03-27 16:40:59.131180
+Topic: robot/coordinates
+{"heading":"-24.907","pozyx_heading":"335.625","pozyx_x":1239,"pozyx_y":-996,"robot_id":2,"x":1395,"y":-1235}
+Timestamp: 2024-03-27 16:40:59.544986
+Topic: robot/coordinates
+{"heading":"-134.84","pozyx_heading":"227.687","pozyx_x":1033,"pozyx_y":598,"robot_id":1,"x":960,"y":562}
+Timestamp: 2024-03-27 16:41:01.059859
+Topic: robot/coordinates
+{"heading":"-57.942","pozyx_heading":"272.062","pozyx_x":1249,"pozyx_y":522,"robot_id":1,"x":961,"y":565}
+Timestamp: 2024-03-27 16:41:01.085170
+Topic: robot/coordinates
+{"heading":"-3.5425","pozyx_heading":"357.375","pozyx_x":-3976,"pozyx_y":-330,"robot_id":3,"x":-4503,"y":-631}
+Timestamp: 2024-03-27 16:41:01.144597
+Topic: robot/coordinates
+{"heading":"-3.5425","pozyx_heading":"357.375","pozyx_x":-3963,"pozyx_y":-354,"robot_id":3,"x":-4503,"y":-631}
+Timestamp: 2024-03-27 16:41:01.161664
+Topic: robot/coordinates
+{"heading":"-25.507","pozyx_heading":"335.375","pozyx_x":1422,"pozyx_y":-1042,"robot_id":2,"x":1756,"y":-1405}
+Timestamp: 2024-03-27 16:41:01.239379
+Topic: robot/coordinates
+{"heading":"-25.547","pozyx_heading":"335.062","pozyx_x":1634,"pozyx_y":-1111,"robot_id":2,"x":1773,"y":-1413}
+Timestamp: 2024-03-27 16:41:01.402415
+Topic: robot/coordinates
+{"heading":"-45.592","pozyx_heading":"315.750","pozyx_x":1414,"pozyx_y":456,"robot_id":1,"x":967,"y":559}
+Timestamp: 2024-03-27 16:41:02.032899
+Topic: robot/coordinates
+{"heading":"-3.3525","pozyx_heading":"357.687","pozyx_x":-3864,"pozyx_y":-397,"robot_id":3,"x":-4351,"y":-640}
+Timestamp: 2024-03-27 16:41:02.306555
+Topic: robot/coordinates
+{"heading":"-25.727","pozyx_heading":"334.875","pozyx_x":1704,"pozyx_y":-1146,"robot_id":2,"x":1964,"y":-1505}
+Timestamp: 2024-03-27 16:41:02.447064
+Topic: robot/coordinates
+{"heading":"-42.682","pozyx_heading":"318.125","pozyx_x":1405,"pozyx_y":441,"robot_id":1,"x":1086,"y":444}
+Timestamp: 2024-03-27 16:41:03.115879
+Topic: robot/coordinates
+{"heading":"-3.2625","pozyx_heading":"357.750","pozyx_x":-3820,"pozyx_y":-397,"robot_id":3,"x":-4171,"y":-651}
+Timestamp: 2024-03-27 16:41:03.484107
+Topic: robot/coordinates
+{"heading":"-25.897","pozyx_heading":"334.750","pozyx_x":1889,"pozyx_y":-1295,"robot_id":2,"x":2155,"y":-1597}
+Timestamp: 2024-03-27 16:41:04.230069
+Topic: robot/coordinates
+{"heading":"-117.19","pozyx_heading":"274.687","pozyx_x":1420,"pozyx_y":407,"robot_id":1,"x":1147,"y":180}
+Timestamp: 2024-03-27 16:41:04.346174
+Topic: robot/coordinates
+{"heading":"-3.0825","pozyx_heading":"357.937","pozyx_x":-3593,"pozyx_y":-386,"robot_id":3,"x":-3957,"y":-663}
+Timestamp: 2024-03-27 16:41:04.426868
+Topic: robot/coordinates
+{"heading":"2.09250","pozyx_heading":"4.68750","pozyx_x":2159,"pozyx_y":-1474,"robot_id":2,"x":2245,"y":-1636}
+Timestamp: 2024-03-27 16:41:04.561785
+Topic: robot/coordinates
+{"heading":"-132.20","pozyx_heading":"226.625","pozyx_x":1308,"pozyx_y":310,"robot_id":1,"x":1116,"y":136}
+Timestamp: 2024-03-27 16:41:05.240567
+Topic: robot/coordinates
+{"heading":"-2.9525","pozyx_heading":"358.125","pozyx_x":-3339,"pozyx_y":-375,"robot_id":3,"x":-3801,"y":-671}
+Timestamp: 2024-03-27 16:41:05.498259
+Topic: robot/coordinates
+{"heading":"45.4925","pozyx_heading":"47.4375","pozyx_x":2412,"pozyx_y":-1659,"robot_id":2,"x":2282,"y":-1616}
+Timestamp: 2024-03-27 16:41:05.853593
+Topic: robot/coordinates
+{"heading":"-168.23","pozyx_heading":"192.875","pozyx_x":1272,"pozyx_y":173,"robot_id":1,"x":1008,"y":72}
+Timestamp: 2024-03-27 16:41:07.538873
+Topic: robot/coordinates
+{"heading":"-2.4725","pozyx_heading":"358.437","pozyx_x":-3277,"pozyx_y":-377,"robot_id":3,"x":-3383,"y":-691}
+Timestamp: 2024-03-27 16:41:07.614222
+Topic: robot/coordinates
+{"heading":"48.5525","pozyx_heading":"49.2500","pozyx_x":2412,"pozyx_y":-1659,"robot_id":2,"x":2398,"y":-1486}
+Timestamp: 2024-03-27 16:41:07.621437
+Topic: robot/coordinates
+{"heading":"-2.4725","pozyx_heading":"358.687","pozyx_x":-3084,"pozyx_y":-348,"robot_id":3,"x":-3383,"y":-691}
+Timestamp: 2024-03-27 16:41:07.706276
+Topic: robot/coordinates
+{"heading":"-144.61","pozyx_heading":"192.250","pozyx_x":1272,"pozyx_y":173,"robot_id":1,"x":1218,"y":122}
+Timestamp: 2024-03-27 16:41:07.734162
+Topic: robot/coordinates
+{"heading":"48.5525","pozyx_heading":"49.6250","pozyx_x":2420,"pozyx_y":-1536,"robot_id":2,"x":2398,"y":-1486}
+Timestamp: 2024-03-27 16:41:07.816100
+Topic: robot/coordinates
+{"heading":"-144.63","pozyx_heading":"216.687","pozyx_x":1324,"pozyx_y":127,"robot_id":1,"x":1225,"y":127}
+Timestamp: 2024-03-27 16:41:08.824827
+Topic: robot/coordinates
+{"heading":"-116.71","pozyx_heading":"243.937","pozyx_x":1341,"pozyx_y":94,"robot_id":1,"x":1286,"y":172}
+Timestamp: 2024-03-27 16:41:08.893923
+Topic: robot/coordinates
+{"heading":"-2.2225","pozyx_heading":"358.812","pozyx_x":-2816,"pozyx_y":-349,"robot_id":3,"x":-3129,"y":-701}
+Timestamp: 2024-03-27 16:41:09.039904
+Topic: robot/coordinates
+{"heading":"48.8125","pozyx_heading":"49.8750","pozyx_x":2492,"pozyx_y":-1470,"robot_id":2,"x":2547,"y":-1317}
+Timestamp: 2024-03-27 16:41:09.474545
+Topic: robot/coordinates
+{"heading":"-2.1025","pozyx_heading":"359.125","pozyx_x":-2579,"pozyx_y":-346,"robot_id":3,"x":-3027,"y":-705}
+Timestamp: 2024-03-27 16:41:09.690893
+Topic: robot/coordinates
+{"heading":"48.8425","pozyx_heading":"50.0625","pozyx_x":2594,"pozyx_y":-1375,"robot_id":2,"x":2624,"y":-1228}
+Timestamp: 2024-03-27 16:41:09.848205
+Topic: robot/coordinates
+{"heading":"-71.752","pozyx_heading":"291.062","pozyx_x":1459,"pozyx_y":84,"robot_id":1,"x":1290,"y":133}
+Timestamp: 2024-03-27 16:41:10.535353
+Topic: robot/coordinates
+{"heading":"-1.9025","pozyx_heading":"359.437","pozyx_x":-2444,"pozyx_y":-364,"robot_id":3,"x":-2827,"y":-712}
+Timestamp: 2024-03-27 16:41:10.836545
+Topic: robot/coordinates
+{"heading":"49.1025","pozyx_heading":"50.3125","pozyx_x":2651,"pozyx_y":-1292,"robot_id":2,"x":2743,"y":-1092}
+Timestamp: 2024-03-27 16:41:11.573134
+Topic: robot/coordinates
+{"heading":"-53.372","pozyx_heading":"296.562","pozyx_x":1441,"pozyx_y":68,"robot_id":1,"x":1366,"y":-32}
+Timestamp: 2024-03-27 16:41:11.724283
+Topic: robot/coordinates
+{"heading":"-1.6125","pozyx_heading":"359.750","pozyx_x":-2373,"pozyx_y":-368,"robot_id":3,"x":-2594,"y":-719}
+Timestamp: 2024-03-27 16:41:11.818314
+Topic: robot/coordinates
+{"heading":"49.2025","pozyx_heading":"50.5000","pozyx_x":2746,"pozyx_y":-1268,"robot_id":2,"x":2865,"y":-951}
+Timestamp: 2024-03-27 16:41:11.950850
+Topic: robot/coordinates
+{"heading":"-34.702","pozyx_heading":"328.187","pozyx_x":1491,"pozyx_y":29,"robot_id":1,"x":1368,"y":-34}
+Timestamp: 2024-03-27 16:41:12.636977
+Topic: robot/coordinates
+{"heading":"-1.4625","pozyx_heading":"0.12500","pozyx_x":-2175,"pozyx_y":-358,"robot_id":3,"x":-2420,"y":-724}
+Timestamp: 2024-03-27 16:41:12.891560
+Topic: robot/coordinates
+{"heading":"49.1725","pozyx_heading":"50.5000","pozyx_x":2912,"pozyx_y":-1234,"robot_id":2,"x":2989,"y":-807}
+Timestamp: 2024-03-27 16:41:13.029712
+Topic: robot/coordinates
+{"heading":"2.49750","pozyx_heading":"5.18750","pozyx_x":1517,"pozyx_y":-22,"robot_id":1,"x":1399,"y":-40}
+Timestamp: 2024-03-27 16:41:14.468918
+Topic: robot/coordinates
+{"heading":"-1.1425","pozyx_heading":"0.31250","pozyx_x":-2084,"pozyx_y":-355,"robot_id":3,"x":-2066,"y":-732}
+Timestamp: 2024-03-27 16:41:14.485634
+Topic: robot/coordinates
+{"heading":"6.87750","pozyx_heading":"7.75000","pozyx_x":1644,"pozyx_y":-142,"robot_id":1,"x":1458,"y":-33}
+Timestamp: 2024-03-27 16:41:14.532001
+Topic: robot/coordinates
+{"heading":"49.2825","pozyx_heading":"50.5625","pozyx_x":2976,"pozyx_y":-1159,"robot_id":2,"x":3183,"y":-582}
+Timestamp: 2024-03-27 16:41:14.758443
+Topic: robot/coordinates
+{"heading":"-1.0825","pozyx_heading":"0.50000","pozyx_x":-2000,"pozyx_y":-351,"robot_id":3,"x":-2008,"y":-733}
+Timestamp: 2024-03-27 16:41:15.007235
+Topic: robot/coordinates
+{"heading":"49.4025","pozyx_heading":"50.8125","pozyx_x":2976,"pozyx_y":-1159,"robot_id":2,"x":3243,"y":-512}
+Timestamp: 2024-03-27 16:41:15.159462
+Topic: robot/coordinates
+{"heading":"7.24750","pozyx_heading":"8.31250","pozyx_x":1644,"pozyx_y":-142,"robot_id":1,"x":1561,"y":-21}
+Timestamp: 2024-03-27 16:41:15.831631
+Topic: robot/coordinates
+{"heading":"-0.8825","pozyx_heading":"0.75000","pozyx_x":-1669,"pozyx_y":-338,"robot_id":3,"x":-1796,"y":-737}
+Timestamp: 2024-03-27 16:41:16.089715
+Topic: robot/coordinates
+{"heading":"49.4625","pozyx_heading":"50.9375","pozyx_x":3362,"pozyx_y":-918,"robot_id":2,"x":3372,"y":-362}
+Timestamp: 2024-03-27 16:41:16.201673
+Topic: robot/coordinates
+{"heading":"7.65750","pozyx_heading":"8.68750","pozyx_x":1790,"pozyx_y":-196,"robot_id":1,"x":1735,"y":1}
+Timestamp: 2024-03-27 16:41:16.916256
+Topic: robot/coordinates
+{"heading":"-0.5725","pozyx_heading":"1.12500","pozyx_x":-1348,"pozyx_y":-310,"robot_id":3,"x":-1588,"y":-739}
+Timestamp: 2024-03-27 16:41:17.146374
+Topic: robot/coordinates
+{"heading":"49.5925","pozyx_heading":"51.1250","pozyx_x":3755,"pozyx_y":-560,"robot_id":2,"x":3502,"y":-209}
+Timestamp: 2024-03-27 16:41:17.291672
+Topic: robot/coordinates
+{"heading":"7.97750","pozyx_heading":"9.00000","pozyx_x":1972,"pozyx_y":-204,"robot_id":1,"x":1912,"y":26}
+Timestamp: 2024-03-27 16:41:17.978731
+Topic: robot/coordinates
+{"heading":"-0.3125","pozyx_heading":"1.50000","pozyx_x":-1157,"pozyx_y":-289,"robot_id":3,"x":-1376,"y":-741}
+Timestamp: 2024-03-27 16:41:18.242603
+Topic: robot/coordinates
+{"heading":"49.5925","pozyx_heading":"51.1250","pozyx_x":3755,"pozyx_y":-560,"robot_id":2,"x":3636,"y":-52}
+Timestamp: 2024-03-27 16:41:18.562872
+Topic: robot/coordinates
+{"heading":"8.28750","pozyx_heading":"9.37500","pozyx_x":1972,"pozyx_y":-204,"robot_id":1,"x":2097,"y":52}
+Timestamp: 2024-03-27 16:41:19.351418
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1250","pozyx_x":3755,"pozyx_y":-560,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:19.414637
+Topic: robot/coordinates
+{"heading":"8.65750","pozyx_heading":"9.81250","pozyx_x":1972,"pozyx_y":-204,"robot_id":1,"x":2283,"y":80}
+Timestamp: 2024-03-27 16:41:19.435751
+Topic: robot/coordinates
+{"heading":"0.07750","pozyx_heading":"1.75000","pozyx_x":-1157,"pozyx_y":-289,"robot_id":3,"x":-1092,"y":-741}
+Timestamp: 2024-03-27 16:41:20.116887
+Topic: robot/coordinates
+{"heading":"0.17750","pozyx_heading":"1.93750","pozyx_x":-930,"pozyx_y":-278,"robot_id":3,"x":-957,"y":-741}
+Timestamp: 2024-03-27 16:41:20.328554
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1250","pozyx_x":3960,"pozyx_y":-234,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:20.475890
+Topic: robot/coordinates
+{"heading":"8.99750","pozyx_heading":"10.1250","pozyx_x":2109,"pozyx_y":-94,"robot_id":1,"x":2472,"y":109}
+Timestamp: 2024-03-27 16:41:21.182358
+Topic: robot/coordinates
+{"heading":"0.31750","pozyx_heading":"2.12500","pozyx_x":-517,"pozyx_y":-374,"robot_id":3,"x":-748,"y":-740}
+Timestamp: 2024-03-27 16:41:21.392774
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4066,"pozyx_y":-18,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:21.550897
+Topic: robot/coordinates
+{"heading":"9.27750","pozyx_heading":"10.3125","pozyx_x":2489,"pozyx_y":-31,"robot_id":1,"x":2664,"y":140}
+Timestamp: 2024-03-27 16:41:22.247897
+Topic: robot/coordinates
+{"heading":"1.41750","pozyx_heading":"3.43750","pozyx_x":-126,"pozyx_y":-378,"robot_id":3,"x":-538,"y":-738}
+Timestamp: 2024-03-27 16:41:22.539731
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3991,"pozyx_y":77,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:24.392027
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3984,"pozyx_y":74,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:24.499435
+Topic: robot/coordinates
+{"heading":"68.9475","pozyx_heading":"16.1875","pozyx_x":-126,"pozyx_y":-378,"robot_id":3,"x":-378,"y":-715}
+Timestamp: 2024-03-27 16:41:24.587932
+Topic: robot/coordinates
+{"heading":"68.9475","pozyx_heading":"67.5000","pozyx_x":182,"pozyx_y":-331,"robot_id":3,"x":-378,"y":-715}
+Timestamp: 2024-03-27 16:41:24.700194
+Topic: robot/coordinates
+{"heading":"16.8375","pozyx_heading":"10.4375","pozyx_x":2665,"pozyx_y":12,"robot_id":1,"x":3166,"y":242}
+Timestamp: 2024-03-27 16:41:24.700932
+Topic: robot/coordinates
+{"heading":"16.8375","pozyx_heading":"15.1250","pozyx_x":2768,"pozyx_y":47,"robot_id":1,"x":3166,"y":242}
+Timestamp: 2024-03-27 16:41:24.701473
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3899,"pozyx_y":67,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:24.804611
+Topic: robot/coordinates
+{"heading":"25.1575","pozyx_heading":"27.5000","pozyx_x":3021,"pozyx_y":127,"robot_id":1,"x":3171,"y":243}
+Timestamp: 2024-03-27 16:41:25.695503
+Topic: robot/coordinates
+{"heading":"132.127","pozyx_heading":"120.062","pozyx_x":224,"pozyx_y":-258,"robot_id":3,"x":-399,"y":-662}
+Timestamp: 2024-03-27 16:41:25.893895
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3968,"pozyx_y":68,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:25.907780
+Topic: robot/coordinates
+{"heading":"80.3375","pozyx_heading":"77.1250","pozyx_x":3021,"pozyx_y":127,"robot_id":1,"x":3183,"y":259}
+Timestamp: 2024-03-27 16:41:26.489042
+Topic: robot/coordinates
+{"heading":"148.597","pozyx_heading":"150.625","pozyx_x":270,"pozyx_y":-205,"robot_id":3,"x":-498,"y":-592}
+Timestamp: 2024-03-27 16:41:26.683775
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4143,"pozyx_y":37,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:26.827029
+Topic: robot/coordinates
+{"heading":"115.007","pozyx_heading":"116.187","pozyx_x":3210,"pozyx_y":173,"robot_id":1,"x":3154,"y":355}
+Timestamp: 2024-03-27 16:41:27.513230
+Topic: robot/coordinates
+{"heading":"139.017","pozyx_heading":"139.437","pozyx_x":270,"pozyx_y":-205,"robot_id":3,"x":-659,"y":-497}
+Timestamp: 2024-03-27 16:41:27.758129
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4140,"pozyx_y":44,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:27.914521
+Topic: robot/coordinates
+{"heading":"106.477","pozyx_heading":"106.562","pozyx_x":3210,"pozyx_y":173,"robot_id":1,"x":3072,"y":523}
+Timestamp: 2024-03-27 16:41:28.595173
+Topic: robot/coordinates
+{"heading":"96.7375","pozyx_heading":"97.1875","pozyx_x":274,"pozyx_y":-168,"robot_id":3,"x":-746,"y":-336}
+Timestamp: 2024-03-27 16:41:28.837385
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4140,"pozyx_y":44,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:28.976965
+Topic: robot/coordinates
+{"heading":"63.9875","pozyx_heading":"64.0000","pozyx_x":3210,"pozyx_y":173,"robot_id":1,"x":3085,"y":702}
+Timestamp: 2024-03-27 16:41:29.658388
+Topic: robot/coordinates
+{"heading":"51.8275","pozyx_heading":"52.3750","pozyx_x":238,"pozyx_y":-118,"robot_id":3,"x":-697,"y":-156}
+Timestamp: 2024-03-27 16:41:29.929942
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4135,"pozyx_y":44,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:30.042790
+Topic: robot/coordinates
+{"heading":"17.5175","pozyx_heading":"17.5000","pozyx_x":3210,"pozyx_y":173,"robot_id":1,"x":3224,"y":825}
+Timestamp: 2024-03-27 16:41:30.723305
+Topic: robot/coordinates
+{"heading":"4.38750","pozyx_heading":"5.00000","pozyx_x":103,"pozyx_y":-3,"robot_id":3,"x":-539,"y":-68}
+Timestamp: 2024-03-27 16:41:31.065665
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4073,"pozyx_y":41,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:31.838003
+Topic: robot/coordinates
+{"heading":"38.8975","pozyx_heading":"39.8750","pozyx_x":93,"pozyx_y":5,"robot_id":3,"x":-512,"y":-62}
+Timestamp: 2024-03-27 16:41:31.954957
+Topic: robot/coordinates
+{"heading":"-29.482","pozyx_heading":"329.250","pozyx_x":3522,"pozyx_y":343,"robot_id":1,"x":3482,"y":750}
+Timestamp: 2024-03-27 16:41:32.050298
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4081,"pozyx_y":49,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:32.185453
+Topic: robot/coordinates
+{"heading":"-16.592","pozyx_heading":"346.875","pozyx_x":3522,"pozyx_y":343,"robot_id":1,"x":3505,"y":740}
+Timestamp: 2024-03-27 16:41:32.837424
+Topic: robot/coordinates
+{"heading":"86.0675","pozyx_heading":"89.9375","pozyx_x":45,"pozyx_y":127,"robot_id":3,"x":-505,"y":-49}
+Timestamp: 2024-03-27 16:41:33.120507
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3874,"pozyx_y":62,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:33.259183
+Topic: robot/coordinates
+{"heading":"14.4275","pozyx_heading":"16.5000","pozyx_x":3739,"pozyx_y":449,"robot_id":1,"x":3648,"y":756}
+Timestamp: 2024-03-27 16:41:33.898930
+Topic: robot/coordinates
+{"heading":"138.787","pozyx_heading":"141.937","pozyx_x":-33,"pozyx_y":251,"robot_id":3,"x":-538,"y":5}
+Timestamp: 2024-03-27 16:41:34.181889
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3909,"pozyx_y":85,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:34.321804
+Topic: robot/coordinates
+{"heading":"-4.2425","pozyx_heading":"355.937","pozyx_x":3900,"pozyx_y":610,"robot_id":1,"x":3826,"y":792}
+Timestamp: 2024-03-27 16:41:34.960561
+Topic: robot/coordinates
+{"heading":"149.207","pozyx_heading":"151.062","pozyx_x":53,"pozyx_y":276,"robot_id":3,"x":-687,"y":108}
+Timestamp: 2024-03-27 16:41:35.260668
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3909,"pozyx_y":85,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:35.393418
+Topic: robot/coordinates
+{"heading":"-48.962","pozyx_heading":"311.812","pozyx_x":3900,"pozyx_y":610,"robot_id":1,"x":3990,"y":711}
+Timestamp: 2024-03-27 16:41:36.037361
+Topic: robot/coordinates
+{"heading":"116.207","pozyx_heading":"116.500","pozyx_x":-6,"pozyx_y":332,"robot_id":3,"x":-819,"y":231}
+Timestamp: 2024-03-27 16:41:36.443667
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3991,"pozyx_y":74,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:36.485751
+Topic: robot/coordinates
+{"heading":"-95.802","pozyx_heading":"264.375","pozyx_x":4070,"pozyx_y":601,"robot_id":1,"x":4047,"y":538}
+Timestamp: 2024-03-27 16:41:37.659739
+Topic: robot/coordinates
+{"heading":"-127.83","pozyx_heading":"234.187","pozyx_x":4228,"pozyx_y":445,"robot_id":1,"x":3985,"y":402}
+Timestamp: 2024-03-27 16:41:37.707782
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3985,"pozyx_y":57,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:37.721802
+Topic: robot/coordinates
+{"heading":"43.2375","pozyx_heading":"71.5000","pozyx_x":-128,"pozyx_y":679,"robot_id":3,"x":-774,"y":509}
+Timestamp: 2024-03-27 16:41:38.162343
+Topic: robot/coordinates
+{"heading":"24.2175","pozyx_heading":"24.9375","pozyx_x":-162,"pozyx_y":835,"robot_id":3,"x":-711,"y":551}
+Timestamp: 2024-03-27 16:41:38.430280
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3981,"pozyx_y":61,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:38.585334
+Topic: robot/coordinates
+{"heading":"-128.18","pozyx_heading":"233.687","pozyx_x":4266,"pozyx_y":407,"robot_id":1,"x":4061,"y":500}
+Timestamp: 2024-03-27 16:41:39.229540
+Topic: robot/coordinates
+{"heading":"-23.632","pozyx_heading":"335.375","pozyx_x":-137,"pozyx_y":903,"robot_id":3,"x":-528,"y":554}
+Timestamp: 2024-03-27 16:41:39.681278
+Topic: robot/coordinates
+{"heading":"-128.80","pozyx_heading":"233.062","pozyx_x":4268,"pozyx_y":355,"robot_id":1,"x":4166,"y":633}
+Timestamp: 2024-03-27 16:41:39.995274
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3974,"pozyx_y":69,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:41.668032
+Topic: robot/coordinates
+{"heading":"-62.672","pozyx_heading":"262.937","pozyx_x":4398,"pozyx_y":318,"robot_id":1,"x":4205,"y":698}
+Timestamp: 2024-03-27 16:41:41.730569
+Topic: robot/coordinates
+{"heading":"-16.102","pozyx_heading":"290.250","pozyx_x":-73,"pozyx_y":1036,"robot_id":3,"x":-395,"y":411}
+Timestamp: 2024-03-27 16:41:41.763764
+Topic: robot/coordinates
+{"heading":"-60.262","pozyx_heading":"301.687","pozyx_x":4552,"pozyx_y":399,"robot_id":1,"x":4201,"y":706}
+Timestamp: 2024-03-27 16:41:42.056570
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4144,"pozyx_y":683,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:42.120546
+Topic: robot/coordinates
+{"heading":"1.77750","pozyx_heading":"328.937","pozyx_x":107,"pozyx_y":1100,"robot_id":3,"x":-390,"y":410}
+Timestamp: 2024-03-27 16:41:42.205690
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4022,"pozyx_y":681,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:42.507434
+Topic: robot/coordinates
+{"heading":"13.8775","pozyx_heading":"18.0000","pozyx_x":164,"pozyx_y":1087,"robot_id":3,"x":-382,"y":412}
+Timestamp: 2024-03-27 16:41:42.923480
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4602,"pozyx_y":406,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:44.145833
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4027,"pozyx_y":677,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:44.960254
+Topic: robot/coordinates
+{"heading":"140.337","pozyx_heading":"69.2500","pozyx_x":181,"pozyx_y":1069,"robot_id":3,"x":-310,"y":491}
+Timestamp: 2024-03-27 16:41:44.972850
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3929,"pozyx_y":92,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:45.053694
+Topic: robot/coordinates
+{"heading":"140.337","pozyx_heading":"121.625","pozyx_x":239,"pozyx_y":1091,"robot_id":3,"x":-310,"y":491}
+Timestamp: 2024-03-27 16:41:45.071237
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3858,"pozyx_y":73,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:45.405823
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4635,"pozyx_y":473,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:45.467700
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4614,"pozyx_y":458,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:45.528481
+Topic: robot/coordinates
+{"heading":"150.387","pozyx_heading":"150.937","pozyx_x":254,"pozyx_y":1091,"robot_id":3,"x":-360,"y":519}
+Timestamp: 2024-03-27 16:41:45.831346
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3862,"pozyx_y":75,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:46.268102
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4434,"pozyx_y":452,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:46.739620
+Topic: robot/coordinates
+{"heading":"108.127","pozyx_heading":"109.187","pozyx_x":270,"pozyx_y":1100,"robot_id":3,"x":-474,"y":654}
+Timestamp: 2024-03-27 16:41:47.533096
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4434,"pozyx_y":452,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:47.578713
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3862,"pozyx_y":75,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:47.639671
+Topic: robot/coordinates
+{"heading":"63.7475","pozyx_heading":"64.3125","pozyx_x":237,"pozyx_y":1144,"robot_id":3,"x":-463,"y":829}
+Timestamp: 2024-03-27 16:41:47.952190
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4057,"pozyx_y":82,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:48.089709
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4351,"pozyx_y":432,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:48.693424
+Topic: robot/coordinates
+{"heading":"16.4975","pozyx_heading":"17.1250","pozyx_x":227,"pozyx_y":1181,"robot_id":3,"x":-325,"y":947}
+Timestamp: 2024-03-27 16:41:49.014320
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3993,"pozyx_y":75,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:49.164072
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4351,"pozyx_y":432,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:49.767494
+Topic: robot/coordinates
+{"heading":"6.11750","pozyx_heading":"9.68750","pozyx_x":247,"pozyx_y":1372,"robot_id":3,"x":-210,"y":954}
+Timestamp: 2024-03-27 16:41:50.078731
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3992,"pozyx_y":65,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:50.245771
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4348,"pozyx_y":398,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:50.837343
+Topic: robot/coordinates
+{"heading":"46.0775","pozyx_heading":"48.4375","pozyx_x":263,"pozyx_y":1547,"robot_id":3,"x":-108,"y":1018}
+Timestamp: 2024-03-27 16:41:51.158275
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3988,"pozyx_y":64,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:51.301765
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4414,"pozyx_y":402,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:51.890853
+Topic: robot/coordinates
+{"heading":"38.8975","pozyx_heading":"39.8125","pozyx_x":263,"pozyx_y":1547,"robot_id":3,"x":14,"y":1150}
+Timestamp: 2024-03-27 16:41:52.245313
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3918,"pozyx_y":62,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:52.387603
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4443,"pozyx_y":426,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:52.947044
+Topic: robot/coordinates
+{"heading":"-5.1825","pozyx_heading":"355.500","pozyx_x":314,"pozyx_y":1654,"robot_id":3,"x":183,"y":1203}
+Timestamp: 2024-03-27 16:41:53.314632
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3842,"pozyx_y":61,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:53.653297
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4443,"pozyx_y":426,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:54.105109
+Topic: robot/coordinates
+{"heading":"-42.542","pozyx_heading":"320.375","pozyx_x":383,"pozyx_y":1699,"robot_id":3,"x":326,"y":1137}
+Timestamp: 2024-03-27 16:41:54.708361
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4433,"pozyx_y":421,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:54.952357
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3841,"pozyx_y":62,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:55.074407
+Topic: robot/coordinates
+{"heading":"1.81750","pozyx_heading":"5.81250","pozyx_x":383,"pozyx_y":1699,"robot_id":3,"x":346,"y":1126}
+Timestamp: 2024-03-27 16:41:55.429867
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3840,"pozyx_y":63,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:55.556586
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4443,"pozyx_y":426,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:56.168356
+Topic: robot/coordinates
+{"heading":"22.1975","pozyx_heading":"24.9375","pozyx_x":383,"pozyx_y":1699,"robot_id":3,"x":496,"y":1175}
+Timestamp: 2024-03-27 16:41:56.510864
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3897,"pozyx_y":654,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:56.634765
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4460,"pozyx_y":419,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:57.198639
+Topic: robot/coordinates
+{"heading":"10.2075","pozyx_heading":"10.9375","pozyx_x":481,"pozyx_y":1794,"robot_id":3,"x":666,"y":1243}
+Timestamp: 2024-03-27 16:41:57.708226
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4460,"pozyx_y":431,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:57.787919
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3900,"pozyx_y":650,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:59.073421
+Topic: robot/coordinates
+{"heading":"-70.062","pozyx_heading":"326.125","pozyx_x":714,"pozyx_y":1865,"robot_id":3,"x":928,"y":1097}
+Timestamp: 2024-03-27 16:41:59.085307
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3879,"pozyx_y":629,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:59.109509
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4452,"pozyx_y":425,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:41:59.321154
+Topic: robot/coordinates
+{"heading":"-81.422","pozyx_heading":"279.500","pozyx_x":836,"pozyx_y":1964,"robot_id":3,"x":940,"y":1053}
+Timestamp: 2024-03-27 16:41:59.695040
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3975,"pozyx_y":618,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:41:59.822964
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4410,"pozyx_y":453,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:00.407705
+Topic: robot/coordinates
+{"heading":"-130.46","pozyx_heading":"229.937","pozyx_x":1251,"pozyx_y":2016,"robot_id":3,"x":890,"y":874}
+Timestamp: 2024-03-27 16:42:00.771578
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3978,"pozyx_y":612,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:00.908145
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4407,"pozyx_y":451,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:01.462618
+Topic: robot/coordinates
+{"heading":"-170.77","pozyx_heading":"192.562","pozyx_x":1348,"pozyx_y":1922,"robot_id":3,"x":762,"y":801}
+Timestamp: 2024-03-27 16:42:01.859221
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3918,"pozyx_y":608,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:01.986595
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4378,"pozyx_y":426,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:02.548340
+Topic: robot/coordinates
+{"heading":"-125.05","pozyx_heading":"238.375","pozyx_x":1411,"pozyx_y":1935,"robot_id":3,"x":747,"y":791}
+Timestamp: 2024-03-27 16:42:02.938460
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3918,"pozyx_y":608,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:03.050169
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4378,"pozyx_y":426,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:03.635370
+Topic: robot/coordinates
+{"heading":"-81.722","pozyx_heading":"281.000","pozyx_x":1534,"pozyx_y":1740,"robot_id":3,"x":732,"y":678}
+Timestamp: 2024-03-27 16:42:04.017026
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3881,"pozyx_y":45,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:04.116717
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4397,"pozyx_y":425,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:04.671024
+Topic: robot/coordinates
+{"heading":"-39.682","pozyx_heading":"324.250","pozyx_x":1508,"pozyx_y":1449,"robot_id":3,"x":776,"y":580}
+Timestamp: 2024-03-27 16:42:05.097980
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3785,"pozyx_y":56,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:05.195016
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4364,"pozyx_y":421,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:05.728980
+Topic: robot/coordinates
+{"heading":"-25.622","pozyx_heading":"336.937","pozyx_x":1453,"pozyx_y":1438,"robot_id":3,"x":928,"y":494}
+Timestamp: 2024-03-27 16:42:06.155521
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3855,"pozyx_y":51,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:06.278546
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4376,"pozyx_y":423,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:06.775623
+Topic: robot/coordinates
+{"heading":"-63.162","pozyx_heading":"297.937","pozyx_x":1496,"pozyx_y":1439,"robot_id":3,"x":1062,"y":375}
+Timestamp: 2024-03-27 16:42:07.247717
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3849,"pozyx_y":47,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:07.382093
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4376,"pozyx_y":423,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:07.853335
+Topic: robot/coordinates
+{"heading":"-99.752","pozyx_heading":"262.812","pozyx_x":1595,"pozyx_y":1367,"robot_id":3,"x":1083,"y":218}
+Timestamp: 2024-03-27 16:42:08.313130
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3846,"pozyx_y":50,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:08.418098
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4376,"pozyx_y":423,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:08.915916
+Topic: robot/coordinates
+{"heading":"-53.502","pozyx_heading":"310.437","pozyx_x":1640,"pozyx_y":1218,"robot_id":3,"x":1101,"y":137}
+Timestamp: 2024-03-27 16:42:09.407207
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3927,"pozyx_y":73,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:09.483088
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4365,"pozyx_y":419,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:09.998301
+Topic: robot/coordinates
+{"heading":"-32.332","pozyx_heading":"330.062","pozyx_x":1634,"pozyx_y":1186,"robot_id":3,"x":1234,"y":36}
+Timestamp: 2024-03-27 16:42:10.468166
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3927,"pozyx_y":73,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:10.568828
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4365,"pozyx_y":419,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:11.100737
+Topic: robot/coordinates
+{"heading":"-53.572","pozyx_heading":"307.125","pozyx_x":1719,"pozyx_y":1073,"robot_id":3,"x":1383,"y":-74}
+Timestamp: 2024-03-27 16:42:11.538706
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3931,"pozyx_y":70,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:11.630671
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4366,"pozyx_y":445,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:12.139990
+Topic: robot/coordinates
+{"heading":"-97.762","pozyx_heading":"262.812","pozyx_x":1859,"pozyx_y":948,"robot_id":3,"x":1430,"y":-250}
+Timestamp: 2024-03-27 16:42:12.611462
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3934,"pozyx_y":70,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:12.709779
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4390,"pozyx_y":458,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:13.209489
+Topic: robot/coordinates
+{"heading":"-144.47","pozyx_heading":"215.562","pozyx_x":1922,"pozyx_y":833,"robot_id":3,"x":1337,"y":-408}
+Timestamp: 2024-03-27 16:42:13.694499
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3938,"pozyx_y":69,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:13.789782
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4381,"pozyx_y":450,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:14.284425
+Topic: robot/coordinates
+{"heading":"175.447","pozyx_heading":"178.437","pozyx_x":2041,"pozyx_y":509,"robot_id":3,"x":1189,"y":-451}
+Timestamp: 2024-03-27 16:42:14.758317
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3875,"pozyx_y":72,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:14.900172
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4379,"pozyx_y":441,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:15.361499
+Topic: robot/coordinates
+{"heading":"-145.73","pozyx_heading":"218.187","pozyx_x":2032,"pozyx_y":380,"robot_id":3,"x":1133,"y":-466}
+Timestamp: 2024-03-27 16:42:16.514182
+Topic: robot/coordinates
+{"heading":"-100.68","pozyx_heading":"258.875","pozyx_x":1975,"pozyx_y":321,"robot_id":3,"x":1099,"y":-504}
+Timestamp: 2024-03-27 16:42:16.565063
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4379,"pozyx_y":441,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:16.591331
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3796,"pozyx_y":55,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:16.894027
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3796,"pozyx_y":55,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:16.984020
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4379,"pozyx_y":441,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:17.468952
+Topic: robot/coordinates
+{"heading":"-55.322","pozyx_heading":"308.500","pozyx_x":2000,"pozyx_y":263,"robot_id":3,"x":1102,"y":-517}
+Timestamp: 2024-03-27 16:42:17.961861
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3788,"pozyx_y":53,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:18.054112
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4432,"pozyx_y":449,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:18.552910
+Topic: robot/coordinates
+{"heading":"-4.9725","pozyx_heading":"358.750","pozyx_x":2000,"pozyx_y":263,"robot_id":3,"x":1120,"y":-524}
+Timestamp: 2024-03-27 16:42:19.050190
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3786,"pozyx_y":56,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:19.366174
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4398,"pozyx_y":459,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:20.130413
+Topic: robot/coordinates
+{"heading":"14.6975","pozyx_heading":"15.1875","pozyx_x":2000,"pozyx_y":263,"robot_id":3,"x":1166,"y":-516}
+Timestamp: 2024-03-27 16:42:20.176213
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4445,"pozyx_y":471,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:20.251107
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3847,"pozyx_y":64,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:20.659376
+Topic: robot/coordinates
+{"heading":"17.5475","pozyx_heading":"19.8125","pozyx_x":1866,"pozyx_y":150,"robot_id":3,"x":1244,"y":-494}
+Timestamp: 2024-03-27 16:42:21.164651
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3846,"pozyx_y":66,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:21.237702
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4453,"pozyx_y":474,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:21.725332
+Topic: robot/coordinates
+{"heading":"23.8375","pozyx_heading":"26.3125","pozyx_x":1866,"pozyx_y":150,"robot_id":3,"x":1402,"y":-434}
+Timestamp: 2024-03-27 16:42:22.240061
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3844,"pozyx_y":63,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:22.318578
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4453,"pozyx_y":474,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:22.807453
+Topic: robot/coordinates
+{"heading":"30.3775","pozyx_heading":"32.6875","pozyx_x":1866,"pozyx_y":150,"robot_id":3,"x":1562,"y":-353}
+Timestamp: 2024-03-27 16:42:23.319310
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3844,"pozyx_y":63,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:23.397927
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4453,"pozyx_y":474,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:23.876822
+Topic: robot/coordinates
+{"heading":"36.9675","pozyx_heading":"39.5625","pozyx_x":1866,"pozyx_y":150,"robot_id":3,"x":1713,"y":-252}
+Timestamp: 2024-03-27 16:42:24.407053
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3844,"pozyx_y":63,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:24.473173
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4453,"pozyx_y":474,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:24.948888
+Topic: robot/coordinates
+{"heading":"38.8375","pozyx_heading":"41.1875","pozyx_x":1917,"pozyx_y":181,"robot_id":3,"x":1862,"y":-135}
+Timestamp: 2024-03-27 16:42:25.470938
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3849,"pozyx_y":59,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:25.553745
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4471,"pozyx_y":504,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:26.040128
+Topic: robot/coordinates
+{"heading":"39.9275","pozyx_heading":"42.2500","pozyx_x":1917,"pozyx_y":181,"robot_id":3,"x":2012,"y":-11}
+Timestamp: 2024-03-27 16:42:26.534811
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3859,"pozyx_y":58,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:26.626323
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4471,"pozyx_y":504,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:27.101346
+Topic: robot/coordinates
+{"heading":"40.5875","pozyx_heading":"42.8750","pozyx_x":1917,"pozyx_y":181,"robot_id":3,"x":2160,"y":113}
+Timestamp: 2024-03-27 16:42:27.609351
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3857,"pozyx_y":54,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:27.711600
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4459,"pozyx_y":493,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:28.159336
+Topic: robot/coordinates
+{"heading":"41.1775","pozyx_heading":"43.6875","pozyx_x":2278,"pozyx_y":369,"robot_id":3,"x":2309,"y":242}
+Timestamp: 2024-03-27 16:42:28.693714
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3788,"pozyx_y":46,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:28.789391
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4449,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:29.237551
+Topic: robot/coordinates
+{"heading":"42.0375","pozyx_heading":"44.5625","pozyx_x":2482,"pozyx_y":466,"robot_id":3,"x":2460,"y":376}
+Timestamp: 2024-03-27 16:42:29.768303
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3789,"pozyx_y":42,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:29.902847
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4442,"pozyx_y":479,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:30.425742
+Topic: robot/coordinates
+{"heading":"42.6175","pozyx_heading":"45.0625","pozyx_x":2482,"pozyx_y":466,"robot_id":3,"x":2609,"y":511}
+Timestamp: 2024-03-27 16:42:31.214744
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4399,"pozyx_y":485,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:31.324257
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3794,"pozyx_y":47,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:31.353156
+Topic: robot/coordinates
+{"heading":"11.8575","pozyx_heading":"12.6250","pozyx_x":2601,"pozyx_y":562,"robot_id":3,"x":2673,"y":566}
+Timestamp: 2024-03-27 16:42:31.889040
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3791,"pozyx_y":46,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:31.989786
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4387,"pozyx_y":485,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:32.427088
+Topic: robot/coordinates
+{"heading":"-31.302","pozyx_heading":"329.750","pozyx_x":2601,"pozyx_y":562,"robot_id":3,"x":2707,"y":557}
+Timestamp: 2024-03-27 16:42:33.636531
+Topic: robot/coordinates
+{"heading":"-31.892","pozyx_heading":"329.437","pozyx_x":2815,"pozyx_y":694,"robot_id":3,"x":2741,"y":535}
+Timestamp: 2024-03-27 16:42:33.651225
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4387,"pozyx_y":485,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:33.712068
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3788,"pozyx_y":51,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:34.026743
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3854,"pozyx_y":57,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:34.114795
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4436,"pozyx_y":495,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:34.528224
+Topic: robot/coordinates
+{"heading":"-27.142","pozyx_heading":"335.125","pozyx_x":3353,"pozyx_y":1007,"robot_id":3,"x":2864,"y":465}
+Timestamp: 2024-03-27 16:42:35.083857
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3856,"pozyx_y":58,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:35.200125
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4414,"pozyx_y":456,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:35.603557
+Topic: robot/coordinates
+{"heading":"-20.902","pozyx_heading":"341.562","pozyx_x":3353,"pozyx_y":1007,"robot_id":3,"x":3022,"y":394}
+Timestamp: 2024-03-27 16:42:36.159711
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3855,"pozyx_y":60,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:36.269007
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4414,"pozyx_y":456,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:36.744277
+Topic: robot/coordinates
+{"heading":"-16.902","pozyx_heading":"345.312","pozyx_x":3353,"pozyx_y":1007,"robot_id":3,"x":3137,"y":355}
+Timestamp: 2024-03-27 16:42:37.497910
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4429,"pozyx_y":448,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:37.574486
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3921,"pozyx_y":69,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:37.722686
+Topic: robot/coordinates
+{"heading":"9.21750","pozyx_heading":"13.3125","pozyx_x":3748,"pozyx_y":1121,"robot_id":3,"x":3141,"y":355}
+Timestamp: 2024-03-27 16:42:38.285945
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3968,"pozyx_y":56,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:38.397522
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4481,"pozyx_y":429,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:38.779330
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"31.0625","pozyx_x":3867,"pozyx_y":1560,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:39.359606
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3968,"pozyx_y":56,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:39.479711
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4481,"pozyx_y":429,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:39.869254
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3897,"pozyx_y":1512,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:40.424383
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3890,"pozyx_y":42,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:40.554978
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4475,"pozyx_y":421,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:40.961959
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3897,"pozyx_y":1512,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:41.505188
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3989,"pozyx_y":71,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:41.611640
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4520,"pozyx_y":379,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:42.007754
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3839,"pozyx_y":1461,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:42.610497
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3924,"pozyx_y":64,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:42.696635
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4480,"pozyx_y":390,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:43.083193
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3839,"pozyx_y":1461,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:43.651598
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3871,"pozyx_y":70,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:43.780876
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4462,"pozyx_y":396,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:44.168875
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3754,"pozyx_y":1059,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:44.713424
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3940,"pozyx_y":91,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:44.854164
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4413,"pozyx_y":432,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:45.244879
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3758,"pozyx_y":1054,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:45.789946
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3940,"pozyx_y":91,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:45.919870
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4413,"pozyx_y":432,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:46.325384
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3757,"pozyx_y":1051,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:46.863863
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3892,"pozyx_y":55,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:46.990024
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:47.409070
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3806,"pozyx_y":1052,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:47.935502
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3962,"pozyx_y":66,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:48.058369
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:48.482789
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3800,"pozyx_y":1041,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:49.015696
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3972,"pozyx_y":67,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:49.127904
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:49.554462
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3797,"pozyx_y":1043,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:50.090963
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3981,"pozyx_y":67,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:50.198197
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:50.626246
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3797,"pozyx_y":1043,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:51.164529
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3981,"pozyx_y":67,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:51.284269
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:51.751318
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3797,"pozyx_y":1043,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:52.273319
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3928,"pozyx_y":70,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:52.326330
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:52.791157
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3797,"pozyx_y":1043,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:53.318431
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3933,"pozyx_y":72,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:53.389477
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:53.855158
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3798,"pozyx_y":1047,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:54.385967
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3933,"pozyx_y":72,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:54.456114
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4388,"pozyx_y":481,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:54.930224
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3807,"pozyx_y":1051,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:55.470571
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4033,"pozyx_y":64,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:55.684725
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4457,"pozyx_y":495,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:56.038717
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3858,"pozyx_y":1080,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:56.789639
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3958,"pozyx_y":59,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:56.838615
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4457,"pozyx_y":495,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:57.058468
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3858,"pozyx_y":1080,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:57.594249
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3958,"pozyx_y":59,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:57.681851
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4457,"pozyx_y":495,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:58.122436
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3860,"pozyx_y":1084,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:58.644924
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3996,"pozyx_y":41,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:58.722604
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4391,"pozyx_y":484,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:42:59.220259
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3894,"pozyx_y":1499,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:42:59.715400
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4049,"pozyx_y":54,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:42:59.795398
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4410,"pozyx_y":483,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:00.271816
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3894,"pozyx_y":1499,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:00.786240
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4010,"pozyx_y":60,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:00.864219
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4410,"pozyx_y":483,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:01.371438
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3892,"pozyx_y":1499,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:01.879914
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3992,"pozyx_y":63,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:01.944346
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4410,"pozyx_y":483,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:02.429040
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3888,"pozyx_y":1495,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:02.981503
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3992,"pozyx_y":63,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:03.039977
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4385,"pozyx_y":474,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:03.503907
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3881,"pozyx_y":1493,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:04.016689
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4003,"pozyx_y":62,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:04.072395
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4385,"pozyx_y":474,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:04.592579
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3881,"pozyx_y":1493,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:05.099231
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4003,"pozyx_y":62,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:05.150019
+Topic: robot/coordinates
+{"heading":"-59.902","pozyx_heading":"301.937","pozyx_x":4385,"pozyx_y":474,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:05.651372
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3904,"pozyx_y":1863,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:06.187473
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3961,"pozyx_y":59,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:06.229720
+Topic: robot/coordinates
+{"heading":"-89.622","pozyx_heading":"268.562","pozyx_x":4361,"pozyx_y":452,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:06.754388
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3928,"pozyx_y":1870,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:07.254980
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3986,"pozyx_y":56,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:07.285207
+Topic: robot/coordinates
+{"heading":"-144.04","pozyx_heading":"218.187","pozyx_x":4132,"pozyx_y":420,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:07.794645
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3928,"pozyx_y":1864,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:08.334687
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3978,"pozyx_y":50,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:08.361223
+Topic: robot/coordinates
+{"heading":"-152.54","pozyx_heading":"209.062","pozyx_x":3870,"pozyx_y":313,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:08.884755
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3842,"pozyx_y":1461,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:09.395223
+Topic: robot/coordinates
+{"heading":"-157.81","pozyx_heading":"204.875","pozyx_x":2964,"pozyx_y":-74,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:09.423691
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3924,"pozyx_y":48,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:09.939536
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3875,"pozyx_y":1491,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:10.458980
+Topic: robot/coordinates
+{"heading":"-157.61","pozyx_heading":"204.375","pozyx_x":2462,"pozyx_y":-211,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:10.476655
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3917,"pozyx_y":50,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:11.005236
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3913,"pozyx_y":1489,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:11.522637
+Topic: robot/coordinates
+{"heading":"129.297","pozyx_heading":"129.062","pozyx_x":281,"pozyx_y":-728,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:11.554782
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3839,"pozyx_y":61,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:12.085341
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3911,"pozyx_y":1495,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:12.600037
+Topic: robot/coordinates
+{"heading":"149.897","pozyx_heading":"150.875","pozyx_x":-1119,"pozyx_y":-782,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:12.618265
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3842,"pozyx_y":69,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:13.162598
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":4080,"pozyx_y":1497,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:13.647053
+Topic: robot/coordinates
+{"heading":"103.427","pozyx_heading":"97.6875","pozyx_x":-2499,"pozyx_y":-517,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:13.688230
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3885,"pozyx_y":61,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:14.279738
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":4001,"pozyx_y":1104,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:14.704975
+Topic: robot/coordinates
+{"heading":"7.06750","pozyx_heading":"5.93750","pozyx_x":-3349,"pozyx_y":-210,"robot_id":1,"x":4200,"y":707}
+Timestamp: 2024-03-27 16:43:14.760693
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3876,"pozyx_y":62,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:15.312856
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3830,"pozyx_y":1070,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:15.759464
+Topic: robot/coordinates
+{"heading":"0.06750","pozyx_heading":"359.562","pozyx_x":-3891,"pozyx_y":-42,"robot_id":1,"x":4199,"y":707}
+Timestamp: 2024-03-27 16:43:15.836902
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3882,"pozyx_y":70,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:16.390159
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3767,"pozyx_y":1044,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:16.839724
+Topic: robot/coordinates
+{"heading":"2.39750","pozyx_heading":"2.18750","pozyx_x":-4144,"pozyx_y":-14,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:16.924434
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3833,"pozyx_y":65,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:17.464105
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3746,"pozyx_y":1049,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:17.903008
+Topic: robot/coordinates
+{"heading":"3.38750","pozyx_heading":"3.00000","pozyx_x":-4249,"pozyx_y":-5,"robot_id":1,"x":4195,"y":707}
+Timestamp: 2024-03-27 16:43:17.977959
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3787,"pozyx_y":45,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:18.550885
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3754,"pozyx_y":1053,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:18.965261
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4251,"pozyx_y":16,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:19.052392
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3790,"pozyx_y":27,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:19.611889
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3754,"pozyx_y":1053,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:20.050607
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4247,"pozyx_y":14,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:20.119885
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3797,"pozyx_y":24,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:20.680550
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3760,"pozyx_y":1068,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:21.077978
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4245,"pozyx_y":-11,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:21.193181
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3810,"pozyx_y":26,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:21.756515
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3759,"pozyx_y":1073,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:22.144234
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4245,"pozyx_y":-15,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:22.264505
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3808,"pozyx_y":29,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:22.833621
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3794,"pozyx_y":1101,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:23.197175
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4250,"pozyx_y":-71,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:23.328455
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3785,"pozyx_y":17,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:23.917391
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3797,"pozyx_y":1104,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:24.250509
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4250,"pozyx_y":-71,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:24.429951
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3788,"pozyx_y":17,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:24.998738
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3777,"pozyx_y":1092,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:25.351785
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4247,"pozyx_y":-66,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:25.485553
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3795,"pozyx_y":26,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:26.070747
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"30.9375","pozyx_x":3808,"pozyx_y":1121,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:26.402564
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4247,"pozyx_y":-66,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:26.563486
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3804,"pozyx_y":34,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:27.156647
+Topic: robot/coordinates
+{"heading":"28.5975","pozyx_heading":"35.3750","pozyx_x":3808,"pozyx_y":1121,"robot_id":3,"x":3170,"y":364}
+Timestamp: 2024-03-27 16:43:27.453114
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4232,"pozyx_y":-63,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:27.638117
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3810,"pozyx_y":30,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:28.224204
+Topic: robot/coordinates
+{"heading":"7.69750","pozyx_heading":"11.5625","pozyx_x":3808,"pozyx_y":1121,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:28.508358
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4222,"pozyx_y":-61,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:28.714431
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3810,"pozyx_y":30,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:29.290668
+Topic: robot/coordinates
+{"heading":"-111.45","pozyx_heading":"249.750","pozyx_x":3741,"pozyx_y":1089,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:29.567861
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4304,"pozyx_y":-70,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:29.778372
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3813,"pozyx_y":28,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:30.360666
+Topic: robot/coordinates
+{"heading":"-158.92","pozyx_heading":"207.687","pozyx_x":3067,"pozyx_y":1257,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:30.632830
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4261,"pozyx_y":-58,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:30.881966
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3860,"pozyx_y":43,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:31.405783
+Topic: robot/coordinates
+{"heading":"-147.29","pozyx_heading":"219.937","pozyx_x":1830,"pozyx_y":1384,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:31.690473
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4229,"pozyx_y":-45,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:31.927020
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3945,"pozyx_y":33,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:32.478561
+Topic: robot/coordinates
+{"heading":"-143.50","pozyx_heading":"222.437","pozyx_x":682,"pozyx_y":1321,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:32.767316
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4182,"pozyx_y":-27,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:32.986535
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3982,"pozyx_y":34,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:33.545273
+Topic: robot/coordinates
+{"heading":"-138.00","pozyx_heading":"228.437","pozyx_x":-739,"pozyx_y":893,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:33.806838
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4196,"pozyx_y":-37,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:34.053402
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3982,"pozyx_y":68,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:34.598058
+Topic: robot/coordinates
+{"heading":"-148.20","pozyx_heading":"217.312","pozyx_x":-1986,"pozyx_y":299,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:34.884474
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4228,"pozyx_y":-47,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:35.128998
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3997,"pozyx_y":26,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:35.664470
+Topic: robot/coordinates
+{"heading":"-172.64","pozyx_heading":"193.125","pozyx_x":-3112,"pozyx_y":-177,"robot_id":3,"x":3171,"y":364}
+Timestamp: 2024-03-27 16:43:35.942768
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4232,"pozyx_y":-43,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:36.196175
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3960,"pozyx_y":-13,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:36.775925
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.812","pozyx_x":-3990,"pozyx_y":-441,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:37.014184
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4198,"pozyx_y":-15,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:37.273060
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3883,"pozyx_y":2,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:37.818783
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.812","pozyx_x":-4397,"pozyx_y":-486,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:38.066809
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4176,"pozyx_y":6,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:38.371476
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3980,"pozyx_y":-19,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:38.891059
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4423,"pozyx_y":-455,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:39.135771
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4177,"pozyx_y":7,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:39.422270
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4005,"pozyx_y":-30,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:39.961284
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4346,"pozyx_y":-411,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:40.196031
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4185,"pozyx_y":-10,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:40.512038
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3956,"pozyx_y":-16,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:41.036334
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4323,"pozyx_y":-397,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:41.266694
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4228,"pozyx_y":-40,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:41.571921
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":3985,"pozyx_y":32,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:42.143398
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4328,"pozyx_y":-394,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:42.321231
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4261,"pozyx_y":-55,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:42.643501
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4022,"pozyx_y":93,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:43.178637
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4242,"pozyx_y":-375,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:43.382679
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4207,"pozyx_y":-49,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:43.717988
+Topic: robot/coordinates
+{"heading":"49.5025","pozyx_heading":"51.1875","pozyx_x":4086,"pozyx_y":152,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:44.259819
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4207,"pozyx_y":-368,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:44.441411
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4206,"pozyx_y":-33,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:44.836699
+Topic: robot/coordinates
+{"heading":"53.8325","pozyx_heading":"50.9375","pozyx_x":3940,"pozyx_y":101,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:45.553878
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4201,"pozyx_y":-366,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:46.251459
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4191,"pozyx_y":-28,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:46.276192
+Topic: robot/coordinates
+{"heading":"161.992","pozyx_heading":"131.562","pozyx_x":3940,"pozyx_y":101,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:46.429015
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4193,"pozyx_y":-360,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:46.541084
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4193,"pozyx_y":-21,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:46.896716
+Topic: robot/coordinates
+{"heading":"-175.30","pozyx_heading":"182.312","pozyx_x":3466,"pozyx_y":-255,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:48.135909
+Topic: robot/coordinates
+{"heading":"171.092","pozyx_heading":"174.687","pozyx_x":2276,"pozyx_y":-927,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:48.159850
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4252,"pozyx_y":-21,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:48.317819
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4223,"pozyx_y":-378,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:48.497864
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4158,"pozyx_y":-362,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:48.669444
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4258,"pozyx_y":-23,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:49.028012
+Topic: robot/coordinates
+{"heading":"165.492","pozyx_heading":"162.562","pozyx_x":702,"pozyx_y":-1448,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:49.677342
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4181,"pozyx_y":-378,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:50.427026
+Topic: robot/coordinates
+{"heading":"130.342","pozyx_heading":"139.625","pozyx_x":-714,"pozyx_y":-1391,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:50.529578
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4267,"pozyx_y":-17,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:50.627566
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4168,"pozyx_y":-373,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:50.770095
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4271,"pozyx_y":-20,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:51.123855
+Topic: robot/coordinates
+{"heading":"141.212","pozyx_heading":"139.875","pozyx_x":-1068,"pozyx_y":-1296,"robot_id":2,"x":3692,"y":13}
+Timestamp: 2024-03-27 16:43:51.922286
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4206,"pozyx_y":-399,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:52.645000
+Topic: robot/coordinates
+{"heading":"170.852","pozyx_heading":"169.937","pozyx_x":-1921,"pozyx_y":-903,"robot_id":2,"x":3691,"y":13}
+Timestamp: 2024-03-27 16:43:52.689328
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4264,"pozyx_y":-12,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:52.797934
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4258,"pozyx_y":-418,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:52.879457
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4245,"pozyx_y":-22,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:53.244014
+Topic: robot/coordinates
+{"heading":"170.202","pozyx_heading":"167.687","pozyx_x":-2340,"pozyx_y":-702,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:43:53.804740
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4299,"pozyx_y":-423,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:53.950244
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4215,"pozyx_y":-15,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:54.313941
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-3603,"pozyx_y":-2,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:43:54.883874
+Topic: robot/coordinates
+{"heading":"-167.01","pozyx_heading":"198.750","pozyx_x":-4245,"pozyx_y":-413,"robot_id":3,"x":3184,"y":367}
+Timestamp: 2024-03-27 16:43:55.006722
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4217,"pozyx_y":-32,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:55.422315
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4256,"pozyx_y":369,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:43:55.948373
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4282,"pozyx_y":-383,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:43:56.064093
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4265,"pozyx_y":-46,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:56.481057
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4296,"pozyx_y":379,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:43:57.061515
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4415,"pozyx_y":-401,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:43:57.153758
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4343,"pozyx_y":-48,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:57.553570
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4337,"pozyx_y":420,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:43:58.116108
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4362,"pozyx_y":-384,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:43:58.183704
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4314,"pozyx_y":-31,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:58.612689
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4274,"pozyx_y":415,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:43:59.185741
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4267,"pozyx_y":-375,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:43:59.243651
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4239,"pozyx_y":-14,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:43:59.697248
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4227,"pozyx_y":377,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:00.255353
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4219,"pozyx_y":-355,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:00.345105
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4182,"pozyx_y":-99,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:00.808970
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4223,"pozyx_y":361,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:01.582853
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4219,"pozyx_y":-106,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:01.684965
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4215,"pozyx_y":-353,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:01.796697
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4219,"pozyx_y":346,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:02.382017
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4222,"pozyx_y":-360,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:02.413206
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4216,"pozyx_y":-109,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:02.861233
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4214,"pozyx_y":330,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:03.465117
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4217,"pozyx_y":-358,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:03.489056
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4216,"pozyx_y":-109,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:03.930275
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4216,"pozyx_y":333,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:04.530150
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4213,"pozyx_y":-26,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:04.578888
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4224,"pozyx_y":-363,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:05.008817
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4210,"pozyx_y":331,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:05.595242
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4222,"pozyx_y":-29,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:05.627864
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4205,"pozyx_y":-359,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:06.079930
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4208,"pozyx_y":327,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:06.636501
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4218,"pozyx_y":-27,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:06.704578
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4216,"pozyx_y":-372,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:07.143779
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4190,"pozyx_y":323,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:07.693641
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4216,"pozyx_y":-36,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:07.783177
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4213,"pozyx_y":-363,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:08.254420
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4208,"pozyx_y":340,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:08.754248
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4249,"pozyx_y":-57,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:08.844828
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4219,"pozyx_y":-363,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:09.282870
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4204,"pozyx_y":340,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:09.814549
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4274,"pozyx_y":-76,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:09.928782
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4206,"pozyx_y":-353,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:10.362639
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4197,"pozyx_y":335,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:10.879320
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4306,"pozyx_y":-81,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:10.998630
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4198,"pozyx_y":-353,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:11.443220
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4186,"pozyx_y":325,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:11.950060
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4259,"pozyx_y":-44,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:12.078913
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4193,"pozyx_y":-363,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:12.518306
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4195,"pozyx_y":332,"robot_id":2,"x":3685,"y":14}
+Timestamp: 2024-03-27 16:44:13.005712
+Topic: robot/coordinates
+{"heading":"3.82750","pozyx_heading":"3.43750","pozyx_x":-4267,"pozyx_y":-28,"robot_id":1,"x":4194,"y":707}
+Timestamp: 2024-03-27 16:44:13.165016
+Topic: robot/coordinates
+{"heading":"-165.22","pozyx_heading":"200.625","pozyx_x":-4193,"pozyx_y":-356,"robot_id":3,"x":3138,"y":356}
+Timestamp: 2024-03-27 16:44:13.592749
+Topic: robot/coordinates
+{"heading":"170.262","pozyx_heading":"167.687","pozyx_x":-4216,"pozyx_y":336,"robot_id":2,"x":3685,"y":14}
