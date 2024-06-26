@@ -396,8 +396,8 @@ void MotionController::readSensors() {
             << ", y: " << kobuki_coordinates[1] << ecl::reset << endl;
     current_x = (0.2 * UWB_x + 0.8 * kobuki_coordinates[0]);
     current_y = (0.2 * UWB_y + 0.8 * kobuki_coordinates[1]);
-    //current_yaw = kobuki_manager.getAngle();
-    current_yaw = UWB_yaw;
+    current_yaw = kobuki_manager.getAngle();
+    //current_yaw = UWB_yaw;
     if (robot_mode == CUSTOM_MODE) {
         return;
     }
@@ -413,10 +413,83 @@ void MotionController::readSensors() {
     setObstacleFlags();
 }
 
+void MotionController::spiralAlgorithm() {
+    double W, radius_value;
+    for (int i=30; i<=500; i=i+1) {
+        readSensors();
+        radius_value = i;
+        W=0.2/(radius_value/100.0);
+        //W=L*R (R is divided by 100 to convert meters to cm)
+        //(The unit of output for W is radian so there is no need to convert again in the setBaseControl function)
+        std::cout << "W = " << W << std::endl;
+        kobuki_manager.move(0.2, W);
+        map_manager.sendGridToMQTT();
+        cout << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". Covered area: " 
+        << map_manager.calculateZeroPercentageAroundOrigin(1.5) << " percent" << endl;
+        ecl::MilliSleep sleep(1000);
+        sleep(500+i*4);
+    }
+}
+
+void MotionController::randomMovementAlgorithm() {
+    std::default_random_engine generator(std::chrono::system_clock::now().time_since_epoch().count());
+    std::uniform_real_distribution<double> moveDurationDist(2.0, 6.0); // Duration for forward movement between 2 to 6 seconds
+    std::uniform_real_distribution<double> rotateAngleDist(0.5, 1.0); // Rotation duration between 0.5 to 1.0 seconds
+    std::uniform_int_distribution<int> moveChoiceDist(0, 1); // 0 for move forward, 1 for rotate
+
+    while (true) {  // Continuously run within a control loop or until a stop condition is met
+        double moveDuration = moveDurationDist(generator);
+        double rotateDuration = rotateAngleDist(generator);
+        int moveChoice = moveChoiceDist(generator);
+        map_manager.sendGridToMQTT();
+        readSensors();
+        cout << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". Covered area: " 
+        << map_manager.calculateZeroPercentageAroundOrigin(1.5) << " percent" << endl;
+        if (moveChoice == 0) {
+            // Move forward
+            kobuki_manager.move(FORWARD_SPEED, 0.0);
+            cout << "Random Movement: Moving forward for " << moveDuration << " seconds." << endl;
+            ecl::MilliSleep sleep(100);
+            int steps = (int)(1000 * moveDuration / 100);
+            for (int i = 0; i < steps; ++i) {
+                sleep();
+                readSensors();
+                if (kobuki_manager.getBumperState() != 0) {
+                    // Bumper hit, perform immediate rotation
+                    double reactionRotateAngle = rotateAngleDist(generator) * (generator()%2 ? 1 : -1);  // Randomly decide direction
+                    while (kobuki_manager.getBumperState() != 0) {
+                        kobuki_manager.move(0.0, reactionRotateAngle * FAST_ROTATION_SPEED); // Rotate in place
+                        cout << "Bumper Hit: Rotating immediately by " << reactionRotateAngle << " radians." << endl;
+                        ecl::MilliSleep reactionSleep(1000 * rotateDuration); // Continue rotating for the rotate duration
+                        reactionSleep();
+                    }
+                    break;  // Exit the current movement loop
+                }
+            }
+        } else {
+            // Rotate
+            kobuki_manager.move(0.0, FAST_ROTATION_SPEED); // Start rotation
+            cout << "Random Movement: Rotating for " << rotateDuration << " seconds." << endl;
+            ecl::MilliSleep sleep(1000 * rotateDuration); // Complete the rotation without interruption
+            sleep();
+        }
+
+        // Stop the robot after movement or rotation completes or after a bumper reaction
+        kobuki_manager.stop();
+        cout << "Stopping for a brief moment." << endl;
+        ecl::MilliSleep(1000); // Pause for a second before the next move
+    }
+}
+
+
+
 void MotionController::Bug2Algorithm() {
     double longitudinal_velocity = 0.0;
     double rotational_velocity = 0.0;
 
+    map_manager.sendGridToMQTT();
+    cout << "TimeStamp:" << double(ecl::TimeStamp() - start_time) << ". Covered area: " 
+    << map_manager.calculateZeroPercentageAroundOrigin(1.5) << " percent" << endl;
     double position_error = sqrt(
                 pow(target_x - current_x, 2) + pow(target_y - current_y, 2));
 
@@ -473,7 +546,7 @@ void MotionController::Bug2Algorithm() {
                 sleep(200);
             }
         } else if (moving_state == GO_STRAIGHT) { // GO STRAIGHT
-            if (position_error > 0.25) {
+            if (position_error > 0.15) {
                 if (isObstacleInFront) {
                     if (robot_id % 2 == 0) { // Even robot_id is right wall follower
                         // turn right and move forward slowly
@@ -489,7 +562,7 @@ void MotionController::Bug2Algorithm() {
                 cout << "yaw_error: " << yaw_error << " position_error: " << position_error << endl;
 
                 // Adjust heading if heading is not good enough
-                if (fabs(yaw_error) > yaw_precision + ecl::pi * 0.33) {
+                if (fabs(yaw_error) > yaw_precision + ecl::pi * 0.05) {
                     moving_state = ADJUST_HEADING; // ADJUST HEADING
                     sendStateToMQTT();
                     map_manager.printMap(current_x, current_y);
@@ -523,7 +596,7 @@ void MotionController::Bug2Algorithm() {
             }
         }
     } else if (robot_mode == WALL_FOLLOWING_MODE) { // "wall following mode"
-        if (position_error < 0.25) {
+        if (position_error < 0.15) {
             robot_mode = GO_TO_GOAL_MODE; // "go to goal mode"
             moving_state = GOAL_ACHIEVED; // finish successfully
             sendStateToMQTT();
@@ -847,7 +920,7 @@ void MotionController::checkDistance(double sensor_distance) {
     double distance = sensor_distance * CM_TO_M;
     cout << "Sensor Distance: " << distance << "m." << endl;
     if (distance > 0.02 && distance < 0.6) {
-        map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
+        //map_manager.updateMapPolar(distance + ROBOT_RADIUS, UWB_yaw, current_x, current_y, 1);
     }
     map_manager.updateMap(current_x, current_y, 0);
 }

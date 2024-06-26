@@ -234,3 +234,35 @@ void MapManager::initialize_mqtt_client() {
         cerr << "MapManager: Error connecting to the MQTT server: " << e.what() << endl;
     }
 }
+
+
+double MapManager::calculateZeroPercentageAroundOrigin(double radius_meters) {
+    int radius_cells = static_cast<int>(radius_meters / GRID_SIZE);
+    
+    // Calculate grid indices for the specified origin
+    int origin_x = static_cast<int>(round((-0.5 / GRID_SIZE) + MAP_ORIGIN));
+    int origin_y = static_cast<int>(round((0.5 / GRID_SIZE) + MAP_ORIGIN));
+
+    int total_cells = 0;
+    int zero_cells = 0;
+    // Check the cells around the origin within the radius
+    for (int row = origin_y - radius_cells; row < origin_y + radius_cells; ++row) {
+        if (row < 0 || row >= MAP_SIZE) continue;
+        for (int col = origin_x - radius_cells; col < origin_x + radius_cells; ++col) {
+            if (col < 0 || col >= MAP_SIZE) continue;
+            total_cells++;
+            if (occupancy_grid[MAP_SIZE-row][col] == 0) {
+                zero_cells++;
+            }
+        }
+    }
+    cout << "radius_cells " << radius_cells << " origin_x " << origin_x << " origin_y " << origin_y << " total_cells " << 
+    total_cells << " zero_cells " << zero_cells << endl;
+
+    double zero_percentage = 0.0;
+    if (total_cells > 0) {
+        zero_percentage = static_cast<double>(zero_cells) / total_cells * 100.0;
+    }
+
+    return zero_percentage;
+}

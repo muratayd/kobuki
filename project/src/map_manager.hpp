@@ -129,6 +129,8 @@ public:
     *   - '#' represents occupied space (any value other than -1 or 0 in the grid).
     */
     void printMap(double robot_x, double robot_y);
+    void sendGridToMQTT();
+    double calculateZeroPercentageAroundOrigin(double radius_meters);
 
 private:
 
@@ -168,8 +170,6 @@ private:
     * @param radius The dilation radius around the specified coordinates due to the robot's assumed size (default: ROBOT_RADIUS).
     */
     void dilateCell(int x, int y, int value, double radius = ROBOT_RADIUS);
-
-    void sendGridToMQTT();
 
     void mergeMap(const std::vector<int>& received_grid);
 

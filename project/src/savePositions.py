@@ -18,11 +18,11 @@ if os.path.exists("mqtt_data.txt"):
 else:
     print("The file does not exist")
 
-client = mqtt.Client()
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
 client.on_message = on_message
 
 # Connect to the MQTT broker
-client.connect("192.168.2.103", 1883, 60)
+client.connect("192.168.2.100", 1883, 60)
 
 # Subscribe to the topics
 client.subscribe("robot/coordinates")

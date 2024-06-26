@@ -127,7 +127,9 @@ int main(int argc, char **argv)
         {
             motion_controller.readSensors();
             //motion_controller.ShortcutBug2Algorithm();
-            motion_controller.Bug2Algorithm();
+            //motion_controller.Bug2Algorithm();
+            //motion_controller.spiralAlgorithm();
+            motion_controller.randomMovementAlgorithm();
             sleep(200);
         }
         motion_controller.stop();

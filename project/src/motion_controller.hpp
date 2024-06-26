@@ -32,7 +32,7 @@
 *****************************************************************************/
 
 #define FORWARD_SPEED 0.2
-#define ROTATION_SPEED 0.7
+#define ROTATION_SPEED 0.6
 #define FAST_ROTATION_SPEED 1.0
 #define LEFT_BUMPER 4
 #define RIGHT_BUMPER 1
@@ -68,6 +68,18 @@ public:
      *
      */
     void Bug2Algorithm();
+
+    /**
+     * @brief Implements the spiral algorithm for navigation.
+     *
+     */
+    void spiralAlgorithm();
+
+    /**
+     * @brief Implements the spiral algorithm for navigation.
+     *
+     */
+    void randomMovementAlgorithm();
 
     /**
      * @brief Implements the Bug2 algorithm for navigation.
@@ -106,7 +118,7 @@ private:
     double hit_y;
     double distance_to_goal_from_hit_point;
     // +/- 7.0 degrees of precision for the rotation angle
-    double yaw_precision = 5.0 * (ecl::pi / 180);
+    double yaw_precision = 3.0 * (ecl::pi / 180);
     // variables for occupancy grid obstacles closer than 10cm
     bool left_obstacle, left_front_obstacle, front_obstacle, right_front_obstacle, right_obstacle, center_obstacle, isObstacleInFront;
     bool button0_flag;

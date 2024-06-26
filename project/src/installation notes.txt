@@ -105,6 +105,7 @@ pip3 install paho-mqtt
 sudo apt install -y mosquitto mosquitto-clients
 sudo systemctl enable mosquitto.service
 mosquitto -v
+mosquitto -c mosquitto.conf -v
 
 10. How to build this repo:
 
